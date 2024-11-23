@@ -6,9 +6,10 @@ import kagglehub
 from task import Task
 
 
-class WorldHappiness(Task):
+class HappinessTask(Task):
     load_dotenv()
 
+    @staticmethod
     def _read_and_attatch_year(path: Path) -> pd.DataFrame:
         df = pd.read_csv(path)
         df["Year"] = path.stem
@@ -24,4 +25,4 @@ class WorldHappiness(Task):
         return df
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("DATA_DIR")) / "cpi.json", orient="records")
+        df.to_json(Path(os.getenv("DATA_DIR")) / "happiness.json", orient="records")
