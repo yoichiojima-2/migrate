@@ -31,4 +31,5 @@ jobs:
         pip install pytest
     - name: Test with pytest
       run: |
+        export DATA_DIR="/tmp"
         pytest -vvv
