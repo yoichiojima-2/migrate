@@ -11,5 +11,5 @@ def test_cpi():
     df = cpi.transform(df)
     cpi.load(df)
     output = Path(os.getenv("DATA_DIR")) / "cpi.json"
-    pprint(json.load(output.open()))
+    pprint(json.load(output.open())[:5])
     assert output.exists()

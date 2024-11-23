@@ -11,5 +11,5 @@ def test_happiness():
     df = happiness.transform(df)
     happiness.load(df)
     output = Path(os.getenv("DATA_DIR")) / "happiness.json"
-    pprint(json.load(output.open()))
+    pprint(json.load(output.open())[:5])
     assert output.exists()

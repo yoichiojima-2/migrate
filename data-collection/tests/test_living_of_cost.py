@@ -11,5 +11,5 @@ def test_cost_of_living():
     df = cost_of_living.transform(df)
     cost_of_living.load(df)
     output = Path(os.getenv("DATA_DIR")) / "cost_of_living.json"
-    pprint(json.load(output.open()))
+    pprint(json.load(output.open())[:5])
     assert output.exists()
