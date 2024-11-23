@@ -17,9 +17,7 @@ class HappinessTask(Task):
 
     def extract(self) -> pd.DataFrame:
         path: str = kagglehub.dataset_download("unsdsn/world-happiness")
-        return pd.concat(
-            [self._read_and_attatch_year(p) for p in Path(path).glob("*.csv")]
-        )
+        return pd.concat([self._read_and_attatch_year(p) for p in Path(path).glob("*.csv")])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         return df
