@@ -25,4 +25,4 @@ venv:
 
 .PHONY: test
 test: venv
-	.venv/bin/pytest -vvv
+	.venv/bin/pytest -vvv -s
