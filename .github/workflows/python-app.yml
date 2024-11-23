@@ -28,6 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -e ./data-collection
         pip install -e ./server-side
+        pip install pytest
     - name: Test with pytest
       run: |
         pytest -vvv
