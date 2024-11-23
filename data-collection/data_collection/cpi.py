@@ -6,10 +6,9 @@ from dotenv import load_dotenv
 from task import Task
 
 
-load_dotenv()
-
-
 class CpiTask(Task):
+    load_dotenv()
+
     def extract(self) -> pd.DataFrame:
         response = requests.get(
             "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL",
