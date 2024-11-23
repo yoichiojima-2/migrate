@@ -3,7 +3,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import pandas as pd
 import kagglehub
-from task import Task
+from data_collection.task import Task
 
 
 class HappinessTask(Task):

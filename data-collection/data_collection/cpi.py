@@ -3,7 +3,7 @@ import requests
 from pathlib import Path
 import pandas as pd
 from dotenv import load_dotenv
-from task import Task
+from data_collection.task import Task
 
 
 class CpiTask(Task):
