@@ -1,5 +1,7 @@
 import os
+import json
 from pathlib import Path
+from pprint import pprint
 from data_collection.cpi import CpiTask
 
 
@@ -8,4 +10,6 @@ def test_cpi():
     df = cpi.extract()
     df = cpi.transform(df)
     cpi.load(df)
-    assert (Path(os.getenv("DATA_DIR")) / "cpi.json").exists()
+    output = (Path(os.getenv("DATA_DIR")) / "cpi.json")
+    pprint(json.load(output.open()))
+    assert output.exists()
