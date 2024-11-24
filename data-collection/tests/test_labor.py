@@ -1,115 +1,46 @@
-import os
-import json
-from pathlib import Path
-from pprint import pprint
 from data_collection import labor
+from tests.test_lib import run_and_check_output
 
 
 def test_working_poverty_rate():
-    labor.WorkingPovertyRate().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "working_poverty_rate.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.WorkingPovertyRate, "working_poverty_rate.json")
 
 
 def test_social_protection():
-    labor.SocialProtection().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "social_protection.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.SocialProtection, "social_protection.json")
 
 
 def test_women_in_senior_and_middle_position():
-    labor.WomenInSeniorAndMiddlePosition().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "women_in_senior_and_middle_position.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.WomenInSeniorAndMiddlePosition, "women_in_senior_and_middle_position.json")
 
 
 def test_women_in_managerial_position():
-    labor.WomenInManagerialPosition().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "women_in_managerial_position.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.WomenInManagerialPosition, "women_in_managerial_position.json")
 
 
 def test_annual_growth_rate_per_worker():
-    labor.AnnualGrowthRatePerWorker().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "annual_growth_rate_per_worker.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.AnnualGrowthRatePerWorker, "annual_growth_rate_per_worker.json")
 
 
 def test_informal_employment():
-    labor.InformalEmployment().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "informal_employment.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.InformalEmployment, "informal_employment.json")
 
 
 def test_average_hourly_earnings():
-    labor.AverageHourlyEarnings().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "average_hourly_earnings.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.AverageHourlyEarnings, "average_hourly_earnings.json")
 
 
 def test_unemployment_rate():
-    labor.UnemploymentRate().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "unemployment_rate.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.UnemploymentRate, "unemployment_rate.json")
 
 
 def test_unemployment_rate_disability():
-    labor.UnemploymentRateDisability().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "unemployment_rate_disability.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.UnemploymentRateDisability, "unemployment_rate_disability.json")
 
 
 def test_youth_neet_proportion():
-    labor.YouthNeetProportion().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "youth_neet_proportion.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.YouthNeetProportion, "youth_neet_proportion.json")
 
 
 def test_labour_rights():
-    labor.LabourRights().run()
-    output = Path(os.getenv("DATA_DIR", "data")) / "labour_rights.json"
-    assert output.exists()
-    with output.open() as f:
-        data = json.load(f)
-    pprint(data[:5])
-    assert len(data) > 0
+    run_and_check_output(labor.LabourRights, "labour_rights.json")

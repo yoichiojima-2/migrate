@@ -11,13 +11,14 @@ class CostOfLivingTask(Task):
     def _scrap(city: str, currency: str = "JPY") -> pd.DataFrame:
         url = f"https://www.numbeo.com/cost-of-living/in/{city}?displayCurrency={currency}"
         print(f"[CostOfLivingTask._scrap] url: {url}")
-        # fmt: off
-        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.122 Safari/537.36"}
-        # fmt: on
-        response = requests.get(url, headers=headers)
+        response = requests.get(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.122 Safari/537.36"
+            },
+        )
         soup = BeautifulSoup(response.text, "html.parser")
         rows = soup.find("table", {"class": "data_wide_table"}).find_all("tr")
-
         cost = []
         for row in rows:
             cells = row.find_all("td")
@@ -35,7 +36,6 @@ class CostOfLivingTask(Task):
         return pd.DataFrame(cost)
 
     def extract(self) -> pd.DataFrame:
-        # fmt: off
         cities = [
             "Tokyo",
             "London",
@@ -49,9 +49,8 @@ class CostOfLivingTask(Task):
             "Singapore",
             "Taipei",
             "Shanghai",
-            "Hong-Kong"
+            "Hong-Kong",
         ]
-        # fmt: of
         return pd.concat([self._scrap(city) for city in cities])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:

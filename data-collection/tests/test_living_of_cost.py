@@ -1,12 +1,6 @@
-import os
-import json
-from pathlib import Path
-from pprint import pprint
 from data_collection.cost_of_living import CostOfLivingTask
+from tests.test_lib import run_and_check_output
 
 
 def test_cost_of_living():
-    CostOfLivingTask().run()
-    output = Path(os.getenv("DATA_DIR")) / "cost_of_living.json"
-    pprint(json.load(output.open())[:5])
-    assert output.exists()
+    run_and_check_output(CostOfLivingTask, "cost_of_living.json")
