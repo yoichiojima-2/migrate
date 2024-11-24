@@ -1,14 +1,11 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 import pandas as pd
 import kagglehub
 from data_collection.task import Task
 
 
 class HappinessTask(Task):
-    load_dotenv()
-
     @staticmethod
     def _read_and_attatch_year(path: Path) -> pd.DataFrame:
         df = pd.read_csv(path)

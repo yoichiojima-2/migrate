@@ -2,14 +2,11 @@ import os
 from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
 import pandas as pd
 from data_collection.task import Task
 
 
 class CostOfLivingTask(Task):
-    load_dotenv()
-
     @staticmethod
     def _scrap(city: str, currency: str = "JPY") -> pd.DataFrame:
         url = f"https://www.numbeo.com/cost-of-living/in/{city}?displayCurrency={currency}"

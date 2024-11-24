@@ -2,13 +2,10 @@ import os
 import requests
 from pathlib import Path
 import pandas as pd
-from dotenv import load_dotenv
 from data_collection.task import Task
 
 
 class CpiTask(Task):
-    load_dotenv()
-
     def extract(self) -> pd.DataFrame:
         url = "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL"
         print(f"[CpiTask.extract] url: {url}")
