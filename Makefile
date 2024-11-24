@@ -1,3 +1,5 @@
+VENV = ./.venv
+
 .PHONY: clean
 clean:
 	-rm poetry.lock
@@ -15,8 +17,8 @@ lint:
 .PHONY: pre-commit
 pre-commit: lint clean
 
-.PHONY: venv
-venv: 
+.PHONY: .venv
+.venv: 
 	python -m venv .venv
 	.venv/bin/pip install --upgrade pip
 	.venv/bin/pip install pytest
@@ -24,5 +26,5 @@ venv:
 	.venv/bin/pip install -e server-side
 
 .PHONY: test
-test: ./.venv
+test: .venv
 	.venv/bin/pytest -vvv -s
