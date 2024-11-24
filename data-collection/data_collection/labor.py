@@ -31,7 +31,7 @@ class LaborTask(Task):
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df.columns = [col.replace(".label", "") for col in df.columns]
-        return df.rename(columns={"ref_area": "country"})
+        return df.rename(columns={"ref_area": "country", "time": "year"})
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df.to_json(Path(os.getenv("DATA_DIR")) / f"{self.name}.json", orient="records")
