@@ -31,19 +31,10 @@ class LaborTask(Task):
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df.columns = [col.replace(".label", "") for col in df.columns]
-        return df
+        return df.rename(columns = {"ref_area": "country"})
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df.to_json(Path(os.getenv("DATA_DIR")) / f"{self.name}.json", orient="records")
-
-
-class WorkingPoveryRate(LaborTask):
-    def __init__(self):
-        super().__init__(
-            name="working_poverty_rate",
-            dataset_id="SDG_0111_SEX_AGE_RT_A",
-            dataset_name="sdg-indicator-111-working-poverty-rate-percentage-of-employed-living-below-us215-ppp-annual",
-        )
 
 
 class WorkingPovertyRate(LaborTask):
@@ -143,3 +134,18 @@ class LabourRights(LaborTask):
             dataset_id="SDG_0882_NOC_RT_A",
             dataset_name="sdg-indicator-882-level-of-national-compliance-with-labour-rights-freedom-of-association-and-collective-bargaining-annual",
         )
+
+
+if __name__ == "__main__":
+    WorkingPovertyRate().run()
+    SocialProtection().run()
+    WomenInSeniorAndMiddlePosition().run()
+    WomenInManagerialPosition().run()
+    AnnualGrowthRatePerWorker().run()
+    InformalEmployment().run()
+    AverageHourlyEarnings().run()
+    UnemploymentRate().run()
+    UnemploymentRateDisability().run()
+    YouthNeetProportion().run()
+    LabourRights().run()
+    
