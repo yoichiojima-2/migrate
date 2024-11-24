@@ -1,4 +1,4 @@
-VENV = ./.venv
+VENV = .venv
 
 .PHONY: clean
 clean:
