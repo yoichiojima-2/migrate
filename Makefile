@@ -17,14 +17,16 @@ lint:
 .PHONY: pre-commit
 pre-commit: lint clean
 
-.PHONY: .venv
-.venv: 
-	python -m venv .venv
-	.venv/bin/pip install --upgrade pip
-	.venv/bin/pip install pytest
-	.venv/bin/pip install -e data-collection
-	.venv/bin/pip install -e server-side
+.PHONY: venv
+venv: .venv/.installed
+.venv/.installed: 
+	python -m venv $(VENV)
+	$(VENV)/bin/pip install --upgrade pip
+	$(VENV)/bin/pip install pytest
+	$(VENV)/bin/pip install -e data-collection
+	$(VENV)/bin/pip install -e server-side
+	touch $(VENV)/.installed
 
 .PHONY: test
-test: .venv
-	.venv/bin/pytest -vvv -s
+test: venv
+	$(VENV)/bin/pytest -vvv -s
