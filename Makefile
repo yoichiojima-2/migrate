@@ -24,5 +24,5 @@ venv:
 	.venv/bin/pip install -e server-side
 
 .PHONY: test
-test: ./venv
+test: ./.venv
 	.venv/bin/pytest -vvv -s
