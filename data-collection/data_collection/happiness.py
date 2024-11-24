@@ -24,3 +24,10 @@ class HappinessTask(Task):
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df.to_json(Path(os.getenv("DATA_DIR")) / "happiness.json", orient="records")
+
+
+if __name__ == "__main__":
+    task = HappinessTask()
+    df = task.extract()
+    df = task.transform(df)
+    task.load(df)

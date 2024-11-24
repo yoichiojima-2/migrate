@@ -10,8 +10,10 @@ class CpiTask(Task):
     load_dotenv()
 
     def extract(self) -> pd.DataFrame:
+        url = "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL"
+        print(f"[CpiTask.extract] url: {url}")
         response = requests.get(
-            "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL",
+            url,
             params={
                 "format": "json",
                 "date": "2010:2024",
@@ -33,3 +35,10 @@ class CpiTask(Task):
 
     def load(self, df: pd.DataFrame) -> None:
         df.to_json(Path(os.getenv("DATA_DIR")) / "cpi.json", orient="records")
+
+
+if __name__ == "__main__":
+    task = CpiTask()
+    df = task.extract()
+    df = task.transform(df)
+    task.load(df)

@@ -7,3 +7,8 @@ class Task:
 
     def load(self) -> None:
         raise NotImplementedError
+
+    def run(self) -> None:
+        df = self.extract()
+        df = self.transform(df)
+        self.load(df)

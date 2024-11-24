@@ -6,10 +6,7 @@ from data_collection.happiness import HappinessTask
 
 
 def test_happiness():
-    happiness = HappinessTask()
-    df = happiness.extract()
-    df = happiness.transform(df)
-    happiness.load(df)
+    HappinessTask().run()
     output = Path(os.getenv("DATA_DIR")) / "happiness.json"
     pprint(json.load(output.open())[:5])
     assert output.exists()
