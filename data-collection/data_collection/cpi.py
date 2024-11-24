@@ -39,6 +39,4 @@ class CpiTask(Task):
 
 if __name__ == "__main__":
     task = CpiTask()
-    df = task.extract()
-    df = task.transform(df)
-    task.load(df)
+    task.run()
