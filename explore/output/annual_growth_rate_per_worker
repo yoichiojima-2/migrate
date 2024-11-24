@@ -1,0 +1,253 @@
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| country     | source                   | indicator                                                                                                    |   year |   obs_value |
++=============+==========================+==============================================================================================================+========+=============+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2024 |       0.362 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2000 |       1.244 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2001 |       0.832 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2002 |       2     |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2003 |       0.843 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2004 |       2.41  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2005 |      -0.215 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2007 |       0.689 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2008 |       0.769 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2009 |       1.238 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2010 |       0.08  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2011 |       0.554 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2006 |       0.199 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2013 |       1.656 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2012 |       2.741 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2022 |       0.471 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2021 |       1.227 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2020 |       1.349 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2019 |      -0.098 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2023 |       0.098 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2017 |       0.002 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2016 |       0.949 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2015 |       0.165 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2014 |       1.825 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Australia   | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2018 |       0.177 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2010 |       1.722 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2009 |      -1.257 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2008 |      -0.378 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2007 |      -0.237 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2006 |       1.134 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2003 |      -0.639 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2004 |       1.457 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2002 |       0.642 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2001 |       0.561 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2000 |       2.627 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2005 |       1.886 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2011 |       1.601 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2019 |      -0.176 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2013 |       0.967 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2012 |       0.614 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2023 |       0.098 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2022 |       0.117 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2021 |       0.072 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2020 |       0.592 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2024 |       0.624 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2018 |       1.24  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2017 |       0.996 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2016 |       0.216 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2015 |      -0.119 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Canada      | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2014 |       2.438 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2009 |      -5.896 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2008 |      -0.649 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2007 |       0.635 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2006 |       1.564 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2005 |      -1.705 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2003 |       0.454 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2010 |       3.15  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2002 |       0.764 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2001 |       1.318 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2000 |       2.426 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2004 |       2.834 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2011 |       1.18  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2012 |      -0.308 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2013 |      -0.468 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2023 |      -1.082 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2022 |       0.184 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2021 |       3.151 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2020 |      -1.03  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2019 |      -0.402 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2024 |       1.873 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2017 |       1.717 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2016 |       0.073 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2015 |       1.239 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2014 |       1.553 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Germany     | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2018 |       0.3   |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2010 |       4.512 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2009 |      -4.283 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2008 |      -0.873 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2007 |       1.035 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2005 |       1.28  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2003 |       1.805 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2002 |       1.305 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2001 |       0.992 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2000 |       3.062 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2011 |      -0.029 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2004 |       1.922 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2012 |       1.587 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2006 |       0.904 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2014 |      -0.457 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2013 |       1.271 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2023 |       1.706 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2022 |       0.557 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2021 |       2.324 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2020 |      -3.484 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2024 |       0.799 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2018 |      -1.229 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2017 |       0.694 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2016 |      -0.282 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2015 |       1.288 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Japan       | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2019 |      -1.249 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2002 |      -0.932 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2011 |       1.342 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2003 |       0.938 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2004 |       2.349 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2005 |       5.169 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2006 |       1.656 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2007 |       0.698 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2008 |      -0.181 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2009 |      -3.768 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2010 |       2.305 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2012 |      -1.528 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2018 |       0.165 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2014 |       1.717 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2015 |       0.575 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2016 |       0.939 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2017 |       1.027 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2019 |       0.004 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2020 |      -3.669 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2021 |       5.463 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2022 |       2.353 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2023 |      -0.829 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2024 |       0.949 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2001 |       0.15  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2013 |       0.75  |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
+| Netherlands | ILO - Modelled Estimates | SDG indicator 8.2.1 - Annual growth rate of output per worker (GDP constant 2017 international $ at PPP) (%) |   2000 |       1.036 |
++-------------+--------------------------+--------------------------------------------------------------------------------------------------------------+--------+-------------+
