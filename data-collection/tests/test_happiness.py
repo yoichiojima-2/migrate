@@ -8,5 +8,5 @@ from data_collection.happiness import HappinessTask
 def test_happiness():
     HappinessTask().run()
     output = Path(os.getenv("DATA_DIR")) / "happiness.json"
-    pprint(json.load(output.open())[:5])
+    pprint(json.load(output.open()))
     assert output.exists()
