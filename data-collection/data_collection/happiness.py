@@ -34,7 +34,7 @@ class HappinessTask(Task):
         ][df["Happiness.Rank"].notna()]
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("DATA_DIR")) / "happiness.json", orient="records")
+        df.to_json(Path(os.getenv("DATA_DIR")) / "happiness.json", orient="records", index=False)
 
 
 if __name__ == "__main__":

@@ -31,7 +31,7 @@ class CpiTask(Task):
         return df.rename(columns={"country_name": "country", "date": "year"})
 
     def load(self, df: pd.DataFrame) -> None:
-        df.to_json(Path(os.getenv("DATA_DIR")) / "cpi.json", orient="records")
+        df.to_json(Path(os.getenv("DATA_DIR")) / "cpi.json", orient="records", index=False)
 
 
 if __name__ == "__main__":

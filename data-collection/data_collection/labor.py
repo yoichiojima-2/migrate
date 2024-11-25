@@ -34,7 +34,7 @@ class LaborTask(Task):
         return df.rename(columns={"ref_area": "country", "time": "year"})
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("DATA_DIR")) / f"{self.name}.json", orient="records")
+        df.to_json(Path(os.getenv("DATA_DIR")) / f"{self.name}.json", orient="records", index=False)
 
 
 class WorkingPovertyRate(LaborTask):
