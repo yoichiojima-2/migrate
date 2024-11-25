@@ -32,6 +32,5 @@ venv: .venv/.installed
 .PHONY: test
 test: venv
 	@for project in $(PROJECTS); do \
-		echo "Testing $${project}"; \
 		cd "${ROOT}/$${project}" && $(VENV)/bin/pytest -vvv -s ;\
 	done
