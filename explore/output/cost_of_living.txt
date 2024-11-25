@@ -1,115 +1,115 @@
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | item                                                                       | country        | city       | currency   |             cost |
 +============================================================================+================+============+============+==================+
-| Price per Square Meter to Buy Apartment Outside of Centre                  | Australia      | Brisbane   | JPY        | 777762           |
+| Price per Square Meter to Buy Apartment Outside of Centre                  | Australia      | Brisbane   | JPY        | 777272           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (1.5 liter bottle)                                                   | Australia      | Brisbane   | JPY        |    196.26        |
+| Water (1.5 liter bottle)                                                   | Australia      | Brisbane   | JPY        |    196.14        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Lettuce (1 head)                                                           | Australia      | Brisbane   | JPY        |    315.33        |
+| Lettuce (1 head)                                                           | Australia      | Brisbane   | JPY        |    315.13        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Onion (1kg)                                                                | Australia      | Brisbane   | JPY        |    326.09        |
+| Onion (1kg)                                                                | Australia      | Brisbane   | JPY        |    325.88        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Potato (1kg)                                                               | Australia      | Brisbane   | JPY        |    357.9         |
+| Potato (1kg)                                                               | Australia      | Brisbane   | JPY        |    357.68        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tomato (1kg)                                                               | Australia      | Brisbane   | JPY        |    579.49        |
+| Tomato (1kg)                                                               | Australia      | Brisbane   | JPY        |    579.13        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Oranges (1kg)                                                              | Australia      | Brisbane   | JPY        |    399.94        |
+| Oranges (1kg)                                                              | Australia      | Brisbane   | JPY        |    399.69        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Banana (1kg)                                                               | Australia      | Brisbane   | JPY        |    425.04        |
+| Banana (1kg)                                                               | Australia      | Brisbane   | JPY        |    424.77        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apples (1kg)                                                               | Australia      | Brisbane   | JPY        |    479.05        |
+| Apples (1kg)                                                               | Australia      | Brisbane   | JPY        |    478.75        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | Australia      | Brisbane   | JPY        |   2174.05        |
+| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | Australia      | Brisbane   | JPY        |   2172.68        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Chicken Fillets (1kg)                                                      | Australia      | Brisbane   | JPY        |   1336.56        |
+| Chicken Fillets (1kg)                                                      | Australia      | Brisbane   | JPY        |   1335.72        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Local Cheese (1kg)                                                         | Australia      | Brisbane   | JPY        |   1315.37        |
+| Local Cheese (1kg)                                                         | Australia      | Brisbane   | JPY        |   1314.54        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Bottle of Wine (Mid-Range)                                                 | Australia      | Brisbane   | JPY        |   2012.94        |
+| Bottle of Wine (Mid-Range)                                                 | Australia      | Brisbane   | JPY        |   2011.67        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Eggs (regular) (12)                                                        | Australia      | Brisbane   | JPY        |    661.28        |
+| Eggs (regular) (12)                                                        | Australia      | Brisbane   | JPY        |    660.86        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Loaf of Fresh White Bread (500g)                                           | Australia      | Brisbane   | JPY        |    355.91        |
+| Loaf of Fresh White Bread (500g)                                           | Australia      | Brisbane   | JPY        |    355.68        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Milk (regular), (1 liter)                                                  | Australia      | Brisbane   | JPY        |    250.46        |
+| Milk (regular), (1 liter)                                                  | Australia      | Brisbane   | JPY        |    250.3         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (0.33 liter bottle)                                                  | Australia      | Brisbane   | JPY        |    339.92        |
+| Water (0.33 liter bottle)                                                  | Australia      | Brisbane   | JPY        |    339.71        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Coke/Pepsi (0.33 liter bottle)                                             | Australia      | Brisbane   | JPY        |    417.56        |
+| Coke/Pepsi (0.33 liter bottle)                                             | Australia      | Brisbane   | JPY        |    417.29        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cappuccino (regular)                                                       | Australia      | Brisbane   | JPY        |    553.44        |
+| Cappuccino (regular)                                                       | Australia      | Brisbane   | JPY        |    553.09        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | Australia      | Brisbane   | JPY        |   1207.76        |
+| Imported Beer (0.33 liter bottle)                                          | Australia      | Brisbane   | JPY        |   1207           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter draught)                                          | Australia      | Brisbane   | JPY        |   1207.76        |
+| Domestic Beer (0.5 liter draught)                                          | Australia      | Brisbane   | JPY        |   1207           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| McMeal at McDonalds (or Equivalent Combo Meal)                             | Australia      | Brisbane   | JPY        |   1509.7         |
+| McMeal at McDonalds (or Equivalent Combo Meal)                             | Australia      | Brisbane   | JPY        |   1508.75        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal for 2 People, Mid-range Restaurant, Three-course                      | Australia      | Brisbane   | JPY        |  11826           |
+| Meal for 2 People, Mid-range Restaurant, Three-course                      | Australia      | Brisbane   | JPY        |  11818.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal, Inexpensive Restaurant                                               | Australia      | Brisbane   | JPY        |   2214.23        |
+| Meal, Inexpensive Restaurant                                               | Australia      | Brisbane   | JPY        |   2212.84        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Average Monthly Net Salary (After Tax)                                     | Australia      | Brisbane   | JPY        | 605389           |
+| Average Monthly Net Salary (After Tax)                                     | Australia      | Brisbane   | JPY        | 605008           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Rice (white), (1kg)                                                        | Australia      | Brisbane   | JPY        |    305.91        |
+| Rice (white), (1kg)                                                        | Australia      | Brisbane   | JPY        |    305.72        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Mortgage Interest Rate in Percentages (%), Yearly, for 20 Years Fixed-Rate | Australia      | Brisbane   | JPY        |      6.36        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter bottle)                                           | Australia      | Brisbane   | JPY        |    779.84        |
+| Domestic Beer (0.5 liter bottle)                                           | Australia      | Brisbane   | JPY        |    779.35        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cigarettes 20 Pack (Marlboro)                                              | Australia      | Brisbane   | JPY        |   4478.79        |
+| Cigarettes 20 Pack (Marlboro)                                              | Australia      | Brisbane   | JPY        |   4475.97        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) Outside of Centre                                   | Australia      | Brisbane   | JPY        | 269918           |
+| Apartment (3 bedrooms) Outside of Centre                                   | Australia      | Brisbane   | JPY        | 269748           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) in City Centre                                      | Australia      | Brisbane   | JPY        | 401785           |
+| Apartment (3 bedrooms) in City Centre                                      | Australia      | Brisbane   | JPY        | 401532           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) Outside of Centre                                    | Australia      | Brisbane   | JPY        | 202118           |
+| Apartment (1 bedroom) Outside of Centre                                    | Australia      | Brisbane   | JPY        | 201991           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) in City Centre                                       | Australia      | Brisbane   | JPY        | 248577           |
+| Apartment (1 bedroom) in City Centre                                       | Australia      | Brisbane   | JPY        | 248421           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Men Leather Business Shoes                                       | Australia      | Brisbane   | JPY        |  15593.3         |
+| 1 Pair of Men Leather Business Shoes                                       | Australia      | Brisbane   | JPY        |  15583.5         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Nike Running Shoes (Mid-Range)                                   | Australia      | Brisbane   | JPY        |  15639.9         |
+| 1 Pair of Nike Running Shoes (Mid-Range)                                   | Australia      | Brisbane   | JPY        |  15630.1         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | Australia      | Brisbane   | JPY        |   6754.92        |
+| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | Australia      | Brisbane   | JPY        |   6750.67        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Jeans (Levis 501 Or Similar)                                     | Australia      | Brisbane   | JPY        |  11014.7         |
+| 1 Pair of Jeans (Levis 501 Or Similar)                                     | Australia      | Brisbane   | JPY        |  11007.8         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| International Primary School, Yearly for 1 Child                           | Australia      | Brisbane   | JPY        |      1.34828e+06 |
+| International Primary School, Yearly for 1 Child                           | Australia      | Brisbane   | JPY        |      1.34743e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | Australia      | Brisbane   | JPY        | 260703           |
+| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | Australia      | Brisbane   | JPY        | 260539           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cinema, International Release, 1 Seat                                      | Australia      | Brisbane   | JPY        |   2012.94        |
+| Cinema, International Release, 1 Seat                                      | Australia      | Brisbane   | JPY        |   2011.67        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | Australia      | Brisbane   | JPY        |    751.46        |
+| Imported Beer (0.33 liter bottle)                                          | Australia      | Brisbane   | JPY        |    750.98        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tennis Court Rent (1 Hour on Weekend)                                      | Australia      | Brisbane   | JPY        |   2859.56        |
+| Tennis Court Rent (1 Hour on Weekend)                                      | Australia      | Brisbane   | JPY        |   2857.76        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | Australia      | Brisbane   | JPY        |   8273.18        |
+| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | Australia      | Brisbane   | JPY        |   8267.97        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | Australia      | Brisbane   | JPY        |   4129.88        |
+| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | Australia      | Brisbane   | JPY        |   4127.28        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | Australia      | Brisbane   | JPY        |  27430.5         |
+| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | Australia      | Brisbane   | JPY        |  27413.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | Australia      | Brisbane   | JPY        |      3.39542e+06 |
+| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | Australia      | Brisbane   | JPY        |      3.39328e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | Australia      | Brisbane   | JPY        |      4.22616e+06 |
+| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | Australia      | Brisbane   | JPY        |      4.2235e+06  |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Gasoline (1 liter)                                                         | Australia      | Brisbane   | JPY        |    197.29        |
+| Gasoline (1 liter)                                                         | Australia      | Brisbane   | JPY        |    197.17        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1hour Waiting (Normal Tariff)                                         | Australia      | Brisbane   | JPY        |   5193.38        |
+| Taxi 1hour Waiting (Normal Tariff)                                         | Australia      | Brisbane   | JPY        |   5190.11        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1km (Normal Tariff)                                                   | Australia      | Brisbane   | JPY        |    251.62        |
+| Taxi 1km (Normal Tariff)                                                   | Australia      | Brisbane   | JPY        |    251.46        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi Start (Normal Tariff)                                                 | Australia      | Brisbane   | JPY        |    362.33        |
+| Taxi Start (Normal Tariff)                                                 | Australia      | Brisbane   | JPY        |    362.1         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Monthly Pass (Regular Price)                                               | Australia      | Brisbane   | JPY        |  17210.6         |
+| Monthly Pass (Regular Price)                                               | Australia      | Brisbane   | JPY        |  17199.8         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| One-way Ticket (Local Transport)                                           | Australia      | Brisbane   | JPY        |     50.32        |
+| One-way Ticket (Local Transport)                                           | Australia      | Brisbane   | JPY        |     50.29        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Fitness Club, Monthly Fee for 1 Adult                                      | Australia      | Brisbane   | JPY        |   7878.98        |
+| Fitness Club, Monthly Fee for 1 Adult                                      | Australia      | Brisbane   | JPY        |   7874.02        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment in City Centre                     | Australia      | Brisbane   | JPY        |      1.14998e+06 |
+| Price per Square Meter to Buy Apartment in City Centre                     | Australia      | Brisbane   | JPY        |      1.14926e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Meal, Inexpensive Restaurant                                               | Japan          | Tokyo      | JPY        |   1000           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
@@ -135,7 +135,7 @@
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Tennis Court Rent (1 Hour on Weekend)                                      | Japan          | Tokyo      | JPY        |   3017.94        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | Japan          | Tokyo      | JPY        |  79139.4         |
+| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | Japan          | Tokyo      | JPY        |  79115.9         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Monthly Pass (Regular Price)                                               | Japan          | Tokyo      | JPY        |   8500           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
@@ -143,17 +143,17 @@
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | Japan          | Tokyo      | JPY        |   5660.48        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Nike Running Shoes (Mid-Range)                                   | Japan          | Tokyo      | JPY        |   9572.2         |
+| 1 Pair of Nike Running Shoes (Mid-Range)                                   | Japan          | Tokyo      | JPY        |   9572.95        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | 1 Pair of Men Leather Business Shoes                                       | Japan          | Tokyo      | JPY        |  13090           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) in City Centre                                       | Japan          | Tokyo      | JPY        | 170246           |
+| Apartment (1 bedroom) in City Centre                                       | Japan          | Tokyo      | JPY        | 170884           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) Outside of Centre                                    | Japan          | Tokyo      | JPY        |  91262.7         |
+| Apartment (1 bedroom) Outside of Centre                                    | Japan          | Tokyo      | JPY        |  90895.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) in City Centre                                      | Japan          | Tokyo      | JPY        | 407843           |
+| Apartment (3 bedrooms) in City Centre                                      | Japan          | Tokyo      | JPY        | 398797           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) Outside of Centre                                   | Japan          | Tokyo      | JPY        | 189316           |
+| Apartment (3 bedrooms) Outside of Centre                                   | Japan          | Tokyo      | JPY        | 186679           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Price per Square Meter to Buy Apartment in City Centre                     | Japan          | Tokyo      | JPY        |      1.53366e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
@@ -161,7 +161,7 @@
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Price per Square Meter to Buy Apartment Outside of Centre                  | Japan          | Tokyo      | JPY        | 766238           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Average Monthly Net Salary (After Tax)                                     | Japan          | Tokyo      | JPY        | 371965           |
+| Average Monthly Net Salary (After Tax)                                     | Japan          | Tokyo      | JPY        | 372033           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | 1 Pair of Jeans (Levis 501 Or Similar)                                     | Japan          | Tokyo      | JPY        |   8069.52        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
@@ -179,11 +179,11 @@
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Imported Beer (0.33 liter bottle)                                          | Japan          | Tokyo      | JPY        |    700           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cappuccino (regular)                                                       | Japan          | Tokyo      | JPY        |    523.87        |
+| Cappuccino (regular)                                                       | Japan          | Tokyo      | JPY        |    518.02        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Coke/Pepsi (0.33 liter bottle)                                             | Japan          | Tokyo      | JPY        |    172.8         |
+| Coke/Pepsi (0.33 liter bottle)                                             | Japan          | Tokyo      | JPY        |    176.06        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (0.33 liter bottle)                                                  | Japan          | Tokyo      | JPY        |    115.06        |
+| Water (0.33 liter bottle)                                                  | Japan          | Tokyo      | JPY        |    116.21        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Milk (regular), (1 liter)                                                  | Japan          | Tokyo      | JPY        |    230.61        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
@@ -221,443 +221,443 @@
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | Japan          | Tokyo      | JPY        |   3155.26        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United Kingdom | Bristol    | JPY        |   1793.89        |
+| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United Kingdom | Bristol    | JPY        |   1797.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apples (1kg)                                                               | United Kingdom | Bristol    | JPY        |    490.38        |
+| Apples (1kg)                                                               | United Kingdom | Bristol    | JPY        |    491.28        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Banana (1kg)                                                               | United Kingdom | Bristol    | JPY        |    239.09        |
+| Banana (1kg)                                                               | United Kingdom | Bristol    | JPY        |    239.78        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Oranges (1kg)                                                              | United Kingdom | Bristol    | JPY        |    516.13        |
+| Oranges (1kg)                                                              | United Kingdom | Bristol    | JPY        |    517.09        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tomato (1kg)                                                               | United Kingdom | Bristol    | JPY        |    453.32        |
+| Tomato (1kg)                                                               | United Kingdom | Bristol    | JPY        |    454.16        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Bottle of Wine (Mid-Range)                                                 | United Kingdom | Bristol    | JPY        |   1560.03        |
+| Bottle of Wine (Mid-Range)                                                 | United Kingdom | Bristol    | JPY        |   1570.29        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Onion (1kg)                                                                | United Kingdom | Bristol    | JPY        |    219.75        |
+| Onion (1kg)                                                                | United Kingdom | Bristol    | JPY        |    220.41        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Lettuce (1 head)                                                           | United Kingdom | Bristol    | JPY        |    149.33        |
+| Lettuce (1 head)                                                           | United Kingdom | Bristol    | JPY        |    149.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (1.5 liter bottle)                                                   | United Kingdom | Bristol    | JPY        |    232.72        |
+| Water (1.5 liter bottle)                                                   | United Kingdom | Bristol    | JPY        |    233.15        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Chicken Fillets (1kg)                                                      | United Kingdom | Bristol    | JPY        |   1404.73        |
+| Chicken Fillets (1kg)                                                      | United Kingdom | Bristol    | JPY        |   1407.32        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Potato (1kg)                                                               | United Kingdom | Bristol    | JPY        |    306.74        |
+| Potato (1kg)                                                               | United Kingdom | Bristol    | JPY        |    307.3         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Local Cheese (1kg)                                                         | United Kingdom | Bristol    | JPY        |   1571.02        |
+| Local Cheese (1kg)                                                         | United Kingdom | Bristol    | JPY        |   1575.78        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment in City Centre                     | United Kingdom | Manchester | JPY        | 822666           |
+| Price per Square Meter to Buy Apartment in City Centre                     | United Kingdom | Manchester | JPY        | 824182           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Rice (white), (1kg)                                                        | United Kingdom | Bristol    | JPY        |    236.14        |
+| Rice (white), (1kg)                                                        | United Kingdom | Bristol    | JPY        |    236.74        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Loaf of Fresh White Bread (500g)                                           | United Kingdom | Bristol    | JPY        |    250.58        |
+| Loaf of Fresh White Bread (500g)                                           | United Kingdom | Bristol    | JPY        |    251.04        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Milk (regular), (1 liter)                                                  | United Kingdom | Bristol    | JPY        |    219.47        |
+| Milk (regular), (1 liter)                                                  | United Kingdom | Bristol    | JPY        |    219.87        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (0.33 liter bottle)                                                  | United Kingdom | Bristol    | JPY        |    220.47        |
+| Water (0.33 liter bottle)                                                  | United Kingdom | Bristol    | JPY        |    220.88        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Coke/Pepsi (0.33 liter bottle)                                             | United Kingdom | Bristol    | JPY        |    348.37        |
+| Coke/Pepsi (0.33 liter bottle)                                             | United Kingdom | Bristol    | JPY        |    349.01        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cappuccino (regular)                                                       | United Kingdom | Bristol    | JPY        |    700.18        |
+| Cappuccino (regular)                                                       | United Kingdom | Bristol    | JPY        |    701.47        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Bristol    | JPY        |    969.67        |
+| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Bristol    | JPY        |    971.46        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter draught)                                          | United Kingdom | Bristol    | JPY        |   1066.64        |
+| Domestic Beer (0.5 liter draught)                                          | United Kingdom | Bristol    | JPY        |   1068.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| McMeal at McDonalds (or Equivalent Combo Meal)                             | United Kingdom | Bristol    | JPY        |   1454.51        |
+| McMeal at McDonalds (or Equivalent Combo Meal)                             | United Kingdom | Bristol    | JPY        |   1457.19        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal for 2 People, Mid-range Restaurant, Three-course                      | United Kingdom | Bristol    | JPY        |  11636.1         |
+| Meal for 2 People, Mid-range Restaurant, Three-course                      | United Kingdom | Bristol    | JPY        |  11657.5         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal, Inexpensive Restaurant                                               | United Kingdom | Bristol    | JPY        |   2909.02        |
+| Meal, Inexpensive Restaurant                                               | United Kingdom | Bristol    | JPY        |   2914.38        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter bottle)                                           | United Kingdom | Bristol    | JPY        |    378.59        |
+| Domestic Beer (0.5 liter bottle)                                           | United Kingdom | Bristol    | JPY        |    379.28        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Eggs (regular) (12)                                                        | United Kingdom | Bristol    | JPY        |    538.4         |
+| Eggs (regular) (12)                                                        | United Kingdom | Bristol    | JPY        |    539.72        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Bristol    | JPY        |    421.81        |
+| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Bristol    | JPY        |    422.58        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cigarettes 20 Pack (Marlboro)                                              | United Kingdom | Bristol    | JPY        |   3025.38        |
+| Cigarettes 20 Pack (Marlboro)                                              | United Kingdom | Bristol    | JPY        |   3030.95        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| One-way Ticket (Local Transport)                                           | United Kingdom | Bristol    | JPY        |    387.87        |
+| One-way Ticket (Local Transport)                                           | United Kingdom | Bristol    | JPY        |    388.58        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1km (Normal Tariff)                                                   | United Kingdom | Manchester | JPY        |    445.87        |
+| Taxi 1km (Normal Tariff)                                                   | United Kingdom | Manchester | JPY        |    446.69        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi Start (Normal Tariff)                                                 | United Kingdom | Manchester | JPY        |    678.77        |
+| Taxi Start (Normal Tariff)                                                 | United Kingdom | Manchester | JPY        |    680.02        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Monthly Pass (Regular Price)                                               | United Kingdom | Manchester | JPY        |  16038.4         |
+| Monthly Pass (Regular Price)                                               | United Kingdom | Manchester | JPY        |  16067.9         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| One-way Ticket (Local Transport)                                           | United Kingdom | Manchester | JPY        |    387.87        |
+| One-way Ticket (Local Transport)                                           | United Kingdom | Manchester | JPY        |    388.58        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cigarettes 20 Pack (Marlboro)                                              | United Kingdom | Manchester | JPY        |   2642.36        |
+| Cigarettes 20 Pack (Marlboro)                                              | United Kingdom | Manchester | JPY        |   2647.22        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Manchester | JPY        |    575.18        |
+| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Manchester | JPY        |    576.24        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter bottle)                                           | United Kingdom | Manchester | JPY        |    418.75        |
+| Domestic Beer (0.5 liter bottle)                                           | United Kingdom | Manchester | JPY        |    419.52        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1hour Waiting (Normal Tariff)                                         | United Kingdom | Manchester | JPY        |   3607.18        |
+| Taxi 1hour Waiting (Normal Tariff)                                         | United Kingdom | Manchester | JPY        |   3613.83        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Bottle of Wine (Mid-Range)                                                 | United Kingdom | Manchester | JPY        |   1551.48        |
+| Bottle of Wine (Mid-Range)                                                 | United Kingdom | Manchester | JPY        |   1554.33        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Lettuce (1 head)                                                           | United Kingdom | Manchester | JPY        |    178.58        |
+| Lettuce (1 head)                                                           | United Kingdom | Manchester | JPY        |    178.91        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Onion (1kg)                                                                | United Kingdom | Manchester | JPY        |    275.51        |
+| Onion (1kg)                                                                | United Kingdom | Manchester | JPY        |    276.02        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Potato (1kg)                                                               | United Kingdom | Manchester | JPY        |    318.09        |
+| Potato (1kg)                                                               | United Kingdom | Manchester | JPY        |    318.67        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tomato (1kg)                                                               | United Kingdom | Manchester | JPY        |    588.59        |
+| Tomato (1kg)                                                               | United Kingdom | Manchester | JPY        |    589.67        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Oranges (1kg)                                                              | United Kingdom | Manchester | JPY        |    554.34        |
+| Oranges (1kg)                                                              | United Kingdom | Manchester | JPY        |    555.36        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Banana (1kg)                                                               | United Kingdom | Manchester | JPY        |    267.8         |
+| Banana (1kg)                                                               | United Kingdom | Manchester | JPY        |    268.29        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apples (1kg)                                                               | United Kingdom | Manchester | JPY        |    434.2         |
+| Apples (1kg)                                                               | United Kingdom | Manchester | JPY        |    435           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (1.5 liter bottle)                                                   | United Kingdom | Manchester | JPY        |    206.96        |
+| Water (1.5 liter bottle)                                                   | United Kingdom | Manchester | JPY        |    207.34        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United Kingdom | Manchester | JPY        |   2232.71        |
+| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United Kingdom | Manchester | JPY        |   2236.82        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Gasoline (1 liter)                                                         | United Kingdom | Manchester | JPY        |    281.35        |
+| Gasoline (1 liter)                                                         | United Kingdom | Manchester | JPY        |    281.87        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United Kingdom | Manchester | JPY        |      5.73038e+06 |
+| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United Kingdom | Manchester | JPY        |      5.74093e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) Outside of Centre                                   | United Kingdom | Manchester | JPY        | 263853           |
+| Apartment (3 bedrooms) Outside of Centre                                   | United Kingdom | Manchester | JPY        | 264339           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) in City Centre                                      | United Kingdom | Manchester | JPY        | 378599           |
+| Apartment (3 bedrooms) in City Centre                                      | United Kingdom | Manchester | JPY        | 379296           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) Outside of Centre                                    | United Kingdom | Manchester | JPY        | 176480           |
+| Apartment (1 bedroom) Outside of Centre                                    | United Kingdom | Manchester | JPY        | 176805           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) in City Centre                                       | United Kingdom | Manchester | JPY        | 225564           |
+| Apartment (1 bedroom) in City Centre                                       | United Kingdom | Manchester | JPY        | 225980           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Men Leather Business Shoes                                       | United Kingdom | Manchester | JPY        |  13046.5         |
+| 1 Pair of Men Leather Business Shoes                                       | United Kingdom | Manchester | JPY        |  13070.5         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United Kingdom | Manchester | JPY        |  13347.1         |
+| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United Kingdom | Manchester | JPY        |  13371.7         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United Kingdom | Manchester | JPY        |   6025.82        |
+| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United Kingdom | Manchester | JPY        |   6036.92        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United Kingdom | Manchester | JPY        |      5.48544e+06 |
+| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United Kingdom | Manchester | JPY        |      5.49554e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United Kingdom | Manchester | JPY        |  12120.9         |
+| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United Kingdom | Manchester | JPY        |  12143.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United Kingdom | Manchester | JPY        | 249351           |
+| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United Kingdom | Manchester | JPY        | 249811           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cinema, International Release, 1 Seat                                      | United Kingdom | Manchester | JPY        |   1937.41        |
+| Cinema, International Release, 1 Seat                                      | United Kingdom | Manchester | JPY        |   1940.97        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tennis Court Rent (1 Hour on Weekend)                                      | United Kingdom | Manchester | JPY        |   2193.88        |
+| Tennis Court Rent (1 Hour on Weekend)                                      | United Kingdom | Manchester | JPY        |   2197.92        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Fitness Club, Monthly Fee for 1 Adult                                      | United Kingdom | Manchester | JPY        |   6159.36        |
+| Fitness Club, Monthly Fee for 1 Adult                                      | United Kingdom | Manchester | JPY        |   6170.7         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United Kingdom | Manchester | JPY        |   5996.07        |
+| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United Kingdom | Manchester | JPY        |   6007.11        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United Kingdom | Manchester | JPY        |   2894.1         |
+| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United Kingdom | Manchester | JPY        |   2899.43        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United Kingdom | Manchester | JPY        |  44251.2         |
+| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United Kingdom | Manchester | JPY        |  44332.7         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| International Primary School, Yearly for 1 Child                           | United Kingdom | Manchester | JPY        |      2.52115e+06 |
+| International Primary School, Yearly for 1 Child                           | United Kingdom | Manchester | JPY        |      2.52579e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Chicken Fillets (1kg)                                                      | United Kingdom | Manchester | JPY        |   1235.6         |
+| Chicken Fillets (1kg)                                                      | United Kingdom | Manchester | JPY        |   1237.87        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Local Cheese (1kg)                                                         | United Kingdom | Manchester | JPY        |   1470.95        |
+| Local Cheese (1kg)                                                         | United Kingdom | Manchester | JPY        |   1473.66        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Eggs (regular) (12)                                                        | United Kingdom | Manchester | JPY        |    570.26        |
+| Eggs (regular) (12)                                                        | United Kingdom | Manchester | JPY        |    571.31        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United Kingdom | Bristol    | JPY        |  11959.3         |
+| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United Kingdom | Bristol    | JPY        |  11981.3         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| International Primary School, Yearly for 1 Child                           | United Kingdom | Bristol    | JPY        |      3.51668e+06 |
+| International Primary School, Yearly for 1 Child                           | United Kingdom | Bristol    | JPY        |      3.52316e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United Kingdom | Bristol    | JPY        | 287346           |
+| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United Kingdom | Bristol    | JPY        | 287876           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cinema, International Release, 1 Seat                                      | United Kingdom | Bristol    | JPY        |   1939.34        |
+| Cinema, International Release, 1 Seat                                      | United Kingdom | Bristol    | JPY        |   1942.92        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tennis Court Rent (1 Hour on Weekend)                                      | United Kingdom | Bristol    | JPY        |   1713.09        |
+| Tennis Court Rent (1 Hour on Weekend)                                      | United Kingdom | Bristol    | JPY        |   1716.24        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Fitness Club, Monthly Fee for 1 Adult                                      | United Kingdom | Bristol    | JPY        |   6787.71        |
+| Fitness Club, Monthly Fee for 1 Adult                                      | United Kingdom | Bristol    | JPY        |   6800.21        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United Kingdom | Bristol    | JPY        |   6302.87        |
+| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United Kingdom | Bristol    | JPY        |   6314.48        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United Kingdom | Bristol    | JPY        |   6233.61        |
+| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United Kingdom | Bristol    | JPY        |   6245.09        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United Kingdom | Bristol    | JPY        |   2377.81        |
+| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United Kingdom | Bristol    | JPY        |   2382.19        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United Kingdom | Bristol    | JPY        |      4.07214e+06 |
+| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United Kingdom | Bristol    | JPY        |      4.07964e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United Kingdom | Bristol    | JPY        |      5.48544e+06 |
+| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United Kingdom | Bristol    | JPY        |      5.49554e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Gasoline (1 liter)                                                         | United Kingdom | Bristol    | JPY        |    281.2         |
+| Gasoline (1 liter)                                                         | United Kingdom | Bristol    | JPY        |    281.71        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1hour Waiting (Normal Tariff)                                         | United Kingdom | Bristol    | JPY        |   3878.69        |
+| Taxi 1hour Waiting (Normal Tariff)                                         | United Kingdom | Bristol    | JPY        |   3885.83        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1km (Normal Tariff)                                                   | United Kingdom | Bristol    | JPY        |    265.11        |
+| Taxi 1km (Normal Tariff)                                                   | United Kingdom | Bristol    | JPY        |    265.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi Start (Normal Tariff)                                                 | United Kingdom | Bristol    | JPY        |    872.71        |
+| Taxi Start (Normal Tariff)                                                 | United Kingdom | Bristol    | JPY        |    874.31        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Monthly Pass (Regular Price)                                               | United Kingdom | Bristol    | JPY        |  16251.7         |
+| Monthly Pass (Regular Price)                                               | United Kingdom | Bristol    | JPY        |  16281.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United Kingdom | Bristol    | JPY        |  46600.1         |
+| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United Kingdom | Bristol    | JPY        |  46685.9         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United Kingdom | Bristol    | JPY        |  14221.9         |
+| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United Kingdom | Bristol    | JPY        |  14248.1         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Men Leather Business Shoes                                       | United Kingdom | Bristol    | JPY        |  19393.5         |
+| 1 Pair of Men Leather Business Shoes                                       | United Kingdom | Bristol    | JPY        |  19429.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) in City Centre                                       | United Kingdom | Bristol    | JPY        | 263298           |
+| Apartment (1 bedroom) in City Centre                                       | United Kingdom | Bristol    | JPY        | 263783           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Rice (white), (1kg)                                                        | United Kingdom | Manchester | JPY        |    315.57        |
+| Rice (white), (1kg)                                                        | United Kingdom | Manchester | JPY        |    316.15        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Loaf of Fresh White Bread (500g)                                           | United Kingdom | Manchester | JPY        |    237.73        |
+| Loaf of Fresh White Bread (500g)                                           | United Kingdom | Manchester | JPY        |    238.17        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Milk (regular), (1 liter)                                                  | United Kingdom | Manchester | JPY        |    235.83        |
+| Milk (regular), (1 liter)                                                  | United Kingdom | Manchester | JPY        |    236.27        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (0.33 liter bottle)                                                  | United Kingdom | Manchester | JPY        |    260.21        |
+| Water (0.33 liter bottle)                                                  | United Kingdom | Manchester | JPY        |    260.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Coke/Pepsi (0.33 liter bottle)                                             | United Kingdom | Manchester | JPY        |    381.99        |
+| Coke/Pepsi (0.33 liter bottle)                                             | United Kingdom | Manchester | JPY        |    382.57        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cappuccino (regular)                                                       | United Kingdom | Manchester | JPY        |    698.52        |
+| Cappuccino (regular)                                                       | United Kingdom | Manchester | JPY        |    699.81        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Manchester | JPY        |   1066.64        |
+| Imported Beer (0.33 liter bottle)                                          | United Kingdom | Manchester | JPY        |   1068.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter draught)                                          | United Kingdom | Manchester | JPY        |    969.67        |
+| Domestic Beer (0.5 liter draught)                                          | United Kingdom | Manchester | JPY        |    971.46        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| McMeal at McDonalds (or Equivalent Combo Meal)                             | United Kingdom | Manchester | JPY        |   1551.48        |
+| McMeal at McDonalds (or Equivalent Combo Meal)                             | United Kingdom | Manchester | JPY        |   1554.33        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal for 2 People, Mid-range Restaurant, Three-course                      | United Kingdom | Manchester | JPY        |  13575.4         |
+| Meal for 2 People, Mid-range Restaurant, Three-course                      | United Kingdom | Manchester | JPY        |  13600.4         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal, Inexpensive Restaurant                                               | United Kingdom | Manchester | JPY        |   2909.02        |
+| Meal, Inexpensive Restaurant                                               | United Kingdom | Manchester | JPY        |   2914.38        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Average Monthly Net Salary (After Tax)                                     | United Kingdom | Bristol    | JPY        | 502452           |
+| Average Monthly Net Salary (After Tax)                                     | United Kingdom | Bristol    | JPY        | 503377           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment Outside of Centre                  | United Kingdom | Bristol    | JPY        | 946400           |
+| Price per Square Meter to Buy Apartment Outside of Centre                  | United Kingdom | Bristol    | JPY        | 948143           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment in City Centre                     | United Kingdom | Bristol    | JPY        |      1.03717e+06 |
+| Price per Square Meter to Buy Apartment in City Centre                     | United Kingdom | Bristol    | JPY        |      1.03908e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) Outside of Centre                                   | United Kingdom | Bristol    | JPY        | 309549           |
+| Apartment (3 bedrooms) Outside of Centre                                   | United Kingdom | Bristol    | JPY        | 310119           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) in City Centre                                      | United Kingdom | Bristol    | JPY        | 415467           |
+| Apartment (3 bedrooms) in City Centre                                      | United Kingdom | Bristol    | JPY        | 416233           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) Outside of Centre                                    | United Kingdom | Bristol    | JPY        | 198702           |
+| Apartment (1 bedroom) Outside of Centre                                    | United Kingdom | Bristol    | JPY        | 199068           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment Outside of Centre                  | United Kingdom | Manchester | JPY        | 576876           |
+| Price per Square Meter to Buy Apartment Outside of Centre                  | United Kingdom | Manchester | JPY        | 577938           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Mortgage Interest Rate in Percentages (%), Yearly, for 20 Years Fixed-Rate | United Kingdom | Bristol    | JPY        |      5.75        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Mortgage Interest Rate in Percentages (%), Yearly, for 20 Years Fixed-Rate | United Kingdom | Manchester | JPY        |      6           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Average Monthly Net Salary (After Tax)                                     | United Kingdom | London     | JPY        | 672375           |
+| Average Monthly Net Salary (After Tax)                                     | United Kingdom | London     | JPY        | 672484           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi Start (Normal Tariff)                                                 | United Kingdom | London     | JPY        |    969.67        |
+| Taxi Start (Normal Tariff)                                                 | United Kingdom | London     | JPY        |    971.46        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1km (Normal Tariff)                                                   | United Kingdom | London     | JPY        |    543.02        |
+| Taxi 1km (Normal Tariff)                                                   | United Kingdom | London     | JPY        |    544.02        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1hour Waiting (Normal Tariff)                                         | United Kingdom | London     | JPY        |   5818.03        |
+| Taxi 1hour Waiting (Normal Tariff)                                         | United Kingdom | London     | JPY        |   5828.75        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Gasoline (1 liter)                                                         | United Kingdom | London     | JPY        |    290.49        |
+| Gasoline (1 liter)                                                         | United Kingdom | London     | JPY        |    291.02        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United Kingdom | London     | JPY        |      5.48544e+06 |
+| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United Kingdom | London     | JPY        |      5.49554e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United Kingdom | London     | JPY        |      5.92283e+06 |
+| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United Kingdom | London     | JPY        |      5.93374e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United Kingdom | London     | JPY        |  49201.1         |
+| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United Kingdom | London     | JPY        |  49291.7         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United Kingdom | London     | JPY        |   2814.64        |
+| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United Kingdom | London     | JPY        |   2819.82        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United Kingdom | London     | JPY        |   6237.23        |
+| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United Kingdom | London     | JPY        |   6248.71        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Fitness Club, Monthly Fee for 1 Adult                                      | United Kingdom | London     | JPY        |   9615.92        |
+| Fitness Club, Monthly Fee for 1 Adult                                      | United Kingdom | London     | JPY        |   9633.63        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tennis Court Rent (1 Hour on Weekend)                                      | United Kingdom | London     | JPY        |   2823.24        |
+| Tennis Court Rent (1 Hour on Weekend)                                      | United Kingdom | London     | JPY        |   2828.44        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Monthly Pass (Regular Price)                                               | United Kingdom | London     | JPY        |  37390.6         |
+| Monthly Pass (Regular Price)                                               | United Kingdom | London     | JPY        |  37459.4         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cinema, International Release, 1 Seat                                      | United Kingdom | London     | JPY        |   2715.08        |
+| Cinema, International Release, 1 Seat                                      | United Kingdom | London     | JPY        |   2720.08        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| International Primary School, Yearly for 1 Child                           | United Kingdom | London     | JPY        |      4.03498e+06 |
+| International Primary School, Yearly for 1 Child                           | United Kingdom | London     | JPY        |      4.04241e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United Kingdom | London     | JPY        |  14812.9         |
+| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United Kingdom | London     | JPY        |  14840.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United Kingdom | London     | JPY        |   7500.7         |
+| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United Kingdom | London     | JPY        |   7514.52        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United Kingdom | London     | JPY        |  17445.3         |
+| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United Kingdom | London     | JPY        |  17477.4         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Men Leather Business Shoes                                       | United Kingdom | London     | JPY        |  21060.1         |
+| 1 Pair of Men Leather Business Shoes                                       | United Kingdom | London     | JPY        |  21098.9         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) in City Centre                                       | United Kingdom | London     | JPY        | 421156           |
+| Apartment (1 bedroom) in City Centre                                       | United Kingdom | London     | JPY        | 421727           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) Outside of Centre                                    | United Kingdom | London     | JPY        | 308807           |
+| Apartment (1 bedroom) Outside of Centre                                    | United Kingdom | London     | JPY        | 309072           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) in City Centre                                      | United Kingdom | London     | JPY        | 851791           |
+| Apartment (3 bedrooms) in City Centre                                      | United Kingdom | London     | JPY        | 851894           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) Outside of Centre                                   | United Kingdom | London     | JPY        | 528471           |
+| Apartment (3 bedrooms) Outside of Centre                                   | United Kingdom | London     | JPY        | 529769           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment in City Centre                     | United Kingdom | London     | JPY        |      2.83305e+06 |
+| Price per Square Meter to Buy Apartment in City Centre                     | United Kingdom | London     | JPY        |      2.83827e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment Outside of Centre                  | United Kingdom | London     | JPY        |      1.60963e+06 |
+| Price per Square Meter to Buy Apartment Outside of Centre                  | United Kingdom | London     | JPY        |      1.6126e+06  |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United Kingdom | London     | JPY        | 348970           |
+| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United Kingdom | London     | JPY        | 349613           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| One-way Ticket (Local Transport)                                           | United Kingdom | London     | JPY        |    572.11        |
+| One-way Ticket (Local Transport)                                           | United Kingdom | London     | JPY        |    573.16        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cigarettes 20 Pack (Marlboro)                                              | United Kingdom | London     | JPY        |   2967.2         |
+| Cigarettes 20 Pack (Marlboro)                                              | United Kingdom | London     | JPY        |   2972.66        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United Kingdom | London     | JPY        |    482.46        |
+| Imported Beer (0.33 liter bottle)                                          | United Kingdom | London     | JPY        |    483.35        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal, Inexpensive Restaurant                                               | United Kingdom | London     | JPY        |   3878.69        |
+| Meal, Inexpensive Restaurant                                               | United Kingdom | London     | JPY        |   3885.83        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal for 2 People, Mid-range Restaurant, Three-course                      | United Kingdom | London     | JPY        |  16242           |
+| Meal for 2 People, Mid-range Restaurant, Three-course                      | United Kingdom | London     | JPY        |  16271.9         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| McMeal at McDonalds (or Equivalent Combo Meal)                             | United Kingdom | London     | JPY        |   1551.48        |
+| McMeal at McDonalds (or Equivalent Combo Meal)                             | United Kingdom | London     | JPY        |   1554.33        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter draught)                                          | United Kingdom | London     | JPY        |   1192.7         |
+| Domestic Beer (0.5 liter draught)                                          | United Kingdom | London     | JPY        |   1194.89        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United Kingdom | London     | JPY        |   1066.64        |
+| Imported Beer (0.33 liter bottle)                                          | United Kingdom | London     | JPY        |   1068.6         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cappuccino (regular)                                                       | United Kingdom | London     | JPY        |    725.21        |
+| Cappuccino (regular)                                                       | United Kingdom | London     | JPY        |    726.54        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Coke/Pepsi (0.33 liter bottle)                                             | United Kingdom | London     | JPY        |    379.82        |
+| Coke/Pepsi (0.33 liter bottle)                                             | United Kingdom | London     | JPY        |    380.45        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (0.33 liter bottle)                                                  | United Kingdom | London     | JPY        |    284.63        |
+| Water (0.33 liter bottle)                                                  | United Kingdom | London     | JPY        |    285.12        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Milk (regular), (1 liter)                                                  | United Kingdom | London     | JPY        |    251.95        |
+| Milk (regular), (1 liter)                                                  | United Kingdom | London     | JPY        |    252.41        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Loaf of Fresh White Bread (500g)                                           | United Kingdom | London     | JPY        |    308.57        |
+| Loaf of Fresh White Bread (500g)                                           | United Kingdom | London     | JPY        |    309.14        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Rice (white), (1kg)                                                        | United Kingdom | London     | JPY        |    385.62        |
+| Rice (white), (1kg)                                                        | United Kingdom | London     | JPY        |    386.33        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Eggs (regular) (12)                                                        | United Kingdom | London     | JPY        |    666.87        |
+| Eggs (regular) (12)                                                        | United Kingdom | London     | JPY        |    668.1         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Local Cheese (1kg)                                                         | United Kingdom | London     | JPY        |   1605.69        |
+| Local Cheese (1kg)                                                         | United Kingdom | London     | JPY        |   1608.65        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Chicken Fillets (1kg)                                                      | United Kingdom | London     | JPY        |   1358.61        |
+| Chicken Fillets (1kg)                                                      | United Kingdom | London     | JPY        |   1361.11        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United Kingdom | London     | JPY        |   2291.89        |
+| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United Kingdom | London     | JPY        |   2296.11        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apples (1kg)                                                               | United Kingdom | London     | JPY        |    503.78        |
+| Apples (1kg)                                                               | United Kingdom | London     | JPY        |    504.71        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Banana (1kg)                                                               | United Kingdom | London     | JPY        |    261.52        |
+| Banana (1kg)                                                               | United Kingdom | London     | JPY        |    262           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Oranges (1kg)                                                              | United Kingdom | London     | JPY        |    488.09        |
+| Oranges (1kg)                                                              | United Kingdom | London     | JPY        |    488.99        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tomato (1kg)                                                               | United Kingdom | London     | JPY        |    581.77        |
+| Tomato (1kg)                                                               | United Kingdom | London     | JPY        |    582.85        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Potato (1kg)                                                               | United Kingdom | London     | JPY        |    244.65        |
+| Potato (1kg)                                                               | United Kingdom | London     | JPY        |    245.1         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Onion (1kg)                                                                | United Kingdom | London     | JPY        |    244.27        |
+| Onion (1kg)                                                                | United Kingdom | London     | JPY        |    244.72        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Lettuce (1 head)                                                           | United Kingdom | London     | JPY        |    190.83        |
+| Lettuce (1 head)                                                           | United Kingdom | London     | JPY        |    191.18        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (1.5 liter bottle)                                                   | United Kingdom | London     | JPY        |    238.39        |
+| Water (1.5 liter bottle)                                                   | United Kingdom | London     | JPY        |    238.83        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Bottle of Wine (Mid-Range)                                                 | United Kingdom | London     | JPY        |   1793.89        |
+| Bottle of Wine (Mid-Range)                                                 | United Kingdom | London     | JPY        |   1797.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter bottle)                                           | United Kingdom | London     | JPY        |    402.04        |
+| Domestic Beer (0.5 liter bottle)                                           | United Kingdom | London     | JPY        |    402.78        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Mortgage Interest Rate in Percentages (%), Yearly, for 20 Years Fixed-Rate | United Kingdom | London     | JPY        |      5.08        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Average Monthly Net Salary (After Tax)                                     | United Kingdom | Manchester | JPY        | 490898           |
+| Average Monthly Net Salary (After Tax)                                     | United Kingdom | Manchester | JPY        | 491802           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Average Monthly Net Salary (After Tax)                                     | United States  | New-York   | JPY        | 855213           |
+| Average Monthly Net Salary (After Tax)                                     | United States  | New-York   | JPY        | 852420           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal for 2 People, Mid-range Restaurant, Three-course                      | United States  | New-York   | JPY        |  20120.1         |
+| Meal for 2 People, Mid-range Restaurant, Three-course                      | United States  | New-York   | JPY        |  20054.4         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1km (Normal Tariff)                                                   | United States  | New-York   | JPY        |    336.59        |
+| Taxi 1km (Normal Tariff)                                                   | United States  | New-York   | JPY        |    335.49        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi 1hour Waiting (Normal Tariff)                                         | United States  | New-York   | JPY        |   6190.8         |
+| Taxi 1hour Waiting (Normal Tariff)                                         | United States  | New-York   | JPY        |   6170.58        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Gasoline (1 liter)                                                         | United States  | New-York   | JPY        |    157.38        |
+| Gasoline (1 liter)                                                         | United States  | New-York   | JPY        |    156.86        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United States  | New-York   | JPY        |      5.41695e+06 |
+| Volkswagen Golf 1.4 90 KW Trendline (Or Equivalent New Car)                | United States  | New-York   | JPY        |      5.39926e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United States  | New-York   | JPY        |      4.46493e+06 |
+| Toyota Corolla Sedan 1.6l 97kW Comfort (Or Equivalent New Car)             | United States  | New-York   | JPY        |      4.45034e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United States  | New-York   | JPY        |  27578.5         |
+| Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment   | United States  | New-York   | JPY        |  27488.4         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United States  | New-York   | JPY        |  10348           |
+| Mobile Phone Monthly Plan with Calls and 10GB+ Data                        | United States  | New-York   | JPY        |  10314.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United States  | New-York   | JPY        |  10524.3         |
+| Internet (60 Mbps or More, Unlimited Data, Cable/ADSL)                     | United States  | New-York   | JPY        |  10489.9         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Fitness Club, Monthly Fee for 1 Adult                                      | United States  | New-York   | JPY        |  23356.2         |
+| Fitness Club, Monthly Fee for 1 Adult                                      | United States  | New-York   | JPY        |  23279.9         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tennis Court Rent (1 Hour on Weekend)                                      | United States  | New-York   | JPY        |  10747.9         |
+| Tennis Court Rent (1 Hour on Weekend)                                      | United States  | New-York   | JPY        |  10712.8         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cinema, International Release, 1 Seat                                      | United States  | New-York   | JPY        |   3095.4         |
+| Cinema, International Release, 1 Seat                                      | United States  | New-York   | JPY        |   3085.29        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United States  | New-York   | JPY        | 505937           |
+| Preschool (or Kindergarten), Full Day, Private, Monthly for 1 Child        | United States  | New-York   | JPY        | 504284           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| International Primary School, Yearly for 1 Child                           | United States  | New-York   | JPY        |      9.13143e+06 |
+| International Primary School, Yearly for 1 Child                           | United States  | New-York   | JPY        |      9.10161e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United States  | New-York   | JPY        |  10519           |
+| 1 Pair of Jeans (Levis 501 Or Similar)                                     | United States  | New-York   | JPY        |  10484.7         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United States  | New-York   | JPY        |   7056.03        |
+| 1 Summer Dress in a Chain Store (Zara, H&M, ...)                           | United States  | New-York   | JPY        |   7032.99        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United States  | New-York   | JPY        |  16957.6         |
+| 1 Pair of Nike Running Shoes (Mid-Range)                                   | United States  | New-York   | JPY        |  16902.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| 1 Pair of Men Leather Business Shoes                                       | United States  | New-York   | JPY        |  26143.2         |
+| 1 Pair of Men Leather Business Shoes                                       | United States  | New-York   | JPY        |  26057.8         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) in City Centre                                       | United States  | New-York   | JPY        | 618466           |
+| Apartment (1 bedroom) in City Centre                                       | United States  | New-York   | JPY        | 616446           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (1 bedroom) Outside of Centre                                    | United States  | New-York   | JPY        | 439861           |
+| Apartment (1 bedroom) Outside of Centre                                    | United States  | New-York   | JPY        | 438425           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) in City Centre                                      | United States  | New-York   | JPY        |      1.32073e+06 |
+| Apartment (3 bedrooms) in City Centre                                      | United States  | New-York   | JPY        |      1.31642e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apartment (3 bedrooms) Outside of Centre                                   | United States  | New-York   | JPY        | 820157           |
+| Apartment (3 bedrooms) Outside of Centre                                   | United States  | New-York   | JPY        | 817478           |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment in City Centre                     | United States  | New-York   | JPY        |      3.01259e+06 |
+| Price per Square Meter to Buy Apartment in City Centre                     | United States  | New-York   | JPY        |      3.00275e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Price per Square Meter to Buy Apartment Outside of Centre                  | United States  | New-York   | JPY        |      2.21903e+06 |
+| Price per Square Meter to Buy Apartment Outside of Centre                  | United States  | New-York   | JPY        |      2.21178e+06 |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Taxi Start (Normal Tariff)                                                 | United States  | New-York   | JPY        |    773.85        |
+| Taxi Start (Normal Tariff)                                                 | United States  | New-York   | JPY        |    771.32        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Monthly Pass (Regular Price)                                               | United States  | New-York   | JPY        |  20584.4         |
+| Monthly Pass (Regular Price)                                               | United States  | New-York   | JPY        |  20517.2         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| One-way Ticket (Local Transport)                                           | United States  | New-York   | JPY        |    448.83        |
+| One-way Ticket (Local Transport)                                           | United States  | New-York   | JPY        |    447.37        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cigarettes 20 Pack (Marlboro)                                              | United States  | New-York   | JPY        |   2631.09        |
+| Cigarettes 20 Pack (Marlboro)                                              | United States  | New-York   | JPY        |   2622.5         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| McMeal at McDonalds (or Equivalent Combo Meal)                             | United States  | New-York   | JPY        |   1857.24        |
+| McMeal at McDonalds (or Equivalent Combo Meal)                             | United States  | New-York   | JPY        |   1851.17        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter draught)                                          | United States  | New-York   | JPY        |   1392.93        |
+| Domestic Beer (0.5 liter draught)                                          | United States  | New-York   | JPY        |   1388.38        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United States  | New-York   | JPY        |   1702.47        |
+| Imported Beer (0.33 liter bottle)                                          | United States  | New-York   | JPY        |   1696.91        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Cappuccino (regular)                                                       | United States  | New-York   | JPY        |    900.55        |
+| Cappuccino (regular)                                                       | United States  | New-York   | JPY        |    897.61        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Coke/Pepsi (0.33 liter bottle)                                             | United States  | New-York   | JPY        |    493.45        |
+| Coke/Pepsi (0.33 liter bottle)                                             | United States  | New-York   | JPY        |    491.83        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (0.33 liter bottle)                                                  | United States  | New-York   | JPY        |    358.69        |
+| Water (0.33 liter bottle)                                                  | United States  | New-York   | JPY        |    357.52        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Milk (regular), (1 liter)                                                  | United States  | New-York   | JPY        |    238.76        |
+| Milk (regular), (1 liter)                                                  | United States  | New-York   | JPY        |    237.98        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Loaf of Fresh White Bread (500g)                                           | United States  | New-York   | JPY        |    759.52        |
+| Loaf of Fresh White Bread (500g)                                           | United States  | New-York   | JPY        |    757.04        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Rice (white), (1kg)                                                        | United States  | New-York   | JPY        |   1200.7         |
+| Rice (white), (1kg)                                                        | United States  | New-York   | JPY        |   1196.78        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Eggs (regular) (12)                                                        | United States  | New-York   | JPY        |    802.57        |
+| Eggs (regular) (12)                                                        | United States  | New-York   | JPY        |    799.95        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Local Cheese (1kg)                                                         | United States  | New-York   | JPY        |   2626.27        |
+| Local Cheese (1kg)                                                         | United States  | New-York   | JPY        |   2617.7         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Meal, Inexpensive Restaurant                                               | United States  | New-York   | JPY        |   4643.1         |
+| Meal, Inexpensive Restaurant                                               | United States  | New-York   | JPY        |   4627.94        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Chicken Fillets (1kg)                                                      | United States  | New-York   | JPY        |   2373.49        |
+| Chicken Fillets (1kg)                                                      | United States  | New-York   | JPY        |   2365.74        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Apples (1kg)                                                               | United States  | New-York   | JPY        |   1097.23        |
+| Apples (1kg)                                                               | United States  | New-York   | JPY        |   1093.64        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Banana (1kg)                                                               | United States  | New-York   | JPY        |    366.48        |
+| Banana (1kg)                                                               | United States  | New-York   | JPY        |    365.28        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Oranges (1kg)                                                              | United States  | New-York   | JPY        |    936.13        |
+| Oranges (1kg)                                                              | United States  | New-York   | JPY        |    933.07        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Tomato (1kg)                                                               | United States  | New-York   | JPY        |    941.5         |
+| Tomato (1kg)                                                               | United States  | New-York   | JPY        |    938.43        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Potato (1kg)                                                               | United States  | New-York   | JPY        |    610.76        |
+| Potato (1kg)                                                               | United States  | New-York   | JPY        |    608.76        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Onion (1kg)                                                                | United States  | New-York   | JPY        |    570.9         |
+| Onion (1kg)                                                                | United States  | New-York   | JPY        |    569.03        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Lettuce (1 head)                                                           | United States  | New-York   | JPY        |    499.13        |
+| Lettuce (1 head)                                                           | United States  | New-York   | JPY        |    497.5         |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Water (1.5 liter bottle)                                                   | United States  | New-York   | JPY        |    396.34        |
+| Water (1.5 liter bottle)                                                   | United States  | New-York   | JPY        |    395.05        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Bottle of Wine (Mid-Range)                                                 | United States  | New-York   | JPY        |   3095.4         |
+| Bottle of Wine (Mid-Range)                                                 | United States  | New-York   | JPY        |   3085.29        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Domestic Beer (0.5 liter bottle)                                           | United States  | New-York   | JPY        |    440.97        |
+| Domestic Beer (0.5 liter bottle)                                           | United States  | New-York   | JPY        |    439.53        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Imported Beer (0.33 liter bottle)                                          | United States  | New-York   | JPY        |    568.83        |
+| Imported Beer (0.33 liter bottle)                                          | United States  | New-York   | JPY        |    566.97        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
-| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United States  | New-York   | JPY        |   3129.34        |
+| Beef Round (1kg) (or Equivalent Back Leg Red Meat)                         | United States  | New-York   | JPY        |   3119.12        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
 | Mortgage Interest Rate in Percentages (%), Yearly, for 20 Years Fixed-Rate | United States  | New-York   | JPY        |      6.66        |
 +----------------------------------------------------------------------------+----------------+------------+------------+------------------+
