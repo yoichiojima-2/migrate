@@ -1,4 +1,6 @@
-VENV = .venv
+ROOT = $(shell pwd)
+PROJECTS = data-collection server-side explore cleansing
+VENV = "${ROOT}/.venv"
 
 .PHONY: clean
 clean:
@@ -29,4 +31,7 @@ venv: .venv/.installed
 
 .PHONY: test
 test: venv
-	$(VENV)/bin/pytest -vvv -s
+	@for project in $(PROJECTS); do \
+		echo "Testing $${project}"; \
+		cd "${ROOT}/$${project}" && $(VENV)/bin/pytest -vvv -s ;\
+	done
