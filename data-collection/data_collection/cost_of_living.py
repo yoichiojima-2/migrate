@@ -54,7 +54,7 @@ class CostOfLivingTask(Task):
         return pd.concat([self._scrap(city) for city in cities])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
-        return df
+        return df[["item", "country", "city", "cost"]].drop_duplicates()
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df.to_json(Path(os.getenv("DATA_DIR")) / "cost_of_living.json", orient="records")
