@@ -17,9 +17,8 @@ class HappinessTask(Task):
         return pd.concat([self._read_and_attatch_year(p) for p in Path(path).glob("*.csv")])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
-        return (
-            df
-            [[
+        return df[
+            [
                 "Country",
                 "Year",
                 "Happiness.Rank",
@@ -31,9 +30,8 @@ class HappinessTask(Task):
                 "Generosity",
                 "Trust..Government.Corruption.",
                 "Dystopia.Residual",
-            ]]
-            [df["Happiness.Rank"].notna()]
-        )
+            ]
+        ][df["Happiness.Rank"].notna()]
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df.to_json(Path(os.getenv("DATA_DIR")) / "happiness.json", orient="records")
