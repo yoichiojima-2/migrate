@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "data-collection"
+name = "utils"
 version = "0.1.0"
 description = ""
 authors = ["Yoichi Ojima <yoichiojima@gmail.com>"]
@@ -7,15 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
-kagglehub = "^0.3.4"
-python-dotenv = "^1.0.1"
-bs4 = "^0.0.2"
+pyyaml = "^6.0.2"
 
-
-[tool.poetry.group.dev.dependencies]
-jupyterlab = "^4.3.1"
-pandas = "^2.2.3"
-pytest = "^8.3.3"
 
 [build-system]
 requires = ["poetry-core"]

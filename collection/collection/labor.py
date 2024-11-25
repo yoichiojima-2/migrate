@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from pathlib import Path
 import pandas as pd
 from io import StringIO
-from data_collection.task import Task
+from collection.task import Task
 
 
 @dataclass
@@ -34,7 +34,7 @@ class LaborTask(Task):
         return df.rename(columns={"ref_area": "country", "time": "year"})
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("DATA_DIR")) / f"{self.name}.json", orient="records", index=False)
+        df.to_json(Path(os.getenv("APP_ROOT")) / f"data/{self.name}.json", orient="records", index=False)
 
 
 class WorkingPovertyRate(LaborTask):
