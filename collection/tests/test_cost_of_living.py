@@ -1,4 +1,12 @@
-# def test_cost_of_living():
-#     run_and_check_output(CostOfLivingTask, CostOfLivingTask.output_name)
-#     df = pd.read_json(f"{os.getenv('APP_ROOT')}/data/{CostOfLivingTask.output_name}")
-#     assert set(CostOfLivingTask.cities) == set(df["city"].drop_duplicates().values)
+import os
+from pathlib import Path
+from pprint import pprint
+import json
+from cleansing import cost_of_living
+
+
+def test_cost_of_living():
+    cost_of_living.cleanse()
+    output = Path(os.getenv("DATA_DIR")) / "cost_of_living_cleansed.json"
+    pprint(json.load(output.open())[:5])
+    assert output.exists()
