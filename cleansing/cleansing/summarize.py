@@ -13,26 +13,29 @@ def summarize(current_city):
     if not Path(cleansed_cost_of_living_path).exists():
         cost_of_living.cleanse()
 
+    cost_of_living_df = pd.read_json(cleansed_cost_of_living_path)
+    cost_of_living_cols = [
+        "city",
+        "country",
+        'Apartment (1 bedroom) Outside of Centre',
+        'Apartment (1 bedroom) in City Centre',
+        'Apartment (3 bedrooms) Outside of Centre',
+        'Apartment (3 bedrooms) in City Centre',
+        'Average Monthly Net Salary (After Tax)',
+        'Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment',
+        'Cappuccino (regular)',
+        "Cigarettes 20 Pack (Marlboro)",
+        "Mobile Phone Monthly Plan with Calls and 10GB+ Data",
+        'McMeal at McDonalds (or Equivalent Combo Meal)',
+        'Price per Square Meter to Buy Apartment Outside of Centre',
+        'Price per Square Meter to Buy Apartment in City Centre',
+        'Water (1.5 liter bottle)',
+    ]
+
     # fmt: off
     df = (
-        pd.read_json(cleansed_cost_of_living_path)
-        [[
-            "city",
-            "country",
-            'Apartment (1 bedroom) Outside of Centre',
-            'Apartment (1 bedroom) in City Centre',
-            'Apartment (3 bedrooms) Outside of Centre',
-            'Apartment (3 bedrooms) in City Centre',
-            'Average Monthly Net Salary (After Tax)',
-            'Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment',
-            'Cappuccino (regular)',
-            "Cigarettes 20 Pack (Marlboro)",
-            "Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-            'McMeal at McDonalds (or Equivalent Combo Meal)',
-            'Price per Square Meter to Buy Apartment Outside of Centre',
-            'Price per Square Meter to Buy Apartment in City Centre',
-            'Water (1.5 liter bottle)',
-        ]]
+        cost_of_living_df
+        [[i for i in cost_of_living_df.columns if i in cost_of_living_cols]]
         .merge(
             pd.read_json(f"{os.getenv('APP_ROOT')}/data/happiness.json")
             .rename(columns={"Country": "country"})
