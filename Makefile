@@ -37,4 +37,4 @@ cleansing-test-data: venv
 
 .PHONY: test
 test: venv cleansing-test-data
-	@for project in $(PROJECTS); do cd $(ROOT)/$$project && $(VENV)/bin/pytest -vvv -s; done
+	@for project in $(PROJECTS); do cd $(ROOT)/$$project && $(VENV)/bin/pytest -vvv; done
