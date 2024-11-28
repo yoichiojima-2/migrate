@@ -29,6 +29,8 @@ def summarize(current_city):
             "Cigarettes 20 Pack (Marlboro)",
             "Mobile Phone Monthly Plan with Calls and 10GB+ Data",
             'McMeal at McDonalds (or Equivalent Combo Meal)',
+            'Price per Square Meter to Buy Apartment Outside of Centre',
+            'Price per Square Meter to Buy Apartment in City Centre',
             'Water (1.5 liter bottle)',
         ]]
         .merge(
