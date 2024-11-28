@@ -9,6 +9,9 @@ app = FastAPI()
 
 @app.get("/summary")
 def summary(city: str):
-    return pd.read_json(
-        Path(os.getenv("APP_ROOT")) / f"data/summary_{city}.json"
-    ).to_dict(orient="records")
+    # fmt: off
+    return (
+        pd.read_json(Path(os.getenv("APP_ROOT")) / f"data/summary_{city}.json")
+        .to_dict(orient="records")
+    )
+    # fmt: on
