@@ -3,1233 +3,1233 @@
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":271371.93,
-    "value_in_current_city":143495.08,
-    "diff_amount":127876.85,
-    "diff_rate":0.89
+    "value":269545.91,
+    "value_in_current_city":141578.52,
+    "diff_amount":127967.39,
+    "diff_rate":0.9
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":46485.85,
-    "value_in_current_city":143495.08,
-    "diff_amount":-97009.23,
-    "diff_rate":-0.68
+    "value":46216.62,
+    "value_in_current_city":141578.52,
+    "diff_amount":-95361.9,
+    "diff_rate":-0.67
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":159048.24,
-    "value_in_current_city":143495.08,
-    "diff_amount":15553.16,
-    "diff_rate":0.11
+    "value":157978.04,
+    "value_in_current_city":141578.52,
+    "diff_amount":16399.52,
+    "diff_rate":0.12
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":200219.26,
-    "value_in_current_city":143495.08,
-    "diff_amount":56724.18,
-    "diff_rate":0.4
+    "value":197481.9,
+    "value_in_current_city":141578.52,
+    "diff_amount":55903.38,
+    "diff_rate":0.39
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":197557.02,
-    "value_in_current_city":143495.08,
-    "diff_amount":54061.94,
-    "diff_rate":0.38
+    "value":196641.52,
+    "value_in_current_city":141578.52,
+    "diff_amount":55063.0,
+    "diff_rate":0.39
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":204033.08,
-    "value_in_current_city":143495.08,
-    "diff_amount":60538.0,
-    "diff_rate":0.42
+    "value":202627.35,
+    "value_in_current_city":141578.52,
+    "diff_amount":61048.83,
+    "diff_rate":0.43
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":275580.91,
-    "value_in_current_city":143495.08,
-    "diff_amount":132085.83,
-    "diff_rate":0.92
+    "value":273726.57,
+    "value_in_current_city":141578.52,
+    "diff_amount":132148.05,
+    "diff_rate":0.93
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":142278.6,
-    "value_in_current_city":143495.08,
-    "diff_amount":-1216.48,
-    "diff_rate":-0.01
+    "value":141619.27,
+    "value_in_current_city":141578.52,
+    "diff_amount":40.75,
+    "diff_rate":0.0
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":240984.26,
-    "value_in_current_city":143495.08,
-    "diff_amount":97489.18,
+    "value":237685.96,
+    "value_in_current_city":141578.52,
+    "diff_amount":96107.44,
     "diff_rate":0.68
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":53536.52,
-    "value_in_current_city":143495.08,
-    "diff_amount":-89958.56,
+    "value":53046.67,
+    "value_in_current_city":141578.52,
+    "diff_amount":-88531.85,
     "diff_rate":-0.63
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":306725.99,
-    "value_in_current_city":143495.08,
-    "diff_amount":163230.91,
-    "diff_rate":1.14
+    "value":305334.14,
+    "value_in_current_city":141578.52,
+    "diff_amount":163755.62,
+    "diff_rate":1.16
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":175463.41,
-    "value_in_current_city":143495.08,
-    "diff_amount":31968.33,
-    "diff_rate":0.22
+    "value":174650.3,
+    "value_in_current_city":141578.52,
+    "diff_amount":33071.78,
+    "diff_rate":0.23
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":57724.42,
-    "value_in_current_city":143495.08,
-    "diff_amount":-85770.66,
+    "value":56810.19,
+    "value_in_current_city":141578.52,
+    "diff_amount":-84768.33,
     "diff_rate":-0.6
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":436731.9,
-    "value_in_current_city":143495.08,
-    "diff_amount":293236.8200000001,
+    "value":430700.6,
+    "value_in_current_city":141578.52,
+    "diff_amount":289122.08,
     "diff_rate":2.04
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":175648.47,
-    "value_in_current_city":143495.08,
-    "diff_amount":32153.39,
-    "diff_rate":0.22
+    "value":173490.63,
+    "value_in_current_city":141578.52,
+    "diff_amount":31912.11,
+    "diff_rate":0.23
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":156962.14,
-    "value_in_current_city":143495.08,
-    "diff_amount":13467.06,
-    "diff_rate":0.09
+    "value":155905.97,
+    "value_in_current_city":141578.52,
+    "diff_amount":14327.45,
+    "diff_rate":0.1
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":277329.73,
-    "value_in_current_city":143495.08,
-    "diff_amount":133834.65,
+    "value":273499.79,
+    "value_in_current_city":141578.52,
+    "diff_amount":131921.27,
     "diff_rate":0.93
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":75288.61,
-    "value_in_current_city":143495.08,
-    "diff_amount":-68206.47,
-    "diff_rate":-0.48
+    "value":74411.0,
+    "value_in_current_city":141578.52,
+    "diff_amount":-67167.52,
+    "diff_rate":-0.47
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":80047.16,
-    "value_in_current_city":143495.08,
-    "diff_amount":-63447.92,
+    "value":78946.6,
+    "value_in_current_city":141578.52,
+    "diff_amount":-62631.92,
     "diff_rate":-0.44
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":299564.93,
-    "value_in_current_city":143495.08,
-    "diff_amount":156069.85,
-    "diff_rate":1.09
+    "value":296674.59,
+    "value_in_current_city":141578.52,
+    "diff_amount":155096.07,
+    "diff_rate":1.1
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":142578.62,
-    "value_in_current_city":143495.08,
-    "diff_amount":-916.46,
-    "diff_rate":-0.01
+    "value":141614.46,
+    "value_in_current_city":141578.52,
+    "diff_amount":35.94,
+    "diff_rate":0.0
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":74929.63,
-    "value_in_current_city":143495.08,
-    "diff_amount":-68565.45,
-    "diff_rate":-0.48
+    "value":74578.37,
+    "value_in_current_city":141578.52,
+    "diff_amount":-67000.15,
+    "diff_rate":-0.47
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Apartment (1 bedroom) Outside of Centre",
-    "value":90853.5,
-    "value_in_current_city":143495.08,
-    "diff_amount":-52641.58,
-    "diff_rate":-0.37
+    "value":90832.59,
+    "value_in_current_city":141578.52,
+    "diff_amount":-50745.93,
+    "diff_rate":-0.36
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":326654.01,
-    "value_in_current_city":198606.49,
-    "diff_amount":128047.52,
+    "value":322980.46,
+    "value_in_current_city":197270.1,
+    "diff_amount":125710.36,
     "diff_rate":0.64
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":87845.44,
-    "value_in_current_city":198606.49,
-    "diff_amount":-110761.05,
-    "diff_rate":-0.56
+    "value":88483.11,
+    "value_in_current_city":197270.1,
+    "diff_amount":-108786.99,
+    "diff_rate":-0.55
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":209266.48,
-    "value_in_current_city":198606.49,
-    "diff_amount":10659.99,
+    "value":207858.36,
+    "value_in_current_city":197270.1,
+    "diff_amount":10588.26,
     "diff_rate":0.05
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":246241.46,
-    "value_in_current_city":198606.49,
-    "diff_amount":47634.97,
-    "diff_rate":0.24
+    "value":242874.89,
+    "value_in_current_city":197270.1,
+    "diff_amount":45604.79,
+    "diff_rate":0.23
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":261781.13,
-    "value_in_current_city":198606.49,
-    "diff_amount":63174.64,
+    "value":260568.01,
+    "value_in_current_city":197270.1,
+    "diff_amount":63297.91,
     "diff_rate":0.32
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":260866.52,
-    "value_in_current_city":198606.49,
-    "diff_amount":62260.03,
+    "value":259084.13,
+    "value_in_current_city":197270.1,
+    "diff_amount":61814.03,
     "diff_rate":0.31
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":323611.22,
-    "value_in_current_city":198606.49,
-    "diff_amount":125004.73,
+    "value":321433.7,
+    "value_in_current_city":197270.1,
+    "diff_amount":124163.6,
     "diff_rate":0.63
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":202747.01,
-    "value_in_current_city":198606.49,
-    "diff_amount":4140.52,
+    "value":201807.46,
+    "value_in_current_city":197270.1,
+    "diff_amount":4537.36,
     "diff_rate":0.02
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":335539.28,
-    "value_in_current_city":198606.49,
-    "diff_amount":136932.79,
-    "diff_rate":0.69
+    "value":330946.83,
+    "value_in_current_city":197270.1,
+    "diff_amount":133676.73,
+    "diff_rate":0.68
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":72591.42,
-    "value_in_current_city":198606.49,
-    "diff_amount":-126015.07,
-    "diff_rate":-0.63
+    "value":71927.22,
+    "value_in_current_city":197270.1,
+    "diff_amount":-125342.88,
+    "diff_rate":-0.64
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":418526.17,
-    "value_in_current_city":198606.49,
-    "diff_amount":219919.68,
+    "value":416112.19,
+    "value_in_current_city":197270.1,
+    "diff_amount":218842.09,
     "diff_rate":1.11
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":224264.46,
-    "value_in_current_city":198606.49,
-    "diff_amount":25657.97,
+    "value":223225.2,
+    "value_in_current_city":197270.1,
+    "diff_amount":25955.1,
     "diff_rate":0.13
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":101394.92,
-    "value_in_current_city":198606.49,
-    "diff_amount":-97211.57,
+    "value":99789.06,
+    "value_in_current_city":197270.1,
+    "diff_amount":-97481.04,
     "diff_rate":-0.49
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":614065.74,
-    "value_in_current_city":198606.49,
-    "diff_amount":415459.25,
-    "diff_rate":2.09
+    "value":611899.9,
+    "value_in_current_city":197270.1,
+    "diff_amount":414629.8,
+    "diff_rate":2.1
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":221001.36,
-    "value_in_current_city":198606.49,
-    "diff_amount":22394.87,
+    "value":218286.36,
+    "value_in_current_city":197270.1,
+    "diff_amount":21016.26,
     "diff_rate":0.11
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":208496.37,
-    "value_in_current_city":198606.49,
-    "diff_amount":9889.88,
+    "value":207093.43,
+    "value_in_current_city":197270.1,
+    "diff_amount":9823.33,
     "diff_rate":0.05
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":345184.9,
-    "value_in_current_city":198606.49,
-    "diff_amount":146578.41,
-    "diff_rate":0.74
+    "value":340417.87,
+    "value_in_current_city":197270.1,
+    "diff_amount":143147.77,
+    "diff_rate":0.73
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":135560.18,
-    "value_in_current_city":198606.49,
-    "diff_amount":-63046.31,
+    "value":133964.74,
+    "value_in_current_city":197270.1,
+    "diff_amount":-63305.36,
     "diff_rate":-0.32
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":149196.1,
-    "value_in_current_city":198606.49,
-    "diff_amount":-49410.39,
+    "value":147144.83,
+    "value_in_current_city":197270.1,
+    "diff_amount":-50125.27,
     "diff_rate":-0.25
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":412840.1,
-    "value_in_current_city":198606.49,
-    "diff_amount":214233.61,
-    "diff_rate":1.08
+    "value":408856.83,
+    "value_in_current_city":197270.1,
+    "diff_amount":211586.73,
+    "diff_rate":1.07
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":226474.62,
-    "value_in_current_city":198606.49,
-    "diff_amount":27868.13,
+    "value":224943.12,
+    "value_in_current_city":197270.1,
+    "diff_amount":27673.02,
     "diff_rate":0.14
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":99235.54,
-    "value_in_current_city":198606.49,
-    "diff_amount":-99370.95,
+    "value":97731.83,
+    "value_in_current_city":197270.1,
+    "diff_amount":-99538.27,
     "diff_rate":-0.5
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Apartment (1 bedroom) in City Centre",
-    "value":170817.41,
-    "value_in_current_city":198606.49,
-    "diff_amount":-27789.08,
-    "diff_rate":-0.14
+    "value":170784.3,
+    "value_in_current_city":197270.1,
+    "diff_amount":-26485.8,
+    "diff_rate":-0.13
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":415138.25,
-    "value_in_current_city":271798.94,
-    "diff_amount":143339.31,
+    "value":411949.98,
+    "value_in_current_city":269970.05,
+    "diff_amount":141979.93,
     "diff_rate":0.53
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":122600.19,
-    "value_in_current_city":271798.94,
-    "diff_amount":-149198.75,
-    "diff_rate":-0.55
+    "value":124136.68,
+    "value_in_current_city":269970.05,
+    "diff_amount":-145833.37,
+    "diff_rate":-0.54
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":240257.23,
-    "value_in_current_city":271798.94,
-    "diff_amount":-31541.71,
+    "value":238640.58,
+    "value_in_current_city":269970.05,
+    "diff_amount":-31329.47,
     "diff_rate":-0.12
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":267381.47,
-    "value_in_current_city":271798.94,
-    "diff_amount":-4417.47,
+    "value":263725.87,
+    "value_in_current_city":269970.05,
+    "diff_amount":-6244.18,
     "diff_rate":-0.02
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":307765.5,
-    "value_in_current_city":271798.94,
-    "diff_amount":35966.56,
+    "value":306339.28,
+    "value_in_current_city":269970.05,
+    "diff_amount":36369.23,
     "diff_rate":0.13
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":328207.44,
-    "value_in_current_city":271798.94,
-    "diff_amount":56408.5,
+    "value":325961.13,
+    "value_in_current_city":269970.05,
+    "diff_amount":55991.08,
     "diff_rate":0.21
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":471707.09,
-    "value_in_current_city":271798.94,
-    "diff_amount":199908.15,
+    "value":468533.06,
+    "value_in_current_city":269970.05,
+    "diff_amount":198563.01,
     "diff_rate":0.74
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":240483.31,
-    "value_in_current_city":271798.94,
-    "diff_amount":-31315.63,
-    "diff_rate":-0.12
+    "value":239368.89,
+    "value_in_current_city":269970.05,
+    "diff_amount":-30601.16,
+    "diff_rate":-0.11
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":474583.6,
-    "value_in_current_city":271798.94,
-    "diff_amount":202784.66,
-    "diff_rate":0.75
+    "value":468088.09,
+    "value_in_current_city":269970.05,
+    "diff_amount":198118.04,
+    "diff_rate":0.73
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":87008.79,
-    "value_in_current_city":271798.94,
-    "diff_amount":-184790.15,
+    "value":87123.65,
+    "value_in_current_city":269970.05,
+    "diff_amount":-182846.4,
     "diff_rate":-0.68
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":525747.51,
-    "value_in_current_city":271798.94,
-    "diff_amount":253948.57,
-    "diff_rate":0.93
+    "value":527576.11,
+    "value_in_current_city":269970.05,
+    "diff_amount":257606.06,
+    "diff_rate":0.95
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":262332.52,
-    "value_in_current_city":271798.94,
-    "diff_amount":-9466.42,
+    "value":261116.84,
+    "value_in_current_city":269970.05,
+    "diff_amount":-8853.21,
     "diff_rate":-0.03
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":138491.37,
-    "value_in_current_city":271798.94,
-    "diff_amount":-133307.57,
-    "diff_rate":-0.49
+    "value":136297.99,
+    "value_in_current_city":269970.05,
+    "diff_amount":-133672.06,
+    "diff_rate":-0.5
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":814322.39,
-    "value_in_current_city":271798.94,
-    "diff_amount":542523.45,
-    "diff_rate":2.0
+    "value":803076.54,
+    "value_in_current_city":269970.05,
+    "diff_amount":533106.49,
+    "diff_rate":1.97
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":278444.38,
-    "value_in_current_city":271798.94,
-    "diff_amount":6645.44,
+    "value":275023.69,
+    "value_in_current_city":269970.05,
+    "diff_amount":5053.64,
     "diff_rate":0.02
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":347465.99,
-    "value_in_current_city":271798.94,
-    "diff_amount":75667.05,
+    "value":345127.96,
+    "value_in_current_city":269970.05,
+    "diff_amount":75157.91,
     "diff_rate":0.28
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":520359.87,
-    "value_in_current_city":271798.94,
-    "diff_amount":248560.93,
-    "diff_rate":0.91
+    "value":513173.67,
+    "value_in_current_city":269970.05,
+    "diff_amount":243203.62,
+    "diff_rate":0.9
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":213743.56,
-    "value_in_current_city":271798.94,
-    "diff_amount":-58055.38,
-    "diff_rate":-0.21
+    "value":211319.47,
+    "value_in_current_city":269970.05,
+    "diff_amount":-58650.58,
+    "diff_rate":-0.22
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":192925.72,
-    "value_in_current_city":271798.94,
-    "diff_amount":-78873.22,
-    "diff_rate":-0.29
+    "value":190273.22,
+    "value_in_current_city":269970.05,
+    "diff_amount":-79696.83,
+    "diff_rate":-0.3
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":568363.5600000001,
-    "value_in_current_city":271798.94,
-    "diff_amount":296564.6200000001,
-    "diff_rate":1.09
+    "value":562879.73,
+    "value_in_current_city":269970.05,
+    "diff_amount":292909.68,
+    "diff_rate":1.08
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":246016.32,
-    "value_in_current_city":271798.94,
-    "diff_amount":-25782.62,
+    "value":244352.68,
+    "value_in_current_city":269970.05,
+    "diff_amount":-25617.37,
     "diff_rate":-0.09
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":165827.67,
-    "value_in_current_city":271798.94,
-    "diff_amount":-105971.27,
-    "diff_rate":-0.39
+    "value":163117.99,
+    "value_in_current_city":269970.05,
+    "diff_amount":-106852.06,
+    "diff_rate":-0.4
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Apartment (3 bedrooms) Outside of Centre",
-    "value":186570.11,
-    "value_in_current_city":271798.94,
-    "diff_amount":-85228.83,
+    "value":186492.78,
+    "value_in_current_city":269970.05,
+    "diff_amount":-83477.27,
     "diff_rate":-0.31
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":559474.17,
-    "value_in_current_city":368010.79,
-    "diff_amount":191463.3800000001,
-    "diff_rate":0.52
+    "value":558038.03,
+    "value_in_current_city":365534.51,
+    "diff_amount":192503.52,
+    "diff_rate":0.53
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":250377.26,
-    "value_in_current_city":368010.79,
-    "diff_amount":-117633.53,
-    "diff_rate":-0.32
+    "value":251579.07,
+    "value_in_current_city":365534.51,
+    "diff_amount":-113955.44,
+    "diff_rate":-0.31
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":348267.88,
-    "value_in_current_city":368010.79,
-    "diff_amount":-19742.91,
+    "value":345924.45,
+    "value_in_current_city":365534.51,
+    "diff_amount":-19610.06,
     "diff_rate":-0.05
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":398009.8,
-    "value_in_current_city":368010.79,
-    "diff_amount":29999.01,
-    "diff_rate":0.08
+    "value":392568.27,
+    "value_in_current_city":365534.51,
+    "diff_amount":27033.76,
+    "diff_rate":0.07
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":413073.21,
-    "value_in_current_city":368010.79,
-    "diff_amount":45062.42,
+    "value":411158.98,
+    "value_in_current_city":365534.51,
+    "diff_amount":45624.47,
     "diff_rate":0.12
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":460578.52,
-    "value_in_current_city":368010.79,
-    "diff_amount":92567.73,
+    "value":457499.0,
+    "value_in_current_city":365534.51,
+    "diff_amount":91964.49,
     "diff_rate":0.25
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":556286.1899999999,
-    "value_in_current_city":368010.79,
-    "diff_amount":188275.4,
+    "value":552543.04,
+    "value_in_current_city":365534.51,
+    "diff_amount":187008.53,
     "diff_rate":0.51
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":354193.37,
-    "value_in_current_city":368010.79,
-    "diff_amount":-13817.42,
+    "value":352552.0,
+    "value_in_current_city":365534.51,
+    "diff_amount":-12982.51,
     "diff_rate":-0.04
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":703582.48,
-    "value_in_current_city":368010.79,
-    "diff_amount":335571.69,
-    "diff_rate":0.91
+    "value":693952.71,
+    "value_in_current_city":365534.51,
+    "diff_amount":328418.2,
+    "diff_rate":0.9
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":151776.03,
-    "value_in_current_city":368010.79,
-    "diff_amount":-216234.76,
-    "diff_rate":-0.59
+    "value":154934.16,
+    "value_in_current_city":365534.51,
+    "diff_amount":-210600.35,
+    "diff_rate":-0.58
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":845428.11,
-    "value_in_current_city":368010.79,
-    "diff_amount":477417.32,
+    "value":841076.09,
+    "value_in_current_city":365534.51,
+    "diff_amount":475541.58,
     "diff_rate":1.3
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":376417.22,
-    "value_in_current_city":368010.79,
-    "diff_amount":8406.43,
+    "value":374672.87,
+    "value_in_current_city":365534.51,
+    "diff_amount":9138.36,
     "diff_rate":0.02
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":277060.95,
-    "value_in_current_city":368010.79,
-    "diff_amount":-90949.84,
+    "value":272749.74,
+    "value_in_current_city":365534.51,
+    "diff_amount":-92784.77,
     "diff_rate":-0.25
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":1311333.8,
-    "value_in_current_city":368010.79,
-    "diff_amount":943323.01,
-    "diff_rate":2.56
+    "value":1293224.1899999999,
+    "value_in_current_city":365534.51,
+    "diff_amount":927689.6799999999,
+    "diff_rate":2.54
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":349281.68,
-    "value_in_current_city":368010.79,
-    "diff_amount":-18729.11,
-    "diff_rate":-0.05
+    "value":344977.37,
+    "value_in_current_city":365534.51,
+    "diff_amount":-20557.14,
+    "diff_rate":-0.06
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":497331.52,
-    "value_in_current_city":368010.79,
-    "diff_amount":129320.73,
+    "value":493985.06,
+    "value_in_current_city":365534.51,
+    "diff_amount":128450.55,
     "diff_rate":0.35
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":678507.42,
-    "value_in_current_city":368010.79,
-    "diff_amount":310496.6300000001,
-    "diff_rate":0.84
+    "value":669137.1899999999,
+    "value_in_current_city":365534.51,
+    "diff_amount":303602.6799999999,
+    "diff_rate":0.83
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":402700.87,
-    "value_in_current_city":368010.79,
-    "diff_amount":34690.08,
+    "value":398066.2,
+    "value_in_current_city":365534.51,
+    "diff_amount":32531.69,
     "diff_rate":0.09
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":414649.56,
-    "value_in_current_city":368010.79,
-    "diff_amount":46638.77,
-    "diff_rate":0.13
+    "value":408948.62,
+    "value_in_current_city":365534.51,
+    "diff_amount":43414.11,
+    "diff_rate":0.12
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":826748.24,
-    "value_in_current_city":368010.79,
-    "diff_amount":458737.45,
-    "diff_rate":1.25
+    "value":818771.4,
+    "value_in_current_city":365534.51,
+    "diff_amount":453236.89,
+    "diff_rate":1.24
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":382202.78,
-    "value_in_current_city":368010.79,
-    "diff_amount":14191.99,
+    "value":379618.19,
+    "value_in_current_city":365534.51,
+    "diff_amount":14083.68,
     "diff_rate":0.04
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":240185.6,
-    "value_in_current_city":368010.79,
-    "diff_amount":-127825.19,
+    "value":236260.9,
+    "value_in_current_city":365534.51,
+    "diff_amount":-129273.61,
     "diff_rate":-0.35
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Apartment (3 bedrooms) in City Centre",
-    "value":398586.77,
-    "value_in_current_city":368010.79,
-    "diff_amount":30575.98,
-    "diff_rate":0.08
+    "value":398481.68,
+    "value_in_current_city":365534.51,
+    "diff_amount":32947.17,
+    "diff_rate":0.09
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":646788.49,
-    "value_in_current_city":481891.47,
-    "diff_amount":164897.02,
-    "diff_rate":0.34
+    "value":637397.72,
+    "value_in_current_city":477649.68,
+    "diff_amount":159748.04,
+    "diff_rate":0.33
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":106059.16,
-    "value_in_current_city":481891.47,
-    "diff_amount":-375832.3099999999,
+    "value":107013.0,
+    "value_in_current_city":477649.68,
+    "diff_amount":-370636.68,
     "diff_rate":-0.78
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":311589.49,
-    "value_in_current_city":481891.47,
-    "diff_amount":-170301.98,
+    "value":311412.35,
+    "value_in_current_city":477649.68,
+    "diff_amount":-166237.33,
     "diff_rate":-0.35
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":599700.6800000001,
-    "value_in_current_city":481891.47,
-    "diff_amount":117809.2100000001,
+    "value":591501.67,
+    "value_in_current_city":477649.68,
+    "diff_amount":113851.99,
     "diff_rate":0.24
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":499556.17,
-    "value_in_current_city":481891.47,
-    "diff_amount":17664.7,
+    "value":497241.17,
+    "value_in_current_city":477649.68,
+    "diff_amount":19591.49,
     "diff_rate":0.04
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":617885.66,
-    "value_in_current_city":481891.47,
-    "diff_amount":135994.1900000001,
+    "value":613625.5600000001,
+    "value_in_current_city":477649.68,
+    "diff_amount":135975.8800000001,
     "diff_rate":0.28
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":535194.59,
-    "value_in_current_city":481891.47,
-    "diff_amount":53303.12,
+    "value":530914.98,
+    "value_in_current_city":477649.68,
+    "diff_amount":53265.3,
     "diff_rate":0.11
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":513152.63,
-    "value_in_current_city":481891.47,
-    "diff_amount":31261.16,
-    "diff_rate":0.06
+    "value":510774.63,
+    "value_in_current_city":477649.68,
+    "diff_amount":33124.95,
+    "diff_rate":0.07
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":596696.42,
-    "value_in_current_city":481891.47,
-    "diff_amount":114804.9500000001,
-    "diff_rate":0.24
+    "value":588529.58,
+    "value_in_current_city":477649.68,
+    "diff_amount":110879.9,
+    "diff_rate":0.23
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":215476.12,
-    "value_in_current_city":481891.47,
-    "diff_amount":-266415.35,
+    "value":216266.02,
+    "value_in_current_city":477649.68,
+    "diff_amount":-261383.66,
     "diff_rate":-0.55
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":670686.85,
-    "value_in_current_city":481891.47,
-    "diff_amount":188795.38,
-    "diff_rate":0.39
+    "value":667506.11,
+    "value_in_current_city":477649.68,
+    "diff_amount":189856.43,
+    "diff_rate":0.4
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":488069.11,
-    "value_in_current_city":481891.47,
-    "diff_amount":6177.64,
-    "diff_rate":0.01
+    "value":485807.35,
+    "value_in_current_city":477649.68,
+    "diff_amount":8157.67,
+    "diff_rate":0.02
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":140088.69,
-    "value_in_current_city":481891.47,
-    "diff_amount":-341802.78,
+    "value":137870.01,
+    "value_in_current_city":477649.68,
+    "diff_amount":-339779.67,
     "diff_rate":-0.71
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":849129.1,
-    "value_in_current_city":481891.47,
-    "diff_amount":367237.63,
-    "diff_rate":0.76
+    "value":837402.5699999999,
+    "value_in_current_city":477649.68,
+    "diff_amount":359752.89,
+    "diff_rate":0.75
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":568162.54,
-    "value_in_current_city":481891.47,
-    "diff_amount":86271.0700000001,
-    "diff_rate":0.18
+    "value":561182.66,
+    "value_in_current_city":477649.68,
+    "diff_amount":83532.98,
+    "diff_rate":0.17
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":487149.94,
-    "value_in_current_city":481891.47,
-    "diff_amount":5258.47,
+    "value":483871.99,
+    "value_in_current_city":477649.68,
+    "diff_amount":6222.31,
     "diff_rate":0.01
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":1008683.13,
-    "value_in_current_city":481891.47,
-    "diff_amount":526791.66,
-    "diff_rate":1.09
+    "value":994753.15,
+    "value_in_current_city":477649.68,
+    "diff_amount":517103.47,
+    "diff_rate":1.08
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":433715.91,
-    "value_in_current_city":481891.47,
-    "diff_amount":-48175.56,
-    "diff_rate":-0.1
+    "value":426354.53,
+    "value_in_current_city":477649.68,
+    "diff_amount":-51295.15,
+    "diff_rate":-0.11
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":265086.03,
-    "value_in_current_city":481891.47,
-    "diff_amount":-216805.4399999999,
+    "value":261499.99,
+    "value_in_current_city":477649.68,
+    "diff_amount":-216149.69,
     "diff_rate":-0.45
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":651893.42,
-    "value_in_current_city":481891.47,
-    "diff_amount":170001.9500000001,
-    "diff_rate":0.35
+    "value":649394.09,
+    "value_in_current_city":477649.68,
+    "diff_amount":171744.41,
+    "diff_rate":0.36
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":528714.3199999999,
-    "value_in_current_city":481891.47,
-    "diff_amount":46822.85,
+    "value":524925.39,
+    "value_in_current_city":477649.68,
+    "diff_amount":47275.71,
     "diff_rate":0.1
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":266683.06,
-    "value_in_current_city":481891.47,
-    "diff_amount":-215208.41,
+    "value":260773.08,
+    "value_in_current_city":477649.68,
+    "diff_amount":-216876.6,
     "diff_rate":-0.45
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Average Monthly Net Salary (After Tax)",
-    "value":371735.36,
-    "value_in_current_city":481891.47,
-    "diff_amount":-110156.11,
-    "diff_rate":-0.23
+    "value":371385.29,
+    "value_in_current_city":477649.68,
+    "diff_amount":-106264.39,
+    "diff_rate":-0.22
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":41449.31,
-    "value_in_current_city":52577.78,
-    "diff_amount":-11128.47,
-    "diff_rate":-0.21
+    "value":40783.18,
+    "value_in_current_city":52223.99,
+    "diff_amount":-11440.81,
+    "diff_rate":-0.22
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":13279.42,
-    "value_in_current_city":52577.78,
-    "diff_amount":-39298.36,
+    "value":13202.51,
+    "value_in_current_city":52223.99,
+    "diff_amount":-39021.48,
     "diff_rate":-0.75
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":27184.2,
-    "value_in_current_city":52577.78,
-    "diff_amount":-25393.58,
+    "value":27001.28,
+    "value_in_current_city":52223.99,
+    "diff_amount":-25222.71,
     "diff_rate":-0.48
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":27172.71,
-    "value_in_current_city":52577.78,
-    "diff_amount":-25405.07,
-    "diff_rate":-0.48
+    "value":26801.21,
+    "value_in_current_city":52223.99,
+    "diff_amount":-25422.78,
+    "diff_rate":-0.49
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":46331.57,
-    "value_in_current_city":52577.78,
-    "diff_amount":-6246.21,
+    "value":46116.86,
+    "value_in_current_city":52223.99,
+    "diff_amount":-6107.13,
     "diff_rate":-0.12
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":27964.65,
-    "value_in_current_city":52577.78,
-    "diff_amount":-24613.13,
+    "value":27777.67,
+    "value_in_current_city":52223.99,
+    "diff_amount":-24446.32,
     "diff_rate":-0.47
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":40384.87,
-    "value_in_current_city":52577.78,
-    "diff_amount":-12192.91,
+    "value":40113.13,
+    "value_in_current_city":52223.99,
+    "diff_amount":-12110.86,
     "diff_rate":-0.23
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":49980.67,
-    "value_in_current_city":52577.78,
-    "diff_amount":-2597.11,
+    "value":49749.05,
+    "value_in_current_city":52223.99,
+    "diff_amount":-2474.94,
     "diff_rate":-0.05
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":36680.61,
-    "value_in_current_city":52577.78,
-    "diff_amount":-15897.17,
-    "diff_rate":-0.3
+    "value":36178.57,
+    "value_in_current_city":52223.99,
+    "diff_amount":-16045.42,
+    "diff_rate":-0.31
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":9519.75,
-    "value_in_current_city":52577.78,
-    "diff_amount":-43058.03,
+    "value":9430.64,
+    "value_in_current_city":52223.99,
+    "diff_amount":-42793.35,
     "diff_rate":-0.82
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":48917.59,
-    "value_in_current_city":52577.78,
-    "diff_amount":-3660.19,
-    "diff_rate":-0.07
+    "value":48093.09,
+    "value_in_current_city":52223.99,
+    "diff_amount":-4130.9,
+    "diff_rate":-0.08
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":43996.2,
-    "value_in_current_city":52577.78,
-    "diff_amount":-8581.58,
+    "value":43792.32,
+    "value_in_current_city":52223.99,
+    "diff_amount":-8431.67,
     "diff_rate":-0.16
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":7705.87,
-    "value_in_current_city":52577.78,
-    "diff_amount":-44871.91,
+    "value":7583.83,
+    "value_in_current_city":52223.99,
+    "diff_amount":-44640.16,
     "diff_rate":-0.85
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":27382.26,
-    "value_in_current_city":52577.78,
-    "diff_amount":-25195.52,
+    "value":27004.11,
+    "value_in_current_city":52223.99,
+    "diff_amount":-25219.88,
     "diff_rate":-0.48
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":34952.39,
-    "value_in_current_city":52577.78,
-    "diff_amount":-17625.39,
+    "value":34523.0,
+    "value_in_current_city":52223.99,
+    "diff_amount":-17700.99,
     "diff_rate":-0.34
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":37107.83,
-    "value_in_current_city":52577.78,
-    "diff_amount":-15469.95,
+    "value":36858.14,
+    "value_in_current_city":52223.99,
+    "diff_amount":-15365.85,
     "diff_rate":-0.29
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":35991.06,
-    "value_in_current_city":52577.78,
-    "diff_amount":-16586.72,
+    "value":35494.02,
+    "value_in_current_city":52223.99,
+    "diff_amount":-16729.97,
     "diff_rate":-0.32
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":26250.46,
-    "value_in_current_city":52577.78,
-    "diff_amount":-26327.32,
+    "value":25944.47,
+    "value_in_current_city":52223.99,
+    "diff_amount":-26279.52,
     "diff_rate":-0.5
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":8683.85,
-    "value_in_current_city":52577.78,
-    "diff_amount":-43893.93,
-    "diff_rate":-0.83
+    "value":8564.45,
+    "value_in_current_city":52223.99,
+    "diff_amount":-43659.54,
+    "diff_rate":-0.84
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":23798.85,
-    "value_in_current_city":52577.78,
-    "diff_amount":-28778.93,
+    "value":23569.23,
+    "value_in_current_city":52223.99,
+    "diff_amount":-28654.76,
     "diff_rate":-0.55
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":28474.76,
-    "value_in_current_city":52577.78,
-    "diff_amount":-24103.02,
+    "value":28282.25,
+    "value_in_current_city":52223.99,
+    "diff_amount":-23941.74,
     "diff_rate":-0.46
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
-    "value":12843.82,
-    "value_in_current_city":52577.78,
-    "diff_amount":-39733.96,
+    "value":12685.33,
+    "value_in_current_city":52223.99,
+    "diff_amount":-39538.66,
     "diff_rate":-0.76
   },
   {
@@ -1237,448 +1237,448 @@
     "country":"Japan",
     "feature":"Basic (Electricity, Heating, Cooling, Water, Garbage) for 85m2 Apartment",
     "value":26747.16,
-    "value_in_current_city":52577.78,
-    "diff_amount":-25830.62,
+    "value_in_current_city":52223.99,
+    "diff_amount":-25476.83,
     "diff_rate":-0.49
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Cappuccino (regular)",
-    "value":640.66,
-    "value_in_current_city":601.33,
-    "diff_amount":39.33,
-    "diff_rate":0.07
+    "value":635.0,
+    "value_in_current_city":597.36,
+    "diff_amount":37.64,
+    "diff_rate":0.06
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Cappuccino (regular)",
-    "value":381.57,
-    "value_in_current_city":601.33,
-    "diff_amount":-219.76,
-    "diff_rate":-0.37
+    "value":379.38,
+    "value_in_current_city":597.36,
+    "diff_amount":-217.98,
+    "diff_rate":-0.36
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Cappuccino (regular)",
-    "value":371.15,
-    "value_in_current_city":601.33,
-    "diff_amount":-230.18,
+    "value":368.65,
+    "value_in_current_city":597.36,
+    "diff_amount":-228.71,
     "diff_rate":-0.38
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Cappuccino (regular)",
-    "value":548.24,
-    "value_in_current_city":601.33,
-    "diff_amount":-53.09,
-    "diff_rate":-0.09
+    "value":539.6,
+    "value_in_current_city":597.36,
+    "diff_amount":-57.76,
+    "diff_rate":-0.1
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Cappuccino (regular)",
-    "value":696.15,
-    "value_in_current_city":601.33,
-    "diff_amount":94.82,
+    "value":694.0,
+    "value_in_current_city":597.36,
+    "diff_amount":96.64,
     "diff_rate":0.16
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Cappuccino (regular)",
-    "value":928.49,
-    "value_in_current_city":601.33,
-    "diff_amount":327.16,
+    "value":922.28,
+    "value_in_current_city":597.36,
+    "diff_amount":324.92,
     "diff_rate":0.54
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Cappuccino (regular)",
-    "value":647.89,
-    "value_in_current_city":601.33,
-    "diff_amount":46.56,
+    "value":646.51,
+    "value_in_current_city":597.36,
+    "diff_amount":49.15,
     "diff_rate":0.08
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Cappuccino (regular)",
-    "value":665.6,
-    "value_in_current_city":601.33,
-    "diff_amount":64.27,
+    "value":662.52,
+    "value_in_current_city":597.36,
+    "diff_amount":65.16,
     "diff_rate":0.11
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Cappuccino (regular)",
-    "value":792.74,
-    "value_in_current_city":601.33,
-    "diff_amount":191.41,
-    "diff_rate":0.32
+    "value":782.79,
+    "value_in_current_city":597.36,
+    "diff_amount":185.43,
+    "diff_rate":0.31
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Cappuccino (regular)",
-    "value":436.28,
-    "value_in_current_city":601.33,
-    "diff_amount":-165.05,
-    "diff_rate":-0.27
+    "value":432.29,
+    "value_in_current_city":597.36,
+    "diff_amount":-165.07,
+    "diff_rate":-0.28
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Cappuccino (regular)",
-    "value":721.03,
-    "value_in_current_city":601.33,
-    "diff_amount":119.7,
+    "value":715.59,
+    "value_in_current_city":597.36,
+    "diff_amount":118.23,
     "diff_rate":0.2
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Cappuccino (regular)",
-    "value":694.5,
-    "value_in_current_city":601.33,
-    "diff_amount":93.17,
-    "diff_rate":0.15
+    "value":691.28,
+    "value_in_current_city":597.36,
+    "diff_amount":93.92,
+    "diff_rate":0.16
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Cappuccino (regular)",
-    "value":417.24,
-    "value_in_current_city":601.33,
-    "diff_amount":-184.09,
+    "value":410.71,
+    "value_in_current_city":597.36,
+    "diff_amount":-186.65,
     "diff_rate":-0.31
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Cappuccino (regular)",
-    "value":894.15,
-    "value_in_current_city":601.33,
-    "diff_amount":292.82,
-    "diff_rate":0.49
+    "value":881.8,
+    "value_in_current_city":597.36,
+    "diff_amount":284.44,
+    "diff_rate":0.48
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Cappuccino (regular)",
-    "value":656.72,
-    "value_in_current_city":601.33,
-    "diff_amount":55.39,
+    "value":648.73,
+    "value_in_current_city":597.36,
+    "diff_amount":51.37,
     "diff_rate":0.09
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Cappuccino (regular)",
-    "value":650.02,
-    "value_in_current_city":601.33,
-    "diff_amount":48.69,
+    "value":645.65,
+    "value_in_current_city":597.36,
+    "diff_amount":48.29,
     "diff_rate":0.08
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Cappuccino (regular)",
-    "value":845.63,
-    "value_in_current_city":601.33,
-    "diff_amount":244.3,
-    "diff_rate":0.41
+    "value":825.04,
+    "value_in_current_city":597.36,
+    "diff_amount":227.68,
+    "diff_rate":0.38
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Cappuccino (regular)",
-    "value":562.71,
-    "value_in_current_city":601.33,
-    "diff_amount":-38.62,
-    "diff_rate":-0.06
+    "value":556.15,
+    "value_in_current_city":597.36,
+    "diff_amount":-41.21,
+    "diff_rate":-0.07
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Cappuccino (regular)",
-    "value":540.21,
-    "value_in_current_city":601.33,
-    "diff_amount":-61.12,
-    "diff_rate":-0.1
+    "value":532.78,
+    "value_in_current_city":597.36,
+    "diff_amount":-64.58,
+    "diff_rate":-0.11
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Cappuccino (regular)",
-    "value":707.28,
-    "value_in_current_city":601.33,
-    "diff_amount":105.95,
-    "diff_rate":0.18
+    "value":700.62,
+    "value_in_current_city":597.36,
+    "diff_amount":103.26,
+    "diff_rate":0.17
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Cappuccino (regular)",
-    "value":644.84,
-    "value_in_current_city":601.33,
-    "diff_amount":43.51,
-    "diff_rate":0.07
+    "value":642.53,
+    "value_in_current_city":597.36,
+    "diff_amount":45.17,
+    "diff_rate":0.08
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Cappuccino (regular)",
-    "value":486.48,
-    "value_in_current_city":601.33,
-    "diff_amount":-114.85,
-    "diff_rate":-0.19
+    "value":477.39,
+    "value_in_current_city":597.36,
+    "diff_amount":-119.97,
+    "diff_rate":-0.2
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Cappuccino (regular)",
-    "value":517.9,
-    "value_in_current_city":601.33,
-    "diff_amount":-83.43,
-    "diff_rate":-0.14
+    "value":517.79,
+    "value_in_current_city":597.36,
+    "diff_amount":-79.57,
+    "diff_rate":-0.13
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2012.08,
-    "value_in_current_city":1368.22,
-    "diff_amount":643.86,
+    "value":1998.54,
+    "value_in_current_city":1359.01,
+    "diff_amount":639.53,
     "diff_rate":0.47
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":627.56,
-    "value_in_current_city":1368.22,
-    "diff_amount":-740.66,
+    "value":623.92,
+    "value_in_current_city":1359.01,
+    "diff_amount":-735.09,
     "diff_rate":-0.54
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":885.32,
-    "value_in_current_city":1368.22,
-    "diff_amount":-482.9,
+    "value":879.36,
+    "value_in_current_city":1359.01,
+    "diff_amount":-479.65,
     "diff_rate":-0.35
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":4436.7,
-    "value_in_current_city":1368.22,
-    "diff_amount":3068.48,
-    "diff_rate":2.24
+    "value":4376.04,
+    "value_in_current_city":1359.01,
+    "diff_amount":3017.03,
+    "diff_rate":2.22
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":3007.94,
-    "value_in_current_city":1368.22,
-    "diff_amount":1639.72,
+    "value":2994.01,
+    "value_in_current_city":1359.01,
+    "diff_amount":1635.0,
     "diff_rate":1.2
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":1392.88,
-    "value_in_current_city":1368.22,
-    "diff_amount":24.66,
-    "diff_rate":0.02
+    "value":1378.65,
+    "value_in_current_city":1359.01,
+    "diff_amount":19.64,
+    "diff_rate":0.01
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2736.43,
-    "value_in_current_city":1368.22,
-    "diff_amount":1368.21,
+    "value":2718.02,
+    "value_in_current_city":1359.01,
+    "diff_amount":1359.01,
     "diff_rate":1.0
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2890.33,
-    "value_in_current_city":1368.22,
-    "diff_amount":1522.11,
-    "diff_rate":1.11
+    "value":2876.93,
+    "value_in_current_city":1359.01,
+    "diff_amount":1517.92,
+    "diff_rate":1.12
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2014.0,
-    "value_in_current_city":1368.22,
-    "diff_amount":645.78,
-    "diff_rate":0.47
+    "value":1986.43,
+    "value_in_current_city":1359.01,
+    "diff_amount":627.42,
+    "diff_rate":0.46
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":619.49,
-    "value_in_current_city":1368.22,
-    "diff_amount":-748.73,
+    "value":613.83,
+    "value_in_current_city":1359.01,
+    "diff_amount":-745.18,
     "diff_rate":-0.55
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2950.1,
-    "value_in_current_city":1368.22,
-    "diff_amount":1581.88,
-    "diff_rate":1.16
+    "value":2994.01,
+    "value_in_current_city":1359.01,
+    "diff_amount":1635.0,
+    "diff_rate":1.2
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2627.13,
-    "value_in_current_city":1368.22,
-    "diff_amount":1258.91,
+    "value":2614.96,
+    "value_in_current_city":1359.01,
+    "diff_amount":1255.95,
     "diff_rate":0.92
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":637.94,
-    "value_in_current_city":1368.22,
-    "diff_amount":-730.28,
+    "value":636.81,
+    "value_in_current_city":1359.01,
+    "diff_amount":-722.2,
     "diff_rate":-0.53
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2612.37,
-    "value_in_current_city":1368.22,
-    "diff_amount":1244.15,
-    "diff_rate":0.91
+    "value":2576.29,
+    "value_in_current_city":1359.01,
+    "diff_amount":1217.28,
+    "diff_rate":0.9
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2213.35,
-    "value_in_current_city":1368.22,
-    "diff_amount":845.13,
-    "diff_rate":0.62
+    "value":2186.16,
+    "value_in_current_city":1359.01,
+    "diff_amount":827.15,
+    "diff_rate":0.61
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":2012.08,
-    "value_in_current_city":1368.22,
-    "diff_amount":643.86,
+    "value":1998.54,
+    "value_in_current_city":1359.01,
+    "diff_amount":639.53,
     "diff_rate":0.47
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":1844.03,
-    "value_in_current_city":1368.22,
-    "diff_amount":475.81,
-    "diff_rate":0.35
+    "value":1818.56,
+    "value_in_current_city":1359.01,
+    "diff_amount":459.55,
+    "diff_rate":0.34
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":494.66,
-    "value_in_current_city":1368.22,
-    "diff_amount":-873.56,
+    "value":488.89,
+    "value_in_current_city":1359.01,
+    "diff_amount":-870.12,
     "diff_rate":-0.64
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":530.2,
-    "value_in_current_city":1368.22,
-    "diff_amount":-838.02,
-    "diff_rate":-0.61
+    "value":522.91,
+    "value_in_current_city":1359.01,
+    "diff_amount":-836.1,
+    "diff_rate":-0.62
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":1926.4,
-    "value_in_current_city":1368.22,
-    "diff_amount":558.18,
-    "diff_rate":0.41
+    "value":1907.81,
+    "value_in_current_city":1359.01,
+    "diff_amount":548.8,
+    "diff_rate":0.4
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":1046.31,
-    "value_in_current_city":1368.22,
-    "diff_amount":-321.91,
+    "value":1039.23,
+    "value_in_current_city":1359.01,
+    "diff_amount":-319.78,
     "diff_rate":-0.24
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Cigarettes 20 Pack (Marlboro)",
-    "value":568.07,
-    "value_in_current_city":1368.22,
-    "diff_amount":-800.15,
-    "diff_rate":-0.58
+    "value":558.79,
+    "value_in_current_city":1359.01,
+    "diff_amount":-800.22,
+    "diff_rate":-0.59
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Cigarettes 20 Pack (Marlboro)",
     "value":600.0,
-    "value_in_current_city":1368.22,
-    "diff_amount":-768.22,
+    "value_in_current_city":1359.01,
+    "diff_amount":-759.01,
     "diff_rate":-0.56
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":2092.57,
-    "value_in_current_city":1770.63,
-    "diff_amount":321.94,
+    "value":2078.49,
+    "value_in_current_city":1758.72,
+    "diff_amount":319.77,
     "diff_rate":0.18
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":885.44,
-    "value_in_current_city":1770.63,
-    "diff_amount":-885.19,
+    "value":880.32,
+    "value_in_current_city":1758.72,
+    "diff_amount":-878.4,
     "diff_rate":-0.5
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1770.63,
-    "value_in_current_city":1770.63,
+    "value":1758.72,
+    "value_in_current_city":1758.72,
     "diff_amount":0.0,
     "diff_rate":0.0
   },
@@ -1686,171 +1686,171 @@
     "city":"Brisbane",
     "country":"Australia",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1495.52,
-    "value_in_current_city":1770.63,
-    "diff_amount":-275.11,
+    "value":1475.07,
+    "value_in_current_city":1758.72,
+    "diff_amount":-283.65,
     "diff_rate":-0.16
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1446.13,
-    "value_in_current_city":1770.63,
-    "diff_amount":-324.5,
+    "value":1439.43,
+    "value_in_current_city":1758.72,
+    "diff_amount":-319.29,
     "diff_rate":-0.18
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":2158.07,
-    "value_in_current_city":1770.63,
-    "diff_amount":387.44,
+    "value":2143.65,
+    "value_in_current_city":1758.72,
+    "diff_amount":384.93,
     "diff_rate":0.22
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1609.67,
-    "value_in_current_city":1770.63,
-    "diff_amount":-160.96,
+    "value":1598.84,
+    "value_in_current_city":1758.72,
+    "diff_amount":-159.88,
     "diff_rate":-0.09
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1349.72,
-    "value_in_current_city":1770.63,
-    "diff_amount":-420.91,
+    "value":1343.46,
+    "value_in_current_city":1758.72,
+    "diff_amount":-415.26,
     "diff_rate":-0.24
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":972.44,
-    "value_in_current_city":1770.63,
-    "diff_amount":-798.19,
+    "value":973.74,
+    "value_in_current_city":1758.72,
+    "diff_amount":-784.98,
     "diff_rate":-0.45
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":688.33,
-    "value_in_current_city":1770.63,
-    "diff_amount":-1082.3,
+    "value":682.03,
+    "value_in_current_city":1758.72,
+    "diff_amount":-1076.69,
     "diff_rate":-0.61
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1542.54,
-    "value_in_current_city":1770.63,
-    "diff_amount":-228.09,
+    "value":1535.39,
+    "value_in_current_city":1758.72,
+    "diff_amount":-223.33,
     "diff_rate":-0.13
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1542.54,
-    "value_in_current_city":1770.63,
-    "diff_amount":-228.09,
+    "value":1535.39,
+    "value_in_current_city":1758.72,
+    "diff_amount":-223.33,
     "diff_rate":-0.13
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":729.07,
-    "value_in_current_city":1770.63,
-    "diff_amount":-1041.56,
+    "value":717.53,
+    "value_in_current_city":1758.72,
+    "diff_amount":-1041.19,
     "diff_rate":-0.59
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1844.03,
-    "value_in_current_city":1770.63,
-    "diff_amount":73.4,
-    "diff_rate":0.04
+    "value":1818.56,
+    "value_in_current_city":1758.72,
+    "diff_amount":59.84,
+    "diff_rate":0.03
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1874.43,
-    "value_in_current_city":1770.63,
-    "diff_amount":103.8,
-    "diff_rate":0.06
+    "value":1851.41,
+    "value_in_current_city":1758.72,
+    "diff_amount":92.69,
+    "diff_rate":0.05
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1931.6,
-    "value_in_current_city":1770.63,
-    "diff_amount":160.97,
+    "value":1918.6,
+    "value_in_current_city":1758.72,
+    "diff_amount":159.88,
     "diff_rate":0.09
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":2151.36,
-    "value_in_current_city":1770.63,
-    "diff_amount":380.73,
-    "diff_rate":0.22
+    "value":2121.65,
+    "value_in_current_city":1758.72,
+    "diff_amount":362.93,
+    "diff_rate":0.21
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":934.35,
-    "value_in_current_city":1770.63,
-    "diff_amount":-836.28,
+    "value":923.46,
+    "value_in_current_city":1758.72,
+    "diff_amount":-835.26,
     "diff_rate":-0.47
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":825.54,
-    "value_in_current_city":1770.63,
-    "diff_amount":-945.09,
-    "diff_rate":-0.53
+    "value":814.17,
+    "value_in_current_city":1758.72,
+    "diff_amount":-944.55,
+    "diff_rate":-0.54
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1139.88,
-    "value_in_current_city":1770.63,
-    "diff_amount":-630.75,
+    "value":1128.88,
+    "value_in_current_city":1758.72,
+    "diff_amount":-629.84,
     "diff_rate":-0.36
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1534.58,
-    "value_in_current_city":1770.63,
-    "diff_amount":-236.05,
+    "value":1524.21,
+    "value_in_current_city":1758.72,
+    "diff_amount":-234.51,
     "diff_rate":-0.13
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":781.1,
-    "value_in_current_city":1770.63,
-    "diff_amount":-989.53,
+    "value":770.67,
+    "value_in_current_city":1758.72,
+    "diff_amount":-988.05,
     "diff_rate":-0.56
   },
   {
@@ -1858,837 +1858,837 @@
     "country":"Japan",
     "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
     "value":800.0,
-    "value_in_current_city":1770.63,
-    "diff_amount":-970.63,
+    "value_in_current_city":1758.72,
+    "diff_amount":-958.72,
     "diff_rate":-0.55
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":3346.62,
-    "value_in_current_city":2987.96,
-    "diff_amount":358.66,
+    "value":3320.86,
+    "value_in_current_city":2967.85,
+    "diff_amount":353.01,
     "diff_rate":0.12
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2010.72,
-    "value_in_current_city":2987.96,
-    "diff_amount":-977.24,
-    "diff_rate":-0.33
+    "value":2003.87,
+    "value_in_current_city":2967.85,
+    "diff_amount":-963.98,
+    "diff_rate":-0.32
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2837.51,
-    "value_in_current_city":2987.96,
-    "diff_amount":-150.45,
+    "value":2818.41,
+    "value_in_current_city":2967.85,
+    "diff_amount":-149.44,
     "diff_rate":-0.05
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":4091.07,
-    "value_in_current_city":2987.96,
-    "diff_amount":1103.11,
-    "diff_rate":0.37
+    "value":4035.14,
+    "value_in_current_city":2967.85,
+    "diff_amount":1067.29,
+    "diff_rate":0.36
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2364.1,
-    "value_in_current_city":2987.96,
-    "diff_amount":-623.86,
+    "value":2353.15,
+    "value_in_current_city":2967.85,
+    "diff_amount":-614.7,
     "diff_rate":-0.21
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2426.48,
-    "value_in_current_city":2987.96,
-    "diff_amount":-561.48,
+    "value":2410.26,
+    "value_in_current_city":2967.85,
+    "diff_amount":-557.59,
     "diff_rate":-0.19
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":3475.3,
-    "value_in_current_city":2987.96,
-    "diff_amount":487.34,
+    "value":3447.81,
+    "value_in_current_city":2967.85,
+    "diff_amount":479.96,
     "diff_rate":0.16
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2547.81,
-    "value_in_current_city":2987.96,
-    "diff_amount":-440.15,
+    "value":2536.01,
+    "value_in_current_city":2967.85,
+    "diff_amount":-431.84,
     "diff_rate":-0.15
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2747.44,
-    "value_in_current_city":2987.96,
-    "diff_amount":-240.52,
-    "diff_rate":-0.08
+    "value":2709.84,
+    "value_in_current_city":2967.85,
+    "diff_amount":-258.01,
+    "diff_rate":-0.09
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2047.85,
-    "value_in_current_city":2987.96,
-    "diff_amount":-940.11,
-    "diff_rate":-0.31
+    "value":2029.11,
+    "value_in_current_city":2967.85,
+    "diff_amount":-938.74,
+    "diff_rate":-0.32
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2798.42,
-    "value_in_current_city":2987.96,
-    "diff_amount":-189.54,
-    "diff_rate":-0.06
+    "value":2766.26,
+    "value_in_current_city":2967.85,
+    "diff_amount":-201.59,
+    "diff_rate":-0.07
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2877.42,
-    "value_in_current_city":2987.96,
-    "diff_amount":-110.54,
-    "diff_rate":-0.04
+    "value":2864.09,
+    "value_in_current_city":2967.85,
+    "diff_amount":-103.76,
+    "diff_rate":-0.03
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":720.91,
-    "value_in_current_city":2987.96,
-    "diff_amount":-2267.05,
+    "value":709.49,
+    "value_in_current_city":2967.85,
+    "diff_amount":-2258.36,
     "diff_rate":-0.76
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":10274.43,
-    "value_in_current_city":2987.96,
-    "diff_amount":7286.47,
-    "diff_rate":2.44
+    "value":10132.54,
+    "value_in_current_city":2967.85,
+    "diff_amount":7164.69,
+    "diff_rate":2.41
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":4979.28,
-    "value_in_current_city":2987.96,
-    "diff_amount":1991.32,
-    "diff_rate":0.67
+    "value":4918.1,
+    "value_in_current_city":2967.85,
+    "diff_amount":1950.25,
+    "diff_rate":0.66
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2536.98,
-    "value_in_current_city":2987.96,
-    "diff_amount":-450.98,
+    "value":2519.91,
+    "value_in_current_city":2967.85,
+    "diff_amount":-447.94,
     "diff_rate":-0.15
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":8951.11,
-    "value_in_current_city":2987.96,
-    "diff_amount":5963.15,
-    "diff_rate":2.0
+    "value":8827.5,
+    "value_in_current_city":2967.85,
+    "diff_amount":5859.65,
+    "diff_rate":1.97
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":5812.39,
-    "value_in_current_city":2987.96,
-    "diff_amount":2824.43,
-    "diff_rate":0.95
+    "value":5744.36,
+    "value_in_current_city":2967.85,
+    "diff_amount":2776.51,
+    "diff_rate":0.94
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":1661.91,
-    "value_in_current_city":2987.96,
-    "diff_amount":-1326.05,
-    "diff_rate":-0.44
+    "value":1639.04,
+    "value_in_current_city":2967.85,
+    "diff_amount":-1328.81,
+    "diff_rate":-0.45
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2537.09,
-    "value_in_current_city":2987.96,
-    "diff_amount":-450.87,
+    "value":2512.61,
+    "value_in_current_city":2967.85,
+    "diff_amount":-455.24,
     "diff_rate":-0.15
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":3981.04,
-    "value_in_current_city":2987.96,
-    "diff_amount":993.08,
+    "value":3954.12,
+    "value_in_current_city":2967.85,
+    "diff_amount":986.27,
     "diff_rate":0.33
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
-    "value":2582.73,
-    "value_in_current_city":2987.96,
-    "diff_amount":-405.23,
-    "diff_rate":-0.14
+    "value":2520.59,
+    "value_in_current_city":2967.85,
+    "diff_amount":-447.26,
+    "diff_rate":-0.15
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
     "value":4125.81,
-    "value_in_current_city":2987.96,
-    "diff_amount":1137.85,
-    "diff_rate":0.38
+    "value_in_current_city":2967.85,
+    "diff_amount":1157.96,
+    "diff_rate":0.39
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":1124620.5,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":215163.8199999999,
-    "diff_rate":0.24
+    "value":1111964.3600000001,
+    "value_in_current_city":903337.11,
+    "diff_amount":208627.2500000001,
+    "diff_rate":0.23
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":390711.99,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-518744.6900000001,
-    "diff_rate":-0.57
+    "value":393082.43,
+    "value_in_current_city":903337.11,
+    "diff_amount":-510254.68,
+    "diff_rate":-0.56
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":604224.1800000001,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-305232.5,
+    "value":600158.47,
+    "value_in_current_city":903337.11,
+    "diff_amount":-303178.64,
     "diff_rate":-0.34
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":770453.3199999999,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-139003.3600000001,
-    "diff_rate":-0.15
+    "value":759919.8100000001,
+    "value_in_current_city":903337.11,
+    "diff_amount":-143417.2999999999,
+    "diff_rate":-0.16
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":940946.65,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":31489.97,
-    "diff_rate":0.03
+    "value":936586.21,
+    "value_in_current_city":903337.11,
+    "diff_amount":33249.1,
+    "diff_rate":0.04
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":842774.47,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-66682.2100000001,
+    "value":837139.51,
+    "value_in_current_city":903337.11,
+    "diff_amount":-66197.6,
     "diff_rate":-0.07
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":910400.89,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":944.21,
+    "value":904274.97,
+    "value_in_current_city":903337.11,
+    "diff_amount":937.86,
     "diff_rate":0.0
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":472392.8,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-437063.8800000001,
+    "value":470203.69,
+    "value_in_current_city":903337.11,
+    "diff_amount":-433133.42,
     "diff_rate":-0.48
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":2622308.1600000001,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":1712851.48,
-    "diff_rate":1.88
+    "value":2586417.2599999998,
+    "value_in_current_city":903337.11,
+    "diff_amount":1683080.1499999999,
+    "diff_rate":1.86
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":210699.6,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-698757.0800000001,
+    "value":208771.73,
+    "value_in_current_city":903337.11,
+    "diff_amount":-694565.38,
     "diff_rate":-0.77
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":1600359.21,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":690902.5299999999,
+    "value":1592942.98,
+    "value_in_current_city":903337.11,
+    "diff_amount":689605.87,
     "diff_rate":0.76
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":573551.33,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-335905.3500000001,
+    "value":570893.4399999999,
+    "value_in_current_city":903337.11,
+    "diff_amount":-332443.67,
     "diff_rate":-0.37
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":540913.83,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-368542.8500000001,
+    "value":532346.99,
+    "value_in_current_city":903337.11,
+    "diff_amount":-370990.12,
     "diff_rate":-0.41
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":2203243.8399999999,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":1293787.1599999997,
-    "diff_rate":1.42
+    "value":2172816.8900000001,
+    "value_in_current_city":903337.11,
+    "diff_amount":1269479.7800000003,
+    "diff_rate":1.41
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":993528.24,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":84071.5599999999,
+    "value":981322.75,
+    "value_in_current_city":903337.11,
+    "diff_amount":77985.64,
     "diff_rate":0.09
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":1384832.6499999999,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":475375.9699999999,
-    "diff_rate":0.52
+    "value":1367504.0600000001,
+    "value_in_current_city":903337.11,
+    "diff_amount":464166.9500000001,
+    "diff_rate":0.51
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":805184.04,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-104272.64,
-    "diff_rate":-0.11
+    "value":794064.39,
+    "value_in_current_city":903337.11,
+    "diff_amount":-109272.72,
+    "diff_rate":-0.12
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":1669215.95,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":759759.2699999999,
-    "diff_rate":0.84
+    "value":1649570.6000000001,
+    "value_in_current_city":903337.11,
+    "diff_amount":746233.4900000001,
+    "diff_rate":0.83
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":1316318.97,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":406862.2899999999,
-    "diff_rate":0.45
+    "value":1298221.1399999999,
+    "value_in_current_city":903337.11,
+    "diff_amount":394884.0299999999,
+    "diff_rate":0.44
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":2182658.4399999999,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":1273201.7599999998,
-    "diff_rate":1.4
+    "value":2161599.1699999999,
+    "value_in_current_city":903337.11,
+    "diff_amount":1258262.0600000001,
+    "diff_rate":1.39
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":823812.59,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-85644.0900000001,
+    "value":818241.7,
+    "value_in_current_city":903337.11,
+    "diff_amount":-85095.41,
     "diff_rate":-0.09
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
-    "value":1019248.5699999999,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":109791.8899999999,
-    "diff_rate":0.12
+    "value":1002593.74,
+    "value_in_current_city":903337.11,
+    "diff_amount":99256.63,
+    "diff_rate":0.11
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
     "value":766237.5,
-    "value_in_current_city":909456.6800000001,
-    "diff_amount":-143219.1800000001,
-    "diff_rate":-0.16
+    "value_in_current_city":903337.11,
+    "diff_amount":-137099.61,
+    "diff_rate":-0.15
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1542453.1000000001,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":274009.04,
-    "diff_rate":0.22
+    "value":1526345.3500000001,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":266436.4300000002,
+    "diff_rate":0.21
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":835859.8,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-432584.26,
-    "diff_rate":-0.34
+    "value":841379.5699999999,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-418529.35,
+    "diff_rate":-0.33
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":892618.74,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-375825.3200000001,
+    "value":886612.47,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-373296.45,
     "diff_rate":-0.3
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1139173.21,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-129270.8500000001,
-    "diff_rate":-0.1
+    "value":1123598.6100000001,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-136310.3099999998,
+    "diff_rate":-0.11
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1031191.5600000001,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-237252.5,
+    "value":1026412.91,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-233496.0099999999,
     "diff_rate":-0.19
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1224602.4299999999,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-43841.6300000001,
+    "value":1216414.49,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-43494.4299999999,
     "diff_rate":-0.03
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1138398.1100000001,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-130045.95,
+    "value":1130738.03,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-129170.8899999999,
     "diff_rate":-0.1
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":560711.65,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-707732.41,
+    "value":558113.26,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-701795.6599999999,
     "diff_rate":-0.56
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":4210989.0599999996,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":2942544.9999999995,
-    "diff_rate":2.32
+    "value":4153354.27,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":2893445.3500000001,
+    "diff_rate":2.3
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":455569.38,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-812874.6800000001,
+    "value":451280.58,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-808628.3399999999,
     "diff_rate":-0.64
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":2816728.6299999999,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":1548284.5699999998,
-    "diff_rate":1.22
+    "value":2803675.6299999999,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":1543766.71,
+    "diff_rate":1.23
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":817925.76,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-450518.3,
-    "diff_rate":-0.36
+    "value":814135.41,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-445773.5099999999,
+    "diff_rate":-0.35
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1153887.74,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-114556.3200000001,
-    "diff_rate":-0.09
+    "value":1135612.79,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-124296.1299999999,
+    "diff_rate":-0.1
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":2991160.54,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":1722716.48,
-    "diff_rate":1.36
+    "value":2949852.4100000001,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":1689943.4900000002,
+    "diff_rate":1.34
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1332807.22,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":64363.1599999999,
-    "diff_rate":0.05
+    "value":1316433.6899999999,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":56524.77,
+    "diff_rate":0.04
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1943533.7,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":675089.6399999999,
+    "value":1930456.01,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":670547.0900000001,
     "diff_rate":0.53
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1085031.96,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":-183412.1000000001,
-    "diff_rate":-0.14
+    "value":1070047.6000000001,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":-189861.3199999998,
+    "diff_rate":-0.15
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":2963400.5299999998,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":1694956.4699999997,
-    "diff_rate":1.34
+    "value":2928549.1099999999,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":1668640.1899999999,
+    "diff_rate":1.32
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":2436579.3399999999,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":1168135.2799999998,
-    "diff_rate":0.92
+    "value":2403079.25,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":1143170.3300000001,
+    "diff_rate":0.91
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":3245590.0699999998,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":1977146.0099999998,
-    "diff_rate":1.56
+    "value":3213669.3999999999,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":1953760.48,
+    "diff_rate":1.55
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1529057.1899999999,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":260613.1299999999,
+    "value":1518717.1899999999,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":258808.27,
     "diff_rate":0.21
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
-    "value":1974618.1899999999,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":706174.1299999999,
-    "diff_rate":0.56
+    "value":1942352.3500000001,
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":682443.4300000002,
+    "diff_rate":0.54
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Price per Square Meter to Buy Apartment in City Centre",
     "value":1533656.2,
-    "value_in_current_city":1268444.0600000001,
-    "diff_amount":265212.1399999999,
-    "diff_rate":0.21
+    "value_in_current_city":1259908.9199999999,
+    "diff_amount":273747.28,
+    "diff_rate":0.22
   },
   {
     "city":"Amsterdam",
     "country":"Netherlands",
     "feature":"Water (1.5 liter bottle)",
-    "value":147.19,
-    "value_in_current_city":127.1,
-    "diff_amount":20.09,
-    "diff_rate":0.16
+    "value":149.8,
+    "value_in_current_city":126.24,
+    "diff_amount":23.56,
+    "diff_rate":0.19
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
     "feature":"Water (1.5 liter bottle)",
-    "value":75.99,
-    "value_in_current_city":127.1,
-    "diff_amount":-51.11,
-    "diff_rate":-0.4
+    "value":74.38,
+    "value_in_current_city":126.24,
+    "diff_amount":-51.86,
+    "diff_rate":-0.41
   },
   {
     "city":"Barcelona",
     "country":"Spain",
     "feature":"Water (1.5 liter bottle)",
-    "value":129.05,
-    "value_in_current_city":127.1,
-    "diff_amount":1.95,
+    "value":128.18,
+    "value_in_current_city":126.24,
+    "diff_amount":1.94,
     "diff_rate":0.02
   },
   {
     "city":"Brisbane",
     "country":"Australia",
     "feature":"Water (1.5 liter bottle)",
-    "value":194.42,
-    "value_in_current_city":127.1,
-    "diff_amount":67.32,
-    "diff_rate":0.53
+    "value":191.76,
+    "value_in_current_city":126.24,
+    "diff_amount":65.52,
+    "diff_rate":0.52
   },
   {
     "city":"Bristol",
     "country":"United Kingdom",
     "feature":"Water (1.5 liter bottle)",
-    "value":231.38,
-    "value_in_current_city":127.1,
-    "diff_amount":104.28,
+    "value":230.31,
+    "value_in_current_city":126.24,
+    "diff_amount":104.07,
     "diff_rate":0.82
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
     "feature":"Water (1.5 liter bottle)",
-    "value":229.37,
-    "value_in_current_city":127.1,
-    "diff_amount":102.27,
+    "value":227.77,
+    "value_in_current_city":126.24,
+    "diff_amount":101.53,
     "diff_rate":0.8
   },
   {
     "city":"Dublin",
     "country":"Ireland",
     "feature":"Water (1.5 liter bottle)",
-    "value":269.64,
-    "value_in_current_city":127.1,
-    "diff_amount":142.54,
+    "value":267.83,
+    "value_in_current_city":126.24,
+    "diff_amount":141.59,
     "diff_rate":1.12
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
     "feature":"Water (1.5 liter bottle)",
-    "value":170.52,
-    "value_in_current_city":127.1,
-    "diff_amount":43.42,
+    "value":169.73,
+    "value_in_current_city":126.24,
+    "diff_amount":43.49,
     "diff_rate":0.34
   },
   {
     "city":"Hong-Kong",
     "country":"China",
     "feature":"Water (1.5 liter bottle)",
-    "value":246.81,
-    "value_in_current_city":127.1,
-    "diff_amount":119.71,
-    "diff_rate":0.94
+    "value":243.44,
+    "value_in_current_city":126.24,
+    "diff_amount":117.2,
+    "diff_rate":0.93
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
     "feature":"Water (1.5 liter bottle)",
-    "value":100.04,
-    "value_in_current_city":127.1,
-    "diff_amount":-27.06,
-    "diff_rate":-0.21
+    "value":96.28,
+    "value_in_current_city":126.24,
+    "diff_amount":-29.96,
+    "diff_rate":-0.24
   },
   {
     "city":"London",
     "country":"United Kingdom",
     "feature":"Water (1.5 liter bottle)",
-    "value":237.02,
-    "value_in_current_city":127.1,
-    "diff_amount":109.92,
-    "diff_rate":0.86
+    "value":237.22,
+    "value_in_current_city":126.24,
+    "diff_amount":110.98,
+    "diff_rate":0.88
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
     "feature":"Water (1.5 liter bottle)",
-    "value":205.76,
-    "value_in_current_city":127.1,
-    "diff_amount":78.66,
+    "value":204.81,
+    "value_in_current_city":126.24,
+    "diff_amount":78.57,
     "diff_rate":0.62
   },
   {
     "city":"Mumbai",
     "country":"India",
     "feature":"Water (1.5 liter bottle)",
-    "value":53.63,
-    "value_in_current_city":127.1,
-    "diff_amount":-73.47,
+    "value":52.79,
+    "value_in_current_city":126.24,
+    "diff_amount":-73.45,
     "diff_rate":-0.58
   },
   {
     "city":"New-York",
     "country":"United States",
     "feature":"Water (1.5 liter bottle)",
-    "value":393.52,
-    "value_in_current_city":127.1,
-    "diff_amount":266.42,
-    "diff_rate":2.1
+    "value":388.09,
+    "value_in_current_city":126.24,
+    "diff_amount":261.85,
+    "diff_rate":2.07
   },
   {
     "city":"Oslo",
     "country":"Norway",
     "feature":"Water (1.5 liter bottle)",
-    "value":311.2,
-    "value_in_current_city":127.1,
-    "diff_amount":184.1,
-    "diff_rate":1.45
+    "value":307.38,
+    "value_in_current_city":126.24,
+    "diff_amount":181.14,
+    "diff_rate":1.43
   },
   {
     "city":"Paris",
     "country":"France",
     "feature":"Water (1.5 liter bottle)",
-    "value":125.79,
-    "value_in_current_city":127.1,
-    "diff_amount":-1.31,
+    "value":124.94,
+    "value_in_current_city":126.24,
+    "diff_amount":-1.3,
     "diff_rate":-0.01
   },
   {
     "city":"Seattle",
     "country":"United States",
     "feature":"Water (1.5 liter bottle)",
-    "value":366.14,
-    "value_in_current_city":127.1,
-    "diff_amount":239.04,
-    "diff_rate":1.88
+    "value":361.08,
+    "value_in_current_city":126.24,
+    "diff_amount":234.84,
+    "diff_rate":1.86
   },
   {
     "city":"Seoul",
     "country":"South Korea",
     "feature":"Water (1.5 liter bottle)",
-    "value":193.19,
-    "value_in_current_city":127.1,
-    "diff_amount":66.09,
-    "diff_rate":0.52
+    "value":190.93,
+    "value_in_current_city":126.24,
+    "diff_amount":64.69,
+    "diff_rate":0.51
   },
   {
     "city":"Shanghai",
     "country":"China",
     "feature":"Water (1.5 liter bottle)",
-    "value":86.61,
-    "value_in_current_city":127.1,
-    "diff_amount":-40.49,
+    "value":85.42,
+    "value_in_current_city":126.24,
+    "diff_amount":-40.82,
     "diff_rate":-0.32
   },
   {
     "city":"Singapore",
     "country":"Singapore",
     "feature":"Water (1.5 liter bottle)",
-    "value":227.38,
-    "value_in_current_city":127.1,
-    "diff_amount":100.28,
-    "diff_rate":0.79
+    "value":225.19,
+    "value_in_current_city":126.24,
+    "diff_amount":98.95,
+    "diff_rate":0.78
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
     "feature":"Water (1.5 liter bottle)",
-    "value":199.72,
-    "value_in_current_city":127.1,
-    "diff_amount":72.62,
+    "value":198.7,
+    "value_in_current_city":126.24,
+    "diff_amount":72.46,
     "diff_rate":0.57
   },
   {
     "city":"Taipei",
     "country":"China",
     "feature":"Water (1.5 liter bottle)",
-    "value":191.97,
-    "value_in_current_city":127.1,
-    "diff_amount":64.87,
-    "diff_rate":0.51
+    "value":189.52,
+    "value_in_current_city":126.24,
+    "diff_amount":63.28,
+    "diff_rate":0.5
   },
   {
     "city":"Tokyo",
     "country":"Japan",
     "feature":"Water (1.5 liter bottle)",
     "value":134.82,
-    "value_in_current_city":127.1,
-    "diff_amount":7.72,
-    "diff_rate":0.06
+    "value_in_current_city":126.24,
+    "diff_amount":8.58,
+    "diff_rate":0.07
   },
   {
     "city":"Amsterdam",
