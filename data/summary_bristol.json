@@ -1658,6 +1658,213 @@
   {
     "city":"Amsterdam",
     "country":"Netherlands",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":2092.57,
+    "value_in_current_city":1446.13,
+    "diff_amount":646.44,
+    "diff_rate":0.45
+  },
+  {
+    "city":"Bangkok",
+    "country":"Thailand",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":885.44,
+    "value_in_current_city":1446.13,
+    "diff_amount":-560.69,
+    "diff_rate":-0.39
+  },
+  {
+    "city":"Barcelona",
+    "country":"Spain",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1770.63,
+    "value_in_current_city":1446.13,
+    "diff_amount":324.5,
+    "diff_rate":0.22
+  },
+  {
+    "city":"Berlin",
+    "country":"Germany",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1770.63,
+    "value_in_current_city":1446.13,
+    "diff_amount":324.5,
+    "diff_rate":0.22
+  },
+  {
+    "city":"Brisbane",
+    "country":"Australia",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1495.52,
+    "value_in_current_city":1446.13,
+    "diff_amount":49.39,
+    "diff_rate":0.03
+  },
+  {
+    "city":"Copenhagen",
+    "country":"Denmark",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":2158.07,
+    "value_in_current_city":1446.13,
+    "diff_amount":711.94,
+    "diff_rate":0.49
+  },
+  {
+    "city":"Dublin",
+    "country":"Ireland",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1609.67,
+    "value_in_current_city":1446.13,
+    "diff_amount":163.54,
+    "diff_rate":0.11
+  },
+  {
+    "city":"Glasgow",
+    "country":"United Kingdom",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1349.72,
+    "value_in_current_city":1446.13,
+    "diff_amount":-96.41,
+    "diff_rate":-0.07
+  },
+  {
+    "city":"Hong-Kong",
+    "country":"China",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":972.44,
+    "value_in_current_city":1446.13,
+    "diff_amount":-473.69,
+    "diff_rate":-0.33
+  },
+  {
+    "city":"Kuala-Lumpur",
+    "country":"Malaysia",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":688.33,
+    "value_in_current_city":1446.13,
+    "diff_amount":-757.8,
+    "diff_rate":-0.52
+  },
+  {
+    "city":"London",
+    "country":"United Kingdom",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1542.54,
+    "value_in_current_city":1446.13,
+    "diff_amount":96.41,
+    "diff_rate":0.07
+  },
+  {
+    "city":"Manchester",
+    "country":"United Kingdom",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1542.54,
+    "value_in_current_city":1446.13,
+    "diff_amount":96.41,
+    "diff_rate":0.07
+  },
+  {
+    "city":"Mumbai",
+    "country":"India",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":729.07,
+    "value_in_current_city":1446.13,
+    "diff_amount":-717.06,
+    "diff_rate":-0.5
+  },
+  {
+    "city":"New-York",
+    "country":"United States",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1844.03,
+    "value_in_current_city":1446.13,
+    "diff_amount":397.9,
+    "diff_rate":0.28
+  },
+  {
+    "city":"Oslo",
+    "country":"Norway",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1874.43,
+    "value_in_current_city":1446.13,
+    "diff_amount":428.3,
+    "diff_rate":0.3
+  },
+  {
+    "city":"Paris",
+    "country":"France",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1931.6,
+    "value_in_current_city":1446.13,
+    "diff_amount":485.47,
+    "diff_rate":0.34
+  },
+  {
+    "city":"Seattle",
+    "country":"United States",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":2151.36,
+    "value_in_current_city":1446.13,
+    "diff_amount":705.23,
+    "diff_rate":0.49
+  },
+  {
+    "city":"Seoul",
+    "country":"South Korea",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":934.35,
+    "value_in_current_city":1446.13,
+    "diff_amount":-511.78,
+    "diff_rate":-0.35
+  },
+  {
+    "city":"Shanghai",
+    "country":"China",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":825.54,
+    "value_in_current_city":1446.13,
+    "diff_amount":-620.59,
+    "diff_rate":-0.43
+  },
+  {
+    "city":"Singapore",
+    "country":"Singapore",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1139.88,
+    "value_in_current_city":1446.13,
+    "diff_amount":-306.25,
+    "diff_rate":-0.21
+  },
+  {
+    "city":"Stockholm",
+    "country":"Sweden",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":1534.58,
+    "value_in_current_city":1446.13,
+    "diff_amount":88.45,
+    "diff_rate":0.06
+  },
+  {
+    "city":"Taipei",
+    "country":"China",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":781.1,
+    "value_in_current_city":1446.13,
+    "diff_amount":-665.03,
+    "diff_rate":-0.46
+  },
+  {
+    "city":"Tokyo",
+    "country":"Japan",
+    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
+    "value":800.0,
+    "value_in_current_city":1446.13,
+    "diff_amount":-646.13,
+    "diff_rate":-0.45
+  },
+  {
+    "city":"Amsterdam",
+    "country":"Netherlands",
     "feature":"Mobile Phone Monthly Plan with Calls and 10GB+ Data",
     "value":3346.62,
     "value_in_current_city":2364.1,
@@ -1865,209 +2072,416 @@
   {
     "city":"Amsterdam",
     "country":"Netherlands",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":2092.57,
-    "value_in_current_city":1446.13,
-    "diff_amount":646.44,
-    "diff_rate":0.45
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":1124620.5,
+    "value_in_current_city":940946.65,
+    "diff_amount":183673.85,
+    "diff_rate":0.2
   },
   {
     "city":"Bangkok",
     "country":"Thailand",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":885.44,
-    "value_in_current_city":1446.13,
-    "diff_amount":-560.69,
-    "diff_rate":-0.39
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":390711.99,
+    "value_in_current_city":940946.65,
+    "diff_amount":-550234.66,
+    "diff_rate":-0.58
   },
   {
     "city":"Barcelona",
     "country":"Spain",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1770.63,
-    "value_in_current_city":1446.13,
-    "diff_amount":324.5,
-    "diff_rate":0.22
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":604224.1800000001,
+    "value_in_current_city":940946.65,
+    "diff_amount":-336722.47,
+    "diff_rate":-0.36
   },
   {
     "city":"Berlin",
     "country":"Germany",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1770.63,
-    "value_in_current_city":1446.13,
-    "diff_amount":324.5,
-    "diff_rate":0.22
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":909456.6800000001,
+    "value_in_current_city":940946.65,
+    "diff_amount":-31489.97,
+    "diff_rate":-0.03
   },
   {
     "city":"Brisbane",
     "country":"Australia",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1495.52,
-    "value_in_current_city":1446.13,
-    "diff_amount":49.39,
-    "diff_rate":0.03
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":770453.3199999999,
+    "value_in_current_city":940946.65,
+    "diff_amount":-170493.3300000001,
+    "diff_rate":-0.18
   },
   {
     "city":"Copenhagen",
     "country":"Denmark",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":2158.07,
-    "value_in_current_city":1446.13,
-    "diff_amount":711.94,
-    "diff_rate":0.49
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":842774.47,
+    "value_in_current_city":940946.65,
+    "diff_amount":-98172.1800000001,
+    "diff_rate":-0.1
   },
   {
     "city":"Dublin",
     "country":"Ireland",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1609.67,
-    "value_in_current_city":1446.13,
-    "diff_amount":163.54,
-    "diff_rate":0.11
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":910400.89,
+    "value_in_current_city":940946.65,
+    "diff_amount":-30545.76,
+    "diff_rate":-0.03
   },
   {
     "city":"Glasgow",
     "country":"United Kingdom",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1349.72,
-    "value_in_current_city":1446.13,
-    "diff_amount":-96.41,
-    "diff_rate":-0.07
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":472392.8,
+    "value_in_current_city":940946.65,
+    "diff_amount":-468553.85,
+    "diff_rate":-0.5
   },
   {
     "city":"Hong-Kong",
     "country":"China",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":972.44,
-    "value_in_current_city":1446.13,
-    "diff_amount":-473.69,
-    "diff_rate":-0.33
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":2622308.1600000001,
+    "value_in_current_city":940946.65,
+    "diff_amount":1681361.5100000002,
+    "diff_rate":1.79
   },
   {
     "city":"Kuala-Lumpur",
     "country":"Malaysia",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":688.33,
-    "value_in_current_city":1446.13,
-    "diff_amount":-757.8,
-    "diff_rate":-0.52
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":210699.6,
+    "value_in_current_city":940946.65,
+    "diff_amount":-730247.05,
+    "diff_rate":-0.78
   },
   {
     "city":"London",
     "country":"United Kingdom",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1542.54,
-    "value_in_current_city":1446.13,
-    "diff_amount":96.41,
-    "diff_rate":0.07
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":1600359.21,
+    "value_in_current_city":940946.65,
+    "diff_amount":659412.5599999999,
+    "diff_rate":0.7
   },
   {
     "city":"Manchester",
     "country":"United Kingdom",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1542.54,
-    "value_in_current_city":1446.13,
-    "diff_amount":96.41,
-    "diff_rate":0.07
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":573551.33,
+    "value_in_current_city":940946.65,
+    "diff_amount":-367395.3200000001,
+    "diff_rate":-0.39
   },
   {
     "city":"Mumbai",
     "country":"India",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":729.07,
-    "value_in_current_city":1446.13,
-    "diff_amount":-717.06,
-    "diff_rate":-0.5
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":540913.83,
+    "value_in_current_city":940946.65,
+    "diff_amount":-400032.8200000001,
+    "diff_rate":-0.43
   },
   {
     "city":"New-York",
     "country":"United States",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1844.03,
-    "value_in_current_city":1446.13,
-    "diff_amount":397.9,
-    "diff_rate":0.28
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":2203243.8399999999,
+    "value_in_current_city":940946.65,
+    "diff_amount":1262297.1899999999,
+    "diff_rate":1.34
   },
   {
     "city":"Oslo",
     "country":"Norway",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1874.43,
-    "value_in_current_city":1446.13,
-    "diff_amount":428.3,
-    "diff_rate":0.3
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":993528.24,
+    "value_in_current_city":940946.65,
+    "diff_amount":52581.59,
+    "diff_rate":0.06
   },
   {
     "city":"Paris",
     "country":"France",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1931.6,
-    "value_in_current_city":1446.13,
-    "diff_amount":485.47,
-    "diff_rate":0.34
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":1384832.6499999999,
+    "value_in_current_city":940946.65,
+    "diff_amount":443885.9999999999,
+    "diff_rate":0.47
   },
   {
     "city":"Seattle",
     "country":"United States",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":2151.36,
-    "value_in_current_city":1446.13,
-    "diff_amount":705.23,
-    "diff_rate":0.49
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":805184.04,
+    "value_in_current_city":940946.65,
+    "diff_amount":-135762.61,
+    "diff_rate":-0.14
   },
   {
     "city":"Seoul",
     "country":"South Korea",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":934.35,
-    "value_in_current_city":1446.13,
-    "diff_amount":-511.78,
-    "diff_rate":-0.35
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":1669215.95,
+    "value_in_current_city":940946.65,
+    "diff_amount":728269.2999999999,
+    "diff_rate":0.77
   },
   {
     "city":"Shanghai",
     "country":"China",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":825.54,
-    "value_in_current_city":1446.13,
-    "diff_amount":-620.59,
-    "diff_rate":-0.43
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":1316318.97,
+    "value_in_current_city":940946.65,
+    "diff_amount":375372.3199999999,
+    "diff_rate":0.4
   },
   {
     "city":"Singapore",
     "country":"Singapore",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1139.88,
-    "value_in_current_city":1446.13,
-    "diff_amount":-306.25,
-    "diff_rate":-0.21
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":2182658.4399999999,
+    "value_in_current_city":940946.65,
+    "diff_amount":1241711.79,
+    "diff_rate":1.32
   },
   {
     "city":"Stockholm",
     "country":"Sweden",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":1534.58,
-    "value_in_current_city":1446.13,
-    "diff_amount":88.45,
-    "diff_rate":0.06
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":823812.59,
+    "value_in_current_city":940946.65,
+    "diff_amount":-117134.0600000001,
+    "diff_rate":-0.12
   },
   {
     "city":"Taipei",
     "country":"China",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":781.1,
-    "value_in_current_city":1446.13,
-    "diff_amount":-665.03,
-    "diff_rate":-0.46
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":1019248.5699999999,
+    "value_in_current_city":940946.65,
+    "diff_amount":78301.9199999999,
+    "diff_rate":0.08
   },
   {
     "city":"Tokyo",
     "country":"Japan",
-    "feature":"McMeal at McDonalds (or Equivalent Combo Meal)",
-    "value":800.0,
-    "value_in_current_city":1446.13,
-    "diff_amount":-646.13,
-    "diff_rate":-0.45
+    "feature":"Price per Square Meter to Buy Apartment Outside of Centre",
+    "value":766237.5,
+    "value_in_current_city":940946.65,
+    "diff_amount":-174709.15,
+    "diff_rate":-0.19
+  },
+  {
+    "city":"Amsterdam",
+    "country":"Netherlands",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1542453.1000000001,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":511261.54,
+    "diff_rate":0.5
+  },
+  {
+    "city":"Bangkok",
+    "country":"Thailand",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":835859.8,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":-195331.76,
+    "diff_rate":-0.19
+  },
+  {
+    "city":"Barcelona",
+    "country":"Spain",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":892618.74,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":-138572.8200000001,
+    "diff_rate":-0.13
+  },
+  {
+    "city":"Berlin",
+    "country":"Germany",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1268444.0600000001,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":237252.5,
+    "diff_rate":0.23
+  },
+  {
+    "city":"Brisbane",
+    "country":"Australia",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1139173.21,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":107981.6499999999,
+    "diff_rate":0.1
+  },
+  {
+    "city":"Copenhagen",
+    "country":"Denmark",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1224602.4299999999,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":193410.8699999999,
+    "diff_rate":0.19
+  },
+  {
+    "city":"Dublin",
+    "country":"Ireland",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1138398.1100000001,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":107206.55,
+    "diff_rate":0.1
+  },
+  {
+    "city":"Glasgow",
+    "country":"United Kingdom",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":560711.65,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":-470479.91,
+    "diff_rate":-0.46
+  },
+  {
+    "city":"Hong-Kong",
+    "country":"China",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":4210989.0599999996,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":3179797.4999999995,
+    "diff_rate":3.08
+  },
+  {
+    "city":"Kuala-Lumpur",
+    "country":"Malaysia",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":455569.38,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":-575622.1800000001,
+    "diff_rate":-0.56
+  },
+  {
+    "city":"London",
+    "country":"United Kingdom",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":2816728.6299999999,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":1785537.0699999998,
+    "diff_rate":1.73
+  },
+  {
+    "city":"Manchester",
+    "country":"United Kingdom",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":817925.76,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":-213265.8,
+    "diff_rate":-0.21
+  },
+  {
+    "city":"Mumbai",
+    "country":"India",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1153887.74,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":122696.1799999999,
+    "diff_rate":0.12
+  },
+  {
+    "city":"New-York",
+    "country":"United States",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":2991160.54,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":1959968.98,
+    "diff_rate":1.9
+  },
+  {
+    "city":"Oslo",
+    "country":"Norway",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1332807.22,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":301615.6599999999,
+    "diff_rate":0.29
+  },
+  {
+    "city":"Paris",
+    "country":"France",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1943533.7,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":912342.1399999999,
+    "diff_rate":0.88
+  },
+  {
+    "city":"Seattle",
+    "country":"United States",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1085031.96,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":53840.3999999999,
+    "diff_rate":0.05
+  },
+  {
+    "city":"Seoul",
+    "country":"South Korea",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":2963400.5299999998,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":1932208.9699999997,
+    "diff_rate":1.87
+  },
+  {
+    "city":"Shanghai",
+    "country":"China",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":2436579.3399999999,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":1405387.7799999998,
+    "diff_rate":1.36
+  },
+  {
+    "city":"Singapore",
+    "country":"Singapore",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":3245590.0699999998,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":2214398.5099999998,
+    "diff_rate":2.15
+  },
+  {
+    "city":"Stockholm",
+    "country":"Sweden",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1529057.1899999999,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":497865.6299999999,
+    "diff_rate":0.48
+  },
+  {
+    "city":"Taipei",
+    "country":"China",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1974618.1899999999,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":943426.6299999999,
+    "diff_rate":0.91
+  },
+  {
+    "city":"Tokyo",
+    "country":"Japan",
+    "feature":"Price per Square Meter to Buy Apartment in City Centre",
+    "value":1533656.2,
+    "value_in_current_city":1031191.5600000001,
+    "diff_amount":502464.6399999999,
+    "diff_rate":0.49
   },
   {
     "city":"Amsterdam",

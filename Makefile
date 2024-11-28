@@ -1,5 +1,5 @@
 ROOT = $(shell pwd)
-PROJECTS = utils collection cleansing server-side explore 
+PROJECTS = utils collection cleansing 
 VENV = $(ROOT)/.venv
 
 .PHONY: clean
