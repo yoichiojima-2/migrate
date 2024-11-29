@@ -31,8 +31,8 @@ venv: .venv/.installed
 
 .PHONY: cleansing-test-data
 cleansing-test-data: venv
-	# $(VENV)/bin/python $(ROOT)/collection/collection/cost_of_living.py
-	# $(VENV)/bin/python $(ROOT)/collection/collection/happiness.py
+	$(VENV)/bin/python $(ROOT)/collection/collection/cost_of_living.py
+	$(VENV)/bin/python $(ROOT)/collection/collection/happiness.py
 
 
 .PHONY: test
