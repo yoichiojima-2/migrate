@@ -33,7 +33,7 @@ class CpiTask(Task):
         return df.rename(columns={"country_name": "country", "date": "year"})
 
     def load(self, df: pd.DataFrame) -> None:
-        df.to_json(Path(os.getenv("APP_ROOT")) / f"data/{self.output_name}", orient="records", index=False, indent=2)
+        df.to_json(Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.output_name}", orient="records", index=False, indent=2)
 
 
 if __name__ == "__main__":

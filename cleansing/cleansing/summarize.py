@@ -7,7 +7,7 @@ from utils.get_config import get_config
 
 def summarize(current_city):
     cleansed_cost_of_living_path = (
-        f"{os.getenv('APP_ROOT')}/data/cost_of_living_cleansed.json"
+        f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/cost_of_living_cleansed.json"
     )
 
     if not Path(cleansed_cost_of_living_path).exists():
@@ -37,7 +37,7 @@ def summarize(current_city):
         cost_of_living_df
         [[i for i in cost_of_living_df.columns if i in cost_of_living_cols]]
         .merge(
-            pd.read_json(f"{os.getenv('APP_ROOT')}/data/happiness.json")
+            pd.read_json(f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/happiness.json")
             .rename(columns={"Country": "country"})
             .drop(columns=["Year", "Happiness.Rank"]),
             on=["country"],
@@ -64,7 +64,7 @@ def summarize(current_city):
 
     output_df = rest_df.merge(diff_df, on=["city", "feature"], how="left")
     output_df.to_json(
-        f"{os.getenv('APP_ROOT')}/data/summary_{current_city.lower().replace("-", "_")}.json",
+        f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/summary_{current_city.lower().replace("-", "_")}.json",
         orient="records",
         indent=2,
     )

@@ -6,6 +6,6 @@ client = TestClient(app)
 
 
 def test_summary(monkeypatch):
-    monkeypatch.setenv("APP_ROOT", os.getenv("APP_ROOT"))
+    monkeypatch.setenv("SIGN_TO_MIGRATE_ROOT", os.getenv("SIGN_TO_MIGRATE_ROOT"))
     response = client.get("/summary?city=tokyo")
     assert response.status_code == 200

@@ -34,7 +34,7 @@ class LaborTask(Task):
         return df.rename(columns={"ref_area": "country", "time": "year"})
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("APP_ROOT")) / f"data/{self.name}.json", orient="records", index=False)
+        df.to_json(Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.name}.json", orient="records", index=False)
 
 
 class WorkingPovertyRate(LaborTask):

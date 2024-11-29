@@ -39,7 +39,7 @@ class HappinessTask(Task):
         # fmt: on
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("APP_ROOT")) / f"data/{self.output_name}", orient="records", index=False)
+        df.to_json(Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.output_name}", orient="records", index=False)
 
 
 if __name__ == "__main__":

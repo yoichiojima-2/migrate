@@ -8,5 +8,5 @@ def test_summarize():
     for city in get_config()["cities"]:
         summarize(city)
         # fmt: off
-        assert Path(f"{os.getenv('APP_ROOT')}/data/summary_{city.lower().replace('-', '_')}.json").exists()
+        assert Path(f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/summary_{city.lower().replace('-', '_')}.json").exists()
         # fmt: on

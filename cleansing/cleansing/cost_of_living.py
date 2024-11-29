@@ -6,11 +6,11 @@ import pandas as pd
 def cleanse():
     # fmt: off
     (
-        pd.read_json(f"{os.getenv('APP_ROOT')}/data/cost_of_living.json")
+        pd.read_json(f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/cost_of_living.json")
         .pivot(index=["city", "country"], columns="item", values="cost")
         .reset_index()
         .to_json(
-            Path(os.getenv("APP_ROOT")) / "data/cost_of_living_cleansed.json",
+            Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / "data/cost_of_living_cleansed.json",
             orient="records",
             index=False,
         )
