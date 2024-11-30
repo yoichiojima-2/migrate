@@ -9,11 +9,12 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # todo: replace with the actual frontend URL
+    allow_origins=["*"],  # todo: replace with the actual frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.get("/summary")
 def summary(city: str):

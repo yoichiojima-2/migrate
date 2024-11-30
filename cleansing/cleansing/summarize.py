@@ -1,17 +1,23 @@
 import os
-import pandas as pd
+import json
 from pathlib import Path
+
+import pandas as pd
+from tqdm import tqdm
+
 from cleansing import cost_of_living
 from utils.get_config import get_config
 
 
 def summarize(current_city):
-    input_path = f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/cost_of_living_cleansed.json"
+    # fmt: off
+    input_path = Path(f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/cost_of_living_cleansed.json")
+    # fmt: on
 
-    if not Path(input_path).exists():
+    if not input_path.exists():
         cost_of_living.cleanse()
 
-    cost_of_living_df = pd.read_json(input_path)
+    cost_of_living_df = pd.read_json(str(input_path))
     cost_of_living_cols = [
         "city",
         "country",
@@ -58,7 +64,7 @@ def summarize(current_city):
     diff_df = rest_df.merge(current_df, on="feature", how="left")
     diff_df["diff_amount"] = diff_df["value"] - diff_df[current_city_val_name]
     diff_df["diff_rate"] = round(diff_df["value"] / diff_df[current_city_val_name] - 1, 2)
-    diff_df = diff_df[["city", "feature", current_city_val_name, "diff_amount", "diff_rate"]]
+    diff_df = diff_df[["city", "feature", "value", current_city_val_name, "diff_amount", "diff_rate"]]
 
     nested_result = {}
     for city, group in diff_df.groupby("city"):
@@ -73,12 +79,16 @@ def summarize(current_city):
         }
         nested_result[city.lower()] = city_data
 
-    # f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/summary_{current_city.lower().replace("-", "_")}.json",
+    json.dump(
+        nested_result,
+        Path(f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/summary_{current_city.lower().replace("-", "_")}.json").open("w"),
+        indent=2,
+    )
     # fmt: on
 
 
 def main():
-    for city in get_config()["cities"]:
+    for city in tqdm(get_config()["cities"]):
         summarize(city)
 
 

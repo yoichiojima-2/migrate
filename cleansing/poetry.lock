@@ -624,4 +624,4 @@ url = "../utils"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.13"
-content-hash = "bd8459dd83580dd428d92107cc2cc054bbb71ebb912e264ed9235719cfa9ff76"
+content-hash = "742822be2bb5b8754f59560ded27258c0a888308a5d4557038b0d8a0143b7706"
