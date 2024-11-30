@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-interface CityData {
-  city: string;
-  country: string;
-  feature: string;
-  value: number;
-  value_in_current_city: number;
-  diff_amount: number;
-  diff_rate: number;
+
+interface SummaryData {
+  [key: string]: {
+    [key: string]: {
+      value: number;
+      value_in_current_city: number;
+      diff_amount: number;
+      diff_rate: number;
+    };
+  };
 }
 
 function App() {
   // fetch server
-  const [summary, setSummary] = useState<CityData[]>([]);
+  const [summary, setSummary] = useState<SummaryData | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -29,14 +31,13 @@ function App() {
   }, []);
 
   // log data
-  for (let i = 0; i < summary.length; i++) {
-    console.log(summary[i]);
-  }
+  console.log(summary)
 
   return (
     <>
       <div>
         <h1>migrate</h1>
+        <h2>data goes here</h2>
       </div>
     </>
   );
