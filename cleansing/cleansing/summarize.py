@@ -6,14 +6,12 @@ from utils.get_config import get_config
 
 
 def summarize(current_city):
-    cleansed_cost_of_living_path = (
-        f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/cost_of_living_cleansed.json"
-    )
+    input_path = f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/cost_of_living_cleansed.json"
 
-    if not Path(cleansed_cost_of_living_path).exists():
+    if not Path(input_path).exists():
         cost_of_living.cleanse()
 
-    cost_of_living_df = pd.read_json(cleansed_cost_of_living_path)
+    cost_of_living_df = pd.read_json(input_path)
     cost_of_living_cols = [
         "city",
         "country",
