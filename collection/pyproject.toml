@@ -18,6 +18,7 @@ utils = {path = "../utils", develop = true}
 jupyterlab = "^4.3.1"
 pandas = "^2.2.3"
 pytest = "^8.3.3"
+build = "^1.2.2.post1"
 
 [build-system]
 requires = ["poetry-core"]

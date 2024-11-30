@@ -12,6 +12,9 @@ collection = {path = "../collection", develop = true}
 utils = {path = "../utils", develop = true}
 
 
+[tool.poetry.group.dev.dependencies]
+build = "^1.2.2.post1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
