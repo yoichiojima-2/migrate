@@ -60,12 +60,20 @@ def summarize(current_city):
     diff_df["diff_rate"] = round(diff_df["value"] / diff_df[current_city_val_name] - 1, 2)
     diff_df = diff_df[["city", "feature", current_city_val_name, "diff_amount", "diff_rate"]]
 
-    output_df = rest_df.merge(diff_df, on=["city", "feature"], how="left")
-    output_df.to_json(
-        f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/summary_{current_city.lower().replace("-", "_")}.json",
-        orient="records",
-        indent=2,
-    )
+    nested_result = {}
+    for city, group in diff_df.groupby("city"):
+        city_data = {
+            row["feature"]: {
+                "value": row["value"],
+                "value_in_current_city": row[current_city_val_name],
+                "diff_amount": row["diff_amount"],
+                "diff_rate": row["diff_rate"],
+            }
+            for _, row in group.iterrows()
+        }
+        nested_result[city.lower()] = city_data
+
+    # f"{os.getenv('SIGN_TO_MIGRATE_ROOT')}/data/summary_{current_city.lower().replace("-", "_")}.json",
     # fmt: on
 
 
