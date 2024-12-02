@@ -1,0 +1,110 @@
+[
+  {
+    "feature":"Climate Index",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":85.26
+  },
+  {
+    "feature":"Climate Index",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":88.25
+  },
+  {
+    "feature":"Cost of Living Index",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":53.04
+  },
+  {
+    "feature":"Cost of Living Index",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":78.48
+  },
+  {
+    "feature":"Health Care Index",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":79.07
+  },
+  {
+    "feature":"Health Care Index",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":69.59
+  },
+  {
+    "feature":"Pollution Index",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":42.6
+  },
+  {
+    "feature":"Pollution Index",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":57.96
+  },
+  {
+    "feature":"Property Price to Income Ratio",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":15.49
+  },
+  {
+    "feature":"Property Price to Income Ratio",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":17.27
+  },
+  {
+    "feature":"Purchasing Power Index",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":109.83
+  },
+  {
+    "feature":"Purchasing Power Index",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":109.12
+  },
+  {
+    "feature":"Quality of Life Index:",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":170.96
+  },
+  {
+    "feature":"Quality of Life Index:",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":137.25
+  },
+  {
+    "feature":"Safety Index",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":75.28
+  },
+  {
+    "feature":"Safety Index",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":45.01
+  },
+  {
+    "feature":"Traffic Commute Time Index",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":42.94
+  },
+  {
+    "feature":"Traffic Commute Time Index",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":44.8
+  }
+]

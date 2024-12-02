@@ -29,19 +29,20 @@ class QuolityOfLifeTask(Task):
             raise RuntimeError("Failed to fetch data")
 
         soup = BeautifulSoup(response.text, "html.parser")
-        import pdb; pdb.set_trace()
-        rows = soup.find("table", {"class": "data_wide_table"}).find_all("tr")
+        tables = soup.find_all("table")
+        qol_table = tables[1]
+        other_metrics_tables = tables[2]
         data = []
 
-        for row in rows:
+        for row in other_metrics_tables.find_all("tr"):
             cells = row.find_all("td")
             if len(cells) > 1:
                 data.append(
                     {
-                        "feature": cells[0].text.strip(),
+                        "feature": cells[0].text.strip().replace("\u0192", "").replace("\u00a0", ""),
                         "country": soup.find_all("a", class_="breadcrumb_link")[1].text,
                         "city": city,
-                        "value": float(cells[2].text.strip().split("\n")[0]),
+                        "value": float(cells[1].text.strip()),
                     }
                 )
 
