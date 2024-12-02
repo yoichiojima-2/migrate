@@ -8,8 +8,8 @@ from collection.task import Task
 from utils.get_config import get_config
 
 
-class QuolityOfLifeTask(Task):
-    output_name = "quolity_of_life.json"
+class QualityOfLifeTask(Task):
+    output_name = "quality_of_life.json"
     cities = get_config()["cities"]
 
     @staticmethod
@@ -68,5 +68,5 @@ class QuolityOfLifeTask(Task):
 
 
 if __name__ == "__main__":
-    task = QuolityOfLifeTask()
+    task = QualityOfLifeTask()
     task.run()
