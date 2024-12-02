@@ -1,0 +1,1874 @@
+[
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":62.3
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":57.75
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"China",
+    "city":"Shanghai",
+    "value":45.58
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"China",
+    "city":"Taipei",
+    "value":43.41
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":54.3
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"France",
+    "city":"Paris",
+    "value":73.04
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":70.85
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"India",
+    "city":"Mumbai",
+    "value":52.91
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":73.68
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":46.39
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":68.48
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":47.51
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":60.54
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":54.37
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":47.71
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":77.82
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":71.23
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":57.59
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":62.81
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":48.53
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":70.94
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":70.64
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"United States",
+    "city":"New-York",
+    "value":60.46
+  },
+  {
+    "feature":"Crime increasing in the past 5 years",
+    "country":"United States",
+    "city":"Seattle",
+    "value":79.5
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":36.59
+  },
+  {
+    "feature":"Level of crime",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":17.68
+  },
+  {
+    "feature":"Level of crime",
+    "country":"China",
+    "city":"Shanghai",
+    "value":23.73
+  },
+  {
+    "feature":"Level of crime",
+    "country":"China",
+    "city":"Taipei",
+    "value":10.96
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":25.37
+  },
+  {
+    "feature":"Level of crime",
+    "country":"France",
+    "city":"Paris",
+    "value":62.1
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":47.77
+  },
+  {
+    "feature":"Level of crime",
+    "country":"India",
+    "city":"Mumbai",
+    "value":46.88
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":59.78
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":21.61
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":64.81
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":29.92
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":35.28
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":20.61
+  },
+  {
+    "feature":"Level of crime",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":22.4
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":57.22
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":52.14
+  },
+  {
+    "feature":"Level of crime",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":39.75
+  },
+  {
+    "feature":"Level of crime",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":46.99
+  },
+  {
+    "feature":"Level of crime",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":51.96
+  },
+  {
+    "feature":"Level of crime",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":64.48
+  },
+  {
+    "feature":"Level of crime",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":64.43
+  },
+  {
+    "feature":"Level of crime",
+    "country":"United States",
+    "city":"New-York",
+    "value":55.16
+  },
+  {
+    "feature":"Level of crime",
+    "country":"United States",
+    "city":"Seattle",
+    "value":59.99
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":31.42
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":37.7
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"China",
+    "city":"Shanghai",
+    "value":53.68
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"China",
+    "city":"Taipei",
+    "value":34.38
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":18.63
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"France",
+    "city":"Paris",
+    "value":44.99
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":31.88
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"India",
+    "city":"Mumbai",
+    "value":76.81
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":46.37
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":30.95
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":78.92
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":19.35
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":24.84
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":26.11
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":34.49
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":55.19
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":31.25
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":79.1
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":29.01
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":31.02
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":39.03
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":35.06
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"United States",
+    "city":"New-York",
+    "value":54.2
+  },
+  {
+    "feature":"Problem corruption and bribery",
+    "country":"United States",
+    "city":"Seattle",
+    "value":37.3
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":49.61
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":24.3
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"China",
+    "city":"Shanghai",
+    "value":24.45
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"China",
+    "city":"Taipei",
+    "value":22.21
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":33.79
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"France",
+    "city":"Paris",
+    "value":64.62
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":61.3
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"India",
+    "city":"Mumbai",
+    "value":44.65
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":76.32
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":25.2
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":55.35
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":40.97
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":51.96
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":22.52
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":19.8
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":60.38
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":50.93
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":51.52
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":66.51
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":68.63
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":63.25
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":72.33
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"United States",
+    "city":"New-York",
+    "value":61.51
+  },
+  {
+    "feature":"Problem people using or dealing drugs",
+    "country":"United States",
+    "city":"Seattle",
+    "value":75.32
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":45.31
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":23.39
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"China",
+    "city":"Shanghai",
+    "value":30.93
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"China",
+    "city":"Taipei",
+    "value":18.79
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":33.76
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"France",
+    "city":"Paris",
+    "value":67.8
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":55.56
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"India",
+    "city":"Mumbai",
+    "value":48.55
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":60.92
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":23.9
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":64.78
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":35.62
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":38.62
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":27.55
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":22.94
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":63.2
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":52.29
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":41.76
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":53.25
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":55.36
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":59.07
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":62.81
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"United States",
+    "city":"New-York",
+    "value":57.91
+  },
+  {
+    "feature":"Problem property crimes such as vandalism and theft",
+    "country":"United States",
+    "city":"Seattle",
+    "value":67.87
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":35.57
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":18.36
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"China",
+    "city":"Shanghai",
+    "value":22.89
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"China",
+    "city":"Taipei",
+    "value":11.89
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":24.17
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"France",
+    "city":"Paris",
+    "value":56.61
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":39.92
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"India",
+    "city":"Mumbai",
+    "value":39.83
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":51.35
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":21.75
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":61.88
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":26.01
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":31.5
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":19.57
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":21.67
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":47.36
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":49.17
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":37.85
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":38.26
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":46.25
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":57.92
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":54.3
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"United States",
+    "city":"New-York",
+    "value":54.1
+  },
+  {
+    "feature":"Problem violent crimes such as assault and armed robbery",
+    "country":"United States",
+    "city":"Seattle",
+    "value":49.69
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":33.1
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":19.72
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"China",
+    "city":"Shanghai",
+    "value":23.81
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"China",
+    "city":"Taipei",
+    "value":13.39
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":22.71
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"France",
+    "city":"Paris",
+    "value":58.97
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":44.05
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"India",
+    "city":"Mumbai",
+    "value":40.18
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":51.81
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":23.47
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":55.94
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":24.34
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":31.5
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":22.17
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":24.4
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":46.56
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":45.19
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":32.5
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":37.14
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":45.41
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":54.92
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":53.71
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"United States",
+    "city":"New-York",
+    "value":49.91
+  },
+  {
+    "feature":"Worries attacked",
+    "country":"United States",
+    "city":"Seattle",
+    "value":46.81
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":36.54
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":23.78
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"China",
+    "city":"Shanghai",
+    "value":28.78
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"China",
+    "city":"Taipei",
+    "value":15.88
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":25.14
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"France",
+    "city":"Paris",
+    "value":64.76
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":50.41
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"India",
+    "city":"Mumbai",
+    "value":42.05
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":55.78
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":27.3
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":47.15
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":27.91
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":32.27
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":25.47
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":28.24
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":42.73
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":42.07
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":30.6
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":44.05
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":52.29
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":55.24
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":56.48
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"United States",
+    "city":"New-York",
+    "value":55.02
+  },
+  {
+    "feature":"Worries being insulted",
+    "country":"United States",
+    "city":"Seattle",
+    "value":54.97
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":29.37
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":15.52
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"China",
+    "city":"Shanghai",
+    "value":24.08
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"China",
+    "city":"Taipei",
+    "value":10.51
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":20.91
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"France",
+    "city":"Paris",
+    "value":60.79
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":40.48
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"India",
+    "city":"Mumbai",
+    "value":41.45
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":48.71
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":21.02
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":65.07
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":25.57
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":31.58
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":19.96
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":20.02
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":59.11
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":44.22
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":36.66
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":36.91
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":39.99
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":58.28
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":54.13
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"United States",
+    "city":"New-York",
+    "value":49.95
+  },
+  {
+    "feature":"Worries being mugged or robbed",
+    "country":"United States",
+    "city":"Seattle",
+    "value":44.55
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":24.61
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":14.99
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"China",
+    "city":"Shanghai",
+    "value":23.34
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"China",
+    "city":"Taipei",
+    "value":9.81
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":18.82
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"France",
+    "city":"Paris",
+    "value":49.12
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":34.14
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"India",
+    "city":"Mumbai",
+    "value":32.34
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":36.14
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":26.04
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":42.3
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":20.39
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":25.88
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":20.1
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":24.76
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":28.03
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":37.63
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":20.57
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":27.14
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":33.36
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":41.04
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":38.17
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"United States",
+    "city":"New-York",
+    "value":40.46
+  },
+  {
+    "feature":"Worries being subject to a physical attack because of your skin color, ethnic origin, gender or religion",
+    "country":"United States",
+    "city":"Seattle",
+    "value":26.9
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":28.65
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":11.29
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"China",
+    "city":"Shanghai",
+    "value":23.53
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"China",
+    "city":"Taipei",
+    "value":13.26
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":16.23
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"France",
+    "city":"Paris",
+    "value":47.65
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":33.52
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"India",
+    "city":"Mumbai",
+    "value":37.83
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":38.87
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":18.78
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":57.72
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":20.55
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":21.07
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":16.96
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":16.92
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":35.48
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":34.39
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":29.41
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":31.34
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":30.36
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":44.39
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":44.57
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"United States",
+    "city":"New-York",
+    "value":40.43
+  },
+  {
+    "feature":"Worries car stolen",
+    "country":"United States",
+    "city":"Seattle",
+    "value":48.84
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":35.56
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":14.55
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"China",
+    "city":"Shanghai",
+    "value":25.78
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"China",
+    "city":"Taipei",
+    "value":13.39
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":24.12
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"France",
+    "city":"Paris",
+    "value":52.5
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":38.46
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"India",
+    "city":"Mumbai",
+    "value":39.86
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":46.26
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":21.22
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":60.62
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":25.73
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":25.27
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":20.12
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":20.28
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":48.34
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":38.88
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":36.78
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":37.81
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":38.25
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":47.65
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":52.55
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"United States",
+    "city":"New-York",
+    "value":41.54
+  },
+  {
+    "feature":"Worries home broken and things stolen",
+    "country":"United States",
+    "city":"Seattle",
+    "value":49.24
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Australia",
+    "city":"Brisbane",
+    "value":34.81
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"China",
+    "city":"Hong-Kong",
+    "value":13.8
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"China",
+    "city":"Shanghai",
+    "value":26.06
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"China",
+    "city":"Taipei",
+    "value":14.7
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Denmark",
+    "city":"Copenhagen",
+    "value":23.62
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"France",
+    "city":"Paris",
+    "value":57.03
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Germany",
+    "city":"Berlin",
+    "value":39.44
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"India",
+    "city":"Mumbai",
+    "value":44.53
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Ireland",
+    "city":"Dublin",
+    "value":49.21
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Japan",
+    "city":"Tokyo",
+    "value":20.1
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Malaysia",
+    "city":"Kuala-Lumpur",
+    "value":63.24
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Netherlands",
+    "city":"Amsterdam",
+    "value":30.92
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Norway",
+    "city":"Oslo",
+    "value":29.16
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Singapore",
+    "city":"Singapore",
+    "value":22.29
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"South Korea",
+    "city":"Seoul",
+    "value":18.72
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Spain",
+    "city":"Barcelona",
+    "value":52.16
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Sweden",
+    "city":"Stockholm",
+    "value":43.26
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"Thailand",
+    "city":"Bangkok",
+    "value":34.28
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"United Kingdom",
+    "city":"Bristol",
+    "value":41.72
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"United Kingdom",
+    "city":"Glasgow",
+    "value":37.51
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"United Kingdom",
+    "city":"London",
+    "value":51.0
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"United Kingdom",
+    "city":"Manchester",
+    "value":52.75
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"United States",
+    "city":"New-York",
+    "value":49.13
+  },
+  {
+    "feature":"Worries things from car stolen",
+    "country":"United States",
+    "city":"Seattle",
+    "value":66.96
+  }
+]
