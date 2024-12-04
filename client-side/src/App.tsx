@@ -42,7 +42,7 @@ function App() {
         const json = await res.json();
         setSummary(json);
         console.log(`summary updated: ${currentCity}`);
-        console.log(json);
+        console.log(summary);
       } catch (error: any) {
         console.log(error.message);
       }
@@ -54,6 +54,7 @@ function App() {
     <div>
       <h1>migrate</h1>
       <div>
+        <p>select the city you currently live in</p>
         <select
           id="city-select"
           value={currentCity}
@@ -65,8 +66,8 @@ function App() {
             </option>
           ))}
         </select>
+        <div></div>
       </div>
-      <p>Data goes here</p>
     </div>
   );
 }
