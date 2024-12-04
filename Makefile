@@ -10,6 +10,8 @@ clean:
 	-find . -name ".ruff_cache" -type d -print -exec rm -rf {} +
 	-find . -name ".ipynb_checkpoints" -type d -print -exec rm -rf {} +
 	-find . -name "*.ipynb" -print -exec jupyter nbconvert --clear-output {} \;
+	cd $(ROOT)/client-side && npx prettier --write .	
+
 
 .PHONY: lint
 lint:
