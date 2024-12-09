@@ -1,0 +1,7 @@
+#!/bin/bash
+
+root="${HOME}/.sign-to-migrate"
+mkdir $root
+
+cp config.yml $root/
+mkdir "${root}/data"
