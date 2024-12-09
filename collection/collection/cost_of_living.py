@@ -1,21 +1,19 @@
-import os
 import time
-from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from collection.task import Task
-from utils.get_config import get_config
+from utils.utils import get_config, df_to_json
 
 
 class CostOfLivingTask(Task):
-    output_name = "cost_of_living.json"
+    output_path = "raw/cost_of_living.json"
     cities = get_config()["cities"]
 
     @staticmethod
-    def _scrap(city: str, currency: str = "JPY") -> pd.DataFrame:
+    def get_soup(city: str, currency: str = "JPY") -> BeautifulSoup:
         url = f"https://www.numbeo.com/cost-of-living/in/{city}?displayCurrency={currency}"
-        print(f"[CostOfLivingTask._scrap] url: {url}")
+        print(f"[CostOfLivingTask.get_soup] url: {url}")
         response = requests.get(
             url,
             headers={
@@ -28,7 +26,10 @@ class CostOfLivingTask(Task):
             print("response content:", response.text)
             raise RuntimeError("Failed to fetch data")
 
-        soup = BeautifulSoup(response.text, "html.parser")
+        return BeautifulSoup(response.text, "html.parser")
+
+    def scrap(self, city: str, currency: str = "JPY") -> pd.DataFrame:
+        soup = self.get_soup(city, currency)
         rows = soup.find("table", {"class": "data_wide_table"}).find_all("tr")
         cost = []
         for row in rows:
@@ -36,33 +37,28 @@ class CostOfLivingTask(Task):
             if len(cells) > 1:
                 cost.append(
                     {
-                        "item": cells[0].text.strip(),
+                        "feature": cells[0].text.strip(),
                         "country": soup.find_all("a", class_="breadcrumb_link")[1].text,
                         "city": city,
                         "currency": currency,
-                        "cost": float(cells[1].text.strip().replace("\xa0¥", "").replace(",", "")),
+                        "value": float(cells[1].text.strip().replace("\xa0¥", "").replace(",", "")),
                     }
                 )
 
-        request_interval = 4
-        print(f"waiting... {request_interval}s")
+        request_interval = 1
         time.sleep(request_interval)
         return pd.DataFrame(cost)
 
     def extract(self) -> pd.DataFrame:
-        return pd.concat([self._scrap(city) for city in self.cities])
+        return pd.concat([self.scrap(city) for city in self.cities])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
-        keys = ["item", "country", "city"]
-        metrics = ["cost"]
-        # just to join other tables. no political statement here
-        df["country"] = df["country"].apply(lambda x: "China" if ("Hong Kong" in x) or ("Taiwan" in x) else x)
+        keys = ["feature", "country", "city"]
+        metrics = ["value"]
         return df[[*keys, *metrics]].groupby(keys).mean().reset_index()
 
     def load(self, df: pd.DataFrame) -> None:
-        df.to_json(
-            Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.output_name}", orient="records", index=False, indent=2
-        )
+        df_to_json(df, self.output_path)
 
 
 if __name__ == "__main__":
