@@ -45,7 +45,7 @@ class CrimeTask(Task):
                     }
                 )
 
-        request_interval = 0
+        request_interval = 1
         print(f"waiting... {request_interval}s")
         time.sleep(request_interval)
         return pd.DataFrame(data)
