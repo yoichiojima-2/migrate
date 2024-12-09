@@ -3,10 +3,11 @@ import requests
 from pathlib import Path
 import pandas as pd
 from collection.task import Task
+from utils.utils import df_to_json
 
 
 class CpiTask(Task):
-    output_name = "cpi.json"
+    output_path = "raw/cpi.json"
 
     def extract(self) -> pd.DataFrame:
         url = "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL"
@@ -33,9 +34,7 @@ class CpiTask(Task):
         return df.rename(columns={"country_name": "country", "date": "year"})
 
     def load(self, df: pd.DataFrame) -> None:
-        df.to_json(
-            Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.output_name}", orient="records", index=False, indent=2
-        )
+        df_to_json(df, self.output_path)
 
 
 if __name__ == "__main__":
