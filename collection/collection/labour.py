@@ -5,6 +5,7 @@ from pathlib import Path
 import pandas as pd
 from io import StringIO
 from collection.task import Task
+from utils.utils import df_to_json
 
 
 @dataclass
@@ -34,7 +35,7 @@ class LaborTask(Task):
         return df.rename(columns={"ref_area": "country", "time": "year"})
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.name}.json", orient="records", index=False)
+        df_to_json(df, f"raw/{self.name}.json")
 
 
 class WorkingPovertyRate(LaborTask):
