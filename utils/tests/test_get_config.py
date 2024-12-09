@@ -5,8 +5,10 @@ from utils.utils import get_config, get_root, df_to_json
 def test_get_config():
     assert get_config()
 
+
 def test_get_root():
     assert get_root()
+
 
 def test_df_to_json():
     df = pd.DataFrame([{"test": "data"}])
