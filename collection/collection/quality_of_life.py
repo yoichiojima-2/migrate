@@ -5,17 +5,17 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 from collection.task import Task
-from utils.get_config import get_config
+from utils.utils import get_config, df_to_json
 
 
 class QualityOfLifeTask(Task):
-    output_name = "quality_of_life.json"
+    output_path = "raw/quality_of_life.json"
     cities = get_config()["cities"]
 
     @staticmethod
-    def _scrap(city: str) -> pd.DataFrame:
+    def get_soup(city: str) -> BeautifulSoup:
         url = f"https://www.numbeo.com/quality-of-life/in/{city}"
-        print(f"[QuolityOfLifeTask._scrap] url: {url}")
+        print(f"[QuolityOfLifeTask.scrap] url: {url}")
         response = requests.get(
             url,
             headers={
@@ -28,7 +28,11 @@ class QualityOfLifeTask(Task):
             print("response content:", response.text)
             raise RuntimeError("Failed to fetch data")
 
-        soup = BeautifulSoup(response.text, "html.parser")
+        return BeautifulSoup(response.text, "html.parser")
+
+
+    def scrap(self, city: str) -> pd.DataFrame:
+        soup = self.get_soup(city)
         tables = soup.find_all("table")
         qol_table = tables[1]
         other_metrics_tables = tables[2]
@@ -56,25 +60,21 @@ class QualityOfLifeTask(Task):
                     }
                 )
 
-        request_interval = 4
+        request_interval = 1
         print(f"waiting... {request_interval}s")
         time.sleep(request_interval)
         return pd.DataFrame(data)
 
     def extract(self) -> pd.DataFrame:
-        return pd.concat([self._scrap(city) for city in self.cities])
+        return pd.concat([self.scrap(city) for city in self.cities])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         keys = ["feature", "country", "city"]
         metrics = ["value"]
-        # just to join other tables. no political statement here
-        df["country"] = df["country"].apply(lambda x: "China" if ("Hong Kong" in x) or ("Taiwan" in x) else x)
         return df[[*keys, *metrics]].groupby(keys).mean().reset_index()
 
     def load(self, df: pd.DataFrame) -> None:
-        df.to_json(
-            Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.output_name}", orient="records", index=False, indent=2
-        )
+        df_to_json(df, self.output_path)
 
 
 if __name__ == "__main__":
