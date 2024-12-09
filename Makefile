@@ -44,7 +44,7 @@ install:
 	-mkdir ${ROOT}
 	cp config.yml "${ROOT}/"
 	-mkdir "${ROOT}/data"
-	printf "installed.\n"
+	@printf "sign-to-migrate installed.\n"
 
 .PHONY: uninstall
 uninstall:
