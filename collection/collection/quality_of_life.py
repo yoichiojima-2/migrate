@@ -48,14 +48,12 @@ class QualityOfLifeTask(Task):
         for row in other_metrics_tables.find_all("tr"):
             cells = row.find_all("td")
             if len(cells) > 1:
-                data.append(
-                    {
-                        "feature": cells[0].text.strip().replace("\u0192", "").replace("\u00a0", ""),
-                        "country": soup.find_all("a", class_="breadcrumb_link")[1].text,
-                        "city": city,
-                        "value": float(cells[1].text.strip()),
-                    }
-                )
+                data.append({
+                    "feature": cells[0].text.strip().replace("\u0192", "").replace("\u00a0", ""),
+                    "country": soup.find_all("a", class_="breadcrumb_link")[1].text,
+                    "city": city,
+                    "value": float(cells[1].text.strip()),
+                })
 
         request_interval = 1
         print(f"waiting... {request_interval}s")
