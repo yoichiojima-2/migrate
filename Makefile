@@ -1,4 +1,4 @@
-ROOT = $(shell pwd)
+ROOT = $(shell echo ${HOME}/.sign-to-migrate)
 PROJECTS = utils collection cleansing server-side
 VENV = $(ROOT)/.venv
 
@@ -40,3 +40,14 @@ cleansing-test-data: venv
 .PHONY: test
 test: venv cleansing-test-data
 	@for project in $(PROJECTS); do cd $(ROOT)/$$project && $(VENV)/bin/pytest -vvv; done
+
+.PHONY: install
+install:
+	-mkdir ${ROOT}
+	cp config.yml "${ROOT}/"
+	-mkdir "${ROOT}/data"
+	printf "installed.\n"
+
+.PHONY: uninstall
+uninstall:
+	rm -r ~/.sign-to-migrate
