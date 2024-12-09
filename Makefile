@@ -12,7 +12,6 @@ clean:
 	-find . -name "*.ipynb" -print -exec jupyter nbconvert --clear-output {} \;
 	cd $(ROOT)/client-side && npx prettier --write .	
 
-
 .PHONY: lint
 lint:
 	-isort .
@@ -35,7 +34,6 @@ venv: .venv/.installed
 cleansing-test-data: venv
 	$(VENV)/bin/python $(ROOT)/collection/collection/cost_of_living.py
 	$(VENV)/bin/python $(ROOT)/collection/collection/happiness.py
-
 
 .PHONY: test
 test: venv cleansing-test-data
