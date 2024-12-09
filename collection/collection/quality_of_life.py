@@ -36,17 +36,14 @@ class QualityOfLifeTask(Task):
         tables = soup.find_all("table")
         qol_table = tables[1]
         other_metrics_tables = tables[2]
-        data = []
 
         qol_cells = qol_table.find_all("tr")[1].find_all("td")
-        data.append(
-            {
-                "feature": qol_cells[0].text.strip(),
-                "country": soup.find_all("a", class_="breadcrumb_link")[1].text,
-                "city": city,
-                "value": float(qol_cells[1].text.strip()),
-            }
-        )
+        data = [{
+            "feature": qol_cells[0].text.strip(),
+            "country": soup.find_all("a", class_="breadcrumb_link")[1].text,
+            "city": city,
+            "value": float(qol_cells[1].text.strip()),
+        }]
 
         for row in other_metrics_tables.find_all("tr"):
             cells = row.find_all("td")
