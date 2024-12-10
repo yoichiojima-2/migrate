@@ -50,8 +50,8 @@ def happiness(country: str):
         .apply(lambda x: x["haystack_value"] / x["needle_value"] if x["needle_value"] else 0, axis=1)
     )
     # fmt: on
-    result = {}
 
+    result = {}
     for _, row in merged_df.iterrows():
         country = row["country"]
         feature = row["feature"]
