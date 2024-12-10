@@ -1,5 +1,6 @@
 ROOT = $(shell echo ${HOME}/.sign-to-migrate)
-PROJECTS = utils collection cleansing server-side
+PWD = $(shell pwd)
+PROJECTS = utils collection server-side
 VENV = $(ROOT)/.venv
 
 .PHONY: clean
@@ -9,8 +10,8 @@ clean:
 	-find . -name ".pytest_cache" -type d -print -exec rm -rf {} +
 	-find . -name ".ruff_cache" -type d -print -exec rm -rf {} +
 	-find . -name ".ipynb_checkpoints" -type d -print -exec rm -rf {} +
-	-find . -name "*.ipynb" -print -exec jupyter nbconvert --clear-output {} \;
-	cd $(ROOT)/client-side && npx prettier --write .	
+	-find . -name "node_modules" -type d -print -exec rm -rf {} +
+	-find . -name "dist" -type d -print -exec rm -rf {} +
 
 .PHONY: lint
 lint:
@@ -32,12 +33,12 @@ venv: .venv/.installed
 
 .PHONY: cleansing-test-data
 cleansing-test-data: venv
-	$(VENV)/bin/python $(ROOT)/collection/collection/cost_of_living.py
-	$(VENV)/bin/python $(ROOT)/collection/collection/happiness.py
+	$(VENV)/bin/python $(PWD)/collection/collection/cost_of_living.py
+	$(VENV)/bin/python $(PWD)/collection/collection/happiness.py
 
 .PHONY: test
 test: venv cleansing-test-data
-	@for project in $(PROJECTS); do cd $(ROOT)/$$project && $(VENV)/bin/pytest -vvv; done
+	@for project in $(PROJECTS); do cd $(PWD)/$$project && $(VENV)/bin/pytest -vvv; done
 
 .PHONY: install
 install:
