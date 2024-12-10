@@ -1,9 +1,8 @@
-import os
-from pathlib import Path
 from collection.task import Task
+from utils.utils import read_json
 
 
-def run_and_check_output(task_class: Task, output_name: str):
+def run_and_check_output(task_class: Task, output_path: str):
     task_class().run()
-    output = Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{output_name}"
-    assert output.exists()
+    output = read_json(output_path)
+    assert len(output)

@@ -1,12 +1,12 @@
-import os
 from pathlib import Path
 import pandas as pd
 import kagglehub
 from collection.task import Task
+from utils.utils import df_to_json
 
 
 class HappinessTask(Task):
-    output_name = "happiness.json"
+    output_path = "raw/happiness.json"
 
     @staticmethod
     def _read_and_attatch_year(path: Path) -> pd.DataFrame:
@@ -35,11 +35,13 @@ class HappinessTask(Task):
                 "Dystopia.Residual",
             ]]
             [df["Happiness.Rank"].notna()]
+            .melt(id_vars=["Country", "Year"], var_name="feature", value_name="value")
+            .rename(columns={"Country": "country", "Year": "year"})
         )
         # fmt: on
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df.to_json(Path(os.getenv("SIGN_TO_MIGRATE_ROOT")) / f"data/{self.output_name}", orient="records", index=False)
+        df_to_json(df, self.output_path)
 
 
 if __name__ == "__main__":
