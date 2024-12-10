@@ -30,11 +30,14 @@ class CpiTask(Task):
         df["country_id"] = df["country"].apply(lambda x: x["id"])
         df = df[["countryiso3code", "country_name", "date", "value"]]
         df["feature"] = "cpi"
+
+        # fmt: off
         return (
             df
             .rename(columns={"country_name": "country", "date": "year"})
             [["country", "countryiso3code", "year", "feature", "value"]]
         )
+        # fmt: on
 
     def load(self, df: pd.DataFrame) -> None:
         df_to_json(df, self.output_path)
