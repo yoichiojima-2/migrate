@@ -1,4 +1,6 @@
-# crime
+# Features
+
+## crime
 - crime increasing in the past 5 years
 - level of crime
 - problem corruption and bribery
@@ -13,10 +15,10 @@
 - worries home broken and things stolen
 - worries things from car stolen
 
-# cpi
+## cpi
 - cpi
 
-# quality of life
+## quality of life
 - climate index
 - cost of living index
 - health care index
@@ -27,7 +29,7 @@
 - safety index
 - traffic commute time index
 
-# cost of living
+## cost of living
 - 1 pair of jeans (levis 501 or similar)
 - 1 pair of men leather business shoes
 - 1 pair of nike running shoes (mid-range)
@@ -83,7 +85,7 @@
 - water (0.33 liter bottle)
 - water (1.5 liter bottle)
 
-# happiness
+## happiness
 - happiness.rank
 - happiness.score
 - economy..gdp.per.capita.
@@ -94,33 +96,33 @@
 - trust..government.corruption.
 - dystopia.residual
 
-# unemployment rate
+## unemployment rate
 - sdg indicator 8.5.2 - unemployment rate (%)
 
-# women in senior and middle position
+## women in senior and middle position
 - sdg indicator 5.5.2 - proportion of women in senior and middle management positions (%)
 
-# youth neet proportion
+## youth neet proportion
 - sdg indicator 8.6.1 - proportion of youth (aged 15-24 years) not in education, employment or training
 
-# average hourly earnings
+## average hourly earnings
 - sdg indicator 8.5.1 - average hourly earnings of employees by sex (local currency)
 
-# working poverty rate
+## working poverty rate
 - sdg indicator 1.1.1 - working poverty rate (percentage of employed living below us$2.15 ppp) (%)
 
-# labour rights
+## labour rights
 - sdg indicator 8.8.2 - level of national compliance with labour rights (freedom of association and collective bargaining)
 
-# annual growth rate per worker
+## annual growth rate per worker
 - sdg indicator 8.2.1 - annual growth rate of output per worker (gdp constant 2017 international $ at ppp) (%)
 
-# women in managerial position
+## women in managerial position
 - sdg indicator 5.5.2 - proportion of women in managerial positions (%)
 
-# unemployment rate disability
+## unemployment rate disability
 - sdg indicator 8.5.2 - unemployment rate by disability status (%)
 
-# informal employment
+## informal employment
 - sdg indicator 8.3.1 - proportion of informal employment in total employment by sex and sector (%)
 
