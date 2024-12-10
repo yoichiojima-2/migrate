@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from utils.get_config import get_config
+from utils.utils import get_config
 
 
 app = FastAPI()
