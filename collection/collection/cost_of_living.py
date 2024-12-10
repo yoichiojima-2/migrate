@@ -58,8 +58,6 @@ class CostOfLivingTask(Task):
             .groupby(keys)
             .mean()
             .reset_index()
-            # .pivot(index=["city", "country"], columns="feature", values="value")
-            # .reset_index()
         )
 
     def load(self, df: pd.DataFrame) -> None:
