@@ -3,22 +3,11 @@ import "./App.css";
 
 const api_endpoint: string = "http://127.0.0.1:8000";
 
-interface SummaryData {
-  [key: string]: {
-    [key: string]: {
-      value: number;
-      value_in_current_city: number;
-      diff_amount: number;
-      diff_rate: number;
-    };
-  };
-}
 
 function App() {
   // fetch server
   const [cities, setCities] = useState<string[]>([]);
   const [currentCity, setCurrentCity] = useState<string>("tokyo");
-  const [summary, setSummary] = useState<SummaryData | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,20 +24,6 @@ function App() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch(`${api_endpoint}/summary?city=${currentCity}`);
-        const json = await res.json();
-        setSummary(json);
-        console.log(`summary updated: ${currentCity}`);
-        console.log(summary);
-      } catch (error: any) {
-        console.log(error.message);
-      }
-    };
-    fetchData();
-  }, [currentCity]);
 
   return (
     <div>
