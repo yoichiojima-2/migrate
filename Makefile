@@ -31,21 +31,19 @@ venv: .venv/.installed
 	@for project in $(PROJECTS); do $(VENV)/bin/pip install -e $$project; done
 	touch $(VENV)/.installed
 
-.PHONY: cleansing-test-data
-cleansing-test-data: venv
-	$(VENV)/bin/python $(PWD)/collection/collection/cost_of_living.py
-	$(VENV)/bin/python $(PWD)/collection/collection/happiness.py
-
-.PHONY: test
-test: venv cleansing-test-data
-	@for project in $(PROJECTS); do cd $(PWD)/$$project && $(VENV)/bin/pytest -vvv; done
-
 .PHONY: install
-install:
+install: $(ROOT)/.installed
+$(ROOT)/.installed:
 	-mkdir ${ROOT}
 	cp config.yml "${ROOT}/"
 	@printf "sign-to-migrate installed.\n"
+	touch $(ROOT)/.installed
 
 .PHONY: uninstall
 uninstall:
 	rm -r ~/.sign-to-migrate
+
+.PHONY: test
+test: venv install
+	@for project in $(PROJECTS); do cd $(PWD)/$$project && $(VENV)/bin/pytest -vvv; done
+

@@ -28,5 +28,4 @@ jobs:
         make venv
     - name: Test
       run: |
-        export SIGN_TO_MIGRATE_ROOT=$(pwd)
         make test

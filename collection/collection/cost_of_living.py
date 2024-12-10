@@ -8,7 +8,6 @@ from utils.utils import get_config, df_to_json
 
 class CostOfLivingTask(Task):
     output_path = "raw/cost_of_living.json"
-    cities = get_config()["cities"]
 
     @staticmethod
     def get_soup(city: str, currency: str = "JPY") -> BeautifulSoup:
@@ -50,7 +49,7 @@ class CostOfLivingTask(Task):
         return pd.DataFrame(cost)
 
     def extract(self) -> pd.DataFrame:
-        return pd.concat([self.scrap(city) for city in self.cities])
+        return pd.concat([self.scrap(city) for city in get_config()["cities"]])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         keys = ["feature", "country", "city"]
