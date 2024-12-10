@@ -2,45 +2,49 @@ from collection import labour
 from tests.test_lib import run_and_check_output
 
 
+def _test_base(cls):
+    run_and_check_output(cls, cls().output_path)
+
+
 def test_working_poverty_rate():
-    run_and_check_output(labour.WorkingPovertyRate, "raw/working_poverty_rate.json")
+    _test_base(labour.WorkingPovertyRate)
 
 
 def test_social_protection():
-    run_and_check_output(labour.SocialProtection, "raw/social_protection.json")
+    _test_base(labour.WorkingPovertyRate)
 
 
 def test_women_in_senior_and_middle_position():
-    run_and_check_output(labour.WomenInSeniorAndMiddlePosition, "raw/women_in_senior_and_middle_position.json")
+    _test_base(labour.WomenInSeniorAndMiddlePosition)
 
 
 def test_women_in_managerial_position():
-    run_and_check_output(labour.WomenInManagerialPosition, "raw/women_in_managerial_position.json")
+    _test_base(labour.WomenInManagerialPosition)
 
 
 def test_annual_growth_rate_per_worker():
-    run_and_check_output(labour.AnnualGrowthRatePerWorker, "raw/annual_growth_rate_per_worker.json")
+    _test_base(labour.AnnualGrowthRatePerWorker)
 
 
 def test_informal_employment():
-    run_and_check_output(labour.InformalEmployment, "raw/informal_employment.json")
+    _test_base(labour.InformalEmployment)
 
 
 def test_average_hourly_earnings():
-    run_and_check_output(labour.AverageHourlyEarnings, "raw/average_hourly_earnings.json")
+    _test_base(labour.AverageHourlyEarnings)
 
 
 def test_unemployment_rate():
-    run_and_check_output(labour.UnemploymentRate, "raw/unemployment_rate.json")
+    _test_base(labour.UnemploymentRate)
 
 
 def test_unemployment_rate_disability():
-    run_and_check_output(labour.UnemploymentRateDisability, "raw/unemployment_rate_disability.json")
+    _test_base(labour.UnemploymentRateDisability)
 
 
 def test_youth_neet_proportion():
-    run_and_check_output(labour.YouthNeetProportion, "raw/youth_neet_proportion.json")
+    _test_base(labour.YouthNeetProportion)
 
 
 def test_labour_rights():
-    run_and_check_output(labour.LabourRights, "raw/labour_rights.json")
+    _test_base(labour.LabourRights)

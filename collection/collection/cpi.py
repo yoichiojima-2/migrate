@@ -1,6 +1,4 @@
-import os
 import requests
-from pathlib import Path
 import pandas as pd
 from collection.task import Task
 from utils.utils import df_to_json
@@ -31,7 +29,12 @@ class CpiTask(Task):
         df["country_name"] = df["country"].apply(lambda x: x["value"])
         df["country_id"] = df["country"].apply(lambda x: x["id"])
         df = df[["countryiso3code", "country_name", "date", "value"]]
-        return df.rename(columns={"country_name": "country", "date": "year"})
+        df["feature"] = "cpi"
+        return (
+            df
+            .rename(columns={"country_name": "country", "date": "year"})
+            [["country", "countryiso3code", "year", "feature", "value"]]
+        )
 
     def load(self, df: pd.DataFrame) -> None:
         df_to_json(df, self.output_path)

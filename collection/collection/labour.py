@@ -1,18 +1,16 @@
-import os
 import requests
-from dataclasses import dataclass
-from pathlib import Path
 import pandas as pd
 from io import StringIO
 from collection.task import Task
 from utils.utils import df_to_json
 
 
-@dataclass
 class LaborTask(Task):
-    name: str
-    dataset_id: str
-    dataset_name: str
+    def __init__(self, name: str, dataset_id: str, dataset_name: str):
+        self.name = name
+        self.dataset_id = dataset_id
+        self.dataset_name = dataset_name
+        self.output_path = f"raw/labour/{self.name}.json"
 
     def extract(self) -> pd.DataFrame:
         api_url = "https://rplumber.ilo.org/data/indicator/"
@@ -32,10 +30,10 @@ class LaborTask(Task):
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df.columns = [col.replace(".label", "") for col in df.columns]
-        return df.rename(columns={"ref_area": "country", "time": "year"})
+        return df.rename(columns={"ref_area": "country", "time": "year", "indicator": "feature", "obs_value": "value"})
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
-        df_to_json(df, f"raw/{self.name}.json")
+        df_to_json(df, self.output_path)
 
 
 class WorkingPovertyRate(LaborTask):

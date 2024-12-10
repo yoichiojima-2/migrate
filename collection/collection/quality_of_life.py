@@ -1,6 +1,4 @@
-import os
 import time
-from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -29,7 +27,6 @@ class QualityOfLifeTask(Task):
             raise RuntimeError("Failed to fetch data")
 
         return BeautifulSoup(response.text, "html.parser")
-
 
     def scrap(self, city: str) -> pd.DataFrame:
         soup = self.get_soup(city)

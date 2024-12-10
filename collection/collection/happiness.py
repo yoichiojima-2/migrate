@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 import pandas as pd
 import kagglehub
@@ -36,6 +35,8 @@ class HappinessTask(Task):
                 "Dystopia.Residual",
             ]]
             [df["Happiness.Rank"].notna()]
+            .melt(id_vars=["Country", "Year"], var_name="feature", value_name="value")
+            .rename(columns={"Country": "country", "Year": "year"})
         )
         # fmt: on
 
