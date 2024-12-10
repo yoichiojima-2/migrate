@@ -43,7 +43,6 @@ test: venv cleansing-test-data
 install:
 	-mkdir ${ROOT}
 	cp config.yml "${ROOT}/"
-	-mkdir "${ROOT}/data"
 	@printf "sign-to-migrate installed.\n"
 
 .PHONY: uninstall
