@@ -1,4 +1,3 @@
-import os
 from fastapi.testclient import TestClient
 from server_side.main import app
 
