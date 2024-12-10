@@ -11,7 +11,7 @@ def main():
     features_md = (doc_dir / "features.md").open("w")
 
     for f in root.rglob("*.json"):
-        features_md.write(f"# {f.stem.replace('-', ' ')}\n")
+        features_md.write(f"# {f.stem.replace('_', ' ')}\n")
         for row in pd.read_json(f)["feature"].drop_duplicates():
             features_md.write(f"- {row.lower()}\n")
 

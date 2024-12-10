@@ -16,7 +16,7 @@
 # cpi
 - cpi
 
-# quality_of_life
+# quality of life
 - climate index
 - cost of living index
 - health care index
@@ -27,7 +27,7 @@
 - safety index
 - traffic commute time index
 
-# cost_of_living
+# cost of living
 - 1 pair of jeans (levis 501 or similar)
 - 1 pair of men leather business shoes
 - 1 pair of nike running shoes (mid-range)
@@ -94,33 +94,33 @@
 - trust..government.corruption.
 - dystopia.residual
 
-# unemployment_rate
+# unemployment rate
 - sdg indicator 8.5.2 - unemployment rate (%)
 
-# women_in_senior_and_middle_position
+# women in senior and middle position
 - sdg indicator 5.5.2 - proportion of women in senior and middle management positions (%)
 
-# youth_neet_proportion
+# youth neet proportion
 - sdg indicator 8.6.1 - proportion of youth (aged 15-24 years) not in education, employment or training
 
-# average_hourly_earnings
+# average hourly earnings
 - sdg indicator 8.5.1 - average hourly earnings of employees by sex (local currency)
 
-# working_poverty_rate
+# working poverty rate
 - sdg indicator 1.1.1 - working poverty rate (percentage of employed living below us$2.15 ppp) (%)
 
-# labour_rights
+# labour rights
 - sdg indicator 8.8.2 - level of national compliance with labour rights (freedom of association and collective bargaining)
 
-# annual_growth_rate_per_worker
+# annual growth rate per worker
 - sdg indicator 8.2.1 - annual growth rate of output per worker (gdp constant 2017 international $ at ppp) (%)
 
-# women_in_managerial_position
+# women in managerial position
 - sdg indicator 5.5.2 - proportion of women in managerial positions (%)
 
-# unemployment_rate_disability
+# unemployment rate disability
 - sdg indicator 8.5.2 - unemployment rate by disability status (%)
 
-# informal_employment
+# informal employment
 - sdg indicator 8.3.1 - proportion of informal employment in total employment by sex and sector (%)
 
