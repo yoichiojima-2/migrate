@@ -55,7 +55,14 @@ class CostOfLivingTask(Task):
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         keys = ["feature", "country", "city"]
         metrics = ["value"]
-        return df[[*keys, *metrics]].groupby(keys).mean().reset_index()
+        return (
+            df[[*keys, *metrics]]
+            .groupby(keys)
+            .mean()
+            .reset_index()
+            .pivot(index=["city", "country"], columns="feature", values="value")
+            .reset_index()
+        )
 
     def load(self, df: pd.DataFrame) -> None:
         df_to_json(df, self.output_path)
