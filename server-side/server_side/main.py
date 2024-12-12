@@ -23,7 +23,7 @@ def cities() -> list[str]:
 
 @app.get("/country")
 def country(city: str) -> str | None:
-    ref: dict[str, str] = get_data_dir() / "global/city_to_country.json"
+    ref: Path= get_data_dir() / "global/city_to_country.json"
     mapping = json.loads(open(ref).read())
     return mapping.get(city, None)
 
