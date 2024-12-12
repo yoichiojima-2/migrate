@@ -23,7 +23,7 @@ def cities() -> list[str]:
 
 @app.get("/country")
 def country(city: str) -> str | None:
-    ref: Path= get_data_dir() / "global/city_to_country.json"
+    ref: Path = get_data_dir() / "global/city_to_country.json"
     mapping = json.loads(open(ref).read())
     return mapping.get(city, None)
 
@@ -69,10 +69,6 @@ def happiness(country: str) -> dict:
     for _, row in merged_df.iterrows():
         country = row["country"]
         feature = row["feature"]
-        value = row["haystack_value"]
-        value_in_current_country = row["needle_value"]
-        diff_amount = row["diff_amount"]
-        diff_rate = row["diff_rate"]
 
         if country not in result["data"]:
             result["data"][country] = {}
@@ -81,10 +77,10 @@ def happiness(country: str) -> dict:
             result["data"][country][feature] = {}
 
         result["data"][country][feature] = {
-            "value": value,
-            "value_in_current_country": value_in_current_country,
-            "diff_amount": diff_amount,
-            "diff_rate": diff_rate,
+            "value": row["needle_value"],
+            "value_in_current_country": row["diff_amount"],
+            "diff_amount": row["diff_amount"],
+            "diff_rate": row["diff_rate"],
         }
 
     return result
