@@ -5,7 +5,6 @@ const api_endpoint: string = "http://127.0.0.1:8000";
 
 
 function App() {
-  // fetch server
   const [cities, setCities] = useState<string[]>([]);
   const [currentCity, setCurrentCity] = useState<string>("tokyo");
   const [country, setCountry] = useState("japan");
