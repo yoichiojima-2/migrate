@@ -67,17 +67,24 @@ def happiness(country: str) -> dict:
     }
 
     for _, row in merged_df.iterrows():
-        if row["country"] not in result["data"]:
-            result["data"][row["country"]] = {}
+        country = row["country"]
+        feature = row["feature"]
+        value = row["haystack_value"]
+        value_in_current_country = row["needle_value"]
+        diff_amount = row["diff_amount"]
+        diff_rate = row["diff_rate"]
 
-        if row["feature"] not in result["data"][row["country"]]:
-            result["data"][row["country"]][row["feature"]] = {}
+        if country not in result["data"]:
+            result["data"][country] = {}
 
-        result["data"][row["country"]][row["feature"]] = {
-            "value": row["haystack_value"],
-            "value_in_current_country": row["needle_value"],
-            "diff_amount": row["diff_amount"],
-            "diff_rate": row["diff_rate"],
+        if feature not in result["data"][country]:
+            result["data"][country][feature] = {}
+
+        result["data"][country][feature] = {
+            "value": value,
+            "value_in_current_country": value_in_current_country,
+            "diff_amount": diff_amount,
+            "diff_rate": diff_rate,
         }
 
     return result
