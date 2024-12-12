@@ -8,8 +8,8 @@ function App() {
   // fetch server
   const [cities, setCities] = useState<string[]>([]);
   const [currentCity, setCurrentCity] = useState<string>("tokyo");
-  const [country, setCountry] = useState("");
-  const [happiness, setHappiness] = useState({});
+  const [country, setCountry] = useState("japan");
+  const [happiness, setHappiness] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -47,15 +47,16 @@ function App() {
       try {
         const res = await fetch(`${api_endpoint}/happiness?country=${country}`);
         const json = await res.json();
-        setHappiness(json);
+        const data = json["data"]
+        setHappiness(data);
         console.log("happiness fetched:")
-        console.log(json);
+        console.log(data);
       } catch (error: any) {
         console.log(error.message);
       }
     };
     fetchData();
-  }, [currentCity]);
+  }, [country]);
 
 
   return (
