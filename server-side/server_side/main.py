@@ -1,3 +1,4 @@
+import json
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
@@ -17,11 +18,21 @@ app.add_middleware(
 
 @app.get("/cities")
 def cities() -> list[str]:
-    return get_config().get("cities")
+    return [city.lower() for city in get_config().get("cities")]
+
+
+@app.get("/country")
+def country(city: str) -> str | None:
+    ref: dict[str, str] = get_data_dir() / "global/city_to_country.json"
+    mapping = json.loads(open(ref).read())
+    return mapping.get(city, None)
 
 
 @app.get("/happiness")
-def happiness(country: str):
+def happiness(country: str) -> dict:
+    if not country:
+        return {}
+
     df = pd.read_json(get_data_dir() / "raw/happiness.json")
 
     df = df[df["year"] == 2017].drop(columns="year")
@@ -50,8 +61,7 @@ def happiness(country: str):
         .apply(lambda x: x["haystack_value"] / x["needle_value"] if x["needle_value"] else 0, axis=1)
     )
     # fmt: on
-
-    result = {}
+    result = {"selected_country": country}
     for _, row in merged_df.iterrows():
         country = row["country"]
         feature = row["feature"]
