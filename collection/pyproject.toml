@@ -11,7 +11,7 @@ kagglehub = "^0.3.4"
 python-dotenv = "^1.0.1"
 bs4 = "^0.0.2"
 pyyaml = "^6.0.2"
-utils = {path = "../utils", develop = true}
+utils = {path = "../utils"}
 
 
 [tool.poetry.group.dev.dependencies]

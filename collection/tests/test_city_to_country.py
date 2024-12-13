@@ -1,4 +1,3 @@
-from collection.cost_of_living import CostOfLivingTask
 from collection import city_to_country
 from utils.utils import get_data_dir
 
