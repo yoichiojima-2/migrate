@@ -61,10 +61,7 @@ def happiness(country: str) -> dict:
         .apply(lambda x: x["haystack_value"] / x["needle_value"] if x["needle_value"] else 0, axis=1)
     )
     # fmt: on
-    result = {
-        "selected_country": country,
-        "data": {}
-    }
+    result = {"selected_country": country, "data": {}}
 
     for _, row in merged_df.iterrows():
         country = row["country"]
