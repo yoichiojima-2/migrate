@@ -77,10 +77,10 @@ def happiness(country: str) -> dict:
             result["data"][country][feature] = {}
 
         result["data"][country][feature] = {
-            "value": row["needle_value"],
-            "value_in_current_country": row["diff_amount"],
-            "diff_amount": row["diff_amount"],
-            "diff_rate": row["diff_rate"],
+            "value": round(row["needle_value"], 2),
+            "value_in_current_country": round(row["haystack_value"], 2),
+            "diff_amount": round(row["diff_amount"], 2),
+            "diff_rate": round(row["diff_rate"], 2),
         }
 
     return result
