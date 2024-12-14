@@ -17,6 +17,7 @@ pandas = "^2.2.3"
 [tool.poetry.group.dev.dependencies]
 build = "^1.2.2.post1"
 pytest = "^8.3.4"
+ipython = "^8.30.0"
 
 [build-system]
 requires = ["poetry-core"]

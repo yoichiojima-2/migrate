@@ -35,9 +35,13 @@ def happiness(country: str) -> dict:
 
     df = pd.read_json(get_data_dir() / "raw/happiness.json")
 
-    df = df[df["year"] == 2017].drop(columns="year")
+    countries: list[str] = list(json.load((get_data_dir() / "global/city_to_country.json").open()).values())
+
     df["country"] = df["country"].str.lower()
     df["feature"] = df["feature"].str.lower()
+
+    df = df[df["year"] == 2017].drop(columns="year")
+    df = df[df["country"].isin(countries)]
 
     # fmt: off
     needle_df = (
@@ -51,7 +55,6 @@ def happiness(country: str) -> dict:
         .rename(columns={"value": "haystack_value"})
     )
     # fmt: on
-
     merged_df = haystack_df.merge(needle_df, on=["feature"], how="left")
     merged_df["diff_amount"] = merged_df["haystack_value"] - merged_df["needle_value"]
 
