@@ -16,8 +16,6 @@ function App() {
         const res = await fetch(`${api_endpoint}/cities`);
         const json = await res.json();
         setCities(json);
-        console.log("cities updated.");
-        console.log(json);
       } catch (error: any) {
         console.log(error.message);
       }
@@ -31,9 +29,7 @@ function App() {
       try {
         const res = await fetch(`${api_endpoint}/country?city=${currentCity}`);
         const json = await res.json();
-        console.log(json);
         setCountry(json);
-        console.log(`country name fetched: ${country}`)
       } catch (error: any) {
         console.log(error.message);
       }
@@ -48,8 +44,6 @@ function App() {
         const json = await res.json();
         const data = json["data"]
         setHappiness(data);
-        console.log("happiness fetched:")
-        console.log(data);
       } catch (error: any) {
         console.log(error.message);
       }
@@ -61,7 +55,7 @@ function App() {
   return (
     <div>
       <h1>migrate</h1>
-      <div>
+        <div>
         <p>select the city you currently live in</p>
         <select
           id="city-select"
@@ -74,7 +68,23 @@ function App() {
             </option>
           ))}
         </select>
-        <div></div>
+        <div>
+        {Object.keys(happiness).map((country) => (
+          <div key={country}>
+            <h2>{country}</h2>
+            {Object.keys(happiness[country]).map((feature) => (
+              <div key={feature}>
+                <h3>{feature}</h3>
+                {Object.keys(happiness[country][feature]).map((data) => (
+                  <p key={data}>
+                    {data}: {happiness[country][feature][data]}
+                  </p>
+                ))}
+              </div>
+            ))}
+          </div>
+        ))}
+        </div>
       </div>
     </div>
   );
