@@ -31,18 +31,19 @@ def country(city: str) -> str | None:
 
 
 @app.get("/happiness")
-def happiness(country: str) -> dict:
+def happiness(country: str) -> list:
     if not country:
         return {}
 
     df = pd.read_json(get_data_dir() / "raw/happiness.json")
 
-    countries: list[str] = list(json.load((get_data_dir() / "global/city_to_country.json").open()).values())
 
     df["country"] = df["country"].str.lower()
     df["feature"] = df["feature"].str.lower()
 
     df = df[df["year"] == 2017].drop(columns="year")
+
+    countries: list[str] = list(json.load((get_data_dir() / "global/city_to_country.json").open()).values())
     df = df[df["country"].isin(countries)]
 
     # fmt: off
@@ -58,31 +59,20 @@ def happiness(country: str) -> dict:
     )
     # fmt: on
     merged_df = haystack_df.merge(needle_df, on=["feature"], how="left")
-    merged_df["diff_amount"] = merged_df["haystack_value"] - merged_df["needle_value"]
+    merged_df["diff_amount"] = (merged_df["haystack_value"] - merged_df["needle_value"]).round(2)
 
     # fmt: off
     merged_df["diff_rate"] = (
         merged_df
         .apply(lambda x: x["haystack_value"] / x["needle_value"] if x["needle_value"] else 0, axis=1)
+        .round(2)
     )
     # fmt: on
-    result = {"selected_country": country, "data": {}}
+    merged_df["value"] = merged_df["haystack_value"].round(2)
+    merged_df["value_in_current_country"] = merged_df["needle_value"].round(2)
 
-    for _, row in merged_df.iterrows():
-        country = row["country"]
-        feature = row["feature"]
-
-        if country not in result["data"]:
-            result["data"][country] = {}
-
-        if feature not in result["data"][country]:
-            result["data"][country][feature] = {}
-
-        result["data"][country][feature] = {
-            "value": round(row["needle_value"], 2),
-            "value_in_current_country": round(row["haystack_value"], 2),
-            "diff_amount": round(row["diff_amount"], 2),
-            "diff_rate": round(row["diff_rate"], 2),
-        }
-
-    return result
+    return (
+        merged_df
+        [["country", "feature", "value", "value_in_current_country", "diff_amount", "diff_rate"]]
+        .to_dict(orient="records")
+    )
