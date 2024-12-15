@@ -13,6 +13,7 @@ clean:
 	-find . -name "node_modules" -type d -print -exec rm -rf {} +
 	-find . -name "dist" -type d -print -exec rm -rf {} +
 	-find . -name ".DS_Store" -type f -print -exec rm -rf {} +
+	-find . -name ".venv" -type d -print -exec rm -rf {} +
 
 .PHONY: lint
 lint:
