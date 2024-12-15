@@ -54,38 +54,7 @@ function App() {
 
   return (
     <div>
-      <h1>migrate</h1>
-        <div>
-        <p>select the city you currently live in</p>
-        <select
-          id="city-select"
-          value={currentCity}
-          onChange={(e) => setCurrentCity(e.target.value)}
-        >
-          {cities.map((city) => (
-            <option key={city} value={city}>
-              {city}
-            </option>
-          ))}
-        </select>
-        <div>
-        {Object.keys(happiness).map((country) => (
-          <div key={country}>
-            <h2>{country}</h2>
-            {Object.keys(happiness[country]).map((feature) => (
-              <div key={feature}>
-                <h3>{feature}</h3>
-                {Object.keys(happiness[country][feature]).map((data) => (
-                  <p key={data}>
-                    {data}: {happiness[country][feature][data]}
-                  </p>
-                ))}
-              </div>
-            ))}
-          </div>
-        ))}
-        </div>
-      </div>
+
     </div>
   );
 }
