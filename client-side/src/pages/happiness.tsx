@@ -12,7 +12,7 @@ const groupByCountry = (happiness: any) => (
   }, {})
 )
 
-const Happiness = ({ country }: { country: string }): JSX.Element => {
+const Happiness: JSX.elements = ({ country }: { country: string }) => {
   const [happiness, setHappiness] = useState<any>({});
 
   useEffect(() => {
