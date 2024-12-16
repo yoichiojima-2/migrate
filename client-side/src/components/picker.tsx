@@ -1,4 +1,12 @@
-const Picker = ({ picked, options, onPick }) => {
+import React from "react";
+
+interface PickerProps {
+  picked: string;
+  options: string[];
+  onPick: (value: string) => void;
+}
+
+const Picker: React.FC<PickerProps> = ({ picked, options, onPick }) => {
   return (
     <div>
       <select value={picked} onChange={(e) => onPick(e.target.value)}>
