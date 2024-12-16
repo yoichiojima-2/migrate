@@ -1,15 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { API_URL } from "../constants/api";
 
-interface HappinessData {
-  country: string;
-  feature: string;
-  value: number;
-  value_in_current_country: number;
-  diff_amount: number;
-  diff_rate: number;
-}
-
 interface CountryCardProps {
   country: string;
   data: HappinessData[];
@@ -56,6 +47,15 @@ const groupByCountry = (data: HappinessData[]) => {
 
 interface HappinessProps {
   country: string;
+}
+
+interface HappinessData {
+  country: string;
+  feature: string;
+  value: number;
+  value_in_current_country: number;
+  diff_amount: number;
+  diff_rate: number;
 }
 
 const Happiness: React.FC<HappinessProps> = ({ country }) => {
