@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { API_URL } from "../constants/api";
 
-const groupByCountry = (happiness: any) => (
-  happiness.reduce((acc: any, row: any) => {
+const groupByCountry = (happiness) => (
+  happiness.reduce((acc, row) => {
     if (!acc[row.country]) {
       acc[row.country] = [];
     }
@@ -12,8 +12,18 @@ const groupByCountry = (happiness: any) => (
   }, {})
 )
 
-const Happiness: JSX.elements = ({ country }: { country: string }) => {
-  const [happiness, setHappiness] = useState<any>({});
+interface HappinessProps {
+  country: string;
+}
+
+interface HappinessRow {
+  feature: string;
+  value: number;
+  diff_rate: number;
+}
+
+const Happiness: React.FC<HappinessProps> = ({ country }) => {
+  const [happiness, setHappiness] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,6 +31,7 @@ const Happiness: JSX.elements = ({ country }: { country: string }) => {
         const res = await fetch(`${API_URL}/happiness?country=${country}`);
         const json = await res.json();
         setHappiness(groupByCountry(json));
+        console.log(`happiness data fetched: ${country}`);
       } catch (error: any) {
         console.log(error.message);
       }
@@ -31,14 +42,14 @@ const Happiness: JSX.elements = ({ country }: { country: string }) => {
   return (
     <div>
       {Object.keys(happiness).map((country: string) => (
-        <div key={country}>
+        <div id={`happiness-${country}`} key={country}>
         <h3>{country}</h3>
-        {happiness[country].map((row: any) => (
-          <div key={row.feature} className="flex flex-row">
-            <div>{row.feature}</div>
-            <div>{row.value} / {row.diff_rate}</div>
-          </div>
-        ))}
+          {happiness[country].map((row: HappinessRow) => (
+            <div key={row.feature} className="flex">
+              <div>{row.feature}</div>
+              <div>{row.value} / {row.diff_rate}</div>
+            </div>
+          ))}
         </div>
       ))}
     </div>
