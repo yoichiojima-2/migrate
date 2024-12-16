@@ -6,12 +6,10 @@ import { API_URL } from "./constants/api";
 
 import "./App.css";
 
-
-
-function App(){
-  const [currentCity, setCurrentCity] = useState("tokyo");
-  const [country, setCountry] = useState("japan");
-  const [cities, setCities] = useState([]);
+function App() {
+  const [currentCity, setCurrentCity] = useState<string>("tokyo");
+  const [country, setCountry] = useState<string>("japan");
+  const [cities, setCities] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,7 +18,7 @@ function App(){
         const json = await res.json();
         setCountry(json);
         console.log(`country fetched: ${currentCity} -> ${country}`);
-      } catch (error) {
+      } catch (error: any) {
         console.log(error.message);
       }
     };
@@ -33,7 +31,7 @@ function App(){
         const res = await fetch(`${API_URL}/cities`);
         const json = await res.json();
         setCities(json);
-      } catch (error) {
+      } catch (error: any) {
         console.log(error.message);
       }
     };
@@ -42,10 +40,10 @@ function App(){
 
   return (
     <div>
-      <Picker picked={currentCity} options={cities} onPick={setCurrentCity}/>
+      <Picker picked={currentCity} options={cities} onPick={setCurrentCity} />
       <Happiness country={country} />
     </div>
-  )
+  );
 }
 
 export default App;

@@ -1,36 +1,72 @@
 import React, { useEffect, useState } from "react";
 import { API_URL } from "../constants/api";
 
-const groupByCountry = (happiness) => (
-  happiness.reduce((acc, row) => {
-    if (!acc[row.country]) {
-      acc[row.country] = [];
+interface HappinessData {
+  country: string;
+  feature: string;
+  value: number;
+  value_in_current_country: number;
+  diff_amount: number;
+  diff_rate: number;
+}
+
+interface CountryCardProps {
+  country: string;
+  data: HappinessData[];
+}
+
+const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => {
+  return (
+    <div>
+      <h2>{country}</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Value</th>
+            <th>Diff (Amount)</th>
+            <th>Diff (Rate)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item) => (
+            <tr key={item.feature}>
+              <td>{item.feature}</td>
+              <td>{item.value}</td>
+              <td>{item.diff_amount}</td>
+              <td>{item.diff_rate}%</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+const groupByCountry = (data: HappinessData[]) => {
+  return data.reduce<Record<string, HappinessData[]>>((acc, item) => {
+    if (!acc[item.country]) {
+      acc[item.country] = [];
     }
-    const { country, ...rest } = row;
-    acc[row.country].push(rest);
+    acc[item.country].push(item);
     return acc;
-  }, {})
-)
+  }, {});
+};
+
 
 interface HappinessProps {
   country: string;
 }
 
-interface HappinessRow {
-  feature: string;
-  value: number;
-  diff_rate: number;
-}
-
 const Happiness: React.FC<HappinessProps> = ({ country }) => {
-  const [happiness, setHappiness] = useState({});
+  const [happiness, setHappiness] = useState<HappinessData[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch(`${API_URL}/happiness?country=${country}`);
         const json = await res.json();
-        setHappiness(groupByCountry(json));
+        setHappiness(json);
         console.log(`happiness data fetched: ${country}`);
       } catch (error: any) {
         console.log(error.message);
@@ -39,21 +75,15 @@ const Happiness: React.FC<HappinessProps> = ({ country }) => {
     fetchData();
   }, [country]);
 
+  const groupedData = groupByCountry(happiness);
+
   return (
     <div>
-      {Object.keys(happiness).map((country: string) => (
-        <div id={`happiness-${country}`} key={country}>
-        <h3>{country}</h3>
-          {happiness[country].map((row: HappinessRow) => (
-            <div key={row.feature} className="flex">
-              <div>{row.feature}</div>
-              <div>{row.value} / {row.diff_rate}</div>
-            </div>
-          ))}
-        </div>
+      {Object.entries(groupedData).map(([country, data]) => (
+        <CountryCard key={country} country={country} data={data} />
       ))}
     </div>
-  )
-}
+  );
+};
 
 export default Happiness;

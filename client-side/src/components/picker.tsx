@@ -1,4 +1,3 @@
-
 const Picker = ({ picked, options, onPick }) => {
   return (
     <div>
@@ -11,6 +10,6 @@ const Picker = ({ picked, options, onPick }) => {
       </select>
     </div>
   );
-}
+};
 
 export default Picker;
