@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "ui-sans-serif", "system-ui"], // Google Font の 'Roboto'
+        sans: ["Roboto", "ui-sans-serif", "system-ui"],
       },
     },
   },

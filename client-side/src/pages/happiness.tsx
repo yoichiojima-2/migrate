@@ -6,45 +6,33 @@ interface CountryCardProps {
   data: HappinessData[];
 }
 
-const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => {
-  return (
-    <div>
-      <h2>{country}</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>feature</th>
-            <th>value</th>
-            <th>value in current city</th>
-            <th>diff (amount)</th>
-            <th>diff (rate)</th>
+const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => (
+  <div>
+    <h2>{country}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>feature</th>
+          <th>value</th>
+          <th>value in current city</th>
+          <th>diff (amount)</th>
+          <th>diff (rate)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((item) => (
+          <tr key={item.feature}>
+            <td>{item.feature}</td>
+            <td>{item.value}</td>
+            <td>{item.value_in_current_country}</td>
+            <td>{item.diff_amount}</td>
+            <td>{item.diff_rate}</td>
           </tr>
-        </thead>
-        <tbody>
-          {data.map((item) => (
-            <tr key={item.feature}>
-              <td>{item.feature}</td>
-              <td>{item.value}</td>
-              <td>{item.value_in_current_country}</td>
-              <td>{item.diff_amount}</td>
-              <td>{item.diff_rate}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-};
-
-const groupByCountry = (data: HappinessData[]) => {
-  return data.reduce<Record<string, HappinessData[]>>((acc, item) => {
-    if (!acc[item.country]) {
-      acc[item.country] = [];
-    }
-    acc[item.country].push(item);
-    return acc;
-  }, {});
-};
+        ))}
+      </tbody>
+    </table>
+  </div>
+);
 
 interface HappinessProps {
   country: string;
@@ -58,6 +46,16 @@ interface HappinessData {
   diff_amount: number;
   diff_rate: number;
 }
+
+const groupByCountry = (data: HappinessData[]) => {
+  return data.reduce<Record<string, HappinessData[]>>((acc, item) => {
+    if (!acc[item.country]) {
+      acc[item.country] = [];
+    }
+    acc[item.country].push(item);
+    return acc;
+  }, {});
+};
 
 const Happiness: React.FC<HappinessProps> = ({ country }) => {
   const [happiness, setHappiness] = useState<HappinessData[]>([]);
