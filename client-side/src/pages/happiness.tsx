@@ -13,10 +13,11 @@ const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => {
       <table>
         <thead>
           <tr>
-            <th>Feature</th>
-            <th>Value</th>
-            <th>Diff (Amount)</th>
-            <th>Diff (Rate)</th>
+            <th>feature</th>
+            <th>value</th>
+            <th>value in current city</th>
+            <th>diff (amount)</th>
+            <th>diff (rate)</th>
           </tr>
         </thead>
         <tbody>
@@ -24,6 +25,7 @@ const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => {
             <tr key={item.feature}>
               <td>{item.feature}</td>
               <td>{item.value}</td>
+              <td>{item.value_in_current_country}</td>
               <td>{item.diff_amount}</td>
               <td>{item.diff_rate}%</td>
             </tr>
