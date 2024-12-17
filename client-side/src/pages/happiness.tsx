@@ -27,7 +27,7 @@ const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => {
               <td>{item.value}</td>
               <td>{item.value_in_current_country}</td>
               <td>{item.diff_amount}</td>
-              <td>{item.diff_rate}%</td>
+              <td>{item.diff_rate}</td>
             </tr>
           ))}
         </tbody>
@@ -45,7 +45,6 @@ const groupByCountry = (data: HappinessData[]) => {
     return acc;
   }, {});
 };
-
 
 interface HappinessProps {
   country: string;
