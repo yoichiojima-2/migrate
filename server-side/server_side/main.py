@@ -42,6 +42,7 @@ def happiness(country: str) -> list:
     df["feature"] = df["feature"].str.lower()
 
     df = df[df["year"] == 2017].drop(columns="year")
+    df = df[df["feature"] != "happiness.rank"]
 
     countries: list[str] = list(json.load((get_data_dir() / "global/city_to_country.json").open()).values())
     df = df[df["country"].isin(countries)]
@@ -64,8 +65,8 @@ def happiness(country: str) -> list:
     # fmt: off
     merged_df["diff_rate"] = (
         merged_df
-        .apply(lambda x: x["haystack_value"] / x["needle_value"] if x["needle_value"] else 0, axis=1)
-        .round(2)
+        .apply(lambda x: (x["haystack_value"] / x["needle_value"] - 1) * 100 if x["needle_value"] else 0, axis=1)
+        .round()
     )
     # fmt: on
     merged_df["value"] = merged_df["haystack_value"].round(2)
