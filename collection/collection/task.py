@@ -1,14 +1,14 @@
 class Task:
-    def extract(self) -> list[dict]:
+    def extract(self) -> any:
         raise NotImplementedError
 
-    def transform(self) -> list[dict]:
+    def transform(self) -> any:
         raise NotImplementedError
 
     def load(self) -> None:
         raise NotImplementedError
 
     def run(self) -> None:
-        df = self.extract()
-        df = self.transform(df)
-        self.load(df)
+        data = self.extract()
+        data = self.transform(data)
+        self.load(data)

@@ -22,9 +22,6 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: "3.13"
-      - name: Install dependencies
-        run: |
-          make venv
       - name: Test
         run: |
           make test

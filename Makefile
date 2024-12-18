@@ -1,7 +1,7 @@
 ROOT = $(shell echo ${HOME}/.sign-to-migrate)
 PWD = $(shell pwd)
 PROJECTS = utils collection server-side
-VENV = $(ROOT)/.venv
+VENV = $(PWD)/.venv
 
 .PHONY: clean
 clean:
@@ -30,7 +30,7 @@ venv: .venv/.installed
 	python -m venv $(VENV)
 	$(VENV)/bin/pip install --upgrade pip
 	$(VENV)/bin/pip install pytest dateutils
-	@for project in $(PROJECTS); do $(VENV)/bin/pip install -e $$project; done
+	for project in $(PROJECTS); do $(VENV)/bin/pip install -e $$project; done
 	touch $(VENV)/.installed
 
 .PHONY: install
@@ -47,5 +47,5 @@ uninstall:
 
 .PHONY: test
 test: venv install
-	@for project in $(PROJECTS); do cd $(PWD)/$$project && $(VENV)/bin/pytest -vvv; done
+	for project in $(PROJECTS); do cd $(PWD)/$$project && $(VENV)/bin/pytest -vvv; done
 
