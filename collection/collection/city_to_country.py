@@ -1,12 +1,13 @@
 import json
 import pandas as pd
-from utils.utils import get_data_dir
-from task import Task
+from utils.utils import get_data_dir, write_json
+from collection.task import Task
 
 
 class CityToCountryTask(Task):
+    output_path = "global/city_to_country.json"
+
     def extract(self):
-        output_path = get_data_dir() / "global/city_to_country.json"
         return pd.read_json(get_data_dir() / "raw/cost_of_living.json")
 
     def transform(self, df: pd.DataFrame):
@@ -16,15 +17,9 @@ class CityToCountryTask(Task):
         return mapping_df
 
     def load(self, df: pd.DataFrame):
-        mapping = mapping_df.set_index("city").to_dict()["country"]
-
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-
-        with open(output_path, "w") as f:
-            json.dump(mapping, f, indent=2)
-
-        print(f"[city_to_country] saved: {output_path}")
-
+        self.output_path
+        data = df.set_index("city").to_dict()["country"]
+        write_json(data, self.output_path)
 
 if __name__ == "__main__":
-    main()
+    CityToCountryTask().run()
