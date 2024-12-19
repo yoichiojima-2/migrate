@@ -47,5 +47,7 @@ uninstall:
 
 .PHONY: test
 test: venv install
-	for project in $(PROJECTS); do cd $(PWD)/$$project && $(VENV)/bin/pytest -vvv; done
+	cd utils && $(VENV)/bin/pytest
+	cd collection && $(VENV)/bin/pytest
+	cd server-side && $(VENV)/bin/pytest
 
