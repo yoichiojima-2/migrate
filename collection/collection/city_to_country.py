@@ -1,4 +1,3 @@
-import json
 import pandas as pd
 from utils.utils import get_data_dir, write_json
 from collection.task import Task
@@ -18,6 +17,7 @@ class CityToCountryTask(Task):
 
     def load(self, data: dict[str, str]):
         write_json(data, self.output_path)
+
 
 if __name__ == "__main__":
     CityToCountryTask().run()
