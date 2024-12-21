@@ -1,6 +1,10 @@
-from collection.crime import CrimeTask
-from tests.test_lib import run_and_check_output
+from pathlib import Path
+import luigi
+from collection.main import Crime
+from utils.utils import get_data_dir
 
 
-def test_crime():
-    run_and_check_output(CrimeTask, CrimeTask.output_path)
+
+def test_cost_of_living():
+    luigi.build([Crime()], local_scheduler=True)
+    assert Path(get_data_dir() / Crime().output().path).exists()

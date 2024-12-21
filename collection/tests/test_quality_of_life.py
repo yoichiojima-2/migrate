@@ -1,6 +1,10 @@
-from collection.quality_of_life import QualityOfLifeTask
-from tests.test_lib import run_and_check_output
+from pathlib import Path
+import luigi
+from collection.main import QualityOfLife
+from utils.utils import get_data_dir
 
 
-def test_crime():
-    run_and_check_output(QualityOfLifeTask, QualityOfLifeTask.output_path)
+
+def test_quolity_of_life():
+    luigi.build([QualityOfLife()], local_scheduler=True)
+    assert Path(get_data_dir() / QualityOfLife().output().path).exists()
