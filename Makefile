@@ -47,7 +47,7 @@ uninstall:
 
 .PHONY: test
 test: venv install
-	cd utils && $(VENV)/bin/pytest
-	cd collection && $(VENV)/bin/pytest
-	cd server-side && $(VENV)/bin/pytest
+	cd utils && $(VENV)/bin/pytest -vvv
+	cd collection && $(VENV)/bin/pytest -vvv
+	cd server-side && $(VENV)/bin/pytest -vvv
 
