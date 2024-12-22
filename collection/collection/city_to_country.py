@@ -13,7 +13,7 @@ class CityToCountryTask(Task):
         mapping_df = df[["country", "city"]].drop_duplicates()
         mapping_df["country"] = mapping_df["country"].str.lower()
         mapping_df["city"] = mapping_df["city"].str.lower()
-        return df.set_index("city").to_dict()["country"]
+        return mapping_df.set_index("city").to_dict()["country"]
 
     def load(self, data: dict[str, str]):
         write_json(data, self.output_path)

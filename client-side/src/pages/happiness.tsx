@@ -63,7 +63,7 @@ const Happiness: React.FC<HappinessProps> = ({ country }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${API_URL}/happiness?country=${country}`);
+        const res = await fetch(`${API_URL}/summary?country=${country}`);
         const json = await res.json();
         setHappiness(json);
         console.log(`happiness data fetched: ${country}`);

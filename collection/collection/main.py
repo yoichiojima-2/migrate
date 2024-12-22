@@ -216,7 +216,8 @@ class All(luigi.Task):
             UnemploymentRate(),
             UnemploymentRateDisability(),
             YouthNeetProportion(),
-            LabourRights()
+            LabourRights(),
+            QualityOfLife(),
         ]
 
     def run(self):

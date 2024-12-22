@@ -30,13 +30,15 @@ def country(city: str) -> str | None:
     return mapping.get(city, None)
 
 
-@app.get("/happiness")
-def happiness(country: str) -> list:
+@app.get("/summary")
+def summary(country: str) -> list:
     if not country:
         return {}
 
-    df = pd.read_json(get_data_dir() / "raw/happiness.json")
-
+    happiness_df = pd.read_json(get_data_dir() / "raw/happiness.json")
+    # has city column
+    qol_df = pd.read_json(get_data_dir() / "raw/quality_of_life.json")
+    df = pd.concat([happiness_df, qol_df])
 
     df["country"] = df["country"].str.lower()
     df["feature"] = df["feature"].str.lower()
@@ -71,9 +73,16 @@ def happiness(country: str) -> list:
     # fmt: on
     merged_df["value"] = merged_df["haystack_value"].round(2)
     merged_df["value_in_current_country"] = merged_df["needle_value"].round(2)
+    pd.options.display.max_columns = 500
+    print(merged_df)
 
     return (
         merged_df
         [["country", "feature", "value", "value_in_current_country", "diff_amount", "diff_rate"]]
         .to_dict(orient="records")
     )
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
