@@ -36,7 +36,6 @@ def summary(country: str) -> list:
         return {}
 
     happiness_df = pd.read_json(get_data_dir() / "raw/happiness.json")
-    # has city column
     qol_df = pd.read_json(get_data_dir() / "raw/quality_of_life.json")
     df = pd.concat([happiness_df, qol_df])
 
