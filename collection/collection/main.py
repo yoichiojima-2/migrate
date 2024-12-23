@@ -11,7 +11,7 @@ class CostOfLiving(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -24,7 +24,7 @@ class CityToCountry(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -34,7 +34,7 @@ class Cpi(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -44,7 +44,7 @@ class Crime(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -54,7 +54,7 @@ class Happiness(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -64,7 +64,7 @@ class CleanseHappiness(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -74,7 +74,7 @@ class WorkingPovertyRate(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -84,7 +84,7 @@ class SocialProtection(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -94,7 +94,7 @@ class WomenInSeniorAndMiddlePosition(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -104,7 +104,7 @@ class WomenInManagerialPosition(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -114,7 +114,7 @@ class AnnualGrowthRatePerWorker(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -124,7 +124,7 @@ class InformalEmployment(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -134,7 +134,7 @@ class AverageHourlyEarnings(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -144,7 +144,7 @@ class UnemploymentRate(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -154,7 +154,7 @@ class UnemploymentRateDisability(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -164,7 +164,7 @@ class YouthNeetProportion(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -174,7 +174,7 @@ class LabourRights(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -184,7 +184,7 @@ class QualityOfLife(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -194,7 +194,7 @@ class CleanseQualityOfLife(luigi.Task):
 
     def run(self):
         self.instance.run()
-    
+
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
@@ -204,13 +204,13 @@ class All(luigi.Task):
 
     def requires(self):
         return [
-            CityToCountry(), 
-            Cpi(), 
-            Crime(), 
-            Happiness(), 
+            CityToCountry(),
+            Cpi(),
+            Crime(),
+            Happiness(),
             CleanseHappiness(),
-            WorkingPovertyRate(), 
-            SocialProtection(), 
+            WorkingPovertyRate(),
+            SocialProtection(),
             WomenInSeniorAndMiddlePosition(),
             WomenInManagerialPosition(),
             AnnualGrowthRatePerWorker(),
@@ -221,16 +221,14 @@ class All(luigi.Task):
             YouthNeetProportion(),
             LabourRights(),
             QualityOfLife(),
-            CleanseQualityOfLife()
+            CleanseQualityOfLife(),
         ]
 
     def run(self):
         self.success_marker.touch()
 
-
     def output(self):
         return luigi.LocalTarget(self.success_marker)
-
 
 
 if __name__ == "__main__":

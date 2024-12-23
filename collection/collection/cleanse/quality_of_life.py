@@ -1,4 +1,3 @@
-from pathlib import Path
 import pandas as pd
 from collection.task import Task
 from collection.cleanse.cleanse_utils import filter_by_country
@@ -27,4 +26,3 @@ class QualityOfLifeTask(Task):
 if __name__ == "__main__":
     task = QualityOfLifeTask()
     task.run()
-

@@ -1,4 +1,3 @@
-from pathlib import Path
 import pandas as pd
 from collection.task import Task
 from collection.cleanse.cleanse_utils import filter_by_country
@@ -28,4 +27,3 @@ class HappinessTask(Task):
 if __name__ == "__main__":
     task = HappinessTask()
     task.run()
-
