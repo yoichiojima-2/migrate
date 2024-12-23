@@ -17,6 +17,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+def city_to_country(city: str) -> str:
+    df = pd.read_json(get_data_dir() / "master/city_to_country.json")
+    return df[df["city"] == city]["country"].iloc[0]
+
 
 @app.get("/cities")
 def cities() -> list[str]:
@@ -25,41 +29,22 @@ def cities() -> list[str]:
 
 @app.get("/country")
 def country(city: str) -> str | None:
-    ref: Path = get_data_dir() / "global/city_to_country.json"
-    mapping = json.loads(open(ref).read())
-    return mapping.get(city, None)
+    return city_to_country(city)
 
 
 @app.get("/summary")
-def summary(country: str) -> list:
-    if not country:
-        return {}
+def summary(city: str) -> list:
+    qol_df = pd.read_json(get_data_dir() / "cleansed/quality_of_life.json")
 
-    happiness_df = pd.read_json(get_data_dir() / "raw/happiness.json")
-    qol_df = pd.read_json(get_data_dir() / "raw/quality_of_life.json")
+    city_country_df = qol_df[["city", "country"]].drop_duplicates()
+    raw_happiness_df = pd.read_json(get_data_dir() / "cleansed/happiness.json")
+    happiness_df = city_country_df.merge(raw_happiness_df, on = "country", how="left")
+
     df = pd.concat([happiness_df, qol_df])
 
-    df["country"] = df["country"].str.lower()
-    df["feature"] = df["feature"].str.lower()
+    needle_df = df[df["city"] == city].rename(columns={"value": "needle_value"}).drop(columns=["city", "country"])
+    haystack_df = df[df["city"] != city].rename(columns={"value": "haystack_value"})
 
-    df = df[df["year"] == 2017].drop(columns="year")
-    df = df[df["feature"] != "happiness.rank"]
-
-    countries: list[str] = list(json.load((get_data_dir() / "global/city_to_country.json").open()).values())
-    df = df[df["country"].isin(countries)]
-
-    # fmt: off
-    needle_df = (
-        df[df["country"] == country]
-        .rename(columns={"value": "needle_value"})
-        .drop(columns="country")
-    )
-
-    haystack_df = (
-        df[df["country"] != country]
-        .rename(columns={"value": "haystack_value"})
-    )
-    # fmt: on
     merged_df = haystack_df.merge(needle_df, on=["feature"], how="left")
     merged_df["diff_amount"] = (merged_df["haystack_value"] - merged_df["needle_value"]).round(2)
 
@@ -67,17 +52,15 @@ def summary(country: str) -> list:
     merged_df["diff_rate"] = (
         merged_df
         .apply(lambda x: (x["haystack_value"] / x["needle_value"] - 1) * 100 if x["needle_value"] else 0, axis=1)
-        .round()
     )
     # fmt: on
     merged_df["value"] = merged_df["haystack_value"].round(2)
-    merged_df["value_in_current_country"] = merged_df["needle_value"].round(2)
-    pd.options.display.max_columns = 500
-    print(merged_df)
+    merged_df["value_in_current_city"] = merged_df["needle_value"].round(2)
+    merged_df["diff_rate"] = merged_df["diff_rate"].round(2)
 
     return (
         merged_df
-        [["country", "feature", "value", "value_in_current_country", "diff_amount", "diff_rate"]]
+        [["country", "city", "feature", "value", "value_in_current_city", "diff_amount", "diff_rate"]]
         .to_dict(orient="records")
     )
 
