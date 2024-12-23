@@ -33,10 +33,10 @@ def country(city: str) -> str | None:
 
 @app.get("/summary")
 def summary(city: str) -> list:
-    qol_df = pd.read_json(get_data_dir() / "cleansed/quality_of_life.json")
+    qol_df = pd.read_json(get_data_dir() / "cleanse/quality_of_life.json")
 
     city_country_df = qol_df[["city", "country"]].drop_duplicates()
-    raw_happiness_df = pd.read_json(get_data_dir() / "cleansed/happiness.json")
+    raw_happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
     happiness_df = city_country_df.merge(raw_happiness_df, on="country", how="left")
 
     df = pd.concat([happiness_df, qol_df])
