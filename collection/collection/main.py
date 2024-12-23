@@ -1,11 +1,11 @@
 import os
 import luigi
-from collection.city_to_country import CityToCountryTask
-from collection.cost_of_living import CostOfLivingTask
-from collection.cpi import CpiTask
-from collection.crime import CrimeTask
-from collection.happiness import HappinessTask
-from collection.labour import (
+from collection.raw.city_to_country import CityToCountryTask
+from collection.raw.cost_of_living import CostOfLivingTask
+from collection.raw.cpi import CpiTask
+from collection.raw.crime import CrimeTask
+from collection.raw.happiness import HappinessTask
+from collection.raw.labour import (
     WorkingPovertyRate,
     SocialProtection,
     WomenInSeniorAndMiddlePosition,
@@ -19,7 +19,7 @@ from collection.labour import (
     YouthNeetProportion,
     LabourRights,
 )
-from collection.quality_of_life import QualityOfLifeTask
+from collection.raw.quality_of_life import QualityOfLifeTask
 from utils.utils import get_data_dir
 
 
