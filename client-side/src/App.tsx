@@ -8,22 +8,8 @@ import "./App.css";
 
 function App() {
   const [currentCity, setCurrentCity] = useState<string>("tokyo");
-  const [country, setCountry] = useState<string>("japan");
+  const [city, setCity] = useState<string>("japan");
   const [cities, setCities] = useState<string[]>([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch(`${API_URL}/country?city=${currentCity}`);
-        const json = await res.json();
-        setCountry(json);
-        console.log(`country fetched: ${currentCity} -> ${country}`);
-      } catch (error: any) {
-        console.log(error.message);
-      }
-    };
-    fetchData();
-  }, [currentCity]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,7 +27,7 @@ function App() {
   return (
     <div>
       <Picker picked={currentCity} options={cities} onPick={setCurrentCity} />
-      <Happiness country={country} />
+      <Happiness city={currentCity} />
     </div>
   );
 }

@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { API_URL } from "../constants/api";
 
-interface CountryCardProps {
-  country: string;
+interface cityCardProps {
+  city: string;
   data: HappinessData[];
 }
 
-const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => (
+const CityCard: React.FC<cityCardProps> = ({ city, data }) => (
   <div>
-    <h2>{country}</h2>
+    <h2>{city}</h2>
     <table>
       <thead>
         <tr>
@@ -24,7 +24,7 @@ const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => (
           <tr key={item.feature}>
             <td>{item.feature}</td>
             <td>{item.value}</td>
-            <td>{item.value_in_current_country}</td>
+            <td>{item.value_in_current_city}</td>
             <td>{item.diff_amount}</td>
             <td>{item.diff_rate}</td>
           </tr>
@@ -35,51 +35,52 @@ const CountryCard: React.FC<CountryCardProps> = ({ country, data }) => (
 );
 
 interface HappinessProps {
-  country: string;
+  city: string;
 }
 
 interface HappinessData {
-  country: string;
+  city: string;
   feature: string;
   value: number;
-  value_in_current_country: number;
+  value_in_current_city: number;
   diff_amount: number;
   diff_rate: number;
 }
 
-const groupByCountry = (data: HappinessData[]) => {
+const groupBycity = (data: HappinessData[]) => {
   return data.reduce<Record<string, HappinessData[]>>((acc, item) => {
-    if (!acc[item.country]) {
-      acc[item.country] = [];
+    if (!acc[item.city]) {
+      acc[item.city] = [];
     }
-    acc[item.country].push(item);
+    acc[item.city].push(item);
     return acc;
   }, {});
 };
 
-const Happiness: React.FC<HappinessProps> = ({ country }) => {
+const Happiness: React.FC<HappinessProps> = ({ city }) => {
   const [happiness, setHappiness] = useState<HappinessData[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${API_URL}/summary?country=${country}`);
+        const res = await fetch(`${API_URL}/summary?city=${city}`);
         const json = await res.json();
         setHappiness(json);
-        console.log(`happiness data fetched: ${country}`);
+        console.log(`happiness data fetched: ${city}`);
+        console.log(json);
       } catch (error: any) {
         console.log(error.message);
       }
     };
     fetchData();
-  }, [country]);
+  }, [city]);
 
-  const groupedData = groupByCountry(happiness);
+  const groupedData = groupBycity(happiness);
 
   return (
     <div>
-      {Object.entries(groupedData).map(([country, data]) => (
-        <CountryCard key={country} country={country} data={data} />
+      {Object.entries(groupedData).map(([city, data]) => (
+        <CityCard key={city} city={city} data={data} />
       ))}
     </div>
   );
