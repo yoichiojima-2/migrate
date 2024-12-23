@@ -5,7 +5,7 @@ from utils.utils import get_data_dir, df_to_json
 
 
 class QualityOfLifeTask(Task):
-    output_path = "cleansed/quality_of_life.json"
+    output_path = "cleanse/quality_of_life.json"
 
     def extract(self) -> pd.DataFrame:
         return pd.read_json(get_data_dir() / "raw/quality_of_life.json")

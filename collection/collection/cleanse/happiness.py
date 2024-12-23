@@ -5,7 +5,7 @@ from utils.utils import get_data_dir, df_to_json
 
 
 class HappinessTask(Task):
-    output_path = "cleansed/happiness.json"
+    output_path = "cleanse/happiness.json"
 
     def extract(self) -> pd.DataFrame:
         return pd.read_json(get_data_dir() / "raw/happiness.json")
