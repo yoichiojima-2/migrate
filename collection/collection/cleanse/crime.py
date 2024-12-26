@@ -5,10 +5,11 @@ from utils.utils import get_data_dir, df_to_json
 
 
 class CrimeTask(Task):
+    input_path = "raw/crime.json"
     output_path = "cleanse/crime.json"
 
     def extract(self) -> pd.DataFrame:
-        return pd.read_json(get_data_dir() / "raw/crime.json")
+        return pd.read_json(get_data_dir() / self.input_path)
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df["city"] = df["city"].str.lower()
