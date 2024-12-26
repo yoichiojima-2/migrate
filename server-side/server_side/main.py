@@ -31,12 +31,13 @@ def country(city: str) -> str | None:
 def summary(city: str) -> list:
     qol_df = pd.read_json(get_data_dir() / "cleanse/quality_of_life.json")
     crime_df = pd.read_json(get_data_dir() / "cleanse/crime.json")
+    cost_of_living_df = pd.read_json(get_data_dir() / "cleanse/cost_of_living.json")
 
     city_country_df = qol_df[["city", "country"]].drop_duplicates()
     raw_happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
     happiness_df = city_country_df.merge(raw_happiness_df, on="country", how="left")
 
-    df = pd.concat([happiness_df, qol_df, crime_df])
+    df = pd.concat([happiness_df, qol_df, crime_df, cost_of_living_df])
 
     needle_df = (
         df[df["city"] == city]
@@ -55,10 +56,12 @@ def summary(city: str) -> list:
         merged_df
         .apply(lambda x: (x["haystack_value"] / x["needle_value"] - 1) * 100 if x["needle_value"] else 0, axis=1)
     )
-    merged_df["value"] = merged_df["haystack_value"].round(2)
-    merged_df["value_in_current_city"] = merged_df["needle_value"].round(2)
-    merged_df["diff_amount"] = merged_df["diff_amount"].round(2)
-    merged_df["diff_rate"] = merged_df["diff_rate"].round(2)
+
+    decimals = 1
+    merged_df["value"] = merged_df["haystack_value"].round(decimals)
+    merged_df["value_in_current_city"] = merged_df["needle_value"].round(decimals)
+    merged_df["diff_amount"] = merged_df["diff_amount"].round(decimals)
+    merged_df["diff_rate"] = merged_df["diff_rate"].round(decimals)
 
     return (
         merged_df[

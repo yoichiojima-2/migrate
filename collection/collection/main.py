@@ -16,6 +16,16 @@ class CostOfLiving(luigi.Task):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
 
+class CleanseCostOfLiving(luigi.Task):
+    instance = cleanse.CostOfLivingTask()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+
+
 class CityToCountry(luigi.Task):
     instance = master.CityToCountryTask()
 
@@ -214,6 +224,8 @@ class All(luigi.Task):
 
     def requires(self):
         return [
+            CostOfLiving(),
+            CleanseCostOfLiving(),
             CityToCountry(),
             Cpi(),
             Crime(),
