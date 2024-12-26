@@ -199,6 +199,16 @@ class CleanseQualityOfLife(luigi.Task):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
 
+class CleanseCrime(luigi.Task):
+    instance = cleanse.CrimeTask()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+
+
 class All(luigi.Task):
     success_marker = get_data_dir() / ".success"
 
@@ -207,6 +217,7 @@ class All(luigi.Task):
             CityToCountry(),
             Cpi(),
             Crime(),
+            CleanseCrime(),
             Happiness(),
             CleanseHappiness(),
             WorkingPovertyRate(),
