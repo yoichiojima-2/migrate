@@ -19,6 +19,9 @@ class CostOfLiving(luigi.Task):
 class CleanseCostOfLiving(luigi.Task):
     instance = cleanse.CostOfLivingTask()
 
+    def requires(self):
+        return CostOfLiving(), CityToCountry()
+
     def run(self):
         self.instance.run()
 
@@ -71,6 +74,9 @@ class Happiness(luigi.Task):
 
 class CleanseHappiness(luigi.Task):
     instance = cleanse.HappinessTask()
+
+    def requires(self):
+        return Happiness(), CityToCountry()
 
     def run(self):
         self.instance.run()
@@ -202,6 +208,9 @@ class QualityOfLife(luigi.Task):
 class CleanseQualityOfLife(luigi.Task):
     instance = cleanse.QualityOfLifeTask()
 
+    def requires(self):
+        return QualityOfLife(), CityToCountry()
+
     def run(self):
         self.instance.run()
 
@@ -211,6 +220,9 @@ class CleanseQualityOfLife(luigi.Task):
 
 class CleanseCrime(luigi.Task):
     instance = cleanse.CrimeTask()
+
+    def requires(self):
+        return Crime(), CityToCountry()
 
     def run(self):
         self.instance.run()
@@ -224,13 +236,10 @@ class All(luigi.Task):
 
     def requires(self):
         return [
-            CostOfLiving(),
             CleanseCostOfLiving(),
             CityToCountry(),
             Cpi(),
-            Crime(),
             CleanseCrime(),
-            Happiness(),
             CleanseHappiness(),
             WorkingPovertyRate(),
             SocialProtection(),
@@ -243,7 +252,6 @@ class All(luigi.Task):
             UnemploymentRateDisability(),
             YouthNeetProportion(),
             LabourRights(),
-            QualityOfLife(),
             CleanseQualityOfLife(),
         ]
 

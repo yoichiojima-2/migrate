@@ -5,10 +5,11 @@ from utils.utils import get_data_dir, df_to_json
 
 
 class HappinessTask(Task):
+    input_path = "raw/happiness.json"
     output_path = "cleanse/happiness.json"
 
     def extract(self) -> pd.DataFrame:
-        return pd.read_json(get_data_dir() / "raw/happiness.json")
+        return pd.read_json(get_data_dir() / self.input_path)
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df["country"] = df["country"].str.lower()

@@ -5,10 +5,11 @@ from utils.utils import get_data_dir, df_to_json
 
 
 class QualityOfLifeTask(Task):
+    input_path = "raw/quality_of_life.json"
     output_path = "cleanse/quality_of_life.json"
 
     def extract(self) -> pd.DataFrame:
-        return pd.read_json(get_data_dir() / "raw/quality_of_life.json")
+        return pd.read_json(get_data_dir() / self.input_path)
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df["city"] = df["city"].str.lower()
