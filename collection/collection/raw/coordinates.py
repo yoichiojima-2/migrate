@@ -7,8 +7,9 @@ from utils.utils import get_config, df_to_json
 
 
 class CoordinatesTask(Task):
-    output_path = "raw/coordinates.json"
+    output_path = "global/coordinates.json"
     cities = get_config()["cities"]
+
     if key := os.getenv("OPENCAGEDATA_API_KEY"):
         api_key = key
     else:
@@ -17,7 +18,7 @@ class CoordinatesTask(Task):
     def extract_by_city(self, city: str) -> pd.DataFrame:
         url = "https://api.opencagedata.com/geocode/v1/json"
         params = {
-            "q": "tokyo",
+            "q": city,
             "key": self.api_key,
         }
         res = requests.get(url, params=params)
