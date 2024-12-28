@@ -13,6 +13,7 @@ bs4 = "^0.0.2"
 pyyaml = "^6.0.2"
 utils = {path = "../utils"}
 luigi = "^3.6.0"
+requests = "^2.32.3"
 
 
 [tool.poetry.group.dev.dependencies]

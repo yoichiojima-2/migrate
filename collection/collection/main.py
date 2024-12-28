@@ -231,6 +231,28 @@ class CleanseCrime(luigi.Task):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
 
+class Coordinates(luigi.Task):
+    instance = raw.CoordinatesTask()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+
+class Weather(luigi.Task):
+    instance = raw.WeatherTask()
+
+    def requires(self):
+        return Coordinates()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+
+
 class All(luigi.Task):
     success_marker = get_data_dir() / ".success"
 
@@ -253,6 +275,7 @@ class All(luigi.Task):
             YouthNeetProportion(),
             LabourRights(),
             CleanseQualityOfLife(),
+            Weather(),
         ]
 
     def run(self):
