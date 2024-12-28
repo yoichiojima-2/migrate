@@ -240,6 +240,7 @@ class Coordinates(luigi.Task):
     def output(self):
         return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
 
+
 class Weather(luigi.Task):
     instance = raw.WeatherTask()
 

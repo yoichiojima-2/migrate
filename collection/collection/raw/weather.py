@@ -1,4 +1,3 @@
-from datetime import datetime
 import requests
 from tqdm import tqdm
 import pandas as pd
@@ -32,26 +31,14 @@ class WeatherTask(Task):
         data = []
         for feature, content in fetched_data.items():
             for yearmonth, value in content.items():
-                data.append(
-                    {
-                        "city": city,
-                        "feature": feature,
-                        "yearmonth": yearmonth,
-                        "value": value
-                    }
-                )
+                data.append({"city": city, "feature": feature, "yearmonth": yearmonth, "value": value})
 
         return pd.DataFrame(data)
 
-
     def extract(self):
         return pd.concat(
-            [
-                self.extract_by_city(city)
-                for city in tqdm(self.cities, desc="extracting weather data...")
-            ],
+            [self.extract_by_city(city) for city in tqdm(self.cities, desc="extracting weather data...")],
         )
-
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         return df

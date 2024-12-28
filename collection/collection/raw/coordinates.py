@@ -27,12 +27,7 @@ class CoordinatesTask(Task):
         return data
 
     def extract(self) -> pd.DataFrame:
-        return pd.DataFrame(
-            [
-                self.extract_by_city(city)
-                for city in tqdm(self.cities, desc="extracting coordinates...")
-            ]
-        )
+        return pd.DataFrame([self.extract_by_city(city) for city in tqdm(self.cities, desc="extracting coordinates...")])
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df["city"] = df["city"].str.lower()
