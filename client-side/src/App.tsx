@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import Picker from "./components/Picker";
-import { happinessQOLRow } from "./types/types";
+import { happinessQOLRow } from "./types";
 import { API_URL } from "./constants/api";
 import "./App.css";
 
@@ -39,11 +39,13 @@ function App() {
   return (
     <div>
       <Picker picked={currentCity} options={cities} onPick={setCurrentCity} />
+      <div className="grid brid-cols-1 sm:grid-cols-2">
       {cities
         .filter((city) => city != currentCity)
         .map((city) => (
           <Card key={city} city={city} happinessQOLData={happinessQOLData} />
         ))}
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import HappinessQOL from "./HappinessQOL";
-import { happinessQOLRow } from "../types/types";
+import { happinessQOLRow } from "../types";
 
 interface CardProps {
   city: string;
