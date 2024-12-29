@@ -1,4 +1,5 @@
 import pandas as pd
+from sklearn.preprocessing import StandardScaler
 from collection.task import Task
 from utils.utils import get_data_dir, df_to_json
 
@@ -11,6 +12,10 @@ class HappinessQOLTask(Task):
         happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
 
         df = pd.concat([happiness_df, qol_df])
+        df = df.pivot(index=["country", "city"], columns="feature", values="value")
+        scaler = StandardScaler()
+        df = pd.DataFrame(scaler.fit_transform(df), columns=df.columns, index=df.index)
+        df = df.melt(ignore_index=False).reset_index()
 
         feature_mapping = {
             "happiness.score": "Happiness Score",
@@ -29,11 +34,10 @@ class HappinessQOLTask(Task):
             "purchasing power index": "Purchasing Power Index",
             "quality of life index:": "Quality of Life Index",
             "safety index": "Safety Index",
-            "traffic commute time index": "Traffic Commute Time Index"
+            "traffic commute time index": "Traffic Commute Time Index",
         }
         df["feature"] = df["feature"].apply(lambda x: feature_mapping[x])
         return df
-        
 
     def load(self, df: pd.DataFrame):
         df_to_json(df, self.output_path)
