@@ -1,10 +1,15 @@
+from datetime import datetime
 import requests
+import warnings
 from tqdm import tqdm
 from dataclasses import dataclass
 import pandas as pd
+from dotenv import load_dotenv
 from collection.task import Task
 from utils.utils import get_config, get_data_dir, df_to_json
 
+
+load_dotenv()
 
 @dataclass
 class Coordinates:
@@ -13,7 +18,7 @@ class Coordinates:
 
 
 def get_coordinates(city: str) -> Coordinates:
-    path = get_data_dir() / "global/coordinates.json"
+    path = get_data_dir() / "master/coordinates.json"
     df = pd.read_json(path)
     df_filtered = df[df["city"] == city.lower()].iloc[0]
     return Coordinates(latitude=df_filtered["lat"], logitude=df_filtered["lng"])
@@ -22,6 +27,15 @@ def get_coordinates(city: str) -> Coordinates:
 class WeatherTask(Task):
     output_path = "raw/weather.json"
     cities = get_config()["cities"]
+    year = 2022
+
+    @staticmethod
+    def validate_yearmonth(yearmonth: str) -> bool:
+        try:
+            datetime.strptime(yearmonth, "%Y%m")
+            return True
+        except ValueError:
+            return False
 
     def extract_by_city(self, city: str) -> pd.DataFrame:
         coordinates = get_coordinates(city)
@@ -32,8 +46,8 @@ class WeatherTask(Task):
             "community": "ag",
             "longitude": coordinates.logitude,
             "latitude": coordinates.latitude,
-            "start": 2022,
-            "end": 2022,
+            "start": self.year,
+            "end": self.year,
             "format": "JSON",
         }
         res = requests.get(url, params=params)
@@ -42,7 +56,10 @@ class WeatherTask(Task):
         data = []
         for feature, content in fetched_data.items():
             for yearmonth, value in content.items():
-                data.append({"city": city, "feature": feature, "yearmonth": yearmonth, "value": value})
+                if self.validate_yearmonth(yearmonth):
+                    data.append({"city": city, "yearmonth": yearmonth, "feature": feature, "value": value})
+                else:
+                    warnings.warn(f"invalid yearmonth: {yearmonth}")
 
         return pd.DataFrame(data)
 
@@ -52,6 +69,8 @@ class WeatherTask(Task):
         )
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+        df["feature"] = df.apply(lambda x: f"{x['feature']}_{datetime.strptime(x['yearmonth'], '%Y%m').month}", axis=1)
+        df["city"] = df["city"].str.lower()
         return df
 
     def load(self, df: pd.DataFrame) -> None:
