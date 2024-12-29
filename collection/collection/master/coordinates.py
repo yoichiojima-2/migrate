@@ -7,7 +7,7 @@ from utils.utils import get_config, df_to_json
 
 
 class CoordinatesTask(Task):
-    output_path = "global/coordinates.json"
+    output_path = "master/coordinates.json"
     cities: list[str] = get_config()["cities"]
     api_key: str = os.getenv("OPENCAGEDATA_API_KEY")
 
