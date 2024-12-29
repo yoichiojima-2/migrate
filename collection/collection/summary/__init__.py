@@ -1,0 +1,1 @@
+from collection.summary.happiness_qol import HappinessQOLTask

@@ -2,12 +2,7 @@ from utils.utils import get_data_dir
 import pandas as pd
 
 
-OUTPUT_COLS = [
-    "country",
-    "city",
-    "feature",
-    "value"
-]
+OUTPUT_COLS = ["country", "city", "feature", "value"]
 
 
 def filter_by_country(df):

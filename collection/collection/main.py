@@ -3,7 +3,9 @@ import luigi
 from collection import raw
 from collection import master
 from collection import cleanse
+from collection import summary
 from utils.utils import get_data_dir
+
 
 class CostOfLiving(luigi.Task):
     instance = raw.CostOfLivingTask()
@@ -28,7 +30,6 @@ class CleanseCostOfLiving(luigi.Task):
         return self.instance.output()
 
 
-
 class QualityOfLife(luigi.Task):
     instance = raw.QualityOfLifeTask()
 
@@ -37,6 +38,7 @@ class QualityOfLife(luigi.Task):
 
     def output(self):
         return self.instance.output()
+
 
 class CleanseQualityOfLife(luigi.Task):
     instance = cleanse.QualityOfLifeTask()
@@ -49,6 +51,7 @@ class CleanseQualityOfLife(luigi.Task):
 
     def output(self):
         return self.instance.output()
+
 
 class CityToCountry(luigi.Task):
     instance = master.CityToCountryTask()
@@ -92,6 +95,7 @@ class Crime(luigi.Task):
     def output(self):
         return self.instance.output()
 
+
 class CleanseCrime(luigi.Task):
     instance = cleanse.CrimeTask()
 
@@ -126,6 +130,7 @@ class CleanseHappiness(luigi.Task):
 
     def output(self):
         return self.instance.output()
+
 
 class Weather(luigi.Task):
     instance = raw.WeatherTask()
@@ -263,6 +268,19 @@ class LabourRights(luigi.Task):
         return self.instance.output()
 
 
+class HappinessQOL(luigi.Task):
+    instance = summary.HappinessQOLTask()
+
+    def requires(self):
+        return [CleanseHappiness(), CleanseQualityOfLife()]
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
 class All(luigi.Task):
     success_marker = get_data_dir() / ".success"
 
@@ -273,8 +291,6 @@ class All(luigi.Task):
             CleanseWeather(),
             CleanseCostOfLiving(),
             CleanseCrime(),
-            CleanseHappiness(),
-            CleanseQualityOfLife(),
             WorkingPovertyRate(),
             SocialProtection(),
             WomenInSeniorAndMiddlePosition(),
@@ -286,6 +302,7 @@ class All(luigi.Task):
             UnemploymentRateDisability(),
             YouthNeetProportion(),
             LabourRights(),
+            HappinessQOL(),
         ]
 
     def run(self):

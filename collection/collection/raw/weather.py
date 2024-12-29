@@ -11,6 +11,7 @@ from utils.utils import get_config, get_data_dir, df_to_json
 
 load_dotenv()
 
+
 @dataclass
 class Coordinates:
     latitude: float
@@ -69,9 +70,16 @@ class WeatherTask(Task):
         )
 
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
-        df["feature"] = df.apply(lambda x: f"{x['feature']}_{datetime.strptime(x['yearmonth'], '%Y%m').month}", axis=1)
+        df["_dt"] = df["yearmonth"].apply(lambda x: datetime.strptime(x, "%Y%m"))
+        df["year"] = df["_dt"].dt.year
+        df["month"] = df["_dt"].dt.month
         df["city"] = df["city"].str.lower()
-        return df
+
+        # add country column
+        city_to_country_df = pd.read_json(get_data_dir() / "master/city_to_country.json")
+        df = df.merge(city_to_country_df, on="city", how="left")
+
+        return df[["country", "city", "year", "month", "feature", "value"]]
 
     def load(self, df: pd.DataFrame) -> None:
         df_to_json(df, self.output_path)
