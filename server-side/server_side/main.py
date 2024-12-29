@@ -28,7 +28,7 @@ def make_compare_df(df: pd.DataFrame, city: str) -> pd.DataFrame:
 
     # fmt: off
     merged_df = rest_df.merge(current_df, on=["feature"], how="left")
-    merged_df["diff_amount"] = (merged_df["value"] - merged_df["value_in_current_city"])
+    merged_df["diff"] = (merged_df["value"] - merged_df["value_in_current_city"])
 
     merged_df["diff_rate"] = (
         merged_df
@@ -37,10 +37,9 @@ def make_compare_df(df: pd.DataFrame, city: str) -> pd.DataFrame:
 
     merged_df["value"] = merged_df["value"].round(round_decimals)
     merged_df["value_in_current_city"] = merged_df["value_in_current_city"].round(round_decimals)
-    merged_df["diff_amount"] = merged_df["diff_amount"].round(round_decimals)
-    merged_df["diff_rate"] = merged_df["diff_rate"].round(round_decimals)
+    merged_df["diff"] = merged_df["diff"].round(round_decimals)
 
-    return merged_df[["country", "city", "feature", "value", "value_in_current_city", "diff_amount", "diff_rate"]]
+    return merged_df[["country", "city", "feature", "value", "value_in_current_city", "diff"]]
     # fmt: on
 
 
