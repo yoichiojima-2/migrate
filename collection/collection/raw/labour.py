@@ -10,7 +10,10 @@ class LaborTask(Task):
         self.name = name
         self.dataset_id = dataset_id
         self.dataset_name = dataset_name
-        self.output_path = f"raw/labour/{self.name}.json"
+
+    @property
+    def output_path(self) -> str:
+        return f"raw/labour/{self.name}.json"
 
     def extract(self) -> pd.DataFrame:
         api_url = "https://rplumber.ilo.org/data/indicator/"

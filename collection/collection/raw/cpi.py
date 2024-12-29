@@ -12,11 +12,7 @@ class CpiTask(Task):
         print(f"[CpiTask.extract] url: {url}")
         response = requests.get(
             url,
-            params={
-                "format": "json",
-                "date": "2010:2024",
-                "per_page": 10000,
-            },
+            params={"format": "json", "date": "2010:2024", "per_page": 10000},
         )
         if response.status_code == 200:
             data = response.json()

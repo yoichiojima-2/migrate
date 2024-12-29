@@ -4,7 +4,10 @@ from collection import raw
 from collection import master
 from collection import cleanse
 from utils.utils import get_data_dir
+from dotenv import load_dotenv
 
+
+load_dotenv()
 
 class CostOfLiving(luigi.Task):
     instance = raw.CostOfLivingTask()
@@ -13,7 +16,7 @@ class CostOfLiving(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
 
 
 class CleanseCostOfLiving(luigi.Task):
@@ -26,8 +29,30 @@ class CleanseCostOfLiving(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
 
+
+
+class QualityOfLife(luigi.Task):
+    instance = raw.QualityOfLifeTask()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+class CleanseQualityOfLife(luigi.Task):
+    instance = cleanse.QualityOfLifeTask()
+
+    def requires(self):
+        return QualityOfLife(), CityToCountry()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
 
 class CityToCountry(luigi.Task):
     instance = master.CityToCountryTask()
@@ -39,7 +64,7 @@ class CityToCountry(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
 
 
 class Cpi(luigi.Task):
@@ -49,7 +74,7 @@ class Cpi(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
 
 
 class Crime(luigi.Task):
@@ -59,7 +84,19 @@ class Crime(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
+
+class CleanseCrime(luigi.Task):
+    instance = cleanse.CrimeTask()
+
+    def requires(self):
+        return Crime(), CityToCountry()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
 
 
 class Happiness(luigi.Task):
@@ -69,7 +106,7 @@ class Happiness(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
 
 
 class CleanseHappiness(luigi.Task):
@@ -82,154 +119,7 @@ class CleanseHappiness(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class WorkingPovertyRate(luigi.Task):
-    instance = raw.WorkingPovertyRate()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class SocialProtection(luigi.Task):
-    instance = raw.SocialProtection()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class WomenInSeniorAndMiddlePosition(luigi.Task):
-    instance = raw.WomenInSeniorAndMiddlePosition()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class WomenInManagerialPosition(luigi.Task):
-    instance = raw.WomenInManagerialPosition()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class AnnualGrowthRatePerWorker(luigi.Task):
-    instance = raw.AnnualGrowthRatePerWorker()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class InformalEmployment(luigi.Task):
-    instance = raw.InformalEmployment()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class AverageHourlyEarnings(luigi.Task):
-    instance = raw.AverageHourlyEarnings()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class UnemploymentRate(luigi.Task):
-    instance = raw.UnemploymentRate()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class UnemploymentRateDisability(luigi.Task):
-    instance = raw.UnemploymentRateDisability()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class YouthNeetProportion(luigi.Task):
-    instance = raw.YouthNeetProportion()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class LabourRights(luigi.Task):
-    instance = raw.LabourRights()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class QualityOfLife(luigi.Task):
-    instance = raw.QualityOfLifeTask()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class CleanseQualityOfLife(luigi.Task):
-    instance = cleanse.QualityOfLifeTask()
-
-    def requires(self):
-        return QualityOfLife(), CityToCountry()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
-
-class CleanseCrime(luigi.Task):
-    instance = cleanse.CrimeTask()
-
-    def requires(self):
-        return Crime(), CityToCountry()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
-
+        return self.instance.output()
 
 class Coordinates(luigi.Task):
     instance = raw.CoordinatesTask()
@@ -238,7 +128,7 @@ class Coordinates(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
 
 
 class Weather(luigi.Task):
@@ -251,7 +141,118 @@ class Weather(luigi.Task):
         self.instance.run()
 
     def output(self):
-        return luigi.LocalTarget(get_data_dir() / self.instance.output_path)
+        return self.instance.output()
+
+
+
+class WorkingPovertyRate(luigi.Task):
+    instance = raw.WorkingPovertyRate()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class SocialProtection(luigi.Task):
+    instance = raw.SocialProtection()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class WomenInSeniorAndMiddlePosition(luigi.Task):
+    instance = raw.WomenInSeniorAndMiddlePosition()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class WomenInManagerialPosition(luigi.Task):
+    instance = raw.WomenInManagerialPosition()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class AnnualGrowthRatePerWorker(luigi.Task):
+    instance = raw.AnnualGrowthRatePerWorker()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class InformalEmployment(luigi.Task):
+    instance = raw.InformalEmployment()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class AverageHourlyEarnings(luigi.Task):
+    instance = raw.AverageHourlyEarnings()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class UnemploymentRate(luigi.Task):
+    instance = raw.UnemploymentRate()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class UnemploymentRateDisability(luigi.Task):
+    instance = raw.UnemploymentRateDisability()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class YouthNeetProportion(luigi.Task):
+    instance = raw.YouthNeetProportion()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class LabourRights(luigi.Task):
+    instance = raw.LabourRights()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
 
 
 class All(luigi.Task):
@@ -259,11 +260,13 @@ class All(luigi.Task):
 
     def requires(self):
         return [
-            CleanseCostOfLiving(),
             CityToCountry(),
             Cpi(),
+            Weather(),
+            CleanseCostOfLiving(),
             CleanseCrime(),
             CleanseHappiness(),
+            CleanseQualityOfLife(),
             WorkingPovertyRate(),
             SocialProtection(),
             WomenInSeniorAndMiddlePosition(),
@@ -275,8 +278,6 @@ class All(luigi.Task):
             UnemploymentRateDisability(),
             YouthNeetProportion(),
             LabourRights(),
-            CleanseQualityOfLife(),
-            Weather(),
         ]
 
     def run(self):

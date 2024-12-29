@@ -8,23 +8,19 @@ from utils.utils import get_config, df_to_json
 
 class CoordinatesTask(Task):
     output_path = "global/coordinates.json"
-    cities = get_config()["cities"]
-
-    if key := os.getenv("OPENCAGEDATA_API_KEY"):
-        api_key = key
-    else:
-        raise RuntimeError("API key is not set")
+    cities: list[str] = get_config()["cities"]
+    api_key: str = os.getenv("OPENCAGEDATA_API_KEY")
 
     def extract_by_city(self, city: str) -> pd.DataFrame:
         url = "https://api.opencagedata.com/geocode/v1/json"
-        params = {
-            "q": city,
-            "key": self.api_key,
-        }
-        res = requests.get(url, params=params)
-        data = res.json().get("results")[0].get("geometry")
-        data["city"] = city
-        return data
+        params = {"q": city, "key": self.api_key}
+        response = requests.get(url, params=params)
+        if result := response.json().get("results"):
+            data = result[0].get("geometry")
+            data["city"] = city
+            return data
+        else:
+            raise RuntimeError(f"failed to extract coordinates for {city}\nresponse: {response.text}")
 
     def extract(self) -> pd.DataFrame:
         return pd.DataFrame([self.extract_by_city(city) for city in tqdm(self.cities, desc="extracting coordinates...")])

@@ -14,12 +14,12 @@ class CrimeTask(Task):
     def get_soup(city: str) -> BeautifulSoup:
         url = f"https://www.numbeo.com/crime/in/{city}"
         print(f"[CrimeTask.get_soup] url: {url}")
+
         response = requests.get(
             url,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.122 Safari/537.36"
-            },
+            headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.122 Safari/537.36"},
         )
+
         if response.status_code != 200:
             print("status code:", response.status_code)
             print("response headers:", response.headers)
