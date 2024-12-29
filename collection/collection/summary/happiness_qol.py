@@ -27,7 +27,7 @@ class HappinessQOLTask(Task):
             "health..life.expectancy.": "Life Expectancy",
             "trust..government.corruption.": "Trust in Government",
             "dystopia.residual": "Dystopia Residual",
-            "property price to income ratio": "Property Price-to-Income Ratio",
+            "property price to income ratio": "Property Price",
             "traffic commute time index": "Traffic Commute Time",
         }
 
