@@ -18,8 +18,9 @@ class HappinessTask(Task):
         df = df[df["feature"] != "happiness.rank"]
 
         df = filter_by_country(df)
+        city_to_country_df = pd.read_json(get_data_dir() / "master/city_to_country.json")
 
-        return df
+        return df.merge(city_to_country_df, on="country", how="left")
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df_to_json(df, self.output_path)
