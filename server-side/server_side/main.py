@@ -32,12 +32,10 @@ def summary(city: str) -> list:
     qol_df = pd.read_json(get_data_dir() / "cleanse/quality_of_life.json")
     crime_df = pd.read_json(get_data_dir() / "cleanse/crime.json")
     cost_of_living_df = pd.read_json(get_data_dir() / "cleanse/cost_of_living.json")
+    happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
+    weather_df = pd.read_json(get_data_dir() / "cleanse/weather.json")
 
-    city_country_df = qol_df[["city", "country"]].drop_duplicates()
-    raw_happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
-    happiness_df = city_country_df.merge(raw_happiness_df, on="country", how="left")
-
-    df = pd.concat([happiness_df, qol_df, crime_df, cost_of_living_df])
+    df = pd.concat([happiness_df, qol_df, crime_df, cost_of_living_df, weather_df])
 
     needle_df = (
         df[df["city"] == city]
