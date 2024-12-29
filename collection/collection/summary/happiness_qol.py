@@ -11,31 +11,33 @@ class HappinessQOLTask(Task):
         qol_df = pd.read_json(get_data_dir() / "cleanse/quality_of_life.json")
         happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
 
+        feature_mapping = {
+            "happiness.score": "Happiness Score",
+            "quality of life index:": "Quality of Life",
+            "safety index": "Safety",
+            "freedom": "Freedom",
+            "economy..gdp.per.capita.": "GDP per Capita",
+            "cost of living index": "Cost of Living",
+            "purchasing power index": "Purchasing Power",
+            "climate index": "Climate",
+            "pollution index": "Pollution",
+            "generosity": "Generosity",
+            "family": "Family Support",
+            "health care index": "Health Care",
+            "health..life.expectancy.": "Life Expectancy",
+            "trust..government.corruption.": "Trust in Government",
+            "dystopia.residual": "Dystopia Residual",
+            "property price to income ratio": "Property Price-to-Income Ratio",
+            "traffic commute time index": "Traffic Commute Time",
+        }
+
         df = pd.concat([happiness_df, qol_df])
         df = df.pivot(index=["country", "city"], columns="feature", values="value")
+        df = df[feature_mapping.keys()]
         scaler = StandardScaler()
         df = pd.DataFrame(scaler.fit_transform(df), columns=df.columns, index=df.index)
         df = df.melt(ignore_index=False).reset_index()
 
-        feature_mapping = {
-            "happiness.score": "Happiness Score",
-            "economy..gdp.per.capita.": "GDP per Capita",
-            "family": "Family Support",
-            "health..life.expectancy.": "Life Expectancy",
-            "freedom": "Freedom Index",
-            "generosity": "Generosity Index",
-            "trust..government.corruption.": "Trust in Government",
-            "dystopia.residual": "Dystopia Residual",
-            "climate index": "Climate Index",
-            "cost of living index": "Cost of Living Index",
-            "health care index": "Health Care Index",
-            "pollution index": "Pollution Index",
-            "property price to income ratio": "Property Price-to-Income Ratio",
-            "purchasing power index": "Purchasing Power Index",
-            "quality of life index:": "Quality of Life Index",
-            "safety index": "Safety Index",
-            "traffic commute time index": "Traffic Commute Time Index",
-        }
         df["feature"] = df["feature"].apply(lambda x: feature_mapping[x])
         return df
 
