@@ -57,13 +57,13 @@ const groupBycity = (data: HappinessData[]) => {
   }, {});
 };
 
-const Happiness: React.FC<HappinessProps> = ({ city }) => {
+const HappinessQOL: React.FC<HappinessProps> = ({ city }) => {
   const [happiness, setHappiness] = useState<HappinessData[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${API_URL}/summary?city=${city}`);
+        const res = await fetch(`${API_URL}/happiness_qol?city=${city}`);
         const json = await res.json();
         setHappiness(json);
         console.log(`happiness data fetched: ${city}`);
@@ -86,4 +86,4 @@ const Happiness: React.FC<HappinessProps> = ({ city }) => {
   );
 };
 
-export default Happiness;
+export default HappinessQOL;

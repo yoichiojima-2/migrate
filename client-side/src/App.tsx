@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Picker from "./components/picker";
-import Happiness from "./pages/happiness";
+import HappinessQOL from "./pages/happiness_qol";
 import { API_URL } from "./constants/api";
 
 import "./App.css";
@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       <Picker picked={currentCity} options={cities} onPick={setCurrentCity} />
-      <Happiness city={currentCity} />
+      <HappinessQOL city={currentCity} />
     </div>
   );
 }
