@@ -10,6 +10,10 @@ class HappinessQOLTask(Task):
     def extract(self):
         qol_df = pd.read_json(get_data_dir() / "cleanse/quality_of_life.json")
         happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
+        return pd.concat([happiness_df, qol_df])
+        
+    def transform(df: pd.DataFrame) -> pd.DataFrame:
+        df = df.pivot(index=["country", "city"], columns="feature", values="value")
 
         feature_mapping = {
             "happiness.score": "Happiness Score",
@@ -31,14 +35,14 @@ class HappinessQOLTask(Task):
             "traffic commute time index": "Traffic Commute Time",
         }
 
-        df = pd.concat([happiness_df, qol_df])
-        df = df.pivot(index=["country", "city"], columns="feature", values="value")
         df = df[feature_mapping.keys()]
+
         scaler = StandardScaler()
         df = pd.DataFrame(scaler.fit_transform(df), columns=df.columns, index=df.index)
         df = df.melt(ignore_index=False).reset_index()
 
         df["feature"] = df["feature"].apply(lambda x: feature_mapping[x])
+    
         return df
 
     def load(self, df: pd.DataFrame):
