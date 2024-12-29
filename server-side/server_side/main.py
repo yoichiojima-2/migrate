@@ -16,6 +16,34 @@ app.add_middleware(
 )
 
 
+def make_compare_df(df: pd.DataFrame, city: str) -> pd.DataFrame:
+    round_decimals = 1
+
+    rest_df = df[df["city"] != city]
+    current_df = (
+        df[df["city"] == city]
+        .rename(columns={"value": "value_in_current_city"})
+        .drop(columns=["country", "city"])
+    )
+
+    # fmt: off
+    merged_df = rest_df.merge(current_df, on=["feature"], how="left")
+    merged_df["diff_amount"] = (merged_df["value"] - merged_df["value_in_current_city"])
+
+    merged_df["diff_rate"] = (
+        merged_df
+        .apply(lambda x: (x["value"] / x["value_in_current_city"] - 1) * 100 if x["value_in_current_city"] else 0, axis=1)
+    )
+
+    merged_df["value"] = merged_df["value"].round(round_decimals)
+    merged_df["value_in_current_city"] = merged_df["value_in_current_city"].round(round_decimals)
+    merged_df["diff_amount"] = merged_df["diff_amount"].round(round_decimals)
+    merged_df["diff_rate"] = merged_df["diff_rate"].round(round_decimals)
+
+    return merged_df[["country", "city", "feature", "value", "value_in_current_city", "diff_amount", "diff_rate"]]
+    # fmt: on
+
+
 @app.get("/cities")
 def cities() -> list[str]:
     return [city.lower() for city in get_config().get("cities")]
@@ -27,55 +55,10 @@ def country(city: str) -> str | None:
     return df[df["city"] == city]["country"].iloc[0]
 
 
-@app.get("/summary")
-def summary(city: str) -> list:
-    qol_df = pd.read_json(get_data_dir() / "cleanse/quality_of_life.json")
-    crime_df = pd.read_json(get_data_dir() / "cleanse/crime.json")
-    cost_of_living_df = pd.read_json(get_data_dir() / "cleanse/cost_of_living.json")
-    happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
-    weather_df = pd.read_json(get_data_dir() / "cleanse/weather.json")
-
-    df = pd.concat([happiness_df, qol_df, crime_df, cost_of_living_df, weather_df])
-
-    needle_df = (
-        df[df["city"] == city]
-        .rename(columns={"value": "needle_value"})
-        .drop(columns=["city", "country"])
-    )
-    haystack_df = df[df["city"] != city].rename(columns={"value": "haystack_value"})
-
-    # fmt: off
-    merged_df = haystack_df.merge(needle_df, on=["feature"], how="left")
-    merged_df["diff_amount"] = (merged_df["haystack_value"] - merged_df["needle_value"])
-    # fmt: on
-
-    # fmt: off
-    merged_df["diff_rate"] = (
-        merged_df
-        .apply(lambda x: (x["haystack_value"] / x["needle_value"] - 1) * 100 if x["needle_value"] else 0, axis=1)
-    )
-
-    decimals = 1
-    merged_df["value"] = merged_df["haystack_value"].round(decimals)
-    merged_df["value_in_current_city"] = merged_df["needle_value"].round(decimals)
-    merged_df["diff_amount"] = merged_df["diff_amount"].round(decimals)
-    merged_df["diff_rate"] = merged_df["diff_rate"].round(decimals)
-
-    return (
-        merged_df[
-            [
-                "country",
-                "city",
-                "feature",
-                "value",
-                "value_in_current_city",
-                "diff_amount",
-                "diff_rate",
-            ]
-        ]
-        .to_dict(orient="records")
-    )
-    # fmt: on
+@app.get("/happiness_qol")
+def happiness_qol(city: str) -> list:
+    df = pd.read_json(get_data_dir() / "summary/happiness_qol.json")
+    return make_compare_df(df, city).to_dict(orient="records")
 
 
 if __name__ == "__main__":
