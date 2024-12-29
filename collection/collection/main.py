@@ -4,10 +4,6 @@ from collection import raw
 from collection import master
 from collection import cleanse
 from utils.utils import get_data_dir
-from dotenv import load_dotenv
-
-
-load_dotenv()
 
 class CostOfLiving(luigi.Task):
     instance = raw.CostOfLivingTask()
@@ -23,7 +19,7 @@ class CleanseCostOfLiving(luigi.Task):
     instance = cleanse.CostOfLivingTask()
 
     def requires(self):
-        return CostOfLiving(), CityToCountry()
+        return [CostOfLiving(), CityToCountry()]
 
     def run(self):
         self.instance.run()
@@ -46,7 +42,7 @@ class CleanseQualityOfLife(luigi.Task):
     instance = cleanse.QualityOfLifeTask()
 
     def requires(self):
-        return QualityOfLife(), CityToCountry()
+        return [QualityOfLife(), CityToCountry()]
 
     def run(self):
         self.instance.run()
@@ -59,6 +55,16 @@ class CityToCountry(luigi.Task):
 
     def requires(self):
         return CostOfLiving()
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class Coordinates(luigi.Task):
+    instance = master.CoordinatesTask()
 
     def run(self):
         self.instance.run()
@@ -90,7 +96,7 @@ class CleanseCrime(luigi.Task):
     instance = cleanse.CrimeTask()
 
     def requires(self):
-        return Crime(), CityToCountry()
+        return [Crime(), CityToCountry()]
 
     def run(self):
         self.instance.run()
@@ -113,23 +119,13 @@ class CleanseHappiness(luigi.Task):
     instance = cleanse.HappinessTask()
 
     def requires(self):
-        return Happiness(), CityToCountry()
+        return [Happiness(), CityToCountry()]
 
     def run(self):
         self.instance.run()
 
     def output(self):
         return self.instance.output()
-
-class Coordinates(luigi.Task):
-    instance = raw.CoordinatesTask()
-
-    def run(self):
-        self.instance.run()
-
-    def output(self):
-        return self.instance.output()
-
 
 class Weather(luigi.Task):
     instance = raw.WeatherTask()
@@ -143,6 +139,18 @@ class Weather(luigi.Task):
     def output(self):
         return self.instance.output()
 
+
+class CleanseWeather(luigi.Task):
+    instance = cleanse.WeatherTask()
+
+    def requires(self):
+        return [Weather(), CityToCountry()]
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
 
 
 class WorkingPovertyRate(luigi.Task):
@@ -262,7 +270,7 @@ class All(luigi.Task):
         return [
             CityToCountry(),
             Cpi(),
-            Weather(),
+            CleanseWeather(),
             CleanseCostOfLiving(),
             CleanseCrime(),
             CleanseHappiness(),

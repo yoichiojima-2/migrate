@@ -16,5 +16,4 @@ from collection.raw.labour import (
     LabourRights,
 )
 from collection.raw.quality_of_life import QualityOfLifeTask
-from collection.raw.coordinates import CoordinatesTask
 from collection.raw.weather import WeatherTask
