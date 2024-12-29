@@ -1,6 +1,7 @@
 import pandas as pd
 from collection.task import Task
 from utils.utils import get_data_dir, df_to_json
+from collection.cleanse.cleanse_utils import OUTPUT_COLS
 
 
 class WeatherTask(Task):
@@ -14,7 +15,7 @@ class WeatherTask(Task):
         # add country column
         city_to_country_df = pd.read_json(get_data_dir() / "master/city_to_country.json")
         df = df.merge(city_to_country_df, on="city", how="left")
-        return df[["country", "city", "feature", "value"]]
+        return df[OUTPUT_COLS]
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df_to_json(df, self.output_path)

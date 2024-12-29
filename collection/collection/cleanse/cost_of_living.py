@@ -1,6 +1,6 @@
 import pandas as pd
 from collection.task import Task
-from collection.cleanse.cleanse_utils import filter_by_country
+from collection.cleanse.cleanse_utils import filter_by_country, OUTPUT_COLS
 from utils.utils import get_data_dir, df_to_json
 
 
@@ -39,7 +39,7 @@ class CostOfLivingTask(Task):
 
         df = df[df["feature"].isin(features)]
 
-        return df
+        return df[OUTPUT_COLS]
 
     def load(self, df: pd.DataFrame) -> pd.DataFrame:
         df_to_json(df, self.output_path)
