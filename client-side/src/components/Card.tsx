@@ -7,8 +7,8 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ city, happinessQOLData }) => (
-  <div className="m-4 p-4 border-2 rounded-2xl">
-    <h2 className="text-3xl p-4 mb-4">{city}</h2>
+  <div className="m-4 p-4 rounded-2xl border border-gray-600">
+    <h2 className="py-10 m-1 text-3xl text-center">{city}</h2>
     <HappinessQOL city={city} data={happinessQOLData} />
   </div>
 );

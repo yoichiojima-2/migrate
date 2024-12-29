@@ -37,9 +37,9 @@ function App() {
   }, [currentCity]);
 
   return (
-    <div>
+    <div className="bg-gray-800 w-screen text-gray-300">
       <Picker picked={currentCity} options={cities} onPick={setCurrentCity} />
-      <div className="grid brid-cols-1 sm:grid-cols-2">
+      <div className="grid grid-cols-4">
       {cities
         .filter((city) => city != currentCity)
         .map((city) => (

@@ -6,14 +6,13 @@ interface happinessQOLProps {
 }
 
 const HappinessQOL: React.FC<happinessQOLProps> = ({ city, data }) => {
-  const scale = 40;
+  const scale = 30;
   const filteredData = data.filter((row) => row.city === city);
 
   return (
-    <div className="mb-4">
-      <h3 className="text-xl pb-3">Quality of Life</h3>
+    <div className="pb-10 text-xs">
       {filteredData.map((row, index) => (
-        <div key={index} className="flex justify-between">
+        <div key={index} className="flex justify-between h-5">
           <span className="w-5/12 text-right text-nowrap overflow-hidden">{row.feature}</span>
           <span className="relative w-1/12 text-right">{row.value}</span>
           <span className="relative w-3/12 overflow-hidden">
