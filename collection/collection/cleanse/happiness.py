@@ -18,7 +18,7 @@ class HappinessTask(Task):
         df = df[df["feature"] != "happiness.rank"]
 
         df = filter_by_country(df)
-        city_to_country_df = pd.read_json(get_data_dir() / "master/city_to_country.json")
+        city_to_country_df = pd.read_json(get_data_dir() / "master/city_and_country.json")
 
         df_merged = df.merge(city_to_country_df, on="country", how="left")
         return df_merged[OUTPUT_COLS]

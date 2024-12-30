@@ -21,7 +21,20 @@ class CleanseCostOfLiving(luigi.Task):
     instance = cleanse.CostOfLivingTask()
 
     def requires(self):
-        return [CostOfLiving(), CityToCountry()]
+        return [CostOfLiving(), CityAndCountry()]
+
+    def run(self):
+        self.instance.run()
+
+    def output(self):
+        return self.instance.output()
+
+
+class SummariseCostOfLiving(luigi.Task):
+    instance = summary.CostOfLivingTask()
+
+    def requires(self):
+        return CleanseCostOfLiving()
 
     def run(self):
         self.instance.run()
@@ -44,7 +57,7 @@ class CleanseQualityOfLife(luigi.Task):
     instance = cleanse.QualityOfLifeTask()
 
     def requires(self):
-        return [QualityOfLife(), CityToCountry()]
+        return [QualityOfLife(), CityAndCountry()]
 
     def run(self):
         self.instance.run()
@@ -53,8 +66,8 @@ class CleanseQualityOfLife(luigi.Task):
         return self.instance.output()
 
 
-class CityToCountry(luigi.Task):
-    instance = master.CityToCountryTask()
+class CityAndCountry(luigi.Task):
+    instance = master.CityAndCountryTask()
 
     def requires(self):
         return CostOfLiving()
@@ -100,7 +113,7 @@ class CleanseCrime(luigi.Task):
     instance = cleanse.CrimeTask()
 
     def requires(self):
-        return [Crime(), CityToCountry()]
+        return [Crime(), CityAndCountry()]
 
     def run(self):
         self.instance.run()
@@ -123,7 +136,7 @@ class CleanseHappiness(luigi.Task):
     instance = cleanse.HappinessTask()
 
     def requires(self):
-        return [Happiness(), CityToCountry()]
+        return [Happiness(), CityAndCountry()]
 
     def run(self):
         self.instance.run()
@@ -149,7 +162,7 @@ class CleanseWeather(luigi.Task):
     instance = cleanse.WeatherTask()
 
     def requires(self):
-        return [Weather(), CityToCountry()]
+        return [Weather(), CityAndCountry()]
 
     def run(self):
         self.instance.run()
@@ -286,10 +299,10 @@ class All(luigi.Task):
 
     def requires(self):
         return [
-            CityToCountry(),
+            CityAndCountry(),
             Cpi(),
             CleanseWeather(),
-            CleanseCostOfLiving(),
+            SummariseCostOfLiving(),
             CleanseCrime(),
             WorkingPovertyRate(),
             SocialProtection(),

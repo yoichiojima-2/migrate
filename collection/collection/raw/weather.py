@@ -76,7 +76,7 @@ class WeatherTask(Task):
         df["city"] = df["city"].str.lower()
 
         # add country column
-        city_to_country_df = pd.read_json(get_data_dir() / "master/city_to_country.json")
+        city_to_country_df = pd.read_json(get_data_dir() / "master/city_and_country.json")
         df = df.merge(city_to_country_df, on="city", how="left")
 
         return df[["country", "city", "year", "month", "feature", "value"]]
