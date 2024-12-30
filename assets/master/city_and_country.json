@@ -1,0 +1,98 @@
+[
+  {
+    "country":"australia",
+    "city":"brisbane"
+  },
+  {
+    "country":"china",
+    "city":"shanghai"
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen"
+  },
+  {
+    "country":"france",
+    "city":"paris"
+  },
+  {
+    "country":"germany",
+    "city":"berlin"
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong"
+  },
+  {
+    "country":"india",
+    "city":"mumbai"
+  },
+  {
+    "country":"ireland",
+    "city":"dublin"
+  },
+  {
+    "country":"japan",
+    "city":"tokyo"
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur"
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam"
+  },
+  {
+    "country":"norway",
+    "city":"oslo"
+  },
+  {
+    "country":"singapore",
+    "city":"singapore"
+  },
+  {
+    "country":"south korea",
+    "city":"seoul"
+  },
+  {
+    "country":"spain",
+    "city":"barcelona"
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm"
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei"
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok"
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol"
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow"
+  },
+  {
+    "country":"united kingdom",
+    "city":"london"
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester"
+  },
+  {
+    "country":"united states",
+    "city":"new-york"
+  },
+  {
+    "country":"united states",
+    "city":"seattle"
+  }
+]
