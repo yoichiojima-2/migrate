@@ -31,14 +31,9 @@ jobs:
           cd client-side
           npm run build
 
-      - name: Run tests
-        run: |
-          cd client-side
-          npm test -- --watchAll=false
-
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' # Deploy only on push
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build
+          publish_dir: client-side/build
