@@ -1,11 +1,8 @@
 name: Deploy React App to GitHub Pages
 
 on:
-  # Trigger workflow on pushes to the `main` branch
   push:
     branches: ["main"]
-
-  # Allow manual runs
   workflow_dispatch:
 
 permissions:
@@ -13,7 +10,6 @@ permissions:
   pages: write
   id-token: write
 
-# Ensures only one deployment runs at a time for Pages
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -45,11 +41,17 @@ jobs:
           cd client-side
           npm run build
 
-      # Step 5: Upload build artifact
+      # Step 5: Debug build output
+      - name: Debug build output
+        run: |
+          cd client-side
+          ls -R
+
+      # Step 6: Upload build artifact
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: client-side/build
+          path: client-side/dist
 
   # Deploy job
   deploy:
