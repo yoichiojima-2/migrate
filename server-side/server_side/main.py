@@ -16,7 +16,12 @@ app.add_middleware(
 )
 
 
-def make_compare_df(df: pd.DataFrame, city: str, round_decimals: int=1, additional_keys: list[str]=[]) -> pd.DataFrame:
+def make_compare_df(
+    df: pd.DataFrame,
+    city: str,
+    round_decimals: int = 1,
+    additional_keys: list[str] = [],
+) -> pd.DataFrame:
     rest_df = df[df["city"] != city]
     current_df = (
         df[df["city"] == city]
@@ -68,7 +73,11 @@ def happiness_qol(city: str) -> list:
 @app.get("/cost_of_living")
 def cost_of_living(city: str) -> list:
     df = pd.read_json(get_data_dir() / "summary/cost_of_living.json")
-    return make_compare_df(df, city, round_decimals=0, additional_keys=["description"]).drop(columns="diff").to_dict(orient="records")
+    return (
+        make_compare_df(df, city, round_decimals=0, additional_keys=["description"])
+        .drop(columns="diff")
+        .to_dict(orient="records")
+    )
 
 
 if __name__ == "__main__":
