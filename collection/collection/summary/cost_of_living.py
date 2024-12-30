@@ -12,32 +12,24 @@ class CostOfLivingTask(Task):
         # fmt: off
         features = {
             "apartment (1 bedroom) outside of centre": (
-                "apartment",
+                "rent",
                 "1 bedroom, outside of centre"
             ),
             "apartment (1 bedroom) in city centre": (
-                "apartment",
+                "rent",
                 "1 bedroom, in city centre"
             ),
             "price per square meter to buy apartment outside of centre": (
-                "apartment",
+                "rent",
                 "price per m2, outside of centre",
             ),
             "price per square meter to buy apartment in city centre": (
-                "apartment",
+                "rent",
                 "price per m2, city centre"
             ),
             "average monthly net salary (after tax)": (
                 "salary",
                 "monthly"
-            ),
-            "basic (electricity, heating, cooling, water, garbage) for 85m2 apartment": (
-                "basic",
-                "85m2 apartment, electricity, water, etc",
-            ),
-            "loaf of fresh white bread (500g)": (
-                "bread",
-                "loaf of fresh white, 500g"
             ),
             "mcmeal at mcdonalds (or equivalent combo meal)": (
                 "eating-out",
@@ -50,6 +42,14 @@ class CostOfLivingTask(Task):
             "meal, inexpensive restaurant": (
                 "eating-out",
                 "inexpensive restaurant"
+            ),
+            "basic (electricity, heating, cooling, water, garbage) for 85m2 apartment": (
+                "basic",
+                "85m2 apartment, electricity, water, etc",
+            ),
+            "loaf of fresh white bread (500g)": (
+                "bread",
+                "loaf of fresh white, 500g"
             ),
             "water (1.5 liter bottle)": (
                 "water",
