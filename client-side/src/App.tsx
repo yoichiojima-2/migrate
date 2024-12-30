@@ -63,8 +63,8 @@ function App() {
     <div className="bg-gray-800 w-screen min-h-screen text-gray-300">
       <div className="flex justify-between items-center">
         <Picker picked={currentCity} options={citiesAndCountries.map((row) => row.city)} onPick={setCurrentCity} />
-        <Button text="Cost of Living" isPressed={isCostOfLivingVisible} onClick={toggleCostOfLivingVisibility} />
         <Button text="Quality of Life" isPressed={isHappinessQOLVisible} onClick={toggleHappinessQOLVisibility} />
+        <Button text="Cost of Living" isPressed={isCostOfLivingVisible} onClick={toggleCostOfLivingVisibility} />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1">
         {citiesAndCountries
