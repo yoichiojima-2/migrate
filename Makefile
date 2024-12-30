@@ -71,5 +71,5 @@ deploy-server-side: collect
 		--allow-unauthenticated \
 		--port 8000 \
 		--max-instances 1 \
-		--min-instances 0 
+		--min-instances 1
 		
