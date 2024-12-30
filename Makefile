@@ -20,6 +20,7 @@ lint:
 	-isort .
 	-ruff check --fix .
 	-ruff format .
+	npx prettier --write client-side
 
 .PHONY: pre-commit
 pre-commit: lint clean
