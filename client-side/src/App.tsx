@@ -66,7 +66,7 @@ function App() {
         <Button text="Cost of Living" onClick={toggleCostOfLivingVisibility} />
         <Button text="Quality of Life" onClick={toggleHappinessQOLVisibility} />
       </div>
-      <div className="grid grid-cols-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1">
         {citiesAndCountries
           .filter((row) => row.city != currentCity)
           .map((row, index) => (
