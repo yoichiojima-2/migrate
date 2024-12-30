@@ -2,6 +2,7 @@ ROOT = $(shell echo ${HOME}/.sign-to-migrate)
 PWD = $(shell pwd)
 PROJECTS = utils collection server-side
 VENV = $(PWD)/.venv
+GCLOUD_PROJECT_ID = $(shell gcloud config get-value project)
 
 .PHONY: clean
 clean:
@@ -52,3 +53,18 @@ test: venv install
 	cd collection && $(VENV)/bin/pytest -vvv
 	cd server-side && $(VENV)/bin/pytest -vvv
 
+.PHONY: deploy
+deploy:
+	cp -r ~/.sign-to-migrate/data/summary assets/summary
+	cp -r ~/.sign-to-migrate/data/master assets/master
+	docker build --platform=linux/amd64 -t gcr.io/$(GCLOUD_PROJECT_ID)/sign-to-migrate/serverside:latest -f server-side/Dockerfile .
+	docker push gcr.io/$(GCLOUD_PROJECT_ID)/sign-to-migrate/serverside:latest
+	gcloud run deploy sign-to-migrate-serverside \
+		--image=gcr.io/yo-personal/sign-to-migrate/serverside:latest \
+		--platform=managed \
+		--region=us-central1 \
+		--allow-unauthenticated \
+		--port 8000 \
+		--max-instances 1 \
+		--min-instances 0 
+		
