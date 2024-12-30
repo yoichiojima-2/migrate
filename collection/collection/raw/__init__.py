@@ -17,3 +17,24 @@ from collection.raw.labour import (
 )
 from collection.raw.quality_of_life import QualityOfLifeTask
 from collection.raw.weather import WeatherTask
+
+
+__all__ = [
+    "CostOfLivingTask",
+    "CpiTask",
+    "CrimeTask",
+    "HappinessTask",
+    "WorkingPovertyRate",
+    "SocialProtection",
+    "WomenInSeniorAndMiddlePosition",
+    "WomenInManagerialPosition",
+    "AnnualGrowthRatePerWorker",
+    "InformalEmployment",
+    "AverageHourlyEarnings",
+    "UnemploymentRate",
+    "UnemploymentRateDisability",
+    "YouthNeetProportion",
+    "LabourRights",
+    "QualityOfLifeTask",
+    "WeatherTask",
+]
