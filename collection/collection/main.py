@@ -326,4 +326,4 @@ class All(luigi.Task):
 
 
 if __name__ == "__main__":
-    luigi.build([All()], workers=os.cpu_count() - 1)
+    luigi.build([All()], workers=os.cpu_count() - 1, local_scheduler=True)
