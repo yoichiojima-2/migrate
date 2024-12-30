@@ -1,0 +1,3194 @@
+[
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":198946.94
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":80980.96
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":209308.3
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":163402.55
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":145709.4
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":244538.18
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":58942.38
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":281546.98
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":87392.21
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":53357.96
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":271804.5
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":183509.48
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":314597.51
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":73448.46
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":162082.0
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":156729.92
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":77059.72
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":48897.91
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":200060.09
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":147597.63
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":321431.66
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":182471.76
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":450116.46
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"rent",
+    "description":"1 bedroom, outside of centre",
+    "value":285676.37
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":232051.94
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":148939.8
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":282448.39
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":217059.79
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":202793.69
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":331422.82
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":106584.65
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":325955.16
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":163175.6
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":75805.37
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":327743.13
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":223414.04
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":426070.91
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":136325.53
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":211758.72
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":237156.28
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":101590.78
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":94155.17
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":264679.21
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":208837.06
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":436355.03
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":232236.78
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":641011.39
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"rent",
+    "description":"1 bedroom, in city centre",
+    "value":359865.33
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"salary",
+    "description":"monthly",
+    "value":587737.86
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"salary",
+    "description":"monthly",
+    "value":270417.72
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"salary",
+    "description":"monthly",
+    "value":632524.74
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"salary",
+    "description":"monthly",
+    "value":494208.99
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"salary",
+    "description":"monthly",
+    "value":490440.93
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"salary",
+    "description":"monthly",
+    "value":589215.33
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"salary",
+    "description":"monthly",
+    "value":144435.1
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"salary",
+    "description":"monthly",
+    "value":553907.78
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"salary",
+    "description":"monthly",
+    "value":375940.99
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"salary",
+    "description":"monthly",
+    "value":221571.8
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"salary",
+    "description":"monthly",
+    "value":654676.23
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"salary",
+    "description":"monthly",
+    "value":567534.98
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"salary",
+    "description":"monthly",
+    "value":608459.5600000001
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"salary",
+    "description":"monthly",
+    "value":442411.72
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"salary",
+    "description":"monthly",
+    "value":320460.79
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"salary",
+    "description":"monthly",
+    "value":521799.08
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"salary",
+    "description":"monthly",
+    "value":269820.63
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"salary",
+    "description":"monthly",
+    "value":115344.01
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"salary",
+    "description":"monthly",
+    "value":511186.8
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"salary",
+    "description":"monthly",
+    "value":528566.5600000001
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"salary",
+    "description":"monthly",
+    "value":645646.39
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"salary",
+    "description":"monthly",
+    "value":499043.52
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"salary",
+    "description":"monthly",
+    "value":886844.41
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"salary",
+    "description":"monthly",
+    "value":1043781.4
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":26857.18
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":8956.13
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":28429.56
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":37918.51
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":52605.31
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":38071.95
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":8205.23
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":41015.24
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":26670.24
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":9654.95
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":42996.02
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":35231.38
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":24135.92
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":25149.78
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":27908.53
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":29404.05
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":13082.11
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":13819.66
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":45229.06
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":51773.04
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":48883.87
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":45317.75
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":28695.63
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"basic",
+    "description":"85m2 apartment, electricity, water, etc",
+    "value":37428.09
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1773.78
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1946.43
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1544.51
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1316.57
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":987.43
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":2440.05
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1384.53
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1974.86
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1200.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":2648.28
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1035.16
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":2502.4
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":3896.47
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":3157.1
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1065.6
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1722.16
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1924.49
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":2791.0
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1594.34
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1588.87
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1986.09
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":1588.87
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":3157.1
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"wine",
+    "description":"1 bottle, mid-range",
+    "value":2604.61
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":545.36
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":543.77
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":950.6
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":667.63
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":600.54
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":810.87
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":415.46
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":656.36
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":510.48
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":452.06
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":648.16
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":679.03
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":729.07
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":550.48
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":379.29
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":669.85
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":506.67
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":396.8
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":713.46
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":689.78
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":745.41
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":715.36
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":928.67
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"coffee",
+    "description":"cappuccino, regular",
+    "value":847.68
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":4828.63
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":540.67
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":1434.19
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2057.15
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":1398.86
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2074.04
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":646.11
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2797.72
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":600.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":635.59
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2057.15
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2224.36
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":1977.31
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":482.57
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":905.15
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":1076.35
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":577.35
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":659.37
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":3098.3
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2977.14
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":3227.39
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2706.04
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":2683.54
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"cigarettes",
+    "description":"20 pack, marlboro",
+    "value":1894.26
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":418.21
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":84.39
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":570.52
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":633.83
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":456.23
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":211.28
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":80.73
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":367.22
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":170.44
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":129.81
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":495.21
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":556.03
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":249.63
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":240.43
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":395.62
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":401.84
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":159.1
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":100.39
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":358.79
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":341.84
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":362.57
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":394.24
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":494.46
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"coke",
+    "description":"pepsi, 0.33 liter bottle",
+    "value":478.69
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":1331568.5700000001
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":4870572.2000000002
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":2057506.3899999999
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":2445067.8100000001
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":1479971.3300000001
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":3470293.0699999998
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":460279.7
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":1486632.5800000001
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":2275864.9900000002
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":1373031.8200000001
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":2159909.0099999998
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":1334475.3600000001
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":4227599.5599999996
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":3299330.0800000001
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":1926666.4099999999
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":889783.1
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":2824186.75
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":2131274.27
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":3601438.04
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":1936434.97
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":4206207.5899999999
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":3078435.0899999999
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":9313456.8000000007
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"school",
+    "description":"international primary per year",
+    "value":4510148.5700000003
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":347.27
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":305.92
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":594.38
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":311.07
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":310.11
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":363.62
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":85.07
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":284.43
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":242.22
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":144.91
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":314.85
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":481.37
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":334.55
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":491.75
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":290.18
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":448.46
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":288.47
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":217.74
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":300.25
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":256.99
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":313.5
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":240.54
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":787.47
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"bread",
+    "description":"loaf of fresh white, 500g",
+    "value":743.58
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1478.15
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":865.08
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":2206.44
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1974.86
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1810.29
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1016.69
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":738.42
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1806.18
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":800.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":706.21
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":2205.26
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1842.05
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1163.12
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":943.69
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1810.29
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1578.65
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":789.04
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":930.33
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1489.57
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1390.26
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1588.87
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1588.87
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":1894.26
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"eating-out",
+    "description":"mcmeal at mcdonalds",
+    "value":2163.93
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":11825.22
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":5406.74
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":17651.53
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":11520.03
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":11520.03
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":10166.87
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":3322.87
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":14811.47
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":7000.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":4590.35
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":14811.47
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":16682.68
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":11514.93
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":7506.6
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":9874.31
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":14351.34
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":4811.22
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":4419.09
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":13902.61
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":13902.61
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":16385.22
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":13902.61
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":20521.18
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"eating-out",
+    "description":"for 2 people, mid-range",
+    "value":15785.52
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2167.96
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":648.81
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":3309.66
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2468.58
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2468.58
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":1352.19
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":738.42
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":3291.44
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":1000.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":706.21
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":3291.44
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":3475.56
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":1744.69
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":1191.51
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2468.58
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2152.7
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":962.24
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":465.17
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2979.13
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2979.13
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":3972.17
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":2979.13
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":4735.66
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"eating-out",
+    "description":"inexpensive restaurant",
+    "value":3344.04
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":3884.52
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":1695.08
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2416.9
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2549.75
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":3058.61
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2836.34
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":735.88
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":3584.01
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":4065.41
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2174.35
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":3211.6
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":4996.76
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2568.39
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":5778.98
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":3178.62
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":4164.42
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2566.03
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2108.06
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2438.92
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2624.34
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":3028.16
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":2963.85
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":10305.63
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"internet",
+    "description":"monthly plan \/ 10gb",
+    "value":9287.05
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":15372.78
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":5406.74
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":16548.31
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":14219.01
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":8064.02
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":10166.87
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":646.11
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":18925.77
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":8500.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":1765.52
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":13429.06
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":12470.3
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":13957.5
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":6755.94
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":3620.58
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":14638.37
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":5773.47
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":6047.17
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":16643.41
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":12095.27
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":37735.66
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":16961.18
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":20836.89
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"commute",
+    "description":"monthly pass, regular price",
+    "value":15627.66
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":49.27
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":86.51
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":529.55
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":353.83
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":576.0
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":244.0
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":36.92
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":329.14
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":200.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":105.93
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":559.54
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":583.89
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":232.62
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":160.86
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":419.66
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":602.76
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":144.34
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":186.07
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":397.22
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":566.03
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":575.97
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":397.22
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":457.78
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"public transportation",
+    "description":"one-way ticket",
+    "value":434.1
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":778136.15
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":1284641.5800000001
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":860561.99
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":1402700.9199999999
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":929825.9300000001
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":2556420.9199999999
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":530802.12
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":914817.73
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":766237.5
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":219251.26
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":1139660.21
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":974598.03
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":2238712.9399999999
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":1697145.8200000001
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":635481.29
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":855656.92
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":1082539.9099999999
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":410519.88
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":969210.53
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":486582.4
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":1662772.6599999999
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":590779.5
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":2034337.51
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"appartment",
+    "description":"price per m2, outside of centre",
+    "value":852462.85
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1125945.3100000001
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":2491395.9399999999
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1244581.5
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1987722.8600000001
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1296853.6100000001
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":4173421.5
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1123072.2
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1137127.02
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1619911.72
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":477067.08
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1555913.8999999999
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1339433.8200000001
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":3373365.73
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":3018121.25
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":922582.76
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1564714.6799999999
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":2097877.0899999999
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":891259.98
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1062166.1899999999
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":577554.14
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":3008651.3799999999
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":842494.37
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":2941041.9399999999
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"appartment",
+    "description":"price per m2, city centre",
+    "value":1108358.8200000001
+  },
+  {
+    "country":"australia",
+    "city":"brisbane",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":194.92
+  },
+  {
+    "country":"china",
+    "city":"shanghai",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":87.2
+  },
+  {
+    "country":"denmark",
+    "city":"copenhagen",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":237.75
+  },
+  {
+    "country":"france",
+    "city":"paris",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":128.37
+  },
+  {
+    "country":"germany",
+    "city":"berlin",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":134.87
+  },
+  {
+    "country":"hong kong (china)",
+    "city":"hong-kong",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":262.01
+  },
+  {
+    "country":"india",
+    "city":"mumbai",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":54.66
+  },
+  {
+    "country":"ireland",
+    "city":"dublin",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":273.94
+  },
+  {
+    "country":"japan",
+    "city":"tokyo",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":135.0
+  },
+  {
+    "country":"malaysia",
+    "city":"kuala-lumpur",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":101.22
+  },
+  {
+    "country":"netherlands",
+    "city":"amsterdam",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":158.98
+  },
+  {
+    "country":"norway",
+    "city":"oslo",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":317.75
+  },
+  {
+    "country":"singapore",
+    "city":"singapore",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":230.57
+  },
+  {
+    "country":"south korea",
+    "city":"seoul",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":190.02
+  },
+  {
+    "country":"spain",
+    "city":"barcelona",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":125.25
+  },
+  {
+    "country":"sweden",
+    "city":"stockholm",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":215.68
+  },
+  {
+    "country":"taiwan",
+    "city":"taipei",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":191.79
+  },
+  {
+    "country":"thailand",
+    "city":"bangkok",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":79.66
+  },
+  {
+    "country":"united kingdom",
+    "city":"bristol",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":231.71
+  },
+  {
+    "country":"united kingdom",
+    "city":"glasgow",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":180.73
+  },
+  {
+    "country":"united kingdom",
+    "city":"london",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":250.58
+  },
+  {
+    "country":"united kingdom",
+    "city":"manchester",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":204.96
+  },
+  {
+    "country":"united states",
+    "city":"new-york",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":392.2
+  },
+  {
+    "country":"united states",
+    "city":"seattle",
+    "feature":"water",
+    "description":"1.5 liter bottle",
+    "value":398.43
+  }
+]

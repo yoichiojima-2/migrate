@@ -33,6 +33,7 @@ venv: .venv/.installed
 	$(VENV)/bin/pip install --upgrade pip
 	$(VENV)/bin/pip install pytest dateutils
 	for project in $(PROJECTS); do $(VENV)/bin/pip install -e $$project; done
+	for project in $(PROJECTS); do cd $$project && poetry install && cd ..; done
 	touch $(VENV)/.installed
 
 .PHONY: install
@@ -55,7 +56,6 @@ test: venv install
 
 .PHONY: collect
 collect: venv install
-	-rm -r ~/.sign-to-migrate/data/
 	cd collection && poetry run python collection/main.py
 
 .PHONY: deploy-server-side

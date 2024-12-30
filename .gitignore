@@ -2,5 +2,4 @@
 .venv
 .pytest_cache
 .env
-assets
 .ruff_cache
