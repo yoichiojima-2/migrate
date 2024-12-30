@@ -12,7 +12,7 @@ class HappinessQOLTask(Task):
         happiness_df = pd.read_json(get_data_dir() / "cleanse/happiness.json")
         return pd.concat([happiness_df, qol_df])
         
-    def transform(df: pd.DataFrame) -> pd.DataFrame:
+    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         df = df.pivot(index=["country", "city"], columns="feature", values="value")
 
         feature_mapping = {
