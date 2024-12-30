@@ -31,7 +31,7 @@ venv: .venv/.installed
 .venv/.installed: 
 	python -m venv $(VENV)
 	$(VENV)/bin/pip install --upgrade pip
-	$(VENV)/bin/pip install pytest dateutils
+	$(VENV)/bin/pip install pytest dateutils poetry
 	for project in $(PROJECTS); do $(VENV)/bin/pip install -e $$project; done
 	for project in $(PROJECTS); do cd $$project && poetry install && cd ..; done
 	touch $(VENV)/.installed
