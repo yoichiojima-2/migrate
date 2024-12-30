@@ -3,8 +3,8 @@ from utils.utils import get_data_dir, df_to_json
 from collection.task import Task
 
 
-class CityToCountryTask(Task):
-    output_path = "master/city_to_country.json"
+class CityAndCountryTask(Task):
+    output_path = "master/city_and_country.json"
 
     def extract(self) -> pd.DataFrame:
         return pd.read_json(get_data_dir() / "raw/cost_of_living.json")
@@ -20,4 +20,4 @@ class CityToCountryTask(Task):
 
 
 if __name__ == "__main__":
-    CityToCountryTask().run()
+    CityAndCountryTask().run()

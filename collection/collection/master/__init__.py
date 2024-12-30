@@ -1,2 +1,2 @@
-from collection.master.city_to_country import CityToCountryTask
+from collection.master.city_and_country import CityAndCountryTask
 from collection.master.coordinates import CoordinatesTask
