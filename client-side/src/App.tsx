@@ -21,7 +21,10 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${API_URL}/cities_and_countries`);
+        const url = `${API_URL}/cities_and_countries`
+        console.log(`fetching ${url}`);
+
+        const res = await fetch(url);
         const json = await res.json();
         setcitiesAndCountries(json);
       } catch (error: any) {
@@ -35,7 +38,10 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${API_URL}/happiness_qol?city=${currentCity}`);
+        const url = `${API_URL}/happiness_qol?city=${currentCity}`
+        console.log(`fetching ${url}`);
+
+        const res = await fetch(url);
         const json = await res.json();
         setHappinessQOLData(json);
       } catch (error: any) {
@@ -49,7 +55,10 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`${API_URL}/cost_of_living?city=${currentCity}`);
+        const url = `${API_URL}/cost_of_living?city=${currentCity}`
+        console.log(`fetching ${url}`);
+
+        const res = await fetch(url);
         const json = await res.json();
         setCostOfLivingData(json);
       } catch (error: any) {
