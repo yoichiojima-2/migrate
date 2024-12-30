@@ -55,6 +55,7 @@ test: venv install
 
 .PHONY: collect
 collect: venv install
+	-rm -r ~/.sign-to-migrate/data/
 	cd collection && poetry run python collection/main.py
 
 .PHONY: deploy-server-side

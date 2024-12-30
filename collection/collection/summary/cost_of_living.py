@@ -20,11 +20,11 @@ class CostOfLivingTask(Task):
                 "1 bedroom, in city centre"
             ),
             "price per square meter to buy apartment outside of centre": (
-                "rent",
+                "appartment",
                 "price per m2, outside of centre",
             ),
             "price per square meter to buy apartment in city centre": (
-                "rent",
+                "appartment",
                 "price per m2, city centre"
             ),
             "average monthly net salary (after tax)": (
