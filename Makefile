@@ -53,10 +53,10 @@ test: venv install
 	cd collection && $(VENV)/bin/pytest -vvv
 	cd server-side && $(VENV)/bin/pytest -vvv
 
-.PHONY: deploy
-deploy:
-	cp -r ~/.sign-to-migrate/data/summary assets/summary
-	cp -r ~/.sign-to-migrate/data/master assets/master
+.PHONY: deploy-server-side
+deploy-server-side:
+	cp -r ~/.sign-to-migrate/data/summary assets/
+	cp -r ~/.sign-to-migrate/data/master assets/
 	docker build --platform=linux/amd64 -t gcr.io/$(GCLOUD_PROJECT_ID)/sign-to-migrate/serverside:latest -f server-side/Dockerfile .
 	docker push gcr.io/$(GCLOUD_PROJECT_ID)/sign-to-migrate/serverside:latest
 	gcloud run deploy sign-to-migrate-serverside \
