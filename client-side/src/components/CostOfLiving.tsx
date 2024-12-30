@@ -10,26 +10,18 @@ const costOfLiving: React.FC<costOfLivingProps> = ({ city, data }) => {
 
   return (
     <div className="text-xs py-3 my-3">
-      <h2 className="text-lg text-center pb-8">
-        Cost of Living
-      </h2>
+      <h2 className="text-lg text-center pb-8">Cost of Living</h2>
       {data
         .filter((row) => row.city === city)
         .map((row, index) => (
           <div key={index} className="flex h-8 mb-3">
             <span className="w-6/12 h-full text-right text-nowrap">
               <div>
-                  <p>
-                    {row.feature}
-                  </p>
-                  <p className="scale-75 origin-right overflow-hidden">
-                    {row.description}
-                  </p>
+                <p>{row.feature}</p>
+                <p className="scale-75 origin-right overflow-hidden">{row.description}</p>
               </div>
             </span>
-            <span className="relative w-2/12 flex items-center justify-end">
-              {row.value}
-            </span>
+            <span className="relative w-2/12 flex items-center justify-end">{row.value}</span>
             <span className="relative w-2/12">
               <div
                 className="absolute right-0 bg-pink-500 h-8 rounded-l"
@@ -53,4 +45,3 @@ const costOfLiving: React.FC<costOfLivingProps> = ({ city, data }) => {
 };
 
 export default costOfLiving;
-

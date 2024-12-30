@@ -10,16 +10,12 @@ const HappinessQOL: React.FC<happinessQOLProps> = ({ city, data }) => {
 
   return (
     <div className="text-xs pb-5 mb-5">
-      <h2 className="text-lg text-center pb-8">
-        Quality of Life
-      </h2>
+      <h2 className="text-lg text-center pb-8">Quality of Life</h2>
       {data
         .filter((row) => row.city === city)
         .map((row, index) => (
           <div key={index} className="flex justify-between h-5">
-            <span className="w-5/12 text-right text-nowrap overflow-hidden">
-              {row.feature}
-            </span>
+            <span className="w-5/12 text-right text-nowrap overflow-hidden">{row.feature}</span>
             <span className="relative w-1/12 text-right">{row.value}</span>
             <span className="relative w-3/12 overflow-hidden">
               <div
