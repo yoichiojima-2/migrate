@@ -9,8 +9,9 @@ const HappinessQOL: React.FC<happinessQOLProps> = ({ city, data }) => {
   const scale = 30;
 
   return (
-    <div className="text-xs pb-5 mb-5">
-      <h2 className="text-lg text-center pb-8">Quality of Life</h2>
+    <div className="text-xs py-4 my-3 text-center">
+      <h2 className="text-lg pb-2">Quality of Life</h2>
+      <p className="pb-8 text-pretty">scores related to happiness / quality of life. the bar shows z-score.</p>
       {data
         .filter((row) => row.city === city)
         .map((row, index) => (

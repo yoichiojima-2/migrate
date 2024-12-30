@@ -9,8 +9,9 @@ const costOfLiving: React.FC<costOfLivingProps> = ({ city, data }) => {
   const scale = 0.3;
 
   return (
-    <div className="text-xs py-3 my-3">
-      <h2 className="text-lg text-center pb-8">Cost of Living</h2>
+    <div className="text-xs py-4 my-3 text-center">
+      <h2 className="text-lg pb-2">Cost of Living</h2>
+      <p className="pb-8">bar shows difference from selected city</p>
       {data
         .filter((row) => row.city === city)
         .map((row, index) => (
