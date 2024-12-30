@@ -22,13 +22,19 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd client-side
+          npm install
 
       - name: Build the app
-        run: npm run build
+        run: |
+          cd client-side
+          npm run build
 
       - name: Run tests
-        run: npm test -- --watchAll=false
+        run: |
+          cd client-side
+          npm test -- --watchAll=false
 
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' # Deploy only on push
