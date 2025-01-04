@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip install --upgrade pip && pip install poetry
 
-COPY config.yml /app/
+COPY config.yml /.sign-to-migrate/
 COPY server-side/ /app/server-side/
 COPY utils/ /app/utils/
 COPY assets /root/.sign-to-migrate/data
