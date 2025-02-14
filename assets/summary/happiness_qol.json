@@ -147,289 +147,289 @@
     "country":"australia",
     "city":"brisbane",
     "feature":"Quality of Life",
-    "value":1.3515834243
+    "value":1.398020246
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Quality of Life",
-    "value":-1.2222029255
+    "value":-1.165512068
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Quality of Life",
-    "value":1.5109871106
+    "value":1.4975276958
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Quality of Life",
-    "value":-0.6659099795
+    "value":-0.6475547235
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Quality of Life",
-    "value":0.4777790706
+    "value":0.4658266773
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Quality of Life",
-    "value":-0.7232564277
+    "value":-0.7746130959
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Quality of Life",
-    "value":-2.0338009625
+    "value":-2.0345005791
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Quality of Life",
-    "value":-0.1420161568
+    "value":-0.1104737974
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Quality of Life",
-    "value":0.4628754739
+    "value":0.4596682358
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Quality of Life",
-    "value":-0.7206644978
+    "value":-0.7172423512
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Quality of Life",
-    "value":1.4986754438
+    "value":1.4784041143
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Quality of Life",
-    "value":0.9265069274
+    "value":0.9050207961
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Quality of Life",
-    "value":-0.1721473415
+    "value":-0.1620102291
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Quality of Life",
-    "value":-0.3561743614
+    "value":-0.3594044861
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Quality of Life",
-    "value":-0.2959119922
+    "value":-0.3409291616
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Quality of Life",
-    "value":0.7308162231
+    "value":0.7163780085
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Quality of Life",
-    "value":0.008315775
+    "value":0.0600177941
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Quality of Life",
-    "value":-2.0723559192
+    "value":-2.0630238871
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Quality of Life",
-    "value":0.4878227988
+    "value":0.4467030957
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Quality of Life",
-    "value":1.0638792099
+    "value":1.0586577055
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Quality of Life",
-    "value":-0.7371880507
+    "value":-0.7668340118
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Quality of Life",
-    "value":0.1068091096
+    "value":0.1044233987
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Quality of Life",
-    "value":-0.7611634019
+    "value":-0.7755854814
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Quality of Life",
-    "value":1.2767414496
+    "value":1.3270361043
   },
   {
     "country":"australia",
     "city":"brisbane",
     "feature":"Safety",
-    "value":0.2490479815
+    "value":0.2390310475
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Safety",
-    "value":0.9332575549
+    "value":0.9267141982
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Safety",
-    "value":1.0942480427
+    "value":1.0870979473
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Safety",
-    "value":-1.3487066715
+    "value":-1.3428671573
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Safety",
-    "value":-0.3334034533
+    "value":-0.3291208185
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Safety",
-    "value":1.4169884075
+    "value":1.4086219727
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Safety",
-    "value":-0.3121405587
+    "value":-0.3117206948
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Safety",
-    "value":-1.0176130267
+    "value":-1.0168039692
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Safety",
-    "value":1.1785402321
+    "value":1.1710724575
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Safety",
-    "value":-1.5453884468
+    "value":-1.5425903166
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Safety",
-    "value":0.8892129874
+    "value":0.8926704779
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Safety",
-    "value":0.479902266
+    "value":0.4750675085
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Safety",
-    "value":1.2742232579
+    "value":1.3284300981
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Safety",
-    "value":1.2172690759
+    "value":1.2058727049
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Safety",
-    "value":-0.8718103207
+    "value":-0.8738203438
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Safety",
-    "value":-0.4488305956
+    "value":-0.4501651575
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Safety",
-    "value":1.8209834053
+    "value":1.8110943997
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Safety",
-    "value":0.0698321554
+    "value":0.0839429882
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Safety",
-    "value":-0.1746911327
+    "value":-0.1770588677
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Safety",
-    "value":-0.4108611409
+    "value":-0.4267128168
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Safety",
-    "value":-1.1322807798
+    "value":-1.1355787268
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Safety",
-    "value":-1.1846786273
+    "value":-1.1938313149
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Safety",
-    "value":-0.8004277459
+    "value":-0.7958980506
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Safety",
-    "value":-1.0426728668
+    "value":-1.0334475658
   },
   {
     "country":"australia",
@@ -723,289 +723,289 @@
     "country":"australia",
     "city":"brisbane",
     "feature":"Cost of Living",
-    "value":-0.1114551078
+    "value":-0.1916880517
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Cost of Living",
-    "value":-1.3522178899
+    "value":-1.324000261
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Cost of Living",
-    "value":0.6288928747
+    "value":0.6117115201
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Cost of Living",
-    "value":0.4578573816
+    "value":0.4241094972
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Cost of Living",
-    "value":-0.0842586513
+    "value":-0.0814414085
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Cost of Living",
-    "value":0.7352612379
+    "value":0.7639858893
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Cost of Living",
-    "value":-2.1795945332
+    "value":-2.1566365117
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Cost of Living",
-    "value":0.2239678557
+    "value":0.2157981602
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Cost of Living",
-    "value":-0.628792147
+    "value":-0.6077016284
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Cost of Living",
-    "value":-1.7118154814
+    "value":-1.6961588193
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Cost of Living",
-    "value":0.3448409957
+    "value":0.3875636486
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Cost of Living",
-    "value":0.7944890765
+    "value":0.8297684167
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Cost of Living",
-    "value":1.1027155835
+    "value":1.0916803317
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Cost of Living",
-    "value":0.1502352403
+    "value":0.1646339721
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Cost of Living",
-    "value":-0.6330227069
+    "value":-0.6351110148
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Cost of Living",
-    "value":0.0789200877
+    "value":0.037941697
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Cost of Living",
-    "value":-0.8318590222
+    "value":-0.814185673
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Cost of Living",
-    "value":-1.4452902077
+    "value":-1.4586108033
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Cost of Living",
-    "value":-0.0153609615
+    "value":-0.0065224188
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Cost of Living",
-    "value":-0.0159653272
+    "value":-0.041240975
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Cost of Living",
-    "value":1.0199174826
+    "value":0.9948338329
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Cost of Living",
-    "value":0.0154616892
+    "value":0.0068777257
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Cost of Living",
-    "value":2.3144688119
+    "value":2.3774851051
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Cost of Living",
-    "value":1.1426037197
+    "value":1.1069077687
   },
   {
     "country":"australia",
     "city":"brisbane",
     "feature":"Purchasing Power",
-    "value":1.4031285244
+    "value":1.5040962904
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Purchasing Power",
-    "value":-0.6673905946
+    "value":-0.5418873755
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Purchasing Power",
-    "value":0.7182871732
+    "value":0.6668243648
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Purchasing Power",
-    "value":-0.2540444318
+    "value":-0.2166221472
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Purchasing Power",
-    "value":0.4813076521
+    "value":0.4285961888
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Purchasing Power",
-    "value":-0.244363208
+    "value":-0.3298111776
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Purchasing Power",
-    "value":-1.4865063103
+    "value":-1.4874448356
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Purchasing Power",
-    "value":-0.0330599761
+    "value":0.0747272345
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Purchasing Power",
-    "value":-0.0229578296
+    "value":-0.0650223988
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Purchasing Power",
-    "value":-0.0633664157
+    "value":-0.0486774125
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Purchasing Power",
-    "value":0.7986834228
+    "value":0.6925677183
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Purchasing Power",
-    "value":0.3381939094
+    "value":0.287212057
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Purchasing Power",
-    "value":-0.6400306144
+    "value":-0.6240209319
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Purchasing Power",
-    "value":-0.0023326137
+    "value":0.0052610425
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Purchasing Power",
-    "value":-0.8951098146
+    "value":-0.9709432671
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Purchasing Power",
-    "value":0.5713851255
+    "value":0.5327954768
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Purchasing Power",
-    "value":-0.8387061631
+    "value":-0.7527376993
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Purchasing Power",
-    "value":-2.6949755907
+    "value":-2.6185178908
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Purchasing Power",
-    "value":0.3007317827
+    "value":0.1895507635
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Purchasing Power",
-    "value":0.8302526307
+    "value":0.7853255159
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Purchasing Power",
-    "value":-0.3243385348
+    "value":-0.3265421803
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Purchasing Power",
-    "value":0.3432449827
+    "value":0.33747289
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Purchasing Power",
-    "value":-0.2927693269
+    "value":-0.3249076817
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Purchasing Power",
-    "value":2.6747362207
+    "value":2.8027054557
   },
   {
     "country":"australia",
@@ -1155,145 +1155,145 @@
     "country":"australia",
     "city":"brisbane",
     "feature":"Pollution",
-    "value":-1.0537531482
+    "value":-1.0570374934
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Pollution",
-    "value":1.2338459331
+    "value":1.2352313904
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Pollution",
-    "value":-1.4462387049
+    "value":-1.4503242525
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Pollution",
-    "value":0.8739317919
+    "value":0.8745825366
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Pollution",
-    "value":-0.5038390834
+    "value":-0.5060008585
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Pollution",
-    "value":1.01018888
+    "value":1.0116617389
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Pollution",
-    "value":1.9200170861
+    "value":1.9228032625
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Pollution",
-    "value":-0.3284962966
+    "value":-0.3303001349
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Pollution",
-    "value":-0.2877820273
+    "value":-0.2895027532
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Pollution",
-    "value":0.930931769
+    "value":0.9316988709
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Pollution",
-    "value":-1.2708959182
+    "value":-1.281695075
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Pollution",
-    "value":-1.4000958663
+    "value":-1.40408722
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Pollution",
-    "value":-0.831724666
+    "value":-0.839995423
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Pollution",
-    "value":0.5205319338
+    "value":0.5204612638
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Pollution",
-    "value":0.851131801
+    "value":0.8517360028
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Pollution",
-    "value":-1.6074672116
+    "value":-1.6118818839
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Pollution",
-    "value":0.0297892738
+    "value":0.0287168236
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Pollution",
-    "value":1.6333886298
+    "value":1.6225345335
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Pollution",
-    "value":-0.0782392543
+    "value":-0.079532229
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Pollution",
-    "value":-0.7687532627
+    "value":-0.7714558218
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Pollution",
-    "value":0.5460462093
+    "value":0.546027623
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Pollution",
-    "value":0.2930748823
+    "value":0.2925398917
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Pollution",
-    "value":0.5607033463
+    "value":0.5607146804
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Pollution",
-    "value":-0.8262960967
+    "value":-0.7768954727
   },
   {
     "country":"australia",
@@ -1587,145 +1587,145 @@
     "country":"australia",
     "city":"brisbane",
     "feature":"Health Care",
-    "value":0.2648663191
+    "value":0.2662959076
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Health Care",
-    "value":-0.9823268067
+    "value":-0.9758240833
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Health Care",
-    "value":0.6004941786
+    "value":0.6005585532
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Health Care",
-    "value":0.6864149106
+    "value":0.6861297905
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Health Care",
-    "value":-0.6668366188
+    "value":-0.6589430953
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Health Care",
-    "value":-0.8521031972
+    "value":-0.8461301768
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Health Care",
-    "value":-0.9501065322
+    "value":-0.9437348693
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Health Care",
-    "value":-2.8484177053
+    "value":-2.8343243926
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Health Care",
-    "value":0.9012167406
+    "value":0.9000578836
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Health Care",
-    "value":-0.4936526433
+    "value":-0.4623966597
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Health Care",
-    "value":0.8515438174
+    "value":0.873316872
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Health Care",
-    "value":0.709237605
+    "value":0.7088596504
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Health Care",
-    "value":-0.0908992119
+    "value":-0.0880224967
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Health Care",
-    "value":1.4100285756
+    "value":1.4068000543
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Health Care",
-    "value":0.5118884237
+    "value":0.5123132148
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Health Care",
-    "value":-0.8494181743
+    "value":-0.874208239
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Health Care",
-    "value":1.9013877619
+    "value":1.8961605674
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Health Care",
-    "value":0.6313719416
+    "value":0.6379959695
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Health Care",
-    "value":-0.0063209914
+    "value":-0.00378831
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Health Care",
-    "value":0.8663114433
+    "value":0.8652945685
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Health Care",
-    "value":-0.3889367511
+    "value":-0.3848477259
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Health Care",
-    "value":0.2581537619
+    "value":0.2596106547
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Health Care",
-    "value":-1.2924469488
+    "value":-1.3247942852
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Health Care",
-    "value":-0.1714498982
+    "value":-0.2163793526
   },
   {
     "country":"australia",
@@ -2163,288 +2163,288 @@
     "country":"australia",
     "city":"brisbane",
     "feature":"Property Price",
-    "value":-0.8729121358
+    "value":-0.8786990606
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Property Price",
-    "value":2.1437191797
+    "value":2.0847155434
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Property Price",
-    "value":-0.848157981
+    "value":-0.8410140194
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Property Price",
-    "value":0.1453837764
+    "value":0.1239514297
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Property Price",
-    "value":-0.5072257585
+    "value":-0.5109844161
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Property Price",
-    "value":1.4280990691
+    "value":1.5205818963
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Property Price",
-    "value":1.4371005799
+    "value":1.4018169179
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Property Price",
-    "value":-0.7423902288
+    "value":-0.743946489
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Property Price",
-    "value":0.0013596032
+    "value":-0.0393504155
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Property Price",
-    "value":-0.8999166682
+    "value":-0.9083903052
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Property Price",
-    "value":-0.6264957769
+    "value":-0.6297493944
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Property Price",
-    "value":-0.6377476654
+    "value":-0.6206136268
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Property Price",
-    "value":0.8103703887
+    "value":0.8422511546
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Property Price",
-    "value":1.214313187
+    "value":1.2453668984
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Property Price",
-    "value":-0.4172106502
+    "value":-0.3807997283
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Property Price",
-    "value":-0.4790960371
+    "value":-0.4630216363
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Property Price",
-    "value":1.5316164436
+    "value":1.4406439301
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Property Price",
-    "value":1.3909678369
+    "value":1.4063848017
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Property Price",
-    "value":-0.6670025756
+    "value":-0.6468789586
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Property Price",
-    "value":-1.2183451137
+    "value":-1.2452717341
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Property Price",
-    "value":0.2511515286
+    "value":0.3466357641
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Property Price",
-    "value":-0.9764295103
+    "value":-0.9837603876
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Property Price",
-    "value":-0.2056751458
+    "value":-0.2243497087
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Property Price",
-    "value":-1.2554763459
+    "value":-1.2955184557
   },
   {
     "country":"australia",
     "city":"brisbane",
     "feature":"Traffic Commute Time",
-    "value":0.2678825865
+    "value":0.2686904794
   },
   {
     "country":"china",
     "city":"shanghai",
     "feature":"Traffic Commute Time",
-    "value":1.0933084505
+    "value":1.0925795885
   },
   {
     "country":"denmark",
     "city":"copenhagen",
     "feature":"Traffic Commute Time",
-    "value":-1.5257763845
+    "value":-1.5216291072
   },
   {
     "country":"france",
     "city":"paris",
     "feature":"Traffic Commute Time",
-    "value":0.3721318738
+    "value":0.3727456783
   },
   {
     "country":"germany",
     "city":"berlin",
     "feature":"Traffic Commute Time",
-    "value":-0.6932101583
+    "value":-0.6906129297
   },
   {
     "country":"hong kong (china)",
     "city":"hong-kong",
     "feature":"Traffic Commute Time",
-    "value":0.4778092336
+    "value":0.4782262908
   },
   {
     "country":"india",
     "city":"mumbai",
     "feature":"Traffic Commute Time",
-    "value":2.3314472466
+    "value":2.3284132521
   },
   {
     "country":"ireland",
     "city":"dublin",
     "feature":"Traffic Commute Time",
-    "value":0.3107247594
+    "value":0.3114528899
   },
   {
     "country":"japan",
     "city":"tokyo",
     "feature":"Traffic Commute Time",
-    "value":0.6391814181
+    "value":0.6392980371
   },
   {
     "country":"malaysia",
     "city":"kuala-lumpur",
     "feature":"Traffic Commute Time",
-    "value":0.4449635677
+    "value":0.4454417761
   },
   {
     "country":"netherlands",
     "city":"amsterdam",
     "feature":"Traffic Commute Time",
-    "value":-2.0584474006
+    "value":-2.0718387891
   },
   {
     "country":"norway",
     "city":"oslo",
     "feature":"Traffic Commute Time",
-    "value":-1.5014991532
+    "value":-1.4973970746
   },
   {
     "country":"singapore",
     "city":"singapore",
     "feature":"Traffic Commute Time",
-    "value":0.2864475281
+    "value":0.2872208572
   },
   {
     "country":"south korea",
     "city":"seoul",
     "feature":"Traffic Commute Time",
-    "value":0.5363602032
+    "value":0.5366682519
   },
   {
     "country":"spain",
     "city":"barcelona",
     "feature":"Traffic Commute Time",
-    "value":-1.1630459875
+    "value":-1.1595740316
   },
   {
     "country":"sweden",
     "city":"stockholm",
     "feature":"Traffic Commute Time",
-    "value":-0.628946899
+    "value":-0.6264693139
   },
   {
     "country":"taiwan",
     "city":"taipei",
     "feature":"Traffic Commute Time",
-    "value":-0.4947080907
+    "value":-0.5053091508
   },
   {
     "country":"thailand",
     "city":"bangkok",
     "feature":"Traffic Commute Time",
-    "value":0.9833468735
+    "value":0.9828227348
   },
   {
     "country":"united kingdom",
     "city":"bristol",
     "feature":"Traffic Commute Time",
-    "value":-1.0402317586
+    "value":-1.0369884548
   },
   {
     "country":"united kingdom",
     "city":"glasgow",
     "feature":"Traffic Commute Time",
-    "value":-0.9159894573
+    "value":-0.9129774643
   },
   {
     "country":"united kingdom",
     "city":"london",
     "feature":"Traffic Commute Time",
-    "value":0.9048028899
+    "value":0.9044249822
   },
   {
     "country":"united kingdom",
     "city":"manchester",
     "feature":"Traffic Commute Time",
-    "value":0.0808050983
+    "value":0.0819612868
   },
   {
     "country":"united states",
     "city":"new-york",
     "feature":"Traffic Commute Time",
-    "value":0.7348622708
+    "value":0.7348007539
   },
   {
     "country":"united states",
     "city":"seattle",
     "feature":"Traffic Commute Time",
-    "value":0.5577812896
+    "value":0.5580494571
   }
 ]
