@@ -21,31 +21,22 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./client-side
-      - name: Build
-        run: npm run build
-        working-directory: ./client-side
+      - uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
+      - name: Build (if static build needed)
+        run: |
+          cd client-side
+          npm ci
+          npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        id: artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          path: './client-side/dist'
+          path: client-side/dist
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        id: deploy
+        uses: actions/deploy-pages@v1
