@@ -301,7 +301,7 @@ class All(luigi.Task):
         return [
             CityAndCountry(),
             Cpi(),
-            CleanseWeather(),
+            # CleanseWeather(),
             SummariseCostOfLiving(),
             CleanseCrime(),
             WorkingPovertyRate(),
