@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col">
       {/* Header */}
       <header className="bg-white dark:bg-gray-800 shadow-md">
         <div className="container mx-auto px-4 py-4">
@@ -41,8 +41,22 @@ const Layout = ({ children }) => {
         </div>
       </header>
 
-      {/* Mobile Navigation */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-lg z-10">
+      {/* Main Content */}
+      <main className="container mx-auto px-4 py-8 flex-grow pb-20 md:pb-8">
+        {children}
+      </main>
+
+      {/* Footer - Hidden on mobile, visible on desktop */}
+      <footer className="hidden md:block bg-white dark:bg-gray-800 shadow-inner mt-auto">
+        <div className="container mx-auto px-4 py-6">
+          <p className="text-center text-gray-600 dark:text-gray-400 text-sm">
+            © {new Date().getFullYear()} CityCompare. All rights reserved.
+          </p>
+        </div>
+      </footer>
+
+      {/* Mobile Navigation - Acts as footer on mobile */}
+      <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white dark:bg-gray-800 shadow-lg z-10 border-t border-gray-200 dark:border-gray-700">
         <div className="flex justify-around">
           {navItems.map((item) => {
             const Icon = item.icon;
@@ -50,33 +64,25 @@ const Layout = ({ children }) => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex flex-col items-center py-2 px-3 ${
+                className={`flex flex-col items-center py-3 px-2 min-w-0 flex-1 ${
                   location.pathname === item.path
                     ? 'text-indigo-600 dark:text-indigo-400'
                     : 'text-gray-600 dark:text-gray-400'
                 }`}
               >
-                <Icon className="h-6 w-6" />
-                <span className="text-xs mt-1">{item.label}</span>
+                <Icon className="h-5 w-5" />
+                <span className="text-xs mt-1 truncate">{item.label}</span>
               </Link>
             );
           })}
         </div>
-      </div>
-
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-8 mb-16 md:mb-0">
-        {children}
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-white dark:bg-gray-800 shadow-inner mt-auto">
-        <div className="container mx-auto px-4 py-6">
-          <p className="text-center text-gray-600 dark:text-gray-400 text-sm">
-            © {new Date().getFullYear()} CityCompare. All rights reserved.
+        {/* Mobile Footer Text */}
+        <div className="px-4 py-2 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+          <p className="text-center text-gray-500 dark:text-gray-500 text-xs">
+            © {new Date().getFullYear()} CityCompare
           </p>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };
