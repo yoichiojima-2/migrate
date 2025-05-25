@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <CityProvider>
-      <Router>
+      <Router basename="/migrate">
         <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />
