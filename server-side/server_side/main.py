@@ -47,11 +47,6 @@ def make_compare_df(
     # fmt: on
 
 
-@app.get("/cities")
-def cities() -> list[str]:
-    return [city.lower() for city in get_config().get("cities")]
-
-
 @app.get("/cities_and_countries")
 def cities_and_countries() -> list[dict[str, str]]:
     df = pd.read_json(get_data_dir() / "master/city_and_country.json")
