@@ -1,0 +1,71 @@
+/* Custom styles that can't be easily achieved with Tailwind */
+/* Gradient backgrounds for progress bars */
+.progress-fill.positive {
+  background: linear-gradient(90deg, #059669, #10b981);
+}
+
+.progress-fill.negative {
+  background: linear-gradient(90deg, #dc2626, #ef4444);
+}
+
+/* Shimmer effect for progress bars */
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Arrow indicators for diff values */
+.diff-positive::before {
+  content: '↑';
+  margin-right: 0.25rem;
+}
+
+.diff-negative::before {
+  content: '↓';
+  margin-right: 0.25rem;
+}
+
+/* Decorative elements for cards */
+.happiness-decoration::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.cost-decoration::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+}
