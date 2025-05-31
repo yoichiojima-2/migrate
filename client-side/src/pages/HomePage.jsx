@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { FaSearch, FaChartBar, FaMoneyBillWave, FaHeart } from 'react-icons/fa';
+import { FaSearch, FaChartBar, FaMoneyBillWave, FaHeart, FaGlobe } from 'react-icons/fa';
 import { useCityContext } from '../context/CityContext';
 import CitySelector from '../components/CitySelector';
 import LoadingSpinner from '../components/LoadingSpinner';
@@ -52,6 +52,13 @@ const HomePage = () => {
       icon: FaChartBar,
       path: '/comparison',
       color: 'bg-blue-500',
+    },
+    {
+      title: 'Country Rankings',
+      description: 'See how countries rank across different quality of life and cost metrics.',
+      icon: FaGlobe,
+      path: '/rankings',
+      color: 'bg-purple-500',
     },
   ];
 
@@ -129,7 +136,7 @@ const HomePage = () => {
           Discover What Makes a City Great
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <Link
               key={index}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaHome, FaChartBar, FaMoneyBillWave, FaHeart, FaInfoCircle } from 'react-icons/fa';
+import { FaHome, FaChartBar, FaMoneyBillWave, FaHeart, FaInfoCircle, FaGlobe } from 'react-icons/fa';
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -10,6 +10,7 @@ const Layout = ({ children }) => {
     { path: '/quality-of-life', label: 'Quality of Life', icon: FaHeart },
     { path: '/cost-of-living', label: 'Cost of Living', icon: FaMoneyBillWave },
     { path: '/comparison', label: 'Comparison', icon: FaChartBar },
+    { path: '/rankings', label: 'Rankings', icon: FaGlobe },
     { path: '/about', label: 'About', icon: FaInfoCircle },
   ];
 
