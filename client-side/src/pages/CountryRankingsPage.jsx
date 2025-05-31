@@ -31,31 +31,21 @@ const CountryRankingsPage = () => {
     }
   }, [dataType, happinessQolData, costOfLivingData, selectedMetric]);
 
-  // Calculate country rankings when metric or data changes
+  // Calculate city rankings when metric or data changes
   useEffect(() => {
     if (selectedMetric && cities.length > 0) {
-      calculateCountryRankings();
+      calculateCityRankings();
     }
   }, [selectedMetric, dataType, sortOrder, cities, happinessQolData, costOfLivingData]);
 
-  const calculateCountryRankings = () => {
-    const countryData = new Map();
+  const calculateCityRankings = () => {
     const dataSource = dataType === 'happiness' ? happinessQolData : costOfLivingData;
+    const cityRankings = [];
     
-    // Group cities by country and calculate average values
+    // Get data for each city
     cities.forEach(cityInfo => {
-      const country = cityInfo.country;
       const city = cityInfo.city;
-      
-      if (!countryData.has(country)) {
-        countryData.set(country, {
-          country,
-          cities: [],
-          values: [],
-          averageValue: 0,
-          cityCount: 0
-        });
-      }
+      const country = cityInfo.country;
       
       // Find data for this city and metric
       let cityValue = null;
@@ -120,37 +110,24 @@ const CountryRankingsPage = () => {
       }
       
       if (cityValue !== null && !isNaN(cityValue)) {
-        const countryInfo = countryData.get(country);
-        countryInfo.cities.push(city);
-        countryInfo.values.push(cityValue);
-      }
-    });
-    
-    // Calculate averages and prepare ranking data
-    const rankingData = [];
-    countryData.forEach((data, country) => {
-      if (data.values.length > 0) {
-        const averageValue = data.values.reduce((sum, val) => sum + val, 0) / data.values.length;
-        rankingData.push({
+        cityRankings.push({
+          city,
           country,
-          averageValue,
-          cityCount: data.values.length,
-          cities: data.cities,
-          values: data.values
+          value: cityValue
         });
       }
     });
     
-    // Sort by average value
-    rankingData.sort((a, b) => {
+    // Sort cities by their values
+    cityRankings.sort((a, b) => {
       if (sortOrder === 'desc') {
-        return b.averageValue - a.averageValue;
+        return b.value - a.value;
       } else {
-        return a.averageValue - b.averageValue;
+        return a.value - b.value;
       }
     });
     
-    setRankings(rankingData);
+    setRankings(cityRankings);
   };
 
   const getRankIcon = (rank) => {
@@ -202,7 +179,7 @@ const CountryRankingsPage = () => {
       {/* Header */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
         <h1 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-          Country Rankings
+          City Rankings
         </h1>
         
         {/* Data Category Tabs */}
@@ -294,13 +271,13 @@ const CountryRankingsPage = () => {
               {selectedMetric.charAt(0).toUpperCase() + selectedMetric.slice(1)} Rankings
             </h2>
             <p className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-              Based on average values across {rankings.reduce((sum, r) => sum + r.cityCount, 0)} cities
+              Ranking {rankings.length} cities
             </p>
           </div>
           
           <div className="divide-y divide-gray-200 dark:divide-gray-600">
             {rankings.map((ranking, index) => (
-              <div key={ranking.country} className="px-6 py-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+              <div key={`${ranking.city}-${ranking.country}`} className="px-6 py-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
                     <div className="flex-shrink-0 w-12 flex justify-center">
@@ -308,19 +285,19 @@ const CountryRankingsPage = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-medium text-gray-900 dark:text-white">
-                        {ranking.country.charAt(0).toUpperCase() + ranking.country.slice(1)}
+                        {ranking.city.charAt(0).toUpperCase() + ranking.city.slice(1)}
                       </h3>
                       <p className="text-sm text-gray-600 dark:text-gray-400">
-                        {ranking.cityCount} {ranking.cityCount === 1 ? 'city' : 'cities'}: {ranking.cities.join(', ')}
+                        {ranking.country.charAt(0).toUpperCase() + ranking.country.slice(1)}
                       </p>
                     </div>
                   </div>
                   <div className="text-right">
                     <div className="text-2xl font-bold text-gray-900 dark:text-white">
-                      {ranking.averageValue.toFixed(2)}
+                      {dataType === 'cost' ? Math.round(ranking.value).toLocaleString() : ranking.value.toFixed(2)}
                     </div>
                     <div className="text-sm text-gray-600 dark:text-gray-400">
-                      Average Score
+                      {dataType === 'cost' ? 'yen' : 'Score'}
                     </div>
                   </div>
                 </div>
@@ -342,10 +319,10 @@ const CountryRankingsPage = () => {
         <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 text-center">
           <FaGlobe className="mx-auto text-4xl text-indigo-500 mb-4" />
           <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
-            Select a metric to view country rankings
+            Select a metric to view city rankings
           </h2>
           <p className="text-gray-600 dark:text-gray-400">
-            Choose a data category and metric from the dropdowns above to see how countries rank.
+            Choose a data category and metric from the options above to see how cities rank.
           </p>
         </div>
       )}
