@@ -218,7 +218,7 @@ const HomePage = () => {
               <div className="mt-6 animate-fadeIn">
                 <Link
                   to="/quality-of-life"
-                  className="inline-flex items-center bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="inline-flex items-center bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 btn-hover"
                 >
                   <span>Explore {selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1)}</span>
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
