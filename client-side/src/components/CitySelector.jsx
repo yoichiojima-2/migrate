@@ -46,9 +46,11 @@ const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
 
   return (
     <div className="mb-6" ref={dropdownRef}>
-      <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">
-        {label}
-      </label>
+      {label && (
+        <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">
+          {label}
+        </label>
+      )}
       
       {/* Custom Select Button */}
       <div className="relative">

@@ -188,14 +188,17 @@ const HomePage = () => {
           {/* City/Country Selector */}
           <div className="mt-10 animate-slideIn" style={{animationDelay: '0.3s'}}>
             {activeTab === 'cities' ? (
-              <CitySelector
-                label="Or select a city from our database"
-                value={selectedCity}
-                onChange={setSelectedCity}
-              />
+              <div>
+                <p className="text-white/80 mb-4 text-sm font-bold">Or select a city from our database</p>
+                <CitySelector
+                  label=""
+                  value={selectedCity}
+                  onChange={setSelectedCity}
+                />
+              </div>
             ) : (
               <>
-                <p className="text-white/80 mb-4">Or select a country from our database</p>
+                <p className="text-white/80 mb-4 text-sm font-bold">Or select a country from our database</p>
                 <select
                   value={selectedCountry}
                   onChange={(e) => handleCountrySelect(e.target.value)}
@@ -215,7 +218,7 @@ const HomePage = () => {
               <div className="mt-6 animate-fadeIn">
                 <Link
                   to="/quality-of-life"
-                  className="inline-flex items-center bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 btn-hover"
+                  className="inline-flex items-center bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <span>Explore {selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1)}</span>
                   <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
