@@ -208,12 +208,14 @@ const QualityOfLifePage = () => {
           </div>
         </>
       ) : (
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8 text-center">
-          <FaHeart className="mx-auto text-4xl text-indigo-500 mb-4" />
-          <h2 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+        <div className="bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm rounded-2xl shadow-xl p-12 text-center animate-fadeIn">
+          <div className="p-4 bg-gradient-to-r from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center animate-float">
+            <FaHeart className="text-3xl text-primary-600 dark:text-primary-400" />
+          </div>
+          <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">
             Select a city to view quality of life data
           </h2>
-          <p className="text-gray-600 dark:text-gray-400">
+          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-md mx-auto">
             Choose a city from the dropdown above to see detailed quality of life metrics.
           </p>
         </div>
