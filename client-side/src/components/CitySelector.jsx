@@ -46,7 +46,7 @@ const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
 
   return (
     <div className="mb-6" ref={dropdownRef}>
-      <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+      <label className="block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3">
         {label}
       </label>
       
@@ -55,30 +55,34 @@ const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className={`w-full px-4 py-3 text-left bg-white dark:bg-gray-800 border-2 rounded-xl shadow-sm transition-all duration-200 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 ${
+          className={`w-full px-5 py-4 text-left bg-white dark:bg-gray-800 backdrop-blur-sm border-2 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 ${
             isOpen 
-              ? 'border-indigo-500 ring-2 ring-indigo-200 dark:ring-indigo-800' 
-              : 'border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500'
+              ? 'border-primary-500 ring-4 ring-primary-500/20 dark:ring-primary-500/30 shadow-glow' 
+              : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
           }`}
         >
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <FaMapMarkerAlt className={`text-sm ${value ? 'text-indigo-500' : 'text-gray-400'}`} />
-              <span className={`${value ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-400'}`}>
+              <div className={`p-2 rounded-xl transition-colors duration-300 ${
+                value ? 'bg-gradient-to-r from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30' : 'bg-gray-100 dark:bg-gray-800'
+              }`}>
+                <FaMapMarkerAlt className={`text-sm ${value ? 'text-primary-600 dark:text-primary-400' : 'text-gray-400'}`} />
+              </div>
+              <span className={`font-medium ${value ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-400'}`}>
                 {displayText}
               </span>
             </div>
             <FaChevronDown 
-              className={`text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
+              className={`text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-primary-500' : ''}`} 
             />
           </div>
         </button>
 
         {/* Dropdown */}
         {isOpen && (
-          <div className="absolute z-50 w-full mt-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl shadow-lg max-h-80 overflow-hidden">
+          <div className="absolute z-50 w-full mt-3 bg-white dark:bg-gray-800 backdrop-blur-xl border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl max-h-80 overflow-hidden animate-slideIn">
             {/* Search Input */}
-            <div className="p-3 border-b border-gray-200 dark:border-gray-600">
+            <div className="p-4 border-b border-gray-200 dark:border-gray-700">
               <div className="relative">
                 <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm" />
                 <input
@@ -86,7 +90,8 @@ const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
                   placeholder="Search cities..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-2 border border-gray-200 dark:border-gray-600 rounded-lg bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                  className="w-full pl-10 pr-4 py-2.5 border border-gray-200 dark:border-gray-600 rounded-xl bg-gray-50 dark:bg-gray-700/50 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-200"
+                  autoFocus
                 />
               </div>
             </div>
@@ -98,20 +103,27 @@ const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
                   No cities found
                 </div>
               ) : (
-                searchFilteredCities.map((city) => (
+                searchFilteredCities.map((city, index) => (
                   <button
                     key={city.city}
                     type="button"
                     onClick={() => handleCitySelect(city.city)}
-                    className={`w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-150 flex items-center space-x-3 ${
+                    className={`w-full px-4 py-3.5 text-left hover:bg-gradient-to-r hover:from-primary-50 hover:to-accent-50 dark:hover:from-primary-900/20 dark:hover:to-accent-900/20 transition-all duration-200 flex items-center space-x-3 border-b border-gray-100 dark:border-gray-700/50 last:border-0 ${
                       value === city.city 
-                        ? 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300' 
+                        ? 'bg-gradient-to-r from-primary-50 to-accent-50 dark:from-primary-900/30 dark:to-accent-900/30' 
                         : 'text-gray-900 dark:text-white'
                     }`}
+                    style={{animationDelay: `${index * 0.03}s`}}
                   >
-                    <FaMapMarkerAlt className={`text-sm ${value === city.city ? 'text-indigo-500' : 'text-gray-400'}`} />
+                    <div className={`p-2 rounded-xl transition-colors duration-300 ${
+                      value === city.city 
+                        ? 'bg-gradient-to-r from-primary-100 to-accent-100 dark:from-primary-900/30 dark:to-accent-900/30' 
+                        : 'bg-gray-100 dark:bg-gray-800'
+                    }`}>
+                      <FaMapMarkerAlt className={`text-sm ${value === city.city ? 'text-primary-600 dark:text-primary-400' : 'text-gray-400'}`} />
+                    </div>
                     <div>
-                      <div className="font-medium">
+                      <div className="font-semibold text-gray-900 dark:text-white">
                         {city.city.charAt(0).toUpperCase() + city.city.slice(1)}
                       </div>
                       <div className="text-sm text-gray-500 dark:text-gray-400">
