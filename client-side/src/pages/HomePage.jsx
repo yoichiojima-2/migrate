@@ -9,51 +9,26 @@ const HomePage = () => {
   const { cities, selectedCity, setSelectedCity, loading } = useCityContext();
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredCities, setFilteredCities] = useState([]);
-  const [activeTab, setActiveTab] = useState('cities'); // 'cities' or 'countries'
-  const [selectedCountry, setSelectedCountry] = useState('');
-  
-  // Extract unique countries from cities data
-  const countries = [...new Set(cities.map(city => city.country))].sort();
 
-  // Filter cities or countries based on search term and active tab
+  // Filter cities based on search term
   useEffect(() => {
     if (!searchTerm) {
       setFilteredCities([]);
       return;
     }
 
-    if (activeTab === 'cities') {
-      const filtered = cities.filter(city => 
-        city.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        city.country.toLowerCase().includes(searchTerm.toLowerCase())
-      ).slice(0, 6); // Limit to 6 results
-      
-      setFilteredCities(filtered);
-    } else {
-      // For countries tab, filter unique countries
-      const filtered = countries
-        .filter(country => country.toLowerCase().includes(searchTerm.toLowerCase()))
-        .slice(0, 6);
-      
-      setFilteredCities(filtered);
-    }
-  }, [searchTerm, cities, activeTab, countries]);
+    const filtered = cities.filter(city => 
+      city.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      city.country.toLowerCase().includes(searchTerm.toLowerCase())
+    ).slice(0, 6); // Limit to 6 results
+    
+    setFilteredCities(filtered);
+  }, [searchTerm, cities]);
 
   const handleCitySelect = (city) => {
     setSelectedCity(city);
     setSearchTerm('');
     setFilteredCities([]);
-  };
-
-  const handleCountrySelect = (country) => {
-    setSelectedCountry(country);
-    setSearchTerm('');
-    setFilteredCities([]);
-    // Get the first city from the selected country
-    const countryCity = cities.find(city => city.country === country);
-    if (countryCity) {
-      setSelectedCity(countryCity.city);
-    }
   };
 
   const features = [
@@ -88,142 +63,66 @@ const HomePage = () => {
   ];
 
   return (
-    <div className="space-y-16 animate-fadeIn">
+    <div className="space-y-10">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-accent-600 text-white rounded-2xl shadow-2xl p-8 md:p-16 overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-accent-400 rounded-full blur-3xl"></div>
-        </div>
-        <div className="relative max-w-4xl mx-auto text-center z-10">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-slideIn">
-            <span className="gradient-text">Find Your Perfect</span>
-            <br />
-            <span className="text-white">City to Live</span>
+      <section className="bg-indigo-600 text-white rounded-lg shadow-xl p-8 md:p-12">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            Find Your Perfect City to Live
           </h1>
-          <p className="text-lg md:text-2xl mb-12 text-gray-100 opacity-90 max-w-2xl mx-auto animate-slideIn" style={{animationDelay: '0.1s'}}>
-            Compare quality of life and cost of living across cities worldwide with real-time data
+          <p className="text-lg md:text-xl mb-8 text-indigo-100">
+            Compare quality of life and cost of living across cities worldwide
           </p>
           
-          {/* Tabs */}
-          <div className="flex justify-center mb-8 animate-slideIn" style={{animationDelay: '0.15s'}}>
-            <div className="bg-white/20 backdrop-blur-lg rounded-xl p-1 flex">
-              <button
-                onClick={() => setActiveTab('cities')}
-                className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
-                  activeTab === 'cities' 
-                    ? 'bg-white text-primary-600 shadow-lg' 
-                    : 'text-white/80 hover:text-white'
-                }`}
-              >
-                Cities
-              </button>
-              <button
-                onClick={() => setActiveTab('countries')}
-                className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
-                  activeTab === 'countries' 
-                    ? 'bg-white text-primary-600 shadow-lg' 
-                    : 'text-white/80 hover:text-white'
-                }`}
-              >
-                Countries
-              </button>
-            </div>
-          </div>
-          
           {/* Search Bar */}
-          <div className="relative max-w-xl mx-auto animate-slideIn" style={{animationDelay: '0.2s'}}>
-            <div className="flex items-center bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl hover:shadow-glow transition-all duration-300">
-              <FaSearch className="ml-4 text-primary-500 w-5 h-5" />
+          <div className="relative max-w-md mx-auto">
+            <div className="flex items-center bg-white rounded-lg shadow-md">
+              <FaSearch className="ml-3 text-gray-400" />
               <input
                 type="text"
-                placeholder={activeTab === 'cities' ? "Search for any city..." : "Search for any country..."}
+                placeholder="Search for a city..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full p-4 px-4 rounded-2xl text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-400 bg-transparent"
+                className="w-full p-3 rounded-lg text-gray-800 focus:outline-none"
               />
             </div>
             
             {/* Search Results Dropdown */}
             {filteredCities.length > 0 && (
-              <div className="absolute z-20 w-full mt-2 bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl text-left overflow-hidden animate-slideIn">
-                {activeTab === 'cities' ? (
-                  filteredCities.map((city, index) => (
-                    <div
-                      key={city.city}
-                      className="p-4 hover:bg-gradient-to-r hover:from-primary-50 hover:to-accent-50 cursor-pointer text-gray-800 transition-all duration-200 border-b border-gray-100 last:border-0"
-                      onClick={() => handleCitySelect(city.city)}
-                      style={{animationDelay: `${index * 0.05}s`}}
-                    >
-                      <div className="font-semibold text-gray-900">
-                        {city.city.charAt(0).toUpperCase() + city.city.slice(1)}
-                      </div>
-                      <div className="text-sm text-gray-600">
-                        {city.country.charAt(0).toUpperCase() + city.country.slice(1)}
-                      </div>
+              <div className="absolute z-10 w-full mt-1 bg-white rounded-lg shadow-lg text-left">
+                {filteredCities.map((city) => (
+                  <div
+                    key={city.city}
+                    className="p-3 hover:bg-gray-100 cursor-pointer text-gray-800"
+                    onClick={() => handleCitySelect(city.city)}
+                  >
+                    <div className="font-medium">
+                      {city.city.charAt(0).toUpperCase() + city.city.slice(1)}
                     </div>
-                  ))
-                ) : (
-                  filteredCities.map((country, index) => (
-                    <div
-                      key={country}
-                      className="p-4 hover:bg-gradient-to-r hover:from-primary-50 hover:to-accent-50 cursor-pointer text-gray-800 transition-all duration-200 border-b border-gray-100 last:border-0"
-                      onClick={() => handleCountrySelect(country)}
-                      style={{animationDelay: `${index * 0.05}s`}}
-                    >
-                      <div className="font-semibold text-gray-900">
-                        {country.charAt(0).toUpperCase() + country.slice(1)}
-                      </div>
-                      <div className="text-sm text-gray-600">
-                        {cities.filter(c => c.country === country).length} cities
-                      </div>
+                    <div className="text-sm text-gray-600">
+                      {city.country.charAt(0).toUpperCase() + city.country.slice(1)}
                     </div>
-                  ))
-                )}
+                  </div>
+                ))}
               </div>
             )}
           </div>
           
-          {/* City/Country Selector */}
-          <div className="mt-10 animate-slideIn" style={{animationDelay: '0.3s'}}>
-            {activeTab === 'cities' ? (
-              <div>
-                <p className="text-white/80 mb-4 text-sm font-bold">Or select a city from our database</p>
-                <CitySelector
-                  label=""
-                  value={selectedCity}
-                  onChange={setSelectedCity}
-                />
-              </div>
-            ) : (
-              <>
-                <p className="text-white/80 mb-4 text-sm font-bold">Or select a country from our database</p>
-                <select
-                  value={selectedCountry}
-                  onChange={(e) => handleCountrySelect(e.target.value)}
-                  className="w-full max-w-md mx-auto bg-white backdrop-blur-lg text-gray-800 px-4 py-3 rounded-xl shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 appearance-none cursor-pointer"
-                >
-                  <option value="">Select a country...</option>
-                  {countries.map(country => (
-                    <option key={country} value={country}>
-                      {country.charAt(0).toUpperCase() + country.slice(1)} ({cities.filter(c => c.country === country).length} cities)
-                    </option>
-                  ))}
-                </select>
-              </>
-            )}
+          {/* City Selector */}
+          <div className="mt-8">
+            <CitySelector
+              label="Or select a city to explore"
+              value={selectedCity}
+              onChange={setSelectedCity}
+            />
             
             {selectedCity && (
-              <div className="mt-6 animate-fadeIn">
+              <div className="mt-4">
                 <Link
                   to="/quality-of-life"
-                  className="inline-flex items-center bg-gradient-to-r from-primary-600 to-accent-600 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 btn-hover"
+                  className="inline-block bg-white text-indigo-600 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-indigo-50 transition-colors"
                 >
-                  <span>Explore {selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1)}</span>
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
+                  Explore {selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1)}
                 </Link>
               </div>
             )}
@@ -232,39 +131,27 @@ const HomePage = () => {
       </section>
 
       {/* Features Section */}
-      <section className="animate-fadeIn" style={{animationDelay: '0.4s'}}>
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
-            <span className="gradient-text">Discover</span> What Makes a City Great
-          </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Comprehensive data and insights to help you make informed decisions about your next move
-          </p>
-        </div>
+      <section>
+        <h2 className="text-2xl font-bold text-center mb-8 text-gray-800 dark:text-white">
+          Discover What Makes a City Great
+        </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <Link
               key={index}
               to={feature.path}
-              className="group bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 card-hover animate-slideIn"
-              style={{animationDelay: `${0.5 + index * 0.1}s`}}
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
             >
-              <div className={`${feature.color} w-16 h-16 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300`}>
-                <feature.icon className="text-white text-2xl group-hover:scale-110 transition-transform duration-300" />
+              <div className={`${feature.color} w-12 h-12 rounded-full flex items-center justify-center mb-4`}>
+                <feature.icon className="text-white text-xl" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-300">
+              <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-400">
                 {feature.description}
               </p>
-              <div className="mt-4 flex items-center text-primary-600 dark:text-primary-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <span className="text-sm font-medium">Learn more</span>
-                <svg className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </div>
             </Link>
           ))}
         </div>
@@ -272,10 +159,10 @@ const HomePage = () => {
 
       {/* Loading Indicator */}
       {loading && (
-        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 animate-fadeIn">
-          <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-2xl animate-slideIn">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
             <LoadingSpinner size="lg" />
-            <p className="mt-4 text-center text-gray-700 dark:text-gray-300 font-medium">Loading city data...</p>
+            <p className="mt-4 text-center text-gray-700 dark:text-gray-300">Loading data...</p>
           </div>
         </div>
       )}
