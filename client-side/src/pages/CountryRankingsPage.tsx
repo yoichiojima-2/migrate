@@ -3,13 +3,23 @@ import { useCityContext } from '../context/CityContext';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { FaTrophy, FaMedal, FaAward, FaChevronDown, FaChevronUp, FaGlobe } from 'react-icons/fa';
 
-const CountryRankingsPage = () => {
+interface CityRanking {
+  city: string;
+  country: string;
+  value: number;
+  rank?: number;
+}
+
+type DataType = 'happiness' | 'cost';
+type SortOrder = 'asc' | 'desc';
+
+const CountryRankingsPage: React.FC = () => {
   const { cities, happinessQolData, costOfLivingData, loading } = useCityContext();
-  const [selectedMetric, setSelectedMetric] = useState('');
-  const [rankings, setRankings] = useState([]);
-  const [availableMetrics, setAvailableMetrics] = useState([]);
-  const [dataType, setDataType] = useState('happiness'); // 'happiness' or 'cost'
-  const [sortOrder, setSortOrder] = useState('desc'); // 'asc' or 'desc'
+  const [selectedMetric, setSelectedMetric] = useState<string>('');
+  const [rankings, setRankings] = useState<CityRanking[]>([]);
+  const [availableMetrics, setAvailableMetrics] = useState<string[]>([]);
+  const [dataType, setDataType] = useState<DataType>('happiness');
+  const [sortOrder, setSortOrder] = useState<SortOrder>('desc');
 
   // Extract available metrics when data changes
   useEffect(() => {
@@ -40,7 +50,7 @@ const CountryRankingsPage = () => {
 
   const calculateCityRankings = () => {
     const dataSource = dataType === 'happiness' ? happinessQolData : costOfLivingData;
-    const cityRankings = [];
+    const cityRankings: CityRanking[] = [];
     
     // Get data for each city
     cities.forEach(cityInfo => {
@@ -130,7 +140,7 @@ const CountryRankingsPage = () => {
     setRankings(cityRankings);
   };
 
-  const getRankIcon = (rank) => {
+  const getRankIcon = (rank: number) => {
     switch (rank) {
       case 1:
         return <FaTrophy className="text-yellow-500 text-xl" />;
@@ -143,9 +153,9 @@ const CountryRankingsPage = () => {
     }
   };
 
-  const getMetricDescription = (metric) => {
+  const getMetricDescription = (metric: string) => {
     // Add descriptions for better UX
-    const descriptions = {
+    const descriptions: { [key: string]: string } = {
       'Happiness Score': 'Overall happiness and life satisfaction',
       'Quality of Life': 'General quality of life index',
       'Safety': 'Safety and security levels',

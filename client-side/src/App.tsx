@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CityProvider } from './context/CityContext';
 import Layout from './components/Layout';
@@ -9,7 +10,7 @@ import CountryRankingsPage from './pages/CountryRankingsPage';
 import AboutPage from './pages/AboutPage';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
     <CityProvider>
       <Router basename="/migrate">

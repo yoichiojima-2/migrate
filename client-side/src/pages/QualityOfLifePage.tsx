@@ -5,8 +5,16 @@ import FeatureCard from '../components/FeatureCard';
 import ComparisonChart from '../components/ComparisonChart';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { FaHeart, FaShieldAlt, FaLeaf, FaHospital, FaSmile } from 'react-icons/fa';
+import { IconType } from 'react-icons';
+import { ChartData } from 'chart.js';
+import { HappinessQolItem } from '../types';
 
-const QualityOfLifePage = () => {
+interface ChartDataState {
+  labels: string[];
+  datasets: ChartData<'bar'>['datasets'];
+}
+
+const QualityOfLifePage: React.FC = () => {
   const { 
     selectedCity, 
     setSelectedCity, 
@@ -16,8 +24,8 @@ const QualityOfLifePage = () => {
     loading 
   } = useCityContext();
 
-  const [qolCategories, setQolCategories] = useState([]);
-  const [chartData, setChartData] = useState(null);
+  const [qolCategories, setQolCategories] = useState<string[]>([]);
+  const [chartData, setChartData] = useState<ChartDataState | null>(null);
 
   // Extract unique quality of life categories
   useEffect(() => {
@@ -31,7 +39,7 @@ const QualityOfLifePage = () => {
   }, [happinessQolData, selectedCity, comparisonCity]);
 
   // Prepare data for the chart
-  const prepareChartData = (categories) => {
+  const prepareChartData = (categories: string[]) => {
     if (!categories.length || !selectedCity) return;
 
     const labels = categories;
@@ -79,7 +87,7 @@ const QualityOfLifePage = () => {
   };
 
   // Get icon for a specific category
-  const getCategoryIcon = (category) => {
+  const getCategoryIcon = (category: string): IconType => {
     switch (category.toLowerCase()) {
       case 'safety':
         return FaShieldAlt;
@@ -95,7 +103,7 @@ const QualityOfLifePage = () => {
   };
 
   // Get data for a specific category and city
-  const getCategoryData = (category, city) => {
+  const getCategoryData = (category: string, city: string): HappinessQolItem | null => {
     if (city === selectedCity) {
       // For selected city, get value_in_current_city from any item with this category
       const item = happinessQolData.find(data => data.feature === category);
@@ -122,14 +130,14 @@ const QualityOfLifePage = () => {
           
           return {
             ...compItem,
-            diff: parseFloat(diff)
+            diff: parseFloat(diff.toString())
           };
         }
         
         return compItem;
       }
       
-      return compItem;
+      return null;
     }
   };
 
