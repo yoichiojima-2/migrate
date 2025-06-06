@@ -1,18 +1,29 @@
-import { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
 import api from '../services/api';
+import { CityContextType, City, HappinessQolItem, CostOfLivingItem } from '../types';
 
-const CityContext = createContext();
+const CityContext = createContext<CityContextType | undefined>(undefined);
 
-export const useCityContext = () => useContext(CityContext);
+export const useCityContext = () => {
+  const context = useContext(CityContext);
+  if (!context) {
+    throw new Error('useCityContext must be used within a CityProvider');
+  }
+  return context;
+};
 
-export const CityProvider = ({ children }) => {
-  const [cities, setCities] = useState([]);
-  const [selectedCity, setSelectedCity] = useState('');
-  const [comparisonCity, setComparisonCity] = useState('');
-  const [happinessQolData, setHappinessQolData] = useState([]);
-  const [costOfLivingData, setCostOfLivingData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+interface CityProviderProps {
+  children: ReactNode;
+}
+
+export const CityProvider: React.FC<CityProviderProps> = ({ children }) => {
+  const [cities, setCities] = useState<City[]>([]);
+  const [selectedCity, setSelectedCity] = useState<string>('');
+  const [comparisonCity, setComparisonCity] = useState<string>('');
+  const [happinessQolData, setHappinessQolData] = useState<HappinessQolItem[]>([]);
+  const [costOfLivingData, setCostOfLivingData] = useState<CostOfLivingItem[]>([]);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Fetch cities and countries on component mount
   useEffect(() => {
@@ -69,7 +80,7 @@ export const CityProvider = ({ children }) => {
         setLoading(false);
       } catch (err) {
         console.error('Failed to fetch cost of living data:', err);
-        setError(`Failed to fetch cost of living data: ${err.message}`);
+        setError(`Failed to fetch cost of living data: ${err instanceof Error ? err.message : 'Unknown error'}`);
         setLoading(false);
       }
     };
@@ -78,7 +89,7 @@ export const CityProvider = ({ children }) => {
   }, [selectedCity]); // Removed comparisonCity from dependency array as it's not needed for fetching
 
   // Get filtered data for a specific city
-  const getFilteredDataForCity = (cityName, dataType) => {
+  const getFilteredDataForCity = (cityName: string, dataType: 'happiness' | 'costOfLiving') => {
     if (!cityName) return [];
 
     const dataSource = dataType === 'happiness' ? happinessQolData : costOfLivingData;
@@ -104,13 +115,13 @@ export const CityProvider = ({ children }) => {
   };
 
   // Get unique features from data
-  const getUniqueFeatures = (dataType) => {
+  const getUniqueFeatures = (dataType: 'happiness' | 'costOfLiving') => {
     const dataSource = dataType === 'happiness' ? happinessQolData : costOfLivingData;
     return [...new Set(dataSource.map(item => item.feature))];
   };
 
   // Get data for the selected city
-  const getSelectedCityData = (dataType) => {
+  const getSelectedCityData = (dataType: 'happiness' | 'costOfLiving') => {
     if (!selectedCity) return [];
     
     const dataSource = dataType === 'happiness' ? happinessQolData : costOfLivingData;

@@ -1,12 +1,19 @@
-import { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useCityContext } from '../context/CityContext';
 import { FaChevronDown, FaSearch, FaMapMarkerAlt } from 'react-icons/fa';
 
-const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
+interface CitySelectorProps {
+  label: string;
+  value: string;
+  onChange: (city: string) => void;
+  excludeCity?: string | null;
+}
+
+const CitySelector: React.FC<CitySelectorProps> = ({ label, value, onChange, excludeCity = null }) => {
   const { cities } = useCityContext();
   const [isOpen, setIsOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
-  const dropdownRef = useRef(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Filter out the excluded city if provided
   const filteredCities = excludeCity 
@@ -27,8 +34,8 @@ const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
 
   // Close dropdown when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsOpen(false);
         setSearchTerm('');
       }
@@ -38,7 +45,7 @@ const CitySelector = ({ label, value, onChange, excludeCity = null }) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleCitySelect = (cityName) => {
+  const handleCitySelect = (cityName: string) => {
     onChange(cityName);
     setIsOpen(false);
     setSearchTerm('');

@@ -1,8 +1,15 @@
 import React from 'react';
 import { FaGlobe, FaChartLine, FaDatabase, FaCode } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
-const AboutPage = () => {
-  const features = [
+interface Feature {
+  title: string;
+  description: string;
+  icon: IconType;
+}
+
+const AboutPage: React.FC = () => {
+  const features: Feature[] = [
     {
       title: 'Global City Data',
       description: 'Compare cities from around the world with comprehensive data on quality of life and cost of living.',

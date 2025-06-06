@@ -1,6 +1,21 @@
 import React from 'react';
+import { IconType } from 'react-icons';
 
-const DataCard = ({ title, data, description, icon: Icon, className = '' }) => {
+interface DataCardProps {
+  title: string;
+  data: string | number;
+  description?: string;
+  icon?: IconType;
+  className?: string;
+}
+
+const DataCard: React.FC<DataCardProps> = ({ 
+  title, 
+  data, 
+  description, 
+  icon: Icon, 
+  className = '' 
+}) => {
   return (
     <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 ${className}`}>
       <div className="flex items-center mb-4">

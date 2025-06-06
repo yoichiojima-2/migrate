@@ -5,22 +5,36 @@ import FeatureCard from '../components/FeatureCard';
 import ComparisonChart from '../components/ComparisonChart';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { FaMoneyBillWave, FaHome, FaUtensils, FaBus, FaGraduationCap } from 'react-icons/fa';
+import { IconType } from 'react-icons';
+import { ChartData } from 'chart.js';
+import { CostOfLivingItem } from '../types';
 
-const CostOfLivingPage = () => {
+interface ChartDataState {
+  labels: string[];
+  datasets: ChartData<'bar'>['datasets'];
+}
+
+interface FilteredItem extends Partial<CostOfLivingItem> {
+  feature: string;
+  description?: string;
+  city: string;
+  value: number;
+}
+
+const CostOfLivingPage: React.FC = () => {
   const { 
     selectedCity, 
     setSelectedCity, 
     comparisonCity, 
     setComparisonCity, 
     costOfLivingData, 
-    loading,
-    error
+    loading
   } = useCityContext();
 
-  const [categories, setCategories] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [chartData, setChartData] = useState(null);
+  const [categories, setCategories] = useState<string[]>([]);
+  const [filteredData, setFilteredData] = useState<FilteredItem[]>([]);
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
+  const [chartData, setChartData] = useState<ChartDataState | null>(null);
 
   // Extract unique categories
   useEffect(() => {
@@ -39,16 +53,16 @@ const CostOfLivingPage = () => {
   }, [costOfLivingData, selectedCategory, selectedCity, comparisonCity, categories]);
 
   // Filter data by category
-  const filterDataByCategory = (category) => {
+  const filterDataByCategory = (category: string) => {
     if (!costOfLivingData.length || !selectedCity) return;
 
     // Important: The API returns data for all cities EXCEPT the selected city
     // with value_in_current_city being the value for the selected city
 
-    let filtered;
+    let filtered: FilteredItem[];
     if (category === 'all') {
       // Create an array to hold all filtered items
-      const allFilteredItems = [];
+      const allFilteredItems: FilteredItem[] = [];
       
       // Process each category
       categories.forEach(feature => {
@@ -95,7 +109,7 @@ const CostOfLivingPage = () => {
           };
         }
         return null;
-      }).filter(Boolean);
+      }).filter((item): item is NonNullable<typeof item> => item !== null) as FilteredItem[];
     }
 
     console.log(`Filtered ${filtered.length} items for category: ${category}`);
@@ -108,17 +122,17 @@ const CostOfLivingPage = () => {
   };
 
   // Prepare data for the chart
-  const prepareChartData = (data) => {
+  const prepareChartData = (data: FilteredItem[]) => {
     if (!data.length || !selectedCity) return;
 
     // Use description as labels if available, otherwise use feature
-    const labels = data.map(item => item.description || item.feature);
+    const labels = data.map((item: FilteredItem) => item.description || item.feature);
     
     // Data for selected city (which is now in the value field of our filtered data)
-    const selectedCityData = data.map(item => item.value);
+    const selectedCityData = data.map((item: FilteredItem) => item.value);
 
     // Data for comparison city (if selected)
-    const comparisonCityData = comparisonCity ? data.map(item => {
+    const comparisonCityData = comparisonCity ? data.map((item: FilteredItem) => {
       // Normalize the comparison city for case-insensitive comparison
       const normalizedComparisonCity = comparisonCity.toLowerCase().trim();
       
@@ -151,7 +165,7 @@ const CostOfLivingPage = () => {
       }
     ];
 
-    if (comparisonCity && comparisonCityData.some(value => value !== 0)) {
+    if (comparisonCity && comparisonCityData.some((value: number) => value !== 0)) {
       datasets.push({
         label: comparisonCity.charAt(0).toUpperCase() + comparisonCity.slice(1),
         data: comparisonCityData,
@@ -165,7 +179,7 @@ const CostOfLivingPage = () => {
   };
 
   // Get icon for a specific category
-  const getCategoryIcon = (category) => {
+  const getCategoryIcon = (category: string): IconType => {
     switch (category.toLowerCase()) {
       case 'rent':
         return FaHome;
@@ -182,7 +196,7 @@ const CostOfLivingPage = () => {
   };
 
   // Get comparison data for a specific item
-  const getComparisonData = (item) => {
+  const getComparisonData = (item: FilteredItem): CostOfLivingItem | null => {
     if (!comparisonCity) return null;
     
     // Normalize the comparison city for case-insensitive comparison

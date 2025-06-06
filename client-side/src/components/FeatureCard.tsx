@@ -1,7 +1,19 @@
 import React from 'react';
 import { FaArrowUp, FaArrowDown, FaMinus } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
-const FeatureCard = ({ 
+interface FeatureCardProps {
+  feature: string;
+  value?: number;
+  comparisonValue?: number;
+  diff?: number;
+  diffUnit?: string;
+  description?: string;
+  className?: string;
+  icon?: IconType;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ 
   feature, 
   value, 
   comparisonValue, 
@@ -36,8 +48,8 @@ const FeatureCard = ({
         <div className="flex items-center">
           {getDiffIndicator()}
           <span className={`ml-1 font-medium ${
-            diff > 0 ? 'text-green-600 dark:text-green-400' : 
-            diff < 0 ? 'text-red-600 dark:text-red-400' : 
+            diff && diff > 0 ? 'text-green-600 dark:text-green-400' : 
+            diff && diff < 0 ? 'text-red-600 dark:text-red-400' : 
             'text-gray-600 dark:text-gray-400'
           }`}>
             {formattedDiffRate}

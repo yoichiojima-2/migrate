@@ -8,6 +8,8 @@ import {
   Title,
   Tooltip,
   Legend,
+  ChartData,
+  ChartOptions,
 } from 'chart.js';
 
 // Register ChartJS components
@@ -20,7 +22,16 @@ ChartJS.register(
   Legend
 );
 
-const ComparisonChart = ({ 
+interface ComparisonChartProps {
+  title?: string;
+  labels: string[];
+  datasets: ChartData<'bar'>['datasets'];
+  className?: string;
+  horizontal?: boolean;
+  height?: number;
+}
+
+const ComparisonChart: React.FC<ComparisonChartProps> = ({ 
   title, 
   labels, 
   datasets, 
@@ -28,13 +39,13 @@ const ComparisonChart = ({
   horizontal = false,
   height = 300
 }) => {
-  const options = {
+  const options: ChartOptions<'bar'> = {
     responsive: true,
     maintainAspectRatio: false,
     indexAxis: horizontal ? 'y' : 'x',
     plugins: {
       legend: {
-        position: 'top',
+        position: 'top' as const,
       },
       title: {
         display: !!title,
@@ -48,7 +59,7 @@ const ComparisonChart = ({
     },
   };
 
-  const data = {
+  const data: ChartData<'bar'> = {
     labels,
     datasets,
   };

@@ -1,11 +1,22 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaHome, FaChartBar, FaMoneyBillWave, FaHeart, FaInfoCircle, FaGlobe } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+interface NavItem {
+  path: string;
+  label: string;
+  icon: IconType;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
   
-  const navItems = [
+  const navItems: NavItem[] = [
     { path: '/', label: 'Home', icon: FaHome },
     { path: '/quality-of-life', label: 'Quality of Life', icon: FaHeart },
     { path: '/cost-of-living', label: 'Cost of Living', icon: FaMoneyBillWave },

@@ -1,14 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch, FaChartBar, FaMoneyBillWave, FaHeart, FaGlobe } from 'react-icons/fa';
+import { IconType } from 'react-icons';
 import { useCityContext } from '../context/CityContext';
 import CitySelector from '../components/CitySelector';
 import LoadingSpinner from '../components/LoadingSpinner';
+import { City } from '../types';
 
-const HomePage = () => {
+interface Feature {
+  title: string;
+  description: string;
+  icon: IconType;
+  path: string;
+  color: string;
+}
+
+const HomePage: React.FC = () => {
   const { cities, selectedCity, setSelectedCity, loading } = useCityContext();
-  const [searchTerm, setSearchTerm] = useState('');
-  const [filteredCities, setFilteredCities] = useState([]);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [filteredCities, setFilteredCities] = useState<City[]>([]);
 
   // Filter cities based on search term
   useEffect(() => {
@@ -25,13 +35,13 @@ const HomePage = () => {
     setFilteredCities(filtered);
   }, [searchTerm, cities]);
 
-  const handleCitySelect = (city) => {
+  const handleCitySelect = (city: string) => {
     setSelectedCity(city);
     setSearchTerm('');
     setFilteredCities([]);
   };
 
-  const features = [
+  const features: Feature[] = [
     {
       title: 'Quality of Life Comparison',
       description: 'Compare happiness, safety, healthcare, and more between cities.',

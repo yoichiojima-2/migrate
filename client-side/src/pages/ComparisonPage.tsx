@@ -5,8 +5,18 @@ import DataCard from '../components/DataCard';
 import ComparisonChart from '../components/ComparisonChart';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { FaChartBar, FaMoneyBillWave, FaHeart, FaHome, FaUtensils } from 'react-icons/fa';
+import { ChartData } from 'chart.js';
 
-const ComparisonPage = () => {
+interface ChartDataState {
+  labels: string[];
+  datasets: ChartData<'bar'>['datasets'];
+}
+
+interface SummaryData {
+  [key: string]: number;
+}
+
+const ComparisonPage: React.FC = () => {
   const { 
     selectedCity, 
     setSelectedCity, 
@@ -17,9 +27,9 @@ const ComparisonPage = () => {
     loading 
   } = useCityContext();
 
-  const [qolSummary, setQolSummary] = useState({});
-  const [colSummary, setColSummary] = useState({});
-  const [chartData, setChartData] = useState(null);
+  const [qolSummary, setQolSummary] = useState<{ selected: SummaryData; comparison: SummaryData }>({ selected: {}, comparison: {} });
+  const [colSummary, setColSummary] = useState<{ selected: SummaryData; comparison: SummaryData }>({ selected: {}, comparison: {} });
+  const [chartData, setChartData] = useState<ChartDataState | null>(null);
 
   // Prepare summary data when cities or data changes
   useEffect(() => {
@@ -34,8 +44,8 @@ const ComparisonPage = () => {
   const prepareQolSummary = () => {
     if (!happinessQolData.length) return;
 
-    const selectedCityData = {};
-    const comparisonCityData = {};
+    const selectedCityData: SummaryData = {};
+    const comparisonCityData: SummaryData = {};
 
     // Key metrics to highlight
     const keyMetrics = ['Happiness Score', 'Quality of Life', 'Safety', 'Health Care'];
@@ -63,8 +73,8 @@ const ComparisonPage = () => {
     }
 
     setQolSummary({
-      selectedCity: selectedCityData,
-      comparisonCity: comparisonCityData
+      selected: selectedCityData,
+      comparison: comparisonCityData
     });
   };
 
@@ -72,8 +82,8 @@ const ComparisonPage = () => {
   const prepareColSummary = () => {
     if (!costOfLivingData.length) return;
 
-    const selectedCityData = {};
-    const comparisonCityData = {};
+    const selectedCityData: SummaryData = {};
+    const comparisonCityData: SummaryData = {};
 
     // Key metrics to highlight
     const keyMetrics = [
@@ -110,8 +120,8 @@ const ComparisonPage = () => {
     }
 
     setColSummary({
-      selectedCity: selectedCityData,
-      comparisonCity: comparisonCityData
+      selected: selectedCityData,
+      comparison: comparisonCityData
     });
   };
 
@@ -182,7 +192,7 @@ const ComparisonPage = () => {
   };
 
   // Get icon for a specific metric
-  const getMetricIcon = (metric) => {
+  const getMetricIcon = (metric: string) => {
     if (metric.toLowerCase().includes('happiness') || metric.toLowerCase().includes('quality')) {
       return FaHeart;
     } else if (metric.toLowerCase().includes('rent') || metric.toLowerCase().includes('apartment')) {
@@ -240,11 +250,11 @@ const ComparisonPage = () => {
               <div className="space-y-4">
                 <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">Quality of Life</h3>
                 <div className="grid grid-cols-2 gap-4">
-                  {Object.entries(qolSummary.selectedCity || {}).map(([metric, value]) => (
+                  {Object.entries(qolSummary.selected || {}).map(([metric, value]) => (
                     <DataCard
                       key={metric}
                       title={metric}
-                      data={value.toFixed(1)}
+                      data={typeof value === 'number' ? value.toFixed(1) : String(value)}
                       icon={getMetricIcon(metric)}
                       className="bg-indigo-50 dark:bg-indigo-900/20"
                     />
@@ -253,11 +263,11 @@ const ComparisonPage = () => {
                 
                 <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mt-6">Cost of Living</h3>
                 <div className="grid grid-cols-1 gap-4">
-                  {Object.entries(colSummary.selectedCity || {}).map(([metric, value]) => (
+                  {Object.entries(colSummary.selected || {}).map(([metric, value]) => (
                     <DataCard
                       key={metric}
                       title={metric}
-                      data={value.toLocaleString()}
+                      data={typeof value === 'number' ? value.toLocaleString() : String(value)}
                       icon={getMetricIcon(metric)}
                       className="bg-green-50 dark:bg-green-900/20"
                     />
@@ -276,11 +286,11 @@ const ComparisonPage = () => {
                 <div className="space-y-4">
                   <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">Quality of Life</h3>
                   <div className="grid grid-cols-2 gap-4">
-                    {Object.entries(qolSummary.comparisonCity || {}).map(([metric, value]) => (
+                    {Object.entries(qolSummary.comparison || {}).map(([metric, value]) => (
                       <DataCard
                         key={metric}
                         title={metric}
-                        data={value.toFixed(1)}
+                        data={typeof value === 'number' ? value.toFixed(1) : String(value)}
                         icon={getMetricIcon(metric)}
                         className="bg-red-50 dark:bg-red-900/20"
                       />
@@ -289,11 +299,11 @@ const ComparisonPage = () => {
                   
                   <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mt-6">Cost of Living</h3>
                   <div className="grid grid-cols-1 gap-4">
-                    {Object.entries(colSummary.comparisonCity || {}).map(([metric, value]) => (
+                    {Object.entries(colSummary.comparison || {}).map(([metric, value]) => (
                       <DataCard
                         key={metric}
                         title={metric}
-                        data={value.toLocaleString()}
+                        data={typeof value === 'number' ? value.toLocaleString() : String(value)}
                         icon={getMetricIcon(metric)}
                         className="bg-red-50 dark:bg-red-900/20"
                       />
