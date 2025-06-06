@@ -1,48 +1,41 @@
-from pathlib import Path
-import json
+"""
+Utilities module - main entry point.
 
-import pandas as pd
-import yaml
+This module provides backward compatibility while offering enhanced functionality
+through the new modular design.
+"""
 
+# Backward compatibility imports
+from .config import get_root, get_data_dir, get_config
+from .io import read_json, df_to_json, write_json
+from .validation import DataValidator, CityDataValidator, ValidationError
 
-def get_root() -> Path:
-    # this is just too handy
-    return Path().home() / ".sign-to-migrate"
+# New enhanced functionality
+from .config import ConfigManager, get_config_manager
+from .io import (
+    read_json_file, 
+    write_json_file, 
+    read_dataframe_from_json, 
+    write_dataframe_to_json
+)
 
-
-def get_config() -> dict[str, any]:
-    return yaml.safe_load((get_root() / "config.yml").open())
-
-
-def get_data_dir() -> Path:
-    return get_root() / "data"
-
-
-def read_json(path: str) -> None:
-    output_path = get_data_dir() / path
-
-    if not output_path.suffix == ".json":
-        raise ValueError(f"output path must be a json: {path}")
-
-    return pd.read_json(output_path)
-
-
-def df_to_json(df: pd.DataFrame, path: str) -> None:
-    output_path = get_data_dir() / path
-
-    if not output_path.suffix == ".json":
-        raise ValueError(f"output path must be a json: {path}")
-
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_json(output_path, orient="records", index=False, indent=2)
-    print(f"[df_to_json] saved: {output_path}")
-
-
-def write_json(data: any, path: str) -> None:
-    output_path = get_data_dir() / path
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    with open(output_path, "w") as f:
-        json.dump(data, f, indent=2)
-
-    print(f"[write_json] saved: {output_path}")
+__all__ = [
+    # Backward compatibility
+    'get_root',
+    'get_data_dir', 
+    'get_config',
+    'read_json',
+    'df_to_json',
+    'write_json',
+    
+    # Enhanced functionality
+    'ConfigManager',
+    'get_config_manager',
+    'read_json_file',
+    'write_json_file',
+    'read_dataframe_from_json',
+    'write_dataframe_to_json',
+    'DataValidator',
+    'CityDataValidator',
+    'ValidationError'
+]

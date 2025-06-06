@@ -23,7 +23,15 @@ export interface CostOfLivingItem {
   diff_rate?: number;
 }
 
-// Context Types
+// Data Types
+export interface DataItem {
+  feature: string;
+  description?: string;
+  value: number;
+  city: string;
+}
+
+// Legacy Context Type (deprecated - use individual contexts instead)
 export interface CityContextType {
   cities: City[];
   selectedCity: string;
@@ -34,10 +42,13 @@ export interface CityContextType {
   costOfLivingData: CostOfLivingItem[];
   loading: boolean;
   error: string | null;
-  getFilteredDataForCity: (cityName: string, dataType: 'happiness' | 'costOfLiving') => any[];
-  getUniqueFeatures: (dataType: 'happiness' | 'costOfLiving') => string[];
-  getSelectedCityData: (dataType: 'happiness' | 'costOfLiving') => any[];
+  getFilteredDataForCity: (
+    cityName: string,
+    dataType: "happiness" | "costOfLiving",
+  ) => any[];
+  getUniqueFeatures: (dataType: "happiness" | "costOfLiving") => string[];
+  getSelectedCityData: (dataType: "happiness" | "costOfLiving") => any[];
 }
 
 // Component Props Types
-export type Size = 'sm' | 'md' | 'lg' | 'xl';
+export type Size = "sm" | "md" | "lg" | "xl";
