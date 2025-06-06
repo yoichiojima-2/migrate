@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { useCityContext } from '../context/CityContext';
-import CitySelector from '../components/CitySelector';
-import DataCard from '../components/DataCard';
-import ComparisonChart from '../components/ComparisonChart';
-import LoadingSpinner from '../components/LoadingSpinner';
-import { FaChartBar, FaMoneyBillWave, FaHeart, FaHome, FaUtensils } from 'react-icons/fa';
-import { ChartData } from 'chart.js';
+import React, { useState, useEffect } from "react";
+import { useCityContext } from "../context/CityContext";
+import CitySelector from "../components/CitySelector";
+import DataCard from "../components/DataCard";
+import ComparisonChart from "../components/ComparisonChart";
+import LoadingSpinner from "../components/LoadingSpinner";
+import {
+  FaChartBar,
+  FaMoneyBillWave,
+  FaHeart,
+  FaHome,
+  FaUtensils,
+} from "react-icons/fa";
+import { ChartData } from "chart.js";
 
 interface ChartDataState {
   labels: string[];
-  datasets: ChartData<'bar'>['datasets'];
+  datasets: ChartData<"bar">["datasets"];
 }
 
 interface SummaryData {
@@ -17,23 +23,32 @@ interface SummaryData {
 }
 
 const ComparisonPage: React.FC = () => {
-  const { 
-    selectedCity, 
-    setSelectedCity, 
-    comparisonCity, 
-    setComparisonCity, 
-    happinessQolData, 
-    costOfLivingData, 
-    loading 
+  const {
+    selectedCity,
+    setSelectedCity,
+    comparisonCity,
+    setComparisonCity,
+    happinessQolData,
+    costOfLivingData,
+    loading,
   } = useCityContext();
 
-  const [qolSummary, setQolSummary] = useState<{ selected: SummaryData; comparison: SummaryData }>({ selected: {}, comparison: {} });
-  const [colSummary, setColSummary] = useState<{ selected: SummaryData; comparison: SummaryData }>({ selected: {}, comparison: {} });
+  const [qolSummary, setQolSummary] = useState<{
+    selected: SummaryData;
+    comparison: SummaryData;
+  }>({ selected: {}, comparison: {} });
+  const [colSummary, setColSummary] = useState<{
+    selected: SummaryData;
+    comparison: SummaryData;
+  }>({ selected: {}, comparison: {} });
   const [chartData, setChartData] = useState<ChartDataState | null>(null);
 
   // Prepare summary data when cities or data changes
   useEffect(() => {
-    if (selectedCity && (happinessQolData.length > 0 || costOfLivingData.length > 0)) {
+    if (
+      selectedCity &&
+      (happinessQolData.length > 0 || costOfLivingData.length > 0)
+    ) {
       prepareQolSummary();
       prepareColSummary();
       prepareChartData();
@@ -48,13 +63,18 @@ const ComparisonPage: React.FC = () => {
     const comparisonCityData: SummaryData = {};
 
     // Key metrics to highlight
-    const keyMetrics = ['Happiness Score', 'Quality of Life', 'Safety', 'Health Care'];
+    const keyMetrics = [
+      "Happiness Score",
+      "Quality of Life",
+      "Safety",
+      "Health Care",
+    ];
 
     // Get data for selected city
     // For the selected city, we need to use value_in_current_city
-    keyMetrics.forEach(metric => {
+    keyMetrics.forEach((metric) => {
       // Find any item with this feature to get the selected city's value
-      const data = happinessQolData.find(item => item.feature === metric);
+      const data = happinessQolData.find((item) => item.feature === metric);
       if (data) {
         selectedCityData[metric] = data.value_in_current_city;
       }
@@ -62,9 +82,9 @@ const ComparisonPage: React.FC = () => {
 
     // Get data for comparison city
     if (comparisonCity) {
-      keyMetrics.forEach(metric => {
+      keyMetrics.forEach((metric) => {
         const data = happinessQolData.find(
-          item => item.city === comparisonCity && item.feature === metric
+          (item) => item.city === comparisonCity && item.feature === metric,
         );
         if (data) {
           comparisonCityData[metric] = data.value;
@@ -74,7 +94,7 @@ const ComparisonPage: React.FC = () => {
 
     setQolSummary({
       selected: selectedCityData,
-      comparison: comparisonCityData
+      comparison: comparisonCityData,
     });
   };
 
@@ -87,41 +107,45 @@ const ComparisonPage: React.FC = () => {
 
     // Key metrics to highlight
     const keyMetrics = [
-      { feature: 'rent', description: '1 bedroom, in city centre' },
-      { feature: 'salary', description: 'monthly' },
-      { feature: 'eating-out', description: 'for 2 people, mid-range' }
+      { feature: "rent", description: "1 bedroom, in city centre" },
+      { feature: "salary", description: "monthly" },
+      { feature: "eating-out", description: "for 2 people, mid-range" },
     ];
 
     // Get data for selected city
     // For the selected city, we need to use value_in_current_city
-    keyMetrics.forEach(metric => {
+    keyMetrics.forEach((metric) => {
       // Find any item with this feature and description to get the selected city's value
       const data = costOfLivingData.find(
-        item => item.feature === metric.feature && 
-               item.description === metric.description
+        (item) =>
+          item.feature === metric.feature &&
+          item.description === metric.description,
       );
       if (data) {
-        selectedCityData[`${metric.feature} (${metric.description})`] = data.value_in_current_city;
+        selectedCityData[`${metric.feature} (${metric.description})`] =
+          data.value_in_current_city;
       }
     });
 
     // Get data for comparison city
     if (comparisonCity) {
-      keyMetrics.forEach(metric => {
+      keyMetrics.forEach((metric) => {
         const data = costOfLivingData.find(
-          item => item.city === comparisonCity && 
-                 item.feature === metric.feature && 
-                 item.description === metric.description
+          (item) =>
+            item.city === comparisonCity &&
+            item.feature === metric.feature &&
+            item.description === metric.description,
         );
         if (data) {
-          comparisonCityData[`${metric.feature} (${metric.description})`] = data.value;
+          comparisonCityData[`${metric.feature} (${metric.description})`] =
+            data.value;
         }
       });
     }
 
     setColSummary({
       selected: selectedCityData,
-      comparison: comparisonCityData
+      comparison: comparisonCityData,
     });
   };
 
@@ -131,60 +155,62 @@ const ComparisonPage: React.FC = () => {
 
     // Key metrics for radar chart
     const metrics = [
-      'Happiness Score', 
-      'Quality of Life', 
-      'Safety', 
-      'Cost of Living', 
-      'Purchasing Power',
-      'Health Care',
-      'Climate'
+      "Happiness Score",
+      "Quality of Life",
+      "Safety",
+      "Cost of Living",
+      "Purchasing Power",
+      "Health Care",
+      "Climate",
     ];
 
     const labels = metrics;
-    
+
     // Data for selected city
     // For the selected city, we need to use value_in_current_city
-    const selectedCityData = metrics.map(metric => {
+    const selectedCityData = metrics.map((metric) => {
       // Find any item with this feature to get the selected city's value
-      const item = happinessQolData.find(data => data.feature === metric);
+      const item = happinessQolData.find((data) => data.feature === metric);
       // Normalize values to be positive for better visualization
-      return item ? (item.value_in_current_city + 3) : 0;
+      return item ? item.value_in_current_city + 3 : 0;
     });
 
     // Data for comparison city (if selected)
-    const comparisonCityData = comparisonCity ? metrics.map(metric => {
-      const item = happinessQolData.find(
-        data => data.city === comparisonCity && data.feature === metric
-      );
-      // Normalize values to be positive for better visualization
-      return item ? (item.value + 3) : 0;
-    }) : [];
+    const comparisonCityData = comparisonCity
+      ? metrics.map((metric) => {
+          const item = happinessQolData.find(
+            (data) => data.city === comparisonCity && data.feature === metric,
+          );
+          // Normalize values to be positive for better visualization
+          return item ? item.value + 3 : 0;
+        })
+      : [];
 
     const datasets = [
       {
         label: selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1),
         data: selectedCityData,
-        backgroundColor: 'rgba(99, 102, 241, 0.2)',
-        borderColor: 'rgb(99, 102, 241)',
+        backgroundColor: "rgba(99, 102, 241, 0.2)",
+        borderColor: "rgb(99, 102, 241)",
         borderWidth: 2,
-        pointBackgroundColor: 'rgb(99, 102, 241)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(99, 102, 241)'
-      }
+        pointBackgroundColor: "rgb(99, 102, 241)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgb(99, 102, 241)",
+      },
     ];
 
     if (comparisonCity) {
       datasets.push({
         label: comparisonCity.charAt(0).toUpperCase() + comparisonCity.slice(1),
         data: comparisonCityData,
-        backgroundColor: 'rgba(20, 184, 166, 0.2)', // Teal (consistent with other pages)
-        borderColor: 'rgb(20, 184, 166)',
+        backgroundColor: "rgba(20, 184, 166, 0.2)", // Teal (consistent with other pages)
+        borderColor: "rgb(20, 184, 166)",
         borderWidth: 2,
-        pointBackgroundColor: 'rgb(20, 184, 166)',
-        pointBorderColor: '#fff',
-        pointHoverBackgroundColor: '#fff',
-        pointHoverBorderColor: 'rgb(20, 184, 166)'
+        pointBackgroundColor: "rgb(20, 184, 166)",
+        pointBorderColor: "#fff",
+        pointHoverBackgroundColor: "#fff",
+        pointHoverBorderColor: "rgb(20, 184, 166)",
       });
     }
 
@@ -193,13 +219,25 @@ const ComparisonPage: React.FC = () => {
 
   // Get icon for a specific metric
   const getMetricIcon = (metric: string) => {
-    if (metric.toLowerCase().includes('happiness') || metric.toLowerCase().includes('quality')) {
+    if (
+      metric.toLowerCase().includes("happiness") ||
+      metric.toLowerCase().includes("quality")
+    ) {
       return FaHeart;
-    } else if (metric.toLowerCase().includes('rent') || metric.toLowerCase().includes('apartment')) {
+    } else if (
+      metric.toLowerCase().includes("rent") ||
+      metric.toLowerCase().includes("apartment")
+    ) {
       return FaHome;
-    } else if (metric.toLowerCase().includes('eating') || metric.toLowerCase().includes('food')) {
+    } else if (
+      metric.toLowerCase().includes("eating") ||
+      metric.toLowerCase().includes("food")
+    ) {
       return FaUtensils;
-    } else if (metric.toLowerCase().includes('cost') || metric.toLowerCase().includes('salary')) {
+    } else if (
+      metric.toLowerCase().includes("cost") ||
+      metric.toLowerCase().includes("salary")
+    ) {
       return FaMoneyBillWave;
     } else {
       return FaChartBar;
@@ -220,14 +258,14 @@ const ComparisonPage: React.FC = () => {
         <h1 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
           City Comparison Dashboard
         </h1>
-        
+
         <div className="grid md:grid-cols-2 gap-6">
           <CitySelector
             label="Select your base city"
             value={selectedCity}
             onChange={setSelectedCity}
           />
-          
+
           <CitySelector
             label="Select a city to compare with (optional)"
             value={comparisonCity}
@@ -237,7 +275,8 @@ const ComparisonPage: React.FC = () => {
         </div>
       </div>
 
-      {selectedCity && (happinessQolData.length > 0 || costOfLivingData.length > 0) ? (
+      {selectedCity &&
+      (happinessQolData.length > 0 || costOfLivingData.length > 0) ? (
         <>
           {/* City Overview */}
           <div className="grid md:grid-cols-2 gap-6">
@@ -246,68 +285,101 @@ const ComparisonPage: React.FC = () => {
               <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
                 {selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1)}
               </h2>
-              
+
               <div className="space-y-4">
-                <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">Quality of Life</h3>
+                <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                  Quality of Life
+                </h3>
                 <div className="grid grid-cols-2 gap-4">
-                  {Object.entries(qolSummary.selected || {}).map(([metric, value]) => (
-                    <DataCard
-                      key={metric}
-                      title={metric}
-                      data={typeof value === 'number' ? value.toFixed(1) : String(value)}
-                      icon={getMetricIcon(metric)}
-                      className="bg-indigo-50 dark:bg-indigo-900/20"
-                    />
-                  ))}
+                  {Object.entries(qolSummary.selected || {}).map(
+                    ([metric, value]) => (
+                      <DataCard
+                        key={metric}
+                        title={metric}
+                        data={
+                          typeof value === "number"
+                            ? value.toFixed(1)
+                            : String(value)
+                        }
+                        icon={getMetricIcon(metric)}
+                        className="bg-indigo-50 dark:bg-indigo-900/20"
+                      />
+                    ),
+                  )}
                 </div>
-                
-                <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mt-6">Cost of Living</h3>
+
+                <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mt-6">
+                  Cost of Living
+                </h3>
                 <div className="grid grid-cols-1 gap-4">
-                  {Object.entries(colSummary.selected || {}).map(([metric, value]) => (
-                    <DataCard
-                      key={metric}
-                      title={metric}
-                      data={typeof value === 'number' ? value.toLocaleString() : String(value)}
-                      icon={getMetricIcon(metric)}
-                      className="bg-green-50 dark:bg-green-900/20"
-                    />
-                  ))}
+                  {Object.entries(colSummary.selected || {}).map(
+                    ([metric, value]) => (
+                      <DataCard
+                        key={metric}
+                        title={metric}
+                        data={
+                          typeof value === "number"
+                            ? value.toLocaleString()
+                            : String(value)
+                        }
+                        icon={getMetricIcon(metric)}
+                        className="bg-green-50 dark:bg-green-900/20"
+                      />
+                    ),
+                  )}
                 </div>
               </div>
             </div>
-            
+
             {/* Comparison City (if selected) */}
             {comparisonCity && (
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
                 <h2 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
-                  {comparisonCity.charAt(0).toUpperCase() + comparisonCity.slice(1)}
+                  {comparisonCity.charAt(0).toUpperCase() +
+                    comparisonCity.slice(1)}
                 </h2>
-                
+
                 <div className="space-y-4">
-                  <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">Quality of Life</h3>
+                  <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                    Quality of Life
+                  </h3>
                   <div className="grid grid-cols-2 gap-4">
-                    {Object.entries(qolSummary.comparison || {}).map(([metric, value]) => (
-                      <DataCard
-                        key={metric}
-                        title={metric}
-                        data={typeof value === 'number' ? value.toFixed(1) : String(value)}
-                        icon={getMetricIcon(metric)}
-                        className="bg-red-50 dark:bg-red-900/20"
-                      />
-                    ))}
+                    {Object.entries(qolSummary.comparison || {}).map(
+                      ([metric, value]) => (
+                        <DataCard
+                          key={metric}
+                          title={metric}
+                          data={
+                            typeof value === "number"
+                              ? value.toFixed(1)
+                              : String(value)
+                          }
+                          icon={getMetricIcon(metric)}
+                          className="bg-red-50 dark:bg-red-900/20"
+                        />
+                      ),
+                    )}
                   </div>
-                  
-                  <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mt-6">Cost of Living</h3>
+
+                  <h3 className="text-lg font-medium text-gray-800 dark:text-gray-200 mt-6">
+                    Cost of Living
+                  </h3>
                   <div className="grid grid-cols-1 gap-4">
-                    {Object.entries(colSummary.comparison || {}).map(([metric, value]) => (
-                      <DataCard
-                        key={metric}
-                        title={metric}
-                        data={typeof value === 'number' ? value.toLocaleString() : String(value)}
-                        icon={getMetricIcon(metric)}
-                        className="bg-red-50 dark:bg-red-900/20"
-                      />
-                    ))}
+                    {Object.entries(colSummary.comparison || {}).map(
+                      ([metric, value]) => (
+                        <DataCard
+                          key={metric}
+                          title={metric}
+                          data={
+                            typeof value === "number"
+                              ? value.toLocaleString()
+                              : String(value)
+                          }
+                          icon={getMetricIcon(metric)}
+                          className="bg-red-50 dark:bg-red-900/20"
+                        />
+                      ),
+                    )}
                   </div>
                 </div>
               </div>
@@ -340,7 +412,8 @@ const ComparisonPage: React.FC = () => {
             Select a city to view comparison data
           </h2>
           <p className="text-gray-600 dark:text-gray-400">
-            Choose a city from the dropdown above to see detailed comparison metrics.
+            Choose a city from the dropdown above to see detailed comparison
+            metrics.
           </p>
         </div>
       )}

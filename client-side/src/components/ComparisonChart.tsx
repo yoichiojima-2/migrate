@@ -1,5 +1,5 @@
-import React from 'react';
-import { Bar } from 'react-chartjs-2';
+import React from "react";
+import { Bar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -10,7 +10,7 @@ import {
   Legend,
   ChartData,
   ChartOptions,
-} from 'chart.js';
+} from "chart.js";
 
 // Register ChartJS components
 ChartJS.register(
@@ -19,33 +19,33 @@ ChartJS.register(
   BarElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
 );
 
 interface ComparisonChartProps {
   title?: string;
   labels: string[];
-  datasets: ChartData<'bar'>['datasets'];
+  datasets: ChartData<"bar">["datasets"];
   className?: string;
   horizontal?: boolean;
   height?: number;
 }
 
-const ComparisonChart: React.FC<ComparisonChartProps> = ({ 
-  title, 
-  labels, 
-  datasets, 
-  className = '',
+const ComparisonChart: React.FC<ComparisonChartProps> = ({
+  title,
+  labels,
+  datasets,
+  className = "",
   horizontal = false,
-  height = 300
+  height = 300,
 }) => {
-  const options: ChartOptions<'bar'> = {
+  const options: ChartOptions<"bar"> = {
     responsive: true,
     maintainAspectRatio: false,
-    indexAxis: horizontal ? 'y' : 'x',
+    indexAxis: horizontal ? "y" : "x",
     plugins: {
       legend: {
-        position: 'top' as const,
+        position: "top" as const,
       },
       title: {
         display: !!title,
@@ -59,13 +59,15 @@ const ComparisonChart: React.FC<ComparisonChartProps> = ({
     },
   };
 
-  const data: ChartData<'bar'> = {
+  const data: ChartData<"bar"> = {
     labels,
     datasets,
   };
 
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 ${className}`}>
+    <div
+      className={`bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 ${className}`}
+    >
       <div style={{ height: `${height}px` }}>
         <Bar options={options} data={data} />
       </div>

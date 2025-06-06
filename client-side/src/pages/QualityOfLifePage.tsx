@@ -1,27 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import { useCityContext } from '../context/CityContext';
-import CitySelector from '../components/CitySelector';
-import FeatureCard from '../components/FeatureCard';
-import ComparisonChart from '../components/ComparisonChart';
-import LoadingSpinner from '../components/LoadingSpinner';
-import { FaHeart, FaShieldAlt, FaLeaf, FaHospital, FaSmile } from 'react-icons/fa';
-import { IconType } from 'react-icons';
-import { ChartData } from 'chart.js';
-import { HappinessQolItem } from '../types';
+import React, { useState, useEffect } from "react";
+import { useCityContext } from "../context/CityContext";
+import CitySelector from "../components/CitySelector";
+import FeatureCard from "../components/FeatureCard";
+import ComparisonChart from "../components/ComparisonChart";
+import LoadingSpinner from "../components/LoadingSpinner";
+import {
+  FaHeart,
+  FaShieldAlt,
+  FaLeaf,
+  FaHospital,
+  FaSmile,
+} from "react-icons/fa";
+import { IconType } from "react-icons";
+import { ChartData } from "chart.js";
+import { HappinessQolItem } from "../types";
 
 interface ChartDataState {
   labels: string[];
-  datasets: ChartData<'bar'>['datasets'];
+  datasets: ChartData<"bar">["datasets"];
 }
 
 const QualityOfLifePage: React.FC = () => {
-  const { 
-    selectedCity, 
-    setSelectedCity, 
-    comparisonCity, 
-    setComparisonCity, 
-    happinessQolData, 
-    loading 
+  const {
+    selectedCity,
+    setSelectedCity,
+    comparisonCity,
+    setComparisonCity,
+    happinessQolData,
+    loading,
   } = useCityContext();
 
   const [qolCategories, setQolCategories] = useState<string[]>([]);
@@ -30,9 +36,11 @@ const QualityOfLifePage: React.FC = () => {
   // Extract unique quality of life categories
   useEffect(() => {
     if (happinessQolData.length > 0) {
-      const categories = [...new Set(happinessQolData.map(item => item.feature))];
+      const categories = [
+        ...new Set(happinessQolData.map((item) => item.feature)),
+      ];
       setQolCategories(categories);
-      
+
       // Prepare chart data
       prepareChartData(categories);
     }
@@ -43,22 +51,24 @@ const QualityOfLifePage: React.FC = () => {
     if (!categories.length || !selectedCity) return;
 
     const labels = categories;
-    
+
     // Data for selected city
     // The API returns data where value_in_current_city is the value for the selected city
-    const selectedCityData = categories.map(category => {
+    const selectedCityData = categories.map((category) => {
       // Get any item for this category to extract the selected city's value
-      const item = happinessQolData.find(data => data.feature === category);
+      const item = happinessQolData.find((data) => data.feature === category);
       return item ? item.value_in_current_city : 0;
     });
 
     // Data for comparison city (if selected)
-    const comparisonCityData = comparisonCity ? categories.map(category => {
-      const item = happinessQolData.find(
-        data => data.city === comparisonCity && data.feature === category
-      );
-      return item ? item.value : 0;
-    }) : [];
+    const comparisonCityData = comparisonCity
+      ? categories.map((category) => {
+          const item = happinessQolData.find(
+            (data) => data.city === comparisonCity && data.feature === category,
+          );
+          return item ? item.value : 0;
+        })
+      : [];
 
     // Use a color-blind friendly palette for the chart
     // Primary city: Blue (accessible and neutral)
@@ -67,19 +77,19 @@ const QualityOfLifePage: React.FC = () => {
       {
         label: selectedCity.charAt(0).toUpperCase() + selectedCity.slice(1),
         data: selectedCityData,
-        backgroundColor: 'rgba(59, 130, 246, 0.6)', // Blue
-        borderColor: 'rgb(59, 130, 246)',
-        borderWidth: 1
-      }
+        backgroundColor: "rgba(59, 130, 246, 0.6)", // Blue
+        borderColor: "rgb(59, 130, 246)",
+        borderWidth: 1,
+      },
     ];
 
     if (comparisonCity) {
       datasets.push({
         label: comparisonCity.charAt(0).toUpperCase() + comparisonCity.slice(1),
         data: comparisonCityData,
-        backgroundColor: 'rgba(20, 184, 166, 0.6)', // Teal
-        borderColor: 'rgb(20, 184, 166)',
-        borderWidth: 1
+        backgroundColor: "rgba(20, 184, 166, 0.6)", // Teal
+        borderColor: "rgb(20, 184, 166)",
+        borderWidth: 1,
       });
     }
 
@@ -89,13 +99,13 @@ const QualityOfLifePage: React.FC = () => {
   // Get icon for a specific category
   const getCategoryIcon = (category: string): IconType => {
     switch (category.toLowerCase()) {
-      case 'safety':
+      case "safety":
         return FaShieldAlt;
-      case 'health care':
+      case "health care":
         return FaHospital;
-      case 'pollution':
+      case "pollution":
         return FaLeaf;
-      case 'happiness score':
+      case "happiness score":
         return FaSmile;
       default:
         return FaHeart;
@@ -103,40 +113,45 @@ const QualityOfLifePage: React.FC = () => {
   };
 
   // Get data for a specific category and city
-  const getCategoryData = (category: string, city: string): HappinessQolItem | null => {
+  const getCategoryData = (
+    category: string,
+    city: string,
+  ): HappinessQolItem | null => {
     if (city === selectedCity) {
       // For selected city, get value_in_current_city from any item with this category
-      const item = happinessQolData.find(data => data.feature === category);
-      return item ? { ...item, city: selectedCity, value: item.value_in_current_city } : null;
+      const item = happinessQolData.find((data) => data.feature === category);
+      return item
+        ? { ...item, city: selectedCity, value: item.value_in_current_city }
+        : null;
     } else {
       // For comparison city, find the item directly
       const compItem = happinessQolData.find(
-        data => data.city === city && data.feature === category
+        (data) => data.city === city && data.feature === category,
       );
-      
+
       if (compItem) {
         // The API calculates diff and diff_rate, but the diff_rate needs to be adjusted
         // It seems the API returns diff_rate as a decimal between -1 and 1
         // We need to multiply by 100 to get the percentage and invert it
         // because we want to show how the comparison city compares to the selected city
-        
+
         // Calculate the correct diff_rate
         const selectedValue = compItem.value_in_current_city;
         const comparisonValue = compItem.value;
-        
+
         if (selectedValue && comparisonValue) {
           // Calculate the percentage difference
           const diff = comparisonValue - selectedValue;
-          
+
           return {
             ...compItem,
-            diff: parseFloat(diff.toString())
+            diff: parseFloat(diff.toString()),
           };
         }
-        
+
         return compItem;
       }
-      
+
       return null;
     }
   };
@@ -155,14 +170,14 @@ const QualityOfLifePage: React.FC = () => {
         <h1 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
           Quality of Life Comparison
         </h1>
-        
+
         <div className="grid md:grid-cols-2 gap-6">
           <CitySelector
             label="Select your base city"
             value={selectedCity}
             onChange={setSelectedCity}
           />
-          
+
           <CitySelector
             label="Select a city to compare with (optional)"
             value={comparisonCity}
@@ -193,14 +208,14 @@ const QualityOfLifePage: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {qolCategories.map((category) => {
               const selectedCityData = getCategoryData(category, selectedCity);
-              const comparisonCityData = comparisonCity 
-                ? getCategoryData(category, comparisonCity) 
+              const comparisonCityData = comparisonCity
+                ? getCategoryData(category, comparisonCity)
                 : null;
-              
+
               if (!selectedCityData) return null;
-              
+
               const Icon = getCategoryIcon(category);
-              
+
               return (
                 <FeatureCard
                   key={category}
@@ -222,7 +237,8 @@ const QualityOfLifePage: React.FC = () => {
             Select a city to view quality of life data
           </h2>
           <p className="text-gray-600 dark:text-gray-400">
-            Choose a city from the dropdown above to see detailed quality of life metrics.
+            Choose a city from the dropdown above to see detailed quality of
+            life metrics.
           </p>
         </div>
       )}

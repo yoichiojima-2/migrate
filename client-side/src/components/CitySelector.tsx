@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { useCityContext } from '../context/CityContext';
-import { FaChevronDown, FaSearch, FaMapMarkerAlt } from 'react-icons/fa';
+import React, { useState, useRef, useEffect } from "react";
+import { useCity } from "../hooks";
+import { FaChevronDown, FaSearch, FaMapMarkerAlt } from "react-icons/fa";
 
 interface CitySelectorProps {
   label: string;
@@ -9,46 +9,55 @@ interface CitySelectorProps {
   excludeCity?: string | null;
 }
 
-const CitySelector: React.FC<CitySelectorProps> = ({ label, value, onChange, excludeCity = null }) => {
-  const { cities } = useCityContext();
+const CitySelector: React.FC<CitySelectorProps> = ({
+  label,
+  value,
+  onChange,
+  excludeCity = null,
+}) => {
+  const { cities } = useCity();
   const [isOpen, setIsOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Filter out the excluded city if provided
-  const filteredCities = excludeCity 
-    ? cities.filter(city => city.city !== excludeCity)
+  const filteredCities = excludeCity
+    ? cities.filter((city) => city.city !== excludeCity)
     : cities;
 
   // Filter cities based on search term
-  const searchFilteredCities = filteredCities.filter(city =>
-    city.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    city.country.toLowerCase().includes(searchTerm.toLowerCase())
+  const searchFilteredCities = filteredCities.filter(
+    (city) =>
+      city.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      city.country.toLowerCase().includes(searchTerm.toLowerCase()),
   );
 
   // Get selected city display text
-  const selectedCity = filteredCities.find(city => city.city === value);
-  const displayText = selectedCity 
+  const selectedCity = filteredCities.find((city) => city.city === value);
+  const displayText = selectedCity
     ? `${selectedCity.city.charAt(0).toUpperCase() + selectedCity.city.slice(1)} (${selectedCity.country.charAt(0).toUpperCase() + selectedCity.country.slice(1)})`
-    : 'Select a city';
+    : "Select a city";
 
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
-        setSearchTerm('');
+        setSearchTerm("");
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const handleCitySelect = (cityName: string) => {
     onChange(cityName);
     setIsOpen(false);
-    setSearchTerm('');
+    setSearchTerm("");
   };
 
   return (
@@ -56,27 +65,31 @@ const CitySelector: React.FC<CitySelectorProps> = ({ label, value, onChange, exc
       <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
         {label}
       </label>
-      
+
       {/* Custom Select Button */}
       <div className="relative">
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
           className={`w-full px-4 py-3 text-left bg-white dark:bg-gray-800 border-2 rounded-xl shadow-sm transition-all duration-200 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 ${
-            isOpen 
-              ? 'border-indigo-500 ring-2 ring-indigo-200 dark:ring-indigo-800' 
-              : 'border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500'
+            isOpen
+              ? "border-indigo-500 ring-2 ring-indigo-200 dark:ring-indigo-800"
+              : "border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500"
           }`}
         >
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <FaMapMarkerAlt className={`text-sm ${value ? 'text-indigo-500' : 'text-gray-400'}`} />
-              <span className={`${value ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-400'}`}>
+              <FaMapMarkerAlt
+                className={`text-sm ${value ? "text-indigo-500" : "text-gray-400"}`}
+              />
+              <span
+                className={`${value ? "text-gray-900 dark:text-white" : "text-gray-500 dark:text-gray-400"}`}
+              >
                 {displayText}
               </span>
             </div>
-            <FaChevronDown 
-              className={`text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} 
+            <FaChevronDown
+              className={`text-gray-400 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
             />
           </div>
         </button>
@@ -111,18 +124,21 @@ const CitySelector: React.FC<CitySelectorProps> = ({ label, value, onChange, exc
                     type="button"
                     onClick={() => handleCitySelect(city.city)}
                     className={`w-full px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-150 flex items-center space-x-3 ${
-                      value === city.city 
-                        ? 'bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300' 
-                        : 'text-gray-900 dark:text-white'
+                      value === city.city
+                        ? "bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300"
+                        : "text-gray-900 dark:text-white"
                     }`}
                   >
-                    <FaMapMarkerAlt className={`text-sm ${value === city.city ? 'text-indigo-500' : 'text-gray-400'}`} />
+                    <FaMapMarkerAlt
+                      className={`text-sm ${value === city.city ? "text-indigo-500" : "text-gray-400"}`}
+                    />
                     <div>
                       <div className="font-medium">
                         {city.city.charAt(0).toUpperCase() + city.city.slice(1)}
                       </div>
                       <div className="text-sm text-gray-500 dark:text-gray-400">
-                        {city.country.charAt(0).toUpperCase() + city.country.slice(1)}
+                        {city.country.charAt(0).toUpperCase() +
+                          city.country.slice(1)}
                       </div>
                     </div>
                   </button>
