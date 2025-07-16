@@ -1,34 +1,101 @@
-name: Deploy Client App to GitHub Pages
+name: Deploy Frontend
+
 on:
   push:
+    branches:
+      - main
+      - develop
+  workflow_run:
+    workflows: ["CI/CD"]
+    types:
+      - completed
     branches:
       - main
 
 permissions:
   pages: write
   id-token: write
+  contents: read
 
 jobs:
-  deploy:
+  deploy-staging:
+    name: Deploy to Staging
+    if: github.ref == 'refs/heads/develop' || (github.event_name == 'workflow_run' && github.event.workflow_run.head_branch == 'develop')
     runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: client-side/package-lock.json
 
-      - name: Build
+      - name: Build for staging
         working-directory: client-side
+        env:
+          VITE_API_URL: ${{ vars.STAGING_API_URL || 'https://your-staging-api.com' }}
+          VITE_ENV: staging
         run: |
           npm ci
           npm run build
 
-      - name: Upload static files as artifact
-        id: upload
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: client-side/dist  # adjust if your build outputs elsewhere
+          path: client-side/dist
 
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: Deploy to staging
+        id: deploy
         uses: actions/deploy-pages@v4
+
+  deploy-production:
+    name: Deploy to Production
+    if: github.ref == 'refs/heads/main' || (github.event_name == 'workflow_run' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: client-side/package-lock.json
+
+      - name: Build for production
+        working-directory: client-side
+        env:
+          VITE_API_URL: ${{ vars.PRODUCTION_API_URL || 'https://your-production-api.com' }}
+          VITE_ENV: production
+        run: |
+          npm ci
+          npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: client-side/dist
+
+      - name: Deploy to production
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Notify deployment success
+        if: success()
+        run: |
+          echo "🚀 Production deployment successful!"
+          echo "URL: ${{ steps.deploy.outputs.page_url }}"

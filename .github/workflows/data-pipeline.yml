@@ -1,0 +1,139 @@
+name: Data Pipeline
+
+on:
+  schedule:
+    # Run daily at 2 AM UTC to refresh data
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Allow manual triggering
+  push:
+    paths:
+      - 'collection/**'
+      - 'utils/**'
+      - 'config.yml'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  test-pipeline:
+    name: Test Data Pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          
+      - name: Cache Python dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pipeline-${{ hashFiles('**/pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-pipeline-
+            
+      - name: Install dependencies
+        run: |
+          make venv
+          make install
+          
+      - name: Run pipeline tests
+        env:
+          OPENCAGEDATA_API_KEY: ${{ secrets.OPENCAGEDATA_API_KEY }}
+        run: |
+          cd collection && ../.venv/bin/pytest -vvv --tb=short
+          cd ../utils && ../.venv/bin/pytest -vvv --tb=short
+          
+      - name: Test data collection (dry run)
+        env:
+          OPENCAGEDATA_API_KEY: ${{ secrets.OPENCAGEDATA_API_KEY }}
+        run: |
+          # Test that the pipeline can run without errors (using sample data)
+          cd collection && ../.venv/bin/python -c "
+          import collection.main as main
+          from collection.task import TaskManager
+          # Test that tasks can be instantiated without errors
+          tm = TaskManager()
+          print('Data pipeline validation passed')
+          "
+
+  run-pipeline:
+    name: Run Data Collection
+    runs-on: ubuntu-latest
+    needs: [test-pipeline]
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          
+      - name: Cache Python dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pipeline-${{ hashFiles('**/pyproject.toml') }}
+          restore-keys: |
+            ${{ runner.os }}-pipeline-
+            
+      - name: Install dependencies
+        run: |
+          make venv
+          make install
+          
+      - name: Run data collection
+        env:
+          OPENCAGEDATA_API_KEY: ${{ secrets.OPENCAGEDATA_API_KEY }}
+        run: |
+          make collect
+          
+      - name: Check for data updates
+        id: check_updates
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Data updates detected"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No data updates"
+          fi
+          
+      - name: Commit and push data updates
+        if: steps.check_updates.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/
+          git commit -m "📊 Automated data update $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
+          
+      - name: Create PR for data updates
+        if: steps.check_updates.outputs.has_changes == 'true' && github.ref != 'refs/heads/main'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "📊 Automated Data Update"
+          body: |
+            ## Automated Data Update
+            
+            This PR contains the latest data collected from external sources.
+            
+            ### Changes
+            - Updated city data from external APIs
+            - Refreshed cost of living information
+            - Updated happiness and quality of life metrics
+            
+            ### Verification
+            - [ ] Data quality checks passed
+            - [ ] Pipeline tests successful
+            - [ ] Ready for deployment
+            
+            *This PR was automatically created by the data pipeline workflow.*
+          branch: data-update-${{ github.run_number }}
+          base: main

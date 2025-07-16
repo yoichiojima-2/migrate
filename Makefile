@@ -21,6 +21,7 @@ lint:
 	-isort .
 	-ruff check --fix .
 	-ruff format .
+	cd client-side && npm ci && npm run lint:fix
 	npx prettier --write client-side
 
 .PHONY: pre-commit
@@ -53,6 +54,24 @@ test: venv install
 	cd utils && $(VENV)/bin/pytest -vvv
 	cd collection && $(VENV)/bin/pytest -vvv
 	cd server-side && $(VENV)/bin/pytest -vvv
+	cd client-side && npm ci && npm run test
+
+.PHONY: test-frontend
+test-frontend:
+	cd client-side && npm ci && npm run test
+
+.PHONY: test-backend
+test-backend: venv install
+	cd utils && $(VENV)/bin/pytest -vvv
+	cd collection && $(VENV)/bin/pytest -vvv
+	cd server-side && $(VENV)/bin/pytest -vvv
+
+.PHONY: test-coverage
+test-coverage: venv install
+	cd utils && $(VENV)/bin/pytest --cov=utils --cov-report=html
+	cd collection && $(VENV)/bin/pytest --cov=collection --cov-report=html
+	cd server-side && $(VENV)/bin/pytest --cov=server_side --cov-report=html
+	cd client-side && npm ci && npm run test:coverage
 
 .PHONY: collect
 collect: venv install
