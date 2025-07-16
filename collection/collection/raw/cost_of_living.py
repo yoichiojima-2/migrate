@@ -44,6 +44,7 @@ class CostOfLivingTask(Task):
                     }
                 )
 
+        # be nice to numbeo.com
         request_interval = 1
         time.sleep(request_interval)
         return pd.DataFrame(cost)
