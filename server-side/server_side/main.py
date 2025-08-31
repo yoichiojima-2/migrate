@@ -15,7 +15,7 @@ app.add_middleware(
 )
 
 # Data directory path
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "..", "assets")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "assets")
 
 def load_json_data(filename: str) -> List[Dict[str, Any]]:
     """Load JSON data from data directory."""
