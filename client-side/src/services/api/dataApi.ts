@@ -6,15 +6,27 @@ export class DataApiService extends BaseApiService {
     super(baseURL);
   }
 
-  async getHappinessQol(city: string): Promise<HappinessQolItem[]> {
+  async getHappinessQol(city: string, comparisonCity?: string): Promise<HappinessQolItem[]> {
     const formattedCity = encodeURIComponent(city.toLowerCase().trim());
-    return this.get<HappinessQolItem[]>(`/happiness_qol?city=${formattedCity}`);
+    let url = `/happiness_qol?city=${formattedCity}`;
+    
+    if (comparisonCity) {
+      const formattedComparisonCity = encodeURIComponent(comparisonCity.toLowerCase().trim());
+      url += `&comparison_city=${formattedComparisonCity}`;
+    }
+    
+    return this.get<HappinessQolItem[]>(url);
   }
 
-  async getCostOfLiving(city: string): Promise<CostOfLivingItem[]> {
+  async getCostOfLiving(city: string, comparisonCity?: string): Promise<CostOfLivingItem[]> {
     const formattedCity = encodeURIComponent(city.toLowerCase().trim());
-    return this.get<CostOfLivingItem[]>(
-      `/cost_of_living?city=${formattedCity}`,
-    );
+    let url = `/cost_of_living?city=${formattedCity}`;
+    
+    if (comparisonCity) {
+      const formattedComparisonCity = encodeURIComponent(comparisonCity.toLowerCase().trim());
+      url += `&comparison_city=${formattedComparisonCity}`;
+    }
+    
+    return this.get<CostOfLivingItem[]>(url);
   }
 }

@@ -34,9 +34,9 @@ interface DataProviderProps {
 }
 
 export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
-  const { selectedCity } = useCitySelection();
-  const happinessData = useHappinessData(selectedCity);
-  const costOfLivingData = useCostOfLivingData(selectedCity);
+  const { selectedCity, comparisonCity } = useCitySelection();
+  const happinessData = useHappinessData(selectedCity, comparisonCity);
+  const costOfLivingData = useCostOfLivingData(selectedCity, comparisonCity);
 
   const getFilteredDataForCity = (
     cityName: string,
