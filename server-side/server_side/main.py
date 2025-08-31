@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import json
 import os
+from pathlib import Path
 from typing import List, Dict, Any
 
 app = FastAPI(title="Migration API", version="1.0.0")
@@ -14,12 +15,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Data directory path
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "assets")
+# Data directory path - check both local and container paths
+DATA_DIR = "/.migrate/assets"
 
 def load_json_data(filename: str) -> List[Dict[str, Any]]:
     """Load JSON data from data directory."""
     file_path = os.path.join(DATA_DIR, filename)
+    print(file_path)
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             return json.load(f)

@@ -4,10 +4,10 @@ WORKDIR /app
 
 RUN pip install --upgrade pip && pip install poetry
 
-COPY config.yml /.sign-to-migrate/
+COPY config.yml .migrate/
 COPY server-side/ /app/server-side/
 COPY utils/ /app/utils/
-COPY assets /root/.sign-to-migrate/data
+COPY assets /.migrate/assets/
 
 WORKDIR /app/server-side
 RUN poetry install
