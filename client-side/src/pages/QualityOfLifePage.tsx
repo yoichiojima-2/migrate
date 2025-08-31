@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useCityContext } from "../context/CityContext";
+import { useCitySelection } from "../context/CitySelectionContext";
+import { useData } from "../context/DataContext";
 import CitySelector from "../components/CitySelector";
 import FeatureCard from "../components/FeatureCard";
 import ComparisonChart from "../components/ComparisonChart";
@@ -21,30 +22,25 @@ interface ChartDataState {
 }
 
 const QualityOfLifePage: React.FC = () => {
-  const {
-    selectedCity,
-    setSelectedCity,
-    comparisonCity,
-    setComparisonCity,
-    happinessQolData,
-    loading,
-  } = useCityContext();
+  const { selectedCity, setSelectedCity, comparisonCity, setComparisonCity } = useCitySelection();
+  const { happinessData } = useData();
+  const { loading } = happinessData;
 
   const [qolCategories, setQolCategories] = useState<string[]>([]);
   const [chartData, setChartData] = useState<ChartDataState | null>(null);
 
   // Extract unique quality of life categories
   useEffect(() => {
-    if (happinessQolData.length > 0) {
+    if (happinessData.data.length > 0) {
       const categories = [
-        ...new Set(happinessQolData.map((item) => item.feature)),
+        ...new Set(happinessData.data.map((item) => item.feature)),
       ];
       setQolCategories(categories);
 
       // Prepare chart data
       prepareChartData(categories);
     }
-  }, [happinessQolData, selectedCity, comparisonCity]);
+  }, [happinessData.data, selectedCity, comparisonCity]);
 
   // Prepare data for the chart
   const prepareChartData = (categories: string[]) => {
@@ -56,14 +52,14 @@ const QualityOfLifePage: React.FC = () => {
     // The API returns data where value_in_current_city is the value for the selected city
     const selectedCityData = categories.map((category) => {
       // Get any item for this category to extract the selected city's value
-      const item = happinessQolData.find((data) => data.feature === category);
+      const item = happinessData.data.find((data) => data.feature === category);
       return item ? item.value_in_current_city : 0;
     });
 
     // Data for comparison city (if selected)
     const comparisonCityData = comparisonCity
       ? categories.map((category) => {
-          const item = happinessQolData.find(
+          const item = happinessData.data.find(
             (data) => data.city === comparisonCity && data.feature === category,
           );
           return item ? item.value : 0;
@@ -119,13 +115,13 @@ const QualityOfLifePage: React.FC = () => {
   ): HappinessQolItem | null => {
     if (city === selectedCity) {
       // For selected city, get value_in_current_city from any item with this category
-      const item = happinessQolData.find((data) => data.feature === category);
+      const item = happinessData.data.find((data) => data.feature === category);
       return item
         ? { ...item, city: selectedCity, value: item.value_in_current_city }
         : null;
     } else {
       // For comparison city, find the item directly
-      const compItem = happinessQolData.find(
+      const compItem = happinessData.data.find(
         (data) => data.city === city && data.feature === category,
       );
 
@@ -187,7 +183,7 @@ const QualityOfLifePage: React.FC = () => {
         </div>
       </div>
 
-      {selectedCity && happinessQolData.length > 0 ? (
+      {selectedCity && happinessData.data.length > 0 ? (
         <>
           {/* Chart Section */}
           {chartData && (

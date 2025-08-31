@@ -8,7 +8,8 @@ import {
   FaGlobe,
 } from "react-icons/fa";
 import { IconType } from "react-icons";
-import { useCityContext } from "../context/CityContext";
+import { useCitySelection } from "../context/CitySelectionContext";
+import { useCity } from "../hooks/useCity";
 import CitySelector from "../components/CitySelector";
 import LoadingSpinner from "../components/LoadingSpinner";
 import { City } from "../types";
@@ -22,7 +23,8 @@ interface Feature {
 }
 
 const HomePage: React.FC = () => {
-  const { cities, selectedCity, setSelectedCity, loading } = useCityContext();
+  const { cities, loading } = useCity();
+  const { selectedCity, setSelectedCity } = useCitySelection();
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [filteredCities, setFilteredCities] = useState<City[]>([]);
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useCityContext } from "../context/CityContext";
+import { useCitySelection } from "../context/CitySelectionContext";
+import { useData } from "../context/DataContext";
 import CitySelector from "../components/CitySelector";
 import FeatureCard from "../components/FeatureCard";
 import ComparisonChart from "../components/ComparisonChart";
@@ -28,14 +29,9 @@ interface FilteredItem extends Partial<CostOfLivingItem> {
 }
 
 const CostOfLivingPage: React.FC = () => {
-  const {
-    selectedCity,
-    setSelectedCity,
-    comparisonCity,
-    setComparisonCity,
-    costOfLivingData,
-    loading,
-  } = useCityContext();
+  const { selectedCity, setSelectedCity, comparisonCity, setComparisonCity } = useCitySelection();
+  const { costOfLivingData } = useData();
+  const { loading } = costOfLivingData;
 
   const [categories, setCategories] = useState<string[]>([]);
   const [filteredData, setFilteredData] = useState<FilteredItem[]>([]);
@@ -44,22 +40,22 @@ const CostOfLivingPage: React.FC = () => {
 
   // Extract unique categories
   useEffect(() => {
-    if (costOfLivingData.length > 0) {
+    if (costOfLivingData.data.length > 0) {
       // Get unique features
       const uniqueFeatures = [
-        ...new Set(costOfLivingData.map((item) => item.feature)),
+        ...new Set(costOfLivingData.data.map((item) => item.feature)),
       ];
       setCategories(uniqueFeatures);
     }
-  }, [costOfLivingData]);
+  }, [costOfLivingData.data]);
 
   // Filter data when category, city, or data changes
   useEffect(() => {
-    if (costOfLivingData.length > 0 && selectedCity && categories.length > 0) {
+    if (costOfLivingData.data.length > 0 && selectedCity && categories.length > 0) {
       filterDataByCategory(selectedCategory);
     }
   }, [
-    costOfLivingData,
+    costOfLivingData.data,
     selectedCategory,
     selectedCity,
     comparisonCity,
@@ -68,7 +64,7 @@ const CostOfLivingPage: React.FC = () => {
 
   // Filter data by category
   const filterDataByCategory = (category: string) => {
-    if (!costOfLivingData.length || !selectedCity) return;
+    if (!costOfLivingData.data.length || !selectedCity) return;
 
     // Important: The API returns data for all cities EXCEPT the selected city
     // with value_in_current_city being the value for the selected city
@@ -81,7 +77,7 @@ const CostOfLivingPage: React.FC = () => {
       // Process each category
       categories.forEach((feature) => {
         // Find all items for this feature
-        const items = costOfLivingData.filter(
+        const items = costOfLivingData.data.filter(
           (item) => item.feature === feature,
         );
 
@@ -107,7 +103,7 @@ const CostOfLivingPage: React.FC = () => {
       filtered = allFilteredItems;
     } else {
       // Get all items for the selected feature
-      const items = costOfLivingData.filter(
+      const items = costOfLivingData.data.filter(
         (item) => item.feature === category,
       );
 
@@ -165,9 +161,9 @@ const CostOfLivingPage: React.FC = () => {
           // Normalize the comparison city for case-insensitive comparison
           const normalizedComparisonCity = comparisonCity.toLowerCase().trim();
 
-          // Find the comparison city data in the original costOfLivingData
+          // Find the comparison city data in the original costOfLivingData.data
           // The API returns data where city is the comparison city and value is its value
-          const compItem = costOfLivingData.find(
+          const compItem = costOfLivingData.data.find(
             (d) =>
               d.city.toLowerCase().trim() === normalizedComparisonCity &&
               d.feature === item.feature &&
@@ -236,8 +232,8 @@ const CostOfLivingPage: React.FC = () => {
     // Normalize the comparison city for case-insensitive comparison
     const normalizedComparisonCity = comparisonCity.toLowerCase().trim();
 
-    // Find the comparison city data in the original costOfLivingData
-    const comparisonData = costOfLivingData.find(
+    // Find the comparison city data in the original costOfLivingData.data
+    const comparisonData = costOfLivingData.data.find(
       (d) =>
         d.city.toLowerCase().trim() === normalizedComparisonCity &&
         d.feature === item.feature &&
@@ -287,7 +283,7 @@ const CostOfLivingPage: React.FC = () => {
         </div>
       </div>
 
-      {selectedCity && costOfLivingData.length > 0 ? (
+      {selectedCity && costOfLivingData.data.length > 0 ? (
         <>
           {/* Category Filter */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">

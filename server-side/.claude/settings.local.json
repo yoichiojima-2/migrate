@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/Users/yo/Developer/repo/**)",
+      "Read(/Users/yo/Developer/repo/migrate/main/assets/master/**)",
+      "Bash(poetry run pytest:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

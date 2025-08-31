@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useCityContext } from "../context/CityContext";
+import { useCitySelection } from "../context/CitySelectionContext";
+import { useData } from "../context/DataContext";
 import CitySelector from "../components/CitySelector";
 import DataCard from "../components/DataCard";
 import ComparisonChart from "../components/ComparisonChart";
@@ -23,15 +24,9 @@ interface SummaryData {
 }
 
 const ComparisonPage: React.FC = () => {
-  const {
-    selectedCity,
-    setSelectedCity,
-    comparisonCity,
-    setComparisonCity,
-    happinessQolData,
-    costOfLivingData,
-    loading,
-  } = useCityContext();
+  const { selectedCity, setSelectedCity, comparisonCity, setComparisonCity } = useCitySelection();
+  const { happinessData, costOfLivingData } = useData();
+  const loading = happinessData.loading || costOfLivingData.loading;
 
   const [qolSummary, setQolSummary] = useState<{
     selected: SummaryData;
@@ -47,17 +42,17 @@ const ComparisonPage: React.FC = () => {
   useEffect(() => {
     if (
       selectedCity &&
-      (happinessQolData.length > 0 || costOfLivingData.length > 0)
+      (happinessData.data.length > 0 || costOfLivingData.data.length > 0)
     ) {
       prepareQolSummary();
       prepareColSummary();
       prepareChartData();
     }
-  }, [selectedCity, comparisonCity, happinessQolData, costOfLivingData]);
+  }, [selectedCity, comparisonCity, happinessData.data, costOfLivingData.data]);
 
   // Prepare quality of life summary
   const prepareQolSummary = () => {
-    if (!happinessQolData.length) return;
+    if (!happinessData.data.length) return;
 
     const selectedCityData: SummaryData = {};
     const comparisonCityData: SummaryData = {};
@@ -74,7 +69,7 @@ const ComparisonPage: React.FC = () => {
     // For the selected city, we need to use value_in_current_city
     keyMetrics.forEach((metric) => {
       // Find any item with this feature to get the selected city's value
-      const data = happinessQolData.find((item) => item.feature === metric);
+      const data = happinessData.data.find((item) => item.feature === metric);
       if (data) {
         selectedCityData[metric] = data.value_in_current_city;
       }
@@ -83,7 +78,7 @@ const ComparisonPage: React.FC = () => {
     // Get data for comparison city
     if (comparisonCity) {
       keyMetrics.forEach((metric) => {
-        const data = happinessQolData.find(
+        const data = happinessData.data.find(
           (item) => item.city === comparisonCity && item.feature === metric,
         );
         if (data) {
@@ -100,7 +95,7 @@ const ComparisonPage: React.FC = () => {
 
   // Prepare cost of living summary
   const prepareColSummary = () => {
-    if (!costOfLivingData.length) return;
+    if (!costOfLivingData.data.length) return;
 
     const selectedCityData: SummaryData = {};
     const comparisonCityData: SummaryData = {};
@@ -116,7 +111,7 @@ const ComparisonPage: React.FC = () => {
     // For the selected city, we need to use value_in_current_city
     keyMetrics.forEach((metric) => {
       // Find any item with this feature and description to get the selected city's value
-      const data = costOfLivingData.find(
+      const data = costOfLivingData.data.find(
         (item) =>
           item.feature === metric.feature &&
           item.description === metric.description,
@@ -130,7 +125,7 @@ const ComparisonPage: React.FC = () => {
     // Get data for comparison city
     if (comparisonCity) {
       keyMetrics.forEach((metric) => {
-        const data = costOfLivingData.find(
+        const data = costOfLivingData.data.find(
           (item) =>
             item.city === comparisonCity &&
             item.feature === metric.feature &&
@@ -151,7 +146,7 @@ const ComparisonPage: React.FC = () => {
 
   // Prepare data for the radar chart
   const prepareChartData = () => {
-    if (!happinessQolData.length) return;
+    if (!happinessData.data.length) return;
 
     // Key metrics for radar chart
     const metrics = [
@@ -170,7 +165,7 @@ const ComparisonPage: React.FC = () => {
     // For the selected city, we need to use value_in_current_city
     const selectedCityData = metrics.map((metric) => {
       // Find any item with this feature to get the selected city's value
-      const item = happinessQolData.find((data) => data.feature === metric);
+      const item = happinessData.data.find((data) => data.feature === metric);
       // Normalize values to be positive for better visualization
       return item ? item.value_in_current_city + 3 : 0;
     });
@@ -178,7 +173,7 @@ const ComparisonPage: React.FC = () => {
     // Data for comparison city (if selected)
     const comparisonCityData = comparisonCity
       ? metrics.map((metric) => {
-          const item = happinessQolData.find(
+          const item = happinessData.data.find(
             (data) => data.city === comparisonCity && data.feature === metric,
           );
           // Normalize values to be positive for better visualization
@@ -276,7 +271,7 @@ const ComparisonPage: React.FC = () => {
       </div>
 
       {selectedCity &&
-      (happinessQolData.length > 0 || costOfLivingData.length > 0) ? (
+      (happinessData.data.length > 0 || costOfLivingData.data.length > 0) ? (
         <>
           {/* City Overview */}
           <div className="grid md:grid-cols-2 gap-6">

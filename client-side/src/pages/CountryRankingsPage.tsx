@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useCityContext } from "../context/CityContext";
+import { useCitySelection } from "../context/CitySelectionContext";
+import { useData } from "../context/DataContext";
+import { useCity } from "../hooks/useCity";
 import LoadingSpinner from "../components/LoadingSpinner";
 import {
   FaTrophy,
@@ -21,8 +23,8 @@ type DataType = "happiness" | "cost";
 type SortOrder = "asc" | "desc";
 
 const CountryRankingsPage: React.FC = () => {
-  const { cities, happinessQolData, costOfLivingData, loading } =
-    useCityContext();
+  const { cities, loading: citiesLoading } = useCity();
+  const { happinessData, costOfLivingData } = useData();
   const [selectedMetric, setSelectedMetric] = useState<string>("");
   const [rankings, setRankings] = useState<CityRanking[]>([]);
   const [availableMetrics, setAvailableMetrics] = useState<string[]>([]);
@@ -33,14 +35,14 @@ const CountryRankingsPage: React.FC = () => {
   useEffect(() => {
     const metrics = [];
 
-    if (dataType === "happiness" && happinessQolData.length > 0) {
+    if (dataType === "happiness" && happinessData.data.length > 0) {
       const uniqueFeatures = [
-        ...new Set(happinessQolData.map((item) => item.feature)),
+        ...new Set(happinessData.data.map((item) => item.feature)),
       ];
       metrics.push(...uniqueFeatures);
-    } else if (dataType === "cost" && costOfLivingData.length > 0) {
+    } else if (dataType === "cost" && costOfLivingData.data.length > 0) {
       const uniqueFeatures = [
-        ...new Set(costOfLivingData.map((item) => item.feature)),
+        ...new Set(costOfLivingData.data.map((item) => item.feature)),
       ];
       metrics.push(...uniqueFeatures);
     }
@@ -51,7 +53,7 @@ const CountryRankingsPage: React.FC = () => {
     if (metrics.length > 0 && !selectedMetric) {
       setSelectedMetric(metrics[0]);
     }
-  }, [dataType, happinessQolData, costOfLivingData, selectedMetric]);
+  }, [dataType, happinessData.data, costOfLivingData.data, selectedMetric]);
 
   // Calculate city rankings when metric or data changes
   useEffect(() => {
@@ -63,13 +65,13 @@ const CountryRankingsPage: React.FC = () => {
     dataType,
     sortOrder,
     cities,
-    happinessQolData,
-    costOfLivingData,
+    happinessData.data,
+    costOfLivingData.data,
   ]);
 
   const calculateCityRankings = () => {
     const dataSource =
-      dataType === "happiness" ? happinessQolData : costOfLivingData;
+      dataType === "happiness" ? happinessData.data : costOfLivingData.data;
     const cityRankings: CityRanking[] = [];
 
     // Get data for each city
@@ -222,7 +224,7 @@ const CountryRankingsPage: React.FC = () => {
     setSortOrder(sortOrder === "desc" ? "asc" : "desc");
   };
 
-  if (loading) {
+  if (citiesLoading || happinessData.loading || costOfLivingData.loading) {
     return (
       <div className="flex justify-center items-center h-64">
         <LoadingSpinner size="lg" />

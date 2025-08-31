@@ -31,24 +31,6 @@ export interface DataItem {
   city: string;
 }
 
-// Legacy Context Type (deprecated - use individual contexts instead)
-export interface CityContextType {
-  cities: City[];
-  selectedCity: string;
-  setSelectedCity: (city: string) => void;
-  comparisonCity: string;
-  setComparisonCity: (city: string) => void;
-  happinessQolData: HappinessQolItem[];
-  costOfLivingData: CostOfLivingItem[];
-  loading: boolean;
-  error: string | null;
-  getFilteredDataForCity: (
-    cityName: string,
-    dataType: "happiness" | "costOfLiving",
-  ) => any[];
-  getUniqueFeatures: (dataType: "happiness" | "costOfLiving") => string[];
-  getSelectedCityData: (dataType: "happiness" | "costOfLiving") => any[];
-}
 
 // Component Props Types
 export type Size = "sm" | "md" | "lg" | "xl";

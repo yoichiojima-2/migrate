@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppProvider } from "./context";
-import { CityProvider } from "./context/CityContext";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
@@ -10,7 +9,6 @@ import CostOfLivingPage from "./pages/CostOfLivingPage";
 import ComparisonPage from "./pages/ComparisonPage";
 import CountryRankingsPage from "./pages/CountryRankingsPage";
 import AboutPage from "./pages/AboutPage";
-import "./App.css";
 
 const App: React.FC = () => {
   const handleError = (error: Error, errorInfo: React.ErrorInfo) => {
@@ -20,8 +18,7 @@ const App: React.FC = () => {
 
   return (
     <ErrorBoundary onError={handleError}>
-      <CityProvider>
-        <AppProvider>
+      <AppProvider>
           <Router basename="/migrate">
             <Layout>
               <ErrorBoundary>
@@ -42,8 +39,7 @@ const App: React.FC = () => {
               </ErrorBoundary>
             </Layout>
           </Router>
-        </AppProvider>
-      </CityProvider>
+      </AppProvider>
     </ErrorBoundary>
   );
 };
