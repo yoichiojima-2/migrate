@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/Users/yo/Developer/repo/migrate/main/utils/**)",
+      "Read(/Users/yo/Developer/repo/migrate/main/utils/utils/**)",
+      "Read(/Users/yo/Developer/repo/migrate/main/utils/utils/**)",
+      "Bash(poetry run python:*)",
+      "Bash(poetry install:*)",
+      "Read(/Users/yo/Developer/repo/migrate/main/utils/**)",
+      "Bash(poetry remove:*)",
+      "Bash(poetry add:*)",
+      "Read(/Users/yo/Developer/repo/migrate/main/**)",
+      "Read(/Users/yo/Library/Caches/pypoetry/virtualenvs/collection-yDwH3Mvi-py3.13/lib/python3.13/site-packages/utils/**)",
+      "Read(/Users/yo/Developer/repo/migrate/main/data/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
