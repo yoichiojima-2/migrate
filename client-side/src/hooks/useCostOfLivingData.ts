@@ -11,6 +11,7 @@ export interface UseCostOfLivingDataResult {
 
 export const useCostOfLivingData = (
   city: string,
+  comparisonCity?: string,
 ): UseCostOfLivingDataResult => {
   const [data, setData] = useState<CostOfLivingItem[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
@@ -25,7 +26,7 @@ export const useCostOfLivingData = (
     try {
       setLoading(true);
       setError(null);
-      const result = await dataApi.getCostOfLiving(city);
+      const result = await dataApi.getCostOfLiving(city, comparisonCity);
 
       if (result && Array.isArray(result)) {
         setData(result);
@@ -46,7 +47,7 @@ export const useCostOfLivingData = (
 
   useEffect(() => {
     fetchData();
-  }, [city]);
+  }, [city, comparisonCity]);
 
   return {
     data,

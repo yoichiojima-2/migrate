@@ -55,14 +55,30 @@ async def get_country(city: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/happiness_qol")
-async def get_happiness_qol(city: str):
+async def get_happiness_qol(city: str, comparison_city: str = None):
     """Get happiness and quality of life data."""
     city = city.lower().strip()
     try:
         data = load_json_data("summary/happiness_qol.json")
-        result = [item for item in data if item.get("city", "").lower() == city]
-        if not result:
+        
+        # Get data for the selected city
+        selected_city_data = [item for item in data if item.get("city", "").lower() == city]
+        if not selected_city_data:
             raise HTTPException(status_code=404, detail=f"No data found for city: {city}")
+        
+        # Transform selected city data to have value_in_current_city
+        result = []
+        for item in selected_city_data:
+            transformed_item = item.copy()
+            transformed_item["value_in_current_city"] = item["value"]
+            result.append(transformed_item)
+        
+        # If comparison city is provided, add its data with original structure
+        if comparison_city:
+            comparison_city = comparison_city.lower().strip()
+            comparison_data = [item for item in data if item.get("city", "").lower() == comparison_city]
+            result.extend(comparison_data)
+        
         return result
     except HTTPException:
         raise
@@ -70,14 +86,30 @@ async def get_happiness_qol(city: str):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/cost_of_living")
-async def get_cost_of_living(city: str):
+async def get_cost_of_living(city: str, comparison_city: str = None):
     """Get cost of living data."""
     city = city.lower().strip()
     try:
         data = load_json_data("summary/cost_of_living.json")
-        result = [item for item in data if item.get("city", "").lower() == city]
-        if not result:
+        
+        # Get data for the selected city
+        selected_city_data = [item for item in data if item.get("city", "").lower() == city]
+        if not selected_city_data:
             raise HTTPException(status_code=404, detail=f"No data found for city: {city}")
+        
+        # Transform selected city data to have value_in_current_city
+        result = []
+        for item in selected_city_data:
+            transformed_item = item.copy()
+            transformed_item["value_in_current_city"] = item["value"]
+            result.append(transformed_item)
+        
+        # If comparison city is provided, add its data with original structure
+        if comparison_city:
+            comparison_city = comparison_city.lower().strip()
+            comparison_data = [item for item in data if item.get("city", "").lower() == comparison_city]
+            result.extend(comparison_data)
+        
         return result
     except HTTPException:
         raise

@@ -9,7 +9,7 @@ export interface UseHappinessDataResult {
   refetch: () => Promise<void>;
 }
 
-export const useHappinessData = (city: string): UseHappinessDataResult => {
+export const useHappinessData = (city: string, comparisonCity?: string): UseHappinessDataResult => {
   const [data, setData] = useState<HappinessQolItem[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -23,7 +23,7 @@ export const useHappinessData = (city: string): UseHappinessDataResult => {
     try {
       setLoading(true);
       setError(null);
-      const result = await dataApi.getHappinessQol(city);
+      const result = await dataApi.getHappinessQol(city, comparisonCity);
       setData(result);
     } catch (err) {
       const errorMessage =
@@ -37,7 +37,7 @@ export const useHappinessData = (city: string): UseHappinessDataResult => {
 
   useEffect(() => {
     fetchData();
-  }, [city]);
+  }, [city, comparisonCity]);
 
   return {
     data,
