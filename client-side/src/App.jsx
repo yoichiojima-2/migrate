@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import QualityOfLifePage from './pages/QualityOfLifePage';
 import CostOfLivingPage from './pages/CostOfLivingPage';
 import ComparisonPage from './pages/ComparisonPage';
+import CountryRankingsPage from './pages/CountryRankingsPage';
 import AboutPage from './pages/AboutPage';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
             <Route path="/quality-of-life" element={<QualityOfLifePage />} />
             <Route path="/cost-of-living" element={<CostOfLivingPage />} />
             <Route path="/comparison" element={<ComparisonPage />} />
+            <Route path="/rankings" element={<CountryRankingsPage />} />
             <Route path="/about" element={<AboutPage />} />
           </Routes>
         </Layout>

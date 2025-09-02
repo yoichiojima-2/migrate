@@ -1,85 +1,48 @@
-"""
-Utilities module - provides common utility functions.
-"""
-
-import json
-import os
 from pathlib import Path
+import json
+
 import pandas as pd
 import yaml
 
 
-def get_root():
-    """Get the root directory of the project."""
-    # When installed in a virtualenv, we need to find the actual project root
-    # Look for the main directory that contains config.yml
-    current = Path.cwd()
-    
-    # First try current working directory and its parents
-    test_path = current
-    for _ in range(5):  # Check up to 5 levels up
-        if (test_path / "config.yml").exists() or (test_path / "config.yaml").exists():
-            return test_path
-        if test_path.parent == test_path:
-            break
-        test_path = test_path.parent
-    
-    # Fallback to hardcoded path if we know the structure
-    # This assumes we're running from collection directory
-    main_path = Path("/Users/yo/Developer/repo/migrate/main")
-    if main_path.exists():
-        return main_path
-    
-    # Last resort - return current directory
-    return current
+def get_root() -> Path:
+    # this is just too handy
+    return Path().home() / ".sign-to-migrate"
 
 
-def get_data_dir():
-    """Get the data directory path."""
-    root = get_root()
-    data_dir = root / "data"
-    data_dir.mkdir(exist_ok=True)
-    return data_dir
+def get_config() -> dict[str, any]:
+    return yaml.safe_load((get_root() / "config.yml").open())
 
 
-def get_config():
-    """Load configuration from config.yml or config.yaml."""
-    root = get_root()
-    
-    # Try config.yml first, then config.yaml
-    for config_name in ["config.yml", "config.yaml"]:
-        config_path = root / config_name
-        if config_path.exists():
-            with open(config_path, 'r') as f:
-                return yaml.safe_load(f)
-    
-    # Return empty config if file doesn't exist
-    return {}
+def get_data_dir() -> Path:
+    return get_root() / "data"
 
 
-def read_json(filepath):
-    """Read JSON file and return data."""
-    with open(filepath, 'r') as f:
-        return json.load(f)
+def read_json(path: str) -> None:
+    output_path = get_data_dir() / path
+
+    if not output_path.suffix == ".json":
+        raise ValueError(f"output path must be a json: {path}")
+
+    return pd.read_json(output_path)
 
 
-def write_json(data, filepath):
-    """Write data to JSON file."""
-    with open(filepath, 'w') as f:
+def df_to_json(df: pd.DataFrame, path: str) -> None:
+    output_path = get_data_dir() / path
+
+    if not output_path.suffix == ".json":
+        raise ValueError(f"output path must be a json: {path}")
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    df.to_json(output_path, orient="records", index=False, indent=2)
+    print(f"[df_to_json] saved: {output_path}")
+
+
+def write_json(data: any, path: str) -> None:
+    output_path = get_data_dir() / path
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(output_path, "w") as f:
         json.dump(data, f, indent=2)
 
-
-def df_to_json(df, filepath):
-    """Convert DataFrame to JSON and save to file."""
-    # Convert DataFrame to JSON format
-    df.to_json(filepath, orient='records', indent=2)
-
-
-__all__ = [
-    'get_root',
-    'get_data_dir', 
-    'get_config',
-    'read_json',
-    'df_to_json',
-    'write_json',
-]
+    print(f"[write_json] saved: {output_path}")

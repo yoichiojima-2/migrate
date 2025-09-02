@@ -61,12 +61,11 @@ collect: venv install
 	cp -r ~/.sign-to-migrate/data/master assets/
 
 .PHONY: deploy-server-side
-deploy-server-side:
+deploy-server-side: collect
 	docker build --platform=linux/amd64 -t gcr.io/$(GCLOUD_PROJECT_ID)/sign-to-migrate/serverside:latest -f server-side/Dockerfile .
-	gcloud auth configure-docker
 	docker push gcr.io/$(GCLOUD_PROJECT_ID)/sign-to-migrate/serverside:latest
 	gcloud run deploy sign-to-migrate-serverside \
-		--image=gcr.io/$(GCLOUD_PROJECT_ID)/sign-to-migrate/serverside:latest \
+		--image=gcr.io/yo-personal/sign-to-migrate/serverside:latest \
 		--platform=managed \
 		--region=us-central1 \
 		--allow-unauthenticated \

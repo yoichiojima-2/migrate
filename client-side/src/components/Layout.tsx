@@ -1,17 +1,35 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { FaHome, FaChartBar, FaMoneyBillWave, FaHeart, FaInfoCircle, FaGlobe } from 'react-icons/fa';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import {
+  FaHome,
+  FaChartBar,
+  FaMoneyBillWave,
+  FaHeart,
+  FaInfoCircle,
+  FaGlobe,
+} from "react-icons/fa";
+import { IconType } from "react-icons";
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+interface NavItem {
+  path: string;
+  label: string;
+  icon: IconType;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   const location = useLocation();
-  
-  const navItems = [
-    { path: '/', label: 'Home', icon: FaHome },
-    { path: '/quality-of-life', label: 'Quality of Life', icon: FaHeart },
-    { path: '/cost-of-living', label: 'Cost of Living', icon: FaMoneyBillWave },
-    { path: '/comparison', label: 'Comparison', icon: FaChartBar },
-    { path: '/rankings', label: 'Rankings', icon: FaGlobe },
-    { path: '/about', label: 'About', icon: FaInfoCircle },
+
+  const navItems: NavItem[] = [
+    { path: "/", label: "Home", icon: FaHome },
+    { path: "/quality-of-life", label: "Quality of Life", icon: FaHeart },
+    { path: "/cost-of-living", label: "Cost of Living", icon: FaMoneyBillWave },
+    { path: "/comparison", label: "Comparison", icon: FaChartBar },
+    { path: "/rankings", label: "Rankings", icon: FaGlobe },
+    { path: "/about", label: "About", icon: FaInfoCircle },
   ];
 
   return (
@@ -20,7 +38,10 @@ const Layout = ({ children }) => {
       <header className="bg-white dark:bg-gray-800 shadow-md">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <Link to="/" className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+            <Link
+              to="/"
+              className="text-2xl font-bold text-indigo-600 dark:text-indigo-400"
+            >
               CityCompare
             </Link>
             <nav className="hidden md:flex space-x-4">
@@ -30,8 +51,8 @@ const Layout = ({ children }) => {
                   to={item.path}
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
                     location.pathname === item.path
-                      ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300'
-                      : 'text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700'
+                      ? "bg-indigo-100 text-indigo-700 dark:bg-indigo-900 dark:text-indigo-300"
+                      : "text-gray-700 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700"
                   }`}
                 >
                   {item.label}
@@ -67,8 +88,8 @@ const Layout = ({ children }) => {
                 to={item.path}
                 className={`flex flex-col items-center py-3 px-2 min-w-0 flex-1 ${
                   location.pathname === item.path
-                    ? 'text-indigo-600 dark:text-indigo-400'
-                    : 'text-gray-600 dark:text-gray-400'
+                    ? "text-indigo-600 dark:text-indigo-400"
+                    : "text-gray-600 dark:text-gray-400"
                 }`}
               >
                 <Icon className="h-5 w-5" />
