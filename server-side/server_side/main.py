@@ -1,170 +1,82 @@
-"""
-Refactored FastAPI application with layered architecture.
-
-This replaces the original 83-line main.py with a clean, maintainable
-layered architecture including proper error handling, validation,
-and separation of concerns.
-"""
-
-from fastapi import FastAPI, Request, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
-import logging
-from contextlib import asynccontextmanager
+import pandas as pd
 
-from .core import settings, APIError
-from .api import cities_router, comparison_router
-from .services import CityService, ComparisonService
+from utils.utils import get_config, get_data_dir
 
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO if not settings.debug else logging.DEBUG,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://yoichiojima-2.github.io", "http://localhost:5173", "http://localhost:4173"],
+    allow_credentials=True,
+    allow_methods=["GET"],
+    allow_headers=["Content-Type", "Authorization"],
 )
 
-logger = logging.getLogger(__name__)
 
-
-@asynccontextmanager
-async def lifespan(app: FastAPI):
-    """Application lifespan events."""
-
-    # Startup
-    logger.info(f"Starting {settings.app_name} v{settings.app_version}")
-    logger.info(f"Data directory: {settings.data_dir}")
-
-    # Warm up caches
-    try:
-        city_service = CityService()
-        cities = city_service.get_all_cities()
-        logger.info(f"Loaded {len(cities)} cities")
-    except Exception as e:
-        logger.error(f"Failed to load cities: {e}")
-
-    yield
-
-    # Shutdown
-    logger.info("Shutting down application")
-
-
-def create_app() -> FastAPI:
-    """Create and configure the FastAPI application."""
-
-    app = FastAPI(
-        title=settings.app_name,
-        version=settings.app_version,
-        description="API for migration comparison data",
-        lifespan=lifespan,
-        docs_url="/docs" if settings.debug else None,
-        redoc_url="/redoc" if settings.debug else None,
+def make_compare_df(
+    df: pd.DataFrame,
+    city: str,
+    round_decimals: int = 1,
+    additional_keys: list[str] = [],
+) -> pd.DataFrame:
+    rest_df = df[df["city"] != city]
+    current_df = (
+        df[df["city"] == city]
+        .rename(columns={"value": "value_in_current_city"})
+        .drop(columns=["country", "city"])
     )
 
-    # Add CORS middleware
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=settings.allowed_origins,
-        allow_credentials=settings.allow_credentials,
-        allow_methods=settings.allowed_methods,
-        allow_headers=settings.allowed_headers,
+    # fmt: off
+    merged_df = rest_df.merge(current_df, on=["feature", *additional_keys], how="left")
+    merged_df["diff"] = (merged_df["value"] - merged_df["value_in_current_city"])
+
+    merged_df["diff_rate"] = (
+        merged_df
+        .apply(lambda x: (x["value"] / x["value_in_current_city"] - 1) * 100 if x["value_in_current_city"] else 0, axis=1)
     )
 
-    # Add routers
-    app.include_router(cities_router)
-    app.include_router(comparison_router)
+    merged_df["value"] = merged_df["value"].round(round_decimals)
+    merged_df["value_in_current_city"] = merged_df["value_in_current_city"].round(round_decimals)
+    merged_df["diff"] = merged_df["diff"].round(round_decimals)
+    merged_df["diff_rate"] = merged_df["diff_rate"].round(round_decimals)
 
-    # Legacy endpoints for backward compatibility
-    add_legacy_endpoints(app)
-
-    # Add exception handlers
-    add_exception_handlers(app)
-
-    return app
+    return merged_df[["country", "city", "feature", *additional_keys, "value", "value_in_current_city", "diff", "diff_rate"]]
+    # fmt: on
 
 
-def add_legacy_endpoints(app: FastAPI):
-    """Add legacy endpoints for backward compatibility."""
-
-    @app.get("/cities_and_countries")
-    async def legacy_cities_and_countries():
-        """Legacy endpoint for cities and countries."""
-        city_service = CityService()
-        cities = city_service.get_all_cities()
-        return [{"city": city.city, "country": city.country} for city in cities]
-
-    @app.get("/country")
-    async def legacy_country(city: str):
-        """Legacy endpoint for country lookup."""
-        city_service = CityService()
-        country = city_service.get_country_by_city(city.lower().strip())
-        return {"country": country}
-
-    @app.get("/happiness_qol")
-    async def legacy_happiness_qol(city: str):
-        """Legacy endpoint for happiness and QOL data."""
-        comparison_service = ComparisonService()
-        data = comparison_service.get_happiness_qol_comparison(city.lower().strip())
-        return [item.dict() for item in data]
-
-    @app.get("/cost_of_living")
-    async def legacy_cost_of_living(city: str):
-        """Legacy endpoint for cost of living data."""
-        comparison_service = ComparisonService()
-        data = comparison_service.get_cost_of_living_comparison(city.lower().strip())
-        return [item.dict() for item in data]
+@app.get("/cities_and_countries")
+def cities_and_countries() -> list[dict[str, str]]:
+    df = pd.read_json(get_data_dir() / "master/city_and_country.json")
+    return df.to_dict(orient="records")
 
 
-def add_exception_handlers(app: FastAPI):
-    """Add custom exception handlers."""
-
-    @app.exception_handler(APIError)
-    async def api_error_handler(request: Request, exc: APIError):
-        """Handle API errors."""
-        logger.error(f"API Error: {exc.detail}")
-        return JSONResponse(status_code=exc.status_code, content={"detail": exc.detail})
-
-    @app.exception_handler(HTTPException)
-    async def http_exception_handler(request: Request, exc: HTTPException):
-        """Handle HTTP exceptions."""
-        logger.error(f"HTTP Error: {exc.detail}")
-        return JSONResponse(status_code=exc.status_code, content={"detail": exc.detail})
-
-    @app.exception_handler(Exception)
-    async def general_exception_handler(request: Request, exc: Exception):
-        """Handle unexpected exceptions."""
-        logger.error(f"Unexpected error: {str(exc)}", exc_info=True)
-        return JSONResponse(
-            status_code=500, content={"detail": "Internal server error"}
-        )
+@app.get("/country")
+def country(city: str) -> str | None:
+    df = pd.read_json(get_data_dir() / "master/city_and_country.json")
+    return df[df["city"] == city]["country"].iloc[0]
 
 
-# Create the application instance
-app = create_app()
+@app.get("/happiness_qol")
+def happiness_qol(city: str) -> list:
+    df = pd.read_json(get_data_dir() / "summary/happiness_qol.json")
+    return make_compare_df(df, city).drop(columns="diff_rate").to_dict(orient="records")
 
 
-@app.get("/health")
-async def health_check():
-    """Health check endpoint."""
-    return {"status": "healthy", "version": settings.app_version}
-
-
-@app.get("/")
-async def root():
-    """Root endpoint."""
-    return {
-        "message": f"Welcome to {settings.app_name}",
-        "version": settings.app_version,
-        "docs": "/docs" if settings.debug else "Docs disabled in production",
-    }
+@app.get("/cost_of_living")
+def cost_of_living(city: str) -> list:
+    df = pd.read_json(get_data_dir() / "summary/cost_of_living.json")
+    return (
+        make_compare_df(df, city, round_decimals=0, additional_keys=["description"])
+        .drop(columns="diff")
+        .to_dict(orient="records")
+    )
 
 
 if __name__ == "__main__":
+    import os
     import uvicorn
 
-    uvicorn.run(
-        "main_refactored:app",
-        host=settings.host,
-        port=settings.port,
-        reload=settings.debug,
-        log_level="info",
-    )
+    uvicorn.run("main:app", host="127.0.0.1", port=int(os.getenv("PORT", "8000")), reload=True)
