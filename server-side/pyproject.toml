@@ -3,7 +3,6 @@ name = "server-side"
 version = "0.1.0"
 description = ""
 authors = ["yo <yoichiojima@gmail.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"

@@ -3,7 +3,6 @@ name = "utils"
 version = "0.1.0"
 description = ""
 authors = ["Yoichi Ojima <yoichiojima@gmail.com>"]
-readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.13"
