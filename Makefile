@@ -55,9 +55,12 @@ test: venv install
 	cd server-side && $(VENV)/bin/pytest -vvv
 
 # collection tests scrape live external sources, so CI runs only the
-# deterministic suites; run the full `test` target locally or via dispatch
+# deterministic suites; run the full `test` target locally or via dispatch.
+# server-side reads the pipeline output dir — seed it from the committed
+# assets, same as server-side/Dockerfile does
 .PHONY: test-ci
 test-ci: venv install
+	mkdir -p $(ROOT)/data && cp -r assets/. $(ROOT)/data/
 	cd utils && $(VENV)/bin/pytest -vvv
 	cd server-side && $(VENV)/bin/pytest -vvv
 
