@@ -6,7 +6,6 @@ import yaml
 
 
 def get_root() -> Path:
-    # this is just too handy
     return Path().home() / ".sign-to-migrate"
 
 

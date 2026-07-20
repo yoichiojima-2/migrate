@@ -31,15 +31,6 @@ export class BaseApiService {
   }
 
   private setupInterceptors(): void {
-    // Request interceptor
-    this.client.interceptors.request.use(
-      (config) => {
-        console.log(`[API] ${config.method?.toUpperCase()} ${config.url}`);
-        return config;
-      },
-      (error) => Promise.reject(error),
-    );
-
     // Response interceptor
     this.client.interceptors.response.use(
       (response) => response,
@@ -123,7 +114,6 @@ export class BaseApiService {
     // Check cache first
     const cachedData = this.getFromCache<T>(cacheKey);
     if (cachedData) {
-      console.log(`[Cache Hit] ${url}`);
       return cachedData;
     }
 

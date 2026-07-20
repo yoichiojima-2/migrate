@@ -27,7 +27,7 @@ jobs:
         id: upload
         uses: actions/upload-pages-artifact@v3
         with:
-          path: client-side/dist  # adjust if your build outputs elsewhere
+          path: client-side/dist
 
       - name: Deploy to GitHub Pages
         id: deployment

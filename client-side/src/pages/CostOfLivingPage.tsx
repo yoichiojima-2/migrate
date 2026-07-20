@@ -138,7 +138,6 @@ const CostOfLivingPage: React.FC = () => {
         ) as FilteredItem[];
     }
 
-    console.log(`Filtered ${filtered.length} items for category: ${category}`);
     setFilteredData(filtered);
 
     // Only prepare chart data if we have filtered data
@@ -178,13 +177,6 @@ const CostOfLivingPage: React.FC = () => {
           return compItem ? compItem.value : 0;
         })
       : [];
-
-    console.log("Chart data prepared:", {
-      selectedCity,
-      selectedCityData,
-      comparisonCity,
-      comparisonCityData,
-    });
 
     const datasets = [
       {
