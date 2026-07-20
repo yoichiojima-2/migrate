@@ -54,6 +54,13 @@ test: venv install
 	cd collection && $(VENV)/bin/pytest -vvv
 	cd server-side && $(VENV)/bin/pytest -vvv
 
+# collection tests scrape live external sources, so CI runs only the
+# deterministic suites; run the full `test` target locally or via dispatch
+.PHONY: test-ci
+test-ci: venv install
+	cd utils && $(VENV)/bin/pytest -vvv
+	cd server-side && $(VENV)/bin/pytest -vvv
+
 .PHONY: collect
 collect: venv install
 	cd collection && poetry run python collection/main.py

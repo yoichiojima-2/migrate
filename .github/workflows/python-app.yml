@@ -8,6 +8,12 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "also run the scraping-dependent collection tests"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -25,4 +31,4 @@ jobs:
       - name: Test
         env:
           OPENCAGEDATA_API_KEY: ${{ secrets.OPENCAGEDATA_API_KEY }}
-        run: make test
+        run: make ${{ inputs.full == true && 'test' || 'test-ci' }}
